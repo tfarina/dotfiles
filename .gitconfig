@@ -1,0 +1,21 @@
+[user]
+	name = Thiago Farina
+	email = tfarina@chromium.org
+[core]
+	editor = vim
+[alias]
+	br = branch
+	co = checkout
+	ci = commit
+	st = status
+[color]
+	branch      = auto
+	diff        = auto
+	interactive = auto
+	status      = auto
+	ui          = auto
+[sendemail]
+	smtpserver = /usr/bin/msmtp
+	suppresscc = self
+        #tocmd = ~/scripts/to.sh
+        #cccmd = ~/scripts/cc.sh
