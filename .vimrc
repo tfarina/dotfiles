@@ -7,6 +7,9 @@ set title                         " Show title in the console title bar.
 set history=1000                  " Lots of command line history.
 set viminfo='1000,f1,:1000,/1000
 
+set wildmenu
+set wildmode=list:longest,full
+
 let &background = "dark"
 nmap ,b :let &background = ( &background == "dark"? "light" : "dark" )<CR>
 
