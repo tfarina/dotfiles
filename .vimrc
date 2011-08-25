@@ -41,7 +41,7 @@ syn match ErrorLeadSpace /^ \+/
 syn match ErrorTailSpace / \+$/
 
 function! SetCodingStyle()
-  if (&syntax !~ '^\(c\|cc\|cpp\|h\|java\|python\)$')
+  if (&syntax !~ '^\(c\|cc\|cpp\|h\|java\|python\|objcpp\)$')
     return
   endif
   " The path for the file.
