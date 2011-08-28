@@ -8,6 +8,7 @@
 	co = checkout
 	ci = commit
 	st = status
+        sr = svn rebase
 [color]
 	branch      = auto
 	diff        = auto
