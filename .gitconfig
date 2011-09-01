@@ -9,6 +9,8 @@
 	ci = commit
 	st = status
         sr = svn rebase
+	bl = blame
+	new = !git log $1@{1}..$1@{0} "$@"
 [color]
 	branch      = auto
 	diff        = auto
