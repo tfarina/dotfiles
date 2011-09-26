@@ -96,6 +96,11 @@ nmap <F6> /}<CR>zf%<ESC>:nohlsearch<CR>
 
 autocmd BufNewFile,BufRead * call SetCodingStyle()
 
+augroup NewFiles
+  au!
+  au BufNewFile *.h call IncludeGuard()
+augroup END
+
 " In Makefiles, don't expand tabs to spaces, since we need the actual tabs.
 autocmd FileType make set noexpandtab
 
