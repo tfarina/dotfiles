@@ -12,6 +12,7 @@
 	bl = blame
 	new = !git log $1@{1}..$1@{0} "$@"
 	cm = checkout master
+	rbm = rebase master
 [color]
 	branch      = auto
 	diff        = auto
