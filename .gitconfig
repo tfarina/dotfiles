@@ -11,6 +11,7 @@
         sr = svn rebase
 	bl = blame
 	new = !git log $1@{1}..$1@{0} "$@"
+	cm = checkout master
 [color]
 	branch      = auto
 	diff        = auto
