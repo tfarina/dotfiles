@@ -1,4 +1,4 @@
-so /home/tfarina/chromium/src/tools/vim/filetypes.vim
+so ~/chromium/src/tools/vim/filetypes.vim
 
 set number                        " Display line numbers.
 set numberwidth=1
@@ -40,6 +40,9 @@ syn match ErrorLeadSpace /^ \+/
 " Highlight any trailing spaces.
 syn match ErrorTailSpace / \+$/
 
+" Insert space characters whenever the tab key is pressed.
+set expandtab
+
 function! SetCodingStyle()
   if (&syntax !~ '^\(c\|cc\|cpp\|h\|java\|python\|objcpp\)$')
     return
@@ -47,9 +50,9 @@ function! SetCodingStyle()
   " The path for the file.
   let pathfn = expand('%:p:h')
   if pathfn =~ 'chromium'
-    set expandtab tabstop=2 shiftwidth=2
+    set tabstop=2 shiftwidth=2
   elseif pathfn =~ 'lithium'
-    set expandtab tabstop=2 shiftwidth=2
+    set tabstop=2 shiftwidth=2
   endif
 endfunction
 
