@@ -36,6 +36,9 @@ alias g='git'
 # Vim settings.
 alias v='vim'
 
+# Mac OS X 'open' alias.
+alias open='xdg-open'
+
 # Emacs settings.
 #alias em="emacs -nw"
 
