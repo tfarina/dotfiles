@@ -1,26 +1,27 @@
 so ~/chromium/src/tools/vim/filetypes.vim
 
-set number                        " Display line numbers.
-set numberwidth=1
+" Enable syntax highlighting.
+if has("syntax")
+    syntax on
+endif
+
+" Syntax highlight shell scripts as per POSIX, not the original Bourne shell
+" which very few use.
+let g:is_posix = 1
+
 set background=dark               " Use dark background.
+set number                        " Display line numbers.
+set numberwidth=1                 " Use only 1 column while possible.
+set colorcolumn=81
 set title                         " Show title in the console title bar.
 set history=1000                  " Lots of command line history.
 set viminfo='1000,f1,:1000,/1000
 
 set wildmenu
 set wildmode=list:longest,full
+set foldmethod=indent             " Allow us to fold on indents.
+set foldlevel=99                  " Don't fold by default.
 
-let &background = "dark"
-nmap ,b :let &background = ( &background == "dark"? "light" : "dark" )<CR>
-
-" Syntax highlight shell scripts as per POSIX, not the original Bourne shell
-" which very few use.
-let g:is_posix = 1
-
-" Enable syntax highlighting.
-if has("syntax")
-    syntax on
-endif
 
 " Flag problematic whitespace (trailing and spaces before tabs).
 " Note you get the same by doing let c_space_errors=1 but this rule really
@@ -106,9 +107,3 @@ augroup END
 
 " In Makefiles, don't expand tabs to spaces, since we need the actual tabs.
 autocmd FileType make set noexpandtab
-
-nnoremap <silent> <F8> :TlistToggle<CR>
-let Tlist_Use_Right_Window = 1
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Compact_Format = 1
-let Tlist_Exit_OnlyWindow = 1
