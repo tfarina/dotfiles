@@ -53,6 +53,15 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# Enable color support of ls and also add handy aliases.
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
 # Make the autocompleton work with the g alias.
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
 || complete -o default -o nospace -F _git g
@@ -68,12 +77,12 @@ complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
 
-# append to the history file, don't overwrite it
-shopt -s histappend
-
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
+
+# append to the history file, don't overwrite it
+shopt -s histappend
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -120,7 +129,8 @@ BLUE='\[\033[01;34m\]'
 YELLOW='\[\033[01;33m\]'
 NORMAL='\[\033[00m\]'
 PROMPT="\$"
-export PS1="$GREEN\u@\h$BLUE \w$YELLOW\$(__git_ps1)$BLUE$PROMPT$NORMAL "
+DIR="\w"
+export PS1="$GREEN\u@\h$BLUE $DIR$YELLOW\$(__git_ps1)$BLUE$PROMPT$NORMAL "
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 # Linus Torvalds bash prompt style.
@@ -137,15 +147,6 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
