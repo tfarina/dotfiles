@@ -24,6 +24,7 @@ set foldlevel=99                  " Don't fold by default.
 
 set smartindent
 set incsearch                     " Do incremental searching - http://www.linuxjournal.com/article/3805
+set ignorecase                    " Ignore case when searching.
 
 " Flag problematic whitespace (trailing and spaces before tabs).
 " Note you get the same by doing let c_space_errors=1 but this rule really
