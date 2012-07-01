@@ -1,3 +1,7 @@
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
 # Chromium settings.
 export PATH=~/depot_tools:"${PATH}"
 export CC="gcc -B/usr/local/gold/bin"
@@ -13,11 +17,22 @@ export PATH=~/scripts:"${PATH}"
 # Put ninja into PATH.
 export PATH=~/src/ninja:"${PATH}"
 
-# Chromium Clang settings.
-#export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
-#export CC=clang
-#export CXX=clang++
-#export GYP_DEFINES="clang=1 clang_use_chrome_plugins=1"
+# Lithium settings.
+alias cl="cd ~/lithium/src"
+
+# Git settings.
+alias g='git'
+alias gd='g d'
+
+# Make the autocompleton work with the g alias.
+complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
+|| complete -o default -o nospace -F _git g
+
+# Vim settings.
+alias v='vim'
+
+# Mac OS X 'open' alias.
+alias open='xdg-open'
 
 # Chromium OS settings.
 #alias cros="cd ~/chromiumos/src"
@@ -26,19 +41,6 @@ export PATH=~/src/ninja:"${PATH}"
 # Android settings.
 #export PATH=~/android-sdk-linux_x86/tools/:"$PATH"
 #alias ca="cd ~/android"
-
-# Lithium settings.
-alias cl="cd ~/lithium/src"
-
-# Git settings.
-alias g='git'
-alias gd='g d'
-
-# Vim settings.
-alias v='vim'
-
-# Mac OS X 'open' alias.
-alias open='xdg-open'
 
 # Emacs settings.
 #alias em="emacs -nw"
@@ -62,14 +64,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
-
-# Make the autocompleton work with the g alias.
-complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
-|| complete -o default -o nospace -F _git g
-
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
