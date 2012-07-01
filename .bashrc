@@ -11,6 +11,10 @@ export LD_LIBRARY_PATH=~/chromium/src/out/Debug:~/chromium/src/out/Debug/lib.tar
 alias cr="cd ~/chromium/src"
 alias crl="~/chromium/src/out/Debug/chrome --enable-logging --v=1"
 
+# Chromium OS settings.
+#alias cros="cd ~/chromiumos/src"
+#eval $(keychain --eval ~/.ssh/chromium)
+
 # Make my scripts accessible everywhere.
 export PATH=~/scripts:"${PATH}"
 
@@ -33,10 +37,6 @@ alias v='vim'
 
 # Mac OS X 'open' alias.
 alias open='xdg-open'
-
-# Chromium OS settings.
-#alias cros="cd ~/chromiumos/src"
-#eval $(keychain --eval ~/.ssh/chromium)
 
 # Create a new directory and enter it.
 md() {
@@ -135,15 +135,6 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
