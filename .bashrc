@@ -2,7 +2,7 @@
 export PATH=~/depot_tools:"${PATH}"
 export CC="gcc -B/usr/local/gold/bin"
 export CXX="g++ -B/usr/local/gold/bin -Wno-conversion-null"
-export GYP_GENERATORS="make,ninja"
+export GYP_GENERATORS="ninja"
 export LD_LIBRARY_PATH=~/chromium/src/out/Debug:~/chromium/src/out/Debug/lib.target:$LD_LIBRARY_PATH
 alias cr="cd ~/chromium/src"
 alias crl="~/chromium/src/out/Debug/chrome --enable-logging --v=1"
