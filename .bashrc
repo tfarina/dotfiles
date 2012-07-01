@@ -131,7 +131,7 @@ YELLOW='\[\033[01;33m\]'
 NORMAL='\[\033[00m\]'
 PROMPT="\$"
 DIR="\w"
-export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW\$(__git_ps1)$BLUE$PROMPT$NORMAL "
+export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW\$(__git_ps1)$BLUE\n$NORMAL$PROMPT$NORMAL "
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 # Linus Torvalds bash prompt style.
