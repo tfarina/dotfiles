@@ -38,13 +38,6 @@ alias open='xdg-open'
 #alias cros="cd ~/chromiumos/src"
 #eval $(keychain --eval ~/.ssh/chromium)
 
-# Android settings.
-#export PATH=~/android-sdk-linux_x86/tools/:"$PATH"
-#alias ca="cd ~/android"
-
-# Emacs settings.
-#alias em="emacs -nw"
-
 # Create a new directory and enter it.
 md() {
   mkdir -p "$@" && cd "$@"
