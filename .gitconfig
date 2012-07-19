@@ -7,6 +7,7 @@
 	br  = branch
 	co  = checkout
 	ci  = commit
+        cu  = cl upload
 	st  = status
         sr  = svn rebase
 	bl  = blame
@@ -26,3 +27,5 @@
 	suppresscc = self
         #tocmd = ~/scripts/to.sh
         #cccmd = ~/scripts/cc.sh
+[diff]
+	renames = copies
