@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+TARGET=chrome
+
+time ninja -C out/Debug/ "${TARGET}" 2>&1 | tee errors
