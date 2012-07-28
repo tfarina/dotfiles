@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Default target is chrome.
 TARGET=chrome
+
+if [[ $1 != "" ]]; then
+        TARGET=$1
+fi
 
 time ninja -C out/Debug/ "${TARGET}" 2>&1 | tee errors
