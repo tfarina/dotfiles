@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Copyright (c) 2010-2011, Thiago Farina
+#
+# 2010-09-17 Thiago Farina <tfarina@chromium.org>
+#
+# This script pulls from remote repository to update the git tree, then it does
+# a gclient sync to update all the third_party repos.
+# This should be done in the master/trunk branch for safety.
+
+NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
+
+time git pull && time gclient sync -j"${NUM_JOBS}"

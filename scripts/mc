@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Copyright (c) 2010, Thiago Farina
+#
+# 2010-09-06 Thiago Farina <tfarina@chromium.org>
+#
+# TODO: Add some flag system? like -t for target, -b for build?
+# TODO: Add a way to say mc -v for mc --verbose which compiles with make V=1
+
+# Die if any command dies.
+set -e
+
+NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
+BUILD_TYPE=Debug
+
+# Default target is chrome.
+TARGET=chrome
+
+if [ "$1" != "" ]; then
+  TARGET=$1
+fi
+
+time make -k -j"${NUM_JOBS}" BUILDTYPE="${BUILD_TYPE}" "${TARGET}" 2>&1 | tee errors

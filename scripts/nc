@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Copyright (c) 2011, Thiago Farina
+#
+# 2011-08-06 Thiago Farina <tfarina@chromium.org>
+#
+# TODO: Add some flag system? like -t for target, -b for build?
+# TODO: Add a way to say nc -v for nc --verbose which compiles with make V=1
+
+# Die if any command dies.
+set -e
+
+NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
+
+# Default target is chrome.
+TARGET=chrome
+
+if [ "$1" != "" ]; then
+  TARGET=$1
+fi
+
+#time ~/src/ninja/ninja -f out/Debug/build.ninja -k4 -j"${NUM_JOBS}" "${TARGET}" 2>&1 | tee errors
+time ninja -C out/Debug -k4 -j"${NUM_JOBS}" "${TARGET}" 2>&1 | tee errors

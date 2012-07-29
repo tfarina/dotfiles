@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Copyright (c) 2012, Thiago Farina
+#
+# 2012-03-27 Thiago Farina <tfarina@chromium.org>
+#
+grep error: errors
