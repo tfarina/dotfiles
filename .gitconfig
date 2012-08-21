@@ -16,6 +16,7 @@
 	rbm = rebase master
 	bd  = branch -D
         d   = diff
+        land = cl dcommit
 [color]
 	branch      = auto
 	diff        = auto
