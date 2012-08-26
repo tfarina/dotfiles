@@ -1,11 +1,7 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 # Chromium settings.
 export PATH=~/depot_tools:"${PATH}"
-export CC="gcc -B/usr/local/gold/bin"
-export CXX="g++ -B/usr/local/gold/bin" # -Wno-conversion-null
+export CC="clang -B/usr/local/gold/bin"
+export CXX="clang++ -B/usr/local/gold/bin" # -Wno-conversion-null
 export GYP_GENERATORS="ninja"
 export LD_LIBRARY_PATH=~/chromium/src/out/Debug:~/chromium/src/out/Debug/lib.target:$LD_LIBRARY_PATH
 alias cr="cd ~/chromium/src"
@@ -21,22 +17,25 @@ export PATH=~/scripts:"${PATH}"
 # Put ninja into PATH.
 export PATH=~/src/ninja:"${PATH}"
 
+# Put clang into PATH.
+export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin/:"${PATH}"
+
 # Lithium settings.
 alias cl="cd ~/lithium/src"
+
+# Vim settings.
+alias v='vim'
 
 # Git settings.
 alias g='git'
 alias gd='g d'
 
+# Mac OS X 'open' alias.
+alias open='xdg-open'
+
 # Make the autocompleton work with the g alias.
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
 || complete -o default -o nospace -F _git g
-
-# Vim settings.
-alias v='vim'
-
-# Mac OS X 'open' alias.
-alias open='xdg-open'
 
 # Create a new directory and enter it.
 md() {
