@@ -3,6 +3,7 @@ export PATH=~/depot_tools:"${PATH}"
 export CC="clang -B/usr/local/gold/bin"
 export CXX="clang++ -B/usr/local/gold/bin" # -Wno-conversion-null
 export GYP_GENERATORS="ninja"
+export GYP_PARALLEL=1
 export LD_LIBRARY_PATH=~/chromium/src/out/Debug:~/chromium/src/out/Debug/lib.target:$LD_LIBRARY_PATH
 alias cr="cd ~/chromium/src"
 alias crl="~/chromium/src/out/Debug/chrome --enable-logging --v=1"
