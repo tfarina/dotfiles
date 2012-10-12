@@ -27,6 +27,12 @@ set smartindent
 set incsearch                     " Do incremental searching - http://www.linuxjournal.com/article/3805
 set ignorecase                    " Ignore case when searching.
 
+" Insert space characters whenever the tab key is pressed.
+set expandtab
+
+" In Makefiles, don't expand tabs to spaces, since we need the actual tabs.
+autocmd FileType make set noexpandtab
+
 " Flag problematic whitespace (trailing and spaces before tabs).
 " Note you get the same by doing let c_space_errors=1 but this rule really
 " applys to everything.
@@ -34,19 +40,16 @@ highlight RedundantSpaces term=standout ctermbg=red guibg=red
 " \ze sets end of match so only spaces highlighted.
 match RedundantSpaces /\s\+$\| \+\ze\t/
 
-" Visualizing tabs.
-syntax match Tab /\t/
-hi Tab gui=underline guifg=blue ctermbg=blue
-
-au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
-
 " Highlight any leading spaces.
 syn match ErrorLeadSpace /^ \+/
 " Highlight any trailing spaces.
 syn match ErrorTailSpace / \+$/
 
-" Insert space characters whenever the tab key is pressed.
-set expandtab
+" Visualizing tabs.
+syntax match Tab /\t/
+hi Tab gui=underline guifg=blue ctermbg=blue
+
+au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 
 function! SetCodingStyle()
   if (&syntax !~ '^\(c\|cc\|cpp\|h\|java\|python\|objcpp\)$')
@@ -107,6 +110,3 @@ augroup NewFiles
   au!
   au BufNewFile *.h call IncludeGuard()
 augroup END
-
-" In Makefiles, don't expand tabs to spaces, since we need the actual tabs.
-autocmd FileType make set noexpandtab
