@@ -1,4 +1,5 @@
 so ~/chromium/src/tools/vim/filetypes.vim
+so ~/src/ninja/misc/ninja.vim
 
 " Enable syntax highlighting.
 if has("syntax")
@@ -71,8 +72,8 @@ function! SmartInclude()
   return "#include <.h>\<Left>\<Left>\<Left>"
 endfunction
 
-function! LicenseHeader(license)
-  let filename = $HOME . "/." . a:license . "HEADER"
+function! IncludeChromiumCopyrightLicense()
+  let filename = $HOME . "/.CHROMIUM_BSD_LICENSE"
   execute ":0r " . filename
 endfunction
 
@@ -81,14 +82,13 @@ function! IncludeGuard()
   let guard = substitute(guard, '[\-/]', '_', 'g')
   call append(0, '#ifndef ' . guard . '_')
   call append(1, '#define ' . guard . '_')
-  call append(2, '#pragma once')
   call append('$', '#endif  // ' . guard . '_')
 endfunction
 
 iab #i <C-R>=SmartInclude()<CR>
 
-" Insert a license header at the top of the file on ,lb.
-nmap ,lb :call LicenseHeader("BSD")<CR>
+" Insert chromium source code copyright policy at the top of the file on ,lb.
+nmap ,lb :call IncludeChromiumCopyrightLicense()<CR>
 
 " Insert an include guard based on the file name on ,i.
 nmap ,i :call IncludeGuard()<CR>
