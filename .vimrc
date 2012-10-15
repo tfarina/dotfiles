@@ -1,6 +1,3 @@
-so ~/chromium/src/tools/vim/filetypes.vim
-so ~/src/ninja/misc/ninja.vim
-
 " Enable syntax highlighting.
 if has("syntax")
     syntax on
@@ -10,22 +7,27 @@ endif
 " which very few use.
 let g:is_posix = 1
 
+so ~/chromium/src/tools/vim/filetypes.vim
+so ~/src/ninja/misc/ninja.vim
+
+colorscheme desert
 set background=dark               " Use dark background.
 set number                        " Display line numbers.
 set numberwidth=1                 " Use only 1 column while possible.
 set colorcolumn=81
 set title                         " Show title in the console title bar.
-set history=1000                  " Lots of command line history.
-set viminfo='1000,f1,:1000,/1000
-
 set wildmenu
 set wildmode=list:longest,full
-set foldmethod=indent             " Allow us to fold on indents.
-set foldlevel=99                  " Don't fold by default.
 
 set smartindent
 set incsearch                     " Do incremental searching - http://www.linuxjournal.com/article/3805
 set ignorecase                    " Ignore case when searching.
+
+set foldmethod=indent             " Allow us to fold on indents.
+set foldlevel=99                  " Don't fold by default.
+
+set history=1000                  " Lots of command line history.
+set viminfo='1000,f1,:1000,/1000
 
 " Insert space characters whenever the tab key is pressed.
 set expandtab
