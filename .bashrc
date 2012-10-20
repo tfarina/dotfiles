@@ -13,13 +13,16 @@ alias crl="~/chromium/src/out/Debug/chrome --enable-logging --v=1"
 #eval $(keychain --eval ~/.ssh/chromium)
 
 # Make my scripts accessible everywhere.
-export PATH=~/scripts:"${PATH}"
+export PATH=~/src/scripts:"${PATH}"
 
 # Put ninja into PATH.
 export PATH=~/src/ninja:"${PATH}"
 
 # Put clang into PATH.
-export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin/:"${PATH}"
+export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
+
+# Export GeometricTools path variable.
+export WM5_PATH=~/GeometricTools/WildMagic5
 
 # Lithium settings.
 alias cl="cd ~/lithium/src"
