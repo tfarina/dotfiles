@@ -19,7 +19,6 @@ set title                         " Show title in the console title bar.
 set wildmenu
 set wildmode=list:longest,full
 
-set smartindent
 set incsearch                     " Do incremental searching - http://www.linuxjournal.com/article/3805
 set ignorecase                    " Ignore case when searching.
 
@@ -31,6 +30,7 @@ set viminfo='1000,f1,:1000,/1000
 
 " Insert space characters whenever the tab key is pressed.
 set expandtab
+set smartindent
 
 " In Makefiles, don't expand tabs to spaces, since we need the actual tabs.
 autocmd FileType make set noexpandtab
@@ -60,9 +60,13 @@ function! SetCodingStyle()
   " The path for the file.
   let pathfn = expand('%:p:h')
   if pathfn =~ 'chromium'
-    set tabstop=2 shiftwidth=2
+    set shiftwidth=2
+    set softtabstop=2
+    set tabstop=2
   elseif pathfn =~ 'lithium'
-    set tabstop=2 shiftwidth=2
+    set shiftwidth=2
+    set softtabstop=2
+    set tabstop=2
   endif
 endfunction
 
