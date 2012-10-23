@@ -7,8 +7,13 @@ endif
 " which very few use.
 let g:is_posix = 1
 
-so ~/chromium/src/tools/vim/filetypes.vim
-so ~/src/ninja/misc/ninja.vim
+if filereadable("~/chromium/src/tools/vim/filetypes.vim")
+  source ~/chromium/src/tools/vim/filetypes.vim
+endif
+
+if filereadable("~/src/ninja/misc/ninja.vim")
+  source ~/src/ninja/misc/ninja.vim
+endif
 
 colorscheme desert
 set background=dark               " Use dark background.
