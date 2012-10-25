@@ -1,5 +1,6 @@
 {
   'variables': {
+    'clang': 1,
     'component': 'shared_library', #static_library
     'remove_webcore_debug_symbols': 0,
     'disable_nacl': 1,
