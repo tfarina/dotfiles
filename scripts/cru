@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Copyright (c) 2012, Thiago Farina
+#
+# 2012-09-01 Thiago Farina <tfarina@chromium.org>
+#
+
+# Die if any command dies.
+set -e
+
+gclient sync --reset --manually_grab_svn_rev --force --delete_unversioned_trees
