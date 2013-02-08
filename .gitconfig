@@ -4,19 +4,20 @@
 [core]
 	editor = vim
 [alias]
-	br  = branch
 	co  = checkout
+	br  = branch
 	ci  = commit
-        cu  = cl upload
 	st  = status
-        sr  = svn rebase
-	bl  = blame
-	new = !git log $1@{1}..$1@{0} "$@"
 	cm  = checkout master
 	rbm = rebase master
 	bd  = branch -D
-        d   = diff
+        cu  = cl upload
         land = cl dcommit
+        d   = diff
+        sr  = svn rebase
+	bl  = blame
+	new = !git log $1@{1}..$1@{0} "$@"
+	g = grep --break --heading --line-number
 [color]
 	branch      = auto
 	diff        = auto
@@ -30,3 +31,5 @@
         #cccmd = ~/scripts/cc.sh
 [diff]
 	renames = copies
+[grep]
+	lineNumber = true
