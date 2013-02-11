@@ -21,21 +21,33 @@ export PATH=~/src/ninja:"${PATH}"
 # Put clang into PATH.
 export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
 
+# Put WebKit tools into PATH.
+export PATH=~/src/repos/WebKit/Tools/Scripts:"${PATH}"
+
 # Export GeometricTools path variable.
-export WM5_PATH=~/GeometricTools/WildMagic5
+export WM5_PATH=~/src/GeometricTools/WildMagic5
+
+# LS alias.
+alias lld="ls -lUd */"
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"
 
 # Lithium settings.
 alias cl="cd ~/lithium/src"
 
 # Vim settings.
-alias v='vim'
+alias v="vim"
 
 # Git settings.
-alias g='git'
-alias gd='g d'
+alias g="git"
+alias gd="g d"
 
 # Mac OS X 'open' alias.
-alias open='xdg-open'
+alias open="xdg-open"
+
+# Get my ip address.
+alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
 
 # Make the autocompleton work with the g alias.
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
@@ -45,12 +57,6 @@ complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
 md() {
   mkdir -p "$@" && cd "$@"
 }
-
-# Some alias utilities.
-alias lld="ls -lUd */"
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 
 # Enable color support of ls and also add handy aliases.
 if [ -x /usr/bin/dircolors ]; then
@@ -64,6 +70,13 @@ fi
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# Append to the history file, don't overwrite it.
+shopt -s histappend
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
@@ -71,13 +84,6 @@ HISTCONTROL=ignoredups:ignorespace
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
-
-# append to the history file, don't overwrite it
-shopt -s histappend
-
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
