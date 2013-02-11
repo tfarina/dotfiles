@@ -34,7 +34,7 @@ alias la="ls -A"
 alias l="ls -CF"
 
 # Lithium settings.
-alias cl="cd ~/lithium/src"
+alias cl="cd ~/src/lithium/src"
 
 # Vim settings.
 alias v="vim"
