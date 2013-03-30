@@ -15,7 +15,7 @@ if filereadable("~/src/ninja/misc/ninja.vim")
   source ~/src/ninja/misc/ninja.vim
 endif
 
-colorscheme desert
+colorscheme greg
 set background=dark               " Use dark background.
 set number                        " Display line numbers.
 set numberwidth=1                 " Use only 1 column while possible.
@@ -35,6 +35,8 @@ set viminfo='1000,f1,:1000,/1000
 
 " Insert space characters whenever the tab key is pressed.
 set expandtab
+set autoindent
+set cindent
 set smartindent
 
 " In Makefiles, don't expand tabs to spaces, since we need the actual tabs.
@@ -87,7 +89,7 @@ function! SmartInclude()
 endfunction
 
 function! IncludeChromiumCopyrightLicense()
-  let filename = $HOME . "/.CHROMIUM_BSD_LICENSE"
+  let filename = $HOME . "/.chromium_bsd_license"
   execute ":0r " . filename
 endfunction
 
