@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Copyright (c) 2013, Thiago Farina
+#
+# 2012-04-23 Thiago Farina <tfarina@chromium.org>
+#
+
+# Die if any command dies.
+set -e
+
+# This command will fetch the recent changes, rebase the master branch
+# then sync the third_party code and file generate the build files.
+git svn fetch && git svn rebase && gclient sync && gclient runhooks
