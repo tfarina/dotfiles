@@ -3,6 +3,7 @@
 	email = tfarina@chromium.org
 [core]
 	editor = vim
+	deltaBaseCacheLimit = 1G
 [alias]
 	co  = checkout
 	br  = branch
@@ -18,6 +19,8 @@
 	bl  = blame
 	new = !git log $1@{1}..$1@{0} "$@"
 	g = grep --break --heading --line-number
+        crtr = cl try -r HEAD
+        cam = commit -a --amend
 [color]
 	branch      = auto
 	diff        = auto
@@ -32,4 +35,4 @@
 [diff]
 	renames = copies
 [grep]
-	lineNumber = true
+#lineNumber = true

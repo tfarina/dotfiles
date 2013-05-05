@@ -3,6 +3,8 @@ if has("syntax")
     syntax on
 endif
 
+map <C-K> :pyf ~/src/llvm/tools/clang/tools/clang-format/clang-format.py<CR>
+
 " Syntax highlight shell scripts as per POSIX, not the original Bourne shell
 " which very few use.
 let g:is_posix = 1
