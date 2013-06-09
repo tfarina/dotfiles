@@ -49,6 +49,9 @@ alias open="xdg-open"
 # Get my ip address.
 alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
 
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
+
 # Make the autocompleton work with the g alias.
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
 || complete -o default -o nospace -F _git g
