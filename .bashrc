@@ -1,12 +1,13 @@
 # Chromium settings.
 export PATH=~/depot_tools:"${PATH}"
-export CC="clang -B/usr/local/gold/bin"
-export CXX="clang++ -B/usr/local/gold/bin" # -Wno-conversion-null
+export CC="clang"
+export CXX="clang++" # -Wno-conversion-null
 export GYP_GENERATORS="ninja"
 export GYP_PARALLEL=1
 export LD_LIBRARY_PATH=~/chromium/src/out/Debug:~/chromium/src/out/Debug/lib.target:$LD_LIBRARY_PATH
 alias cr="cd ~/chromium/src"
 alias crl="~/chromium/src/out/Debug/chrome --enable-logging --v=1"
+export LANG=C # so sort works in ASCII order
 
 # Chromium OS settings.
 #alias cros="cd ~/chromiumos/src"
@@ -20,9 +21,6 @@ export PATH=~/src/ninja:"${PATH}"
 
 # Put clang into PATH.
 export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
-
-# Put WebKit tools into PATH.
-export PATH=~/src/repos/WebKit/Tools/Scripts:"${PATH}"
 
 # Export GeometricTools path variable.
 export WM5_PATH=~/src/GeometricTools/WildMagic5
