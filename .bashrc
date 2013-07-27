@@ -6,8 +6,11 @@ export GYP_GENERATORS="ninja"
 export GYP_PARALLEL=1
 export LD_LIBRARY_PATH=~/chromium/src/out/Debug:~/chromium/src/out/Debug/lib.target:$LD_LIBRARY_PATH
 alias cr="cd ~/chromium/src"
-alias crl="~/chromium/src/out/Debug/chrome --enable-logging --v=1"
 export LANG=C # so sort works in ASCII order
+
+alias gyp-gtk='./build/gyp_chromium'
+alias gyp-aura='./build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura -Gconfig=Debug'
+alias gyp-cros='./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros -Gconfig=Debug'
 
 # Chromium OS settings.
 #alias cros="cd ~/chromiumos/src"
@@ -21,6 +24,9 @@ export PATH=~/src/ninja:"${PATH}"
 
 # Put clang into PATH.
 export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
+
+# Put clang-format into PATH.
+export PATH=~/llvm-clang/build/bin:"${PATH}"
 
 # Export GeometricTools path variable.
 export WM5_PATH=~/src/GeometricTools/WildMagic5
