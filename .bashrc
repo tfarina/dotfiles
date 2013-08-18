@@ -1,16 +1,15 @@
 # Chromium settings.
+alias cr="cd ~/chromium/src"
+alias gyp-gtk='./build/gyp_chromium'
+alias gyp-aura='./build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura -Gconfig=Debug'
+alias gyp-cros='./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros -Gconfig=Debug'
 export PATH=~/depot_tools:"${PATH}"
 export CC="clang"
 export CXX="clang++" # -Wno-conversion-null
 export GYP_GENERATORS="ninja"
 export GYP_PARALLEL=1
 export LD_LIBRARY_PATH=~/chromium/src/out/Debug:~/chromium/src/out/Debug/lib.target:$LD_LIBRARY_PATH
-alias cr="cd ~/chromium/src"
 export LANG=C # so sort works in ASCII order
-
-alias gyp-gtk='./build/gyp_chromium'
-alias gyp-aura='./build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura -Gconfig=Debug'
-alias gyp-cros='./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros -Gconfig=Debug'
 
 # Chromium OS settings.
 #alias cros="cd ~/chromiumos/src"
@@ -59,11 +58,6 @@ source ~/.git-prompt.sh
 # Make the autocompleton work with the g alias.
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
 || complete -o default -o nospace -F _git g
-
-# Create a new directory and enter it.
-md() {
-  mkdir -p "$@" && cd "$@"
-}
 
 # Enable color support of ls and also add handy aliases.
 if [ -x /usr/bin/dircolors ]; then
