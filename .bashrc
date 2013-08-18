@@ -1,15 +1,17 @@
 # Chromium settings.
-alias cr="cd ~/chromium/src"
-alias gyp-gtk='./build/gyp_chromium'
-alias gyp-aura='./build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura -Gconfig=Debug'
-alias gyp-cros='./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros -Gconfig=Debug'
+export CR_DIR="${HOME}/chromium/src"
+export CR_BUILD_DIR="${HOME}/chromium/src/out/Debug"
 export PATH=~/depot_tools:"${PATH}"
 export CC="clang"
 export CXX="clang++" # -Wno-conversion-null
 export GYP_GENERATORS="ninja"
 export GYP_PARALLEL=1
-export LD_LIBRARY_PATH=~/chromium/src/out/Debug:~/chromium/src/out/Debug/lib.target:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="${CR_BUILD_DIR}":"${CR_BUILD_DIR}"/lib.target:"${LD_LIBRARY_PATH}"
 export LANG=C # so sort works in ASCII order
+alias cr="cd ${CR_DIR}"
+alias gyp-gtk='./build/gyp_chromium'
+alias gyp-aura='./build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura -Gconfig=Debug'
+alias gyp-cros='./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros -Gconfig=Debug'
 
 # Chromium OS settings.
 #alias cros="cd ~/chromiumos/src"
