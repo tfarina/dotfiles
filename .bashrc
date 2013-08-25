@@ -57,9 +57,9 @@ BLUE='\[\033[01;34m\]'
 YELLOW='\[\033[01;33m\]'
 CYAN='\[\033[1;36m\]'
 NORMAL='\[\033[00m\]'
-PROMPT=">"
+PROMPT="\$"
 DIR="\w"
-export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW\$(__git_ps1) $NORMAL\@\n$GREEN$PROMPT$NORMAL "
+export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
 
 # Linus Torvalds bash prompt style.
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
