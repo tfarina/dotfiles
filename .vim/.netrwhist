@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/tfarina/blink/src/third_party/WebKit/Tools/DumpRenderTree/DumpRenderTree.gyp'
+let g:netrw_dirhist_2='/home/tfarina/chromium/src/url'
+let g:netrw_dirhist_3='/home/tfarina/blink/src/third_party/WebKit/Tools/DumpRenderTree/DumpRenderTree.gyp'
+let g:netrw_dirhist_4='/home/tfarina/chromium/src/chrome/browser/drive'
+let g:netrw_dirhist_5='/home/tfarina/src/scripts'
