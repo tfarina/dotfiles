@@ -1,89 +1,3 @@
-# Chromium settings.
-export CR_DIR="${HOME}/chromium/src"
-export CR_BUILD_DIR="${HOME}/chromium/src/out/Debug"
-export PATH=~/depot_tools:"${PATH}"
-export CC="clang"
-export CXX="clang++" # -Wno-conversion-null
-export GYP_GENERATORS="ninja"
-export GYP_PARALLEL=1
-export LD_LIBRARY_PATH="${CR_BUILD_DIR}":"${CR_BUILD_DIR}"/lib.target:"${LD_LIBRARY_PATH}"
-export LANG=C # so sort works in ASCII order
-alias cr="cd ${CR_DIR}"
-alias gyp-gtk='./build/gyp_chromium'
-alias gyp-aura='./build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura -Gconfig=Debug'
-alias gyp-cros='./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros -Gconfig=Debug'
-
-# Chromium OS settings.
-#alias cros="cd ~/chromiumos/src"
-#eval $(keychain --eval ~/.ssh/chromium)
-
-# Make my scripts accessible everywhere.
-export PATH=~/src/scripts:"${PATH}"
-
-# Put ninja into PATH.
-export PATH=~/src/ninja:"${PATH}"
-
-# Put clang into PATH.
-export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
-
-# Put clang-format into PATH.
-export PATH=~/llvm-clang/build/bin:"${PATH}"
-
-# Export GeometricTools path variable.
-export WM5_PATH=~/src/GeometricTools/WildMagic5
-
-# LS alias.
-alias lld="ls -lUd */"
-alias ll="ls -alF"
-alias la="ls -A"
-alias l="ls -CF"
-
-# Lithium settings.
-alias cl="cd ~/src/lithium/src"
-
-# Vim settings.
-alias v="vim"
-
-# Benjamin Kalman is the author of this function.
-vl() {
-  file=`echo "$1" | cut -d: -f1`
-  line=`echo "$1" | cut -d: -f2`
-  v "$file" +"$line"
-}
-
-# Git settings.
-alias g="git"
-alias gd="git diff"
-source ~/.git-completion.bash
-source ~/.git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=1
-
-# Mac OS X 'open' alias.
-alias open="xdg-open"
-
-# Get my ip address.
-alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
-
-# Make the autocompleton work with the g alias.
-complete -o bashdefault -o default -o nospace -F _git g
-complete -o default -o nospace -F _git g
-
-# Enable programmable completion features (you don't need to enable this, if
-# it's already enabled in /etc/bash.bashrc and /etc/profile sources
-# /etc/bash.bashrc).
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
-fi
-
-# Enable color support of ls and also add handy aliases.
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -161,6 +75,92 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+# Enable programmable completion features (you don't need to enable this, if
+# it's already enabled in /etc/bash.bashrc and /etc/profile sources
+# /etc/bash.bashrc).
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
+
+# Enable color support of ls and also add handy aliases.
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# Chromium settings.
+export CR_DIR="${HOME}/chromium/src"
+export CR_BUILD_DIR="${HOME}/chromium/src/out/Debug"
+export PATH=~/depot_tools:"${PATH}"
+export CC="clang"
+export CXX="clang++" # -Wno-conversion-null
+export GYP_GENERATORS="ninja"
+export GYP_PARALLEL=1
+export LD_LIBRARY_PATH="${CR_BUILD_DIR}":"${CR_BUILD_DIR}"/lib.target:"${LD_LIBRARY_PATH}"
+export LANG=C # so sort works in ASCII order
+alias cr="cd ${CR_DIR}"
+alias gyp-gtk='./build/gyp_chromium'
+alias gyp-aura='./build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura -Gconfig=Debug'
+alias gyp-cros='./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros -Gconfig=Debug'
+
+# Chromium OS settings.
+#alias cros="cd ~/chromiumos/src"
+#eval $(keychain --eval ~/.ssh/chromium)
+
+# Make my scripts accessible everywhere.
+export PATH=~/src/scripts:"${PATH}"
+
+# Put ninja into PATH.
+export PATH=~/src/ninja:"${PATH}"
+
+# Put clang into PATH.
+export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
+
+# Put clang-format into PATH.
+export PATH=~/llvm-clang/build/bin:"${PATH}"
+
+# Export GeometricTools path variable.
+export WM5_PATH=~/src/GeometricTools/WildMagic5
+
+# LS alias.
+alias lld="ls -lUd */"
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"
+
+# Lithium settings.
+alias cl="cd ~/src/lithium/src"
+
+# Vim settings.
+alias v="vim"
+
+# Benjamin Kalman is the author of this function.
+vl() {
+  file=`echo "$1" | cut -d: -f1`
+  line=`echo "$1" | cut -d: -f2`
+  v "$file" +"$line"
+}
+
+# Git settings.
+alias g="git"
+alias gd="git diff"
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+# Mac OS X 'open' alias.
+alias open="xdg-open"
+
+# Get my ip address.
+alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
+
+# Make the autocompleton work with the g alias.
+complete -o bashdefault -o default -o nospace -F _git g
+complete -o default -o nospace -F _git g
 
 po() {
   old_dir=`pwd`
