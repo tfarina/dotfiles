@@ -44,11 +44,19 @@ alias cl="cd ~/src/lithium/src"
 # Vim settings.
 alias v="vim"
 
+# Benjamin Kalman is the author of this function.
+vl() {
+  file=`echo "$1" | cut -d: -f1`
+  line=`echo "$1" | cut -d: -f2`
+  v "$file" +"$line"
+}
+
 # Git settings.
 alias g="git"
 alias gd="git diff"
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
 
 # Mac OS X 'open' alias.
 alias open="xdg-open"
@@ -133,11 +141,11 @@ unset color_prompt force_color_prompt
 GREEN='\[\033[01;32m\]'
 BLUE='\[\033[01;34m\]'
 YELLOW='\[\033[01;33m\]'
+CYAN='\[\033[1;36m\]'
 NORMAL='\[\033[00m\]'
-PROMPT="\$"
+PROMPT=">"
 DIR="\w"
-export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW\$(__git_ps1)$BLUE\n$NORMAL$PROMPT$NORMAL "
-export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW\$(__git_ps1) $CYAN\@\n$GREEN$PROMPT$NORMAL "
 
 # Linus Torvalds bash prompt style.
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
@@ -153,13 +161,6 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
-# Author of these functions is kalman.
-vl() {
-  file=`echo "$1" | cut -d: -f1`
-  line=`echo "$1" | cut -d: -f2`
-  v "$file" +"$line"
-}
 
 po() {
   old_dir=`pwd`
