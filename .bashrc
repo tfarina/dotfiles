@@ -59,7 +59,8 @@ CYAN='\[\033[1;36m\]'
 NORMAL='\[\033[00m\]'
 PROMPT="\$"
 DIR="\w"
-export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW $(__git_ps1 "(%s)")\n$NORMAL$PROMPT$NORMAL "
 
 # Linus Torvalds bash prompt style.
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
@@ -150,7 +151,6 @@ alias g="git"
 alias gd="git diff"
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=1
 
 # Mac OS X 'open' alias.
 alias open="xdg-open"
