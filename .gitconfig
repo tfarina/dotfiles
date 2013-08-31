@@ -30,9 +30,5 @@
 [sendemail]
 	smtpserver = /usr/bin/msmtp
 	suppresscc = self
-        #tocmd = ~/scripts/to.sh
-        #cccmd = ~/scripts/cc.sh
 [diff]
 	renames = copies
-[grep]
-#lineNumber = true
