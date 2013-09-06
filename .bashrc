@@ -60,7 +60,7 @@ NORMAL='\[\033[00m\]'
 PROMPT="\$"
 DIR="\w"
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW $(__git_ps1 "(%s)")\n$NORMAL$PROMPT$NORMAL "
+export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
 
 # Linus Torvalds bash prompt style.
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
@@ -112,8 +112,8 @@ alias gyp-cros='./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros -Gconfig
 #alias cros="cd ~/chromiumos/src"
 #eval $(keychain --eval ~/.ssh/chromium)
 
-# Make my scripts accessible everywhere.
-export PATH=~/src/scripts:"${PATH}"
+# Make my tools accessible everywhere.
+export PATH=~/src/bin:"${PATH}"
 
 # Put ninja into PATH.
 export PATH=~/src/ninja:"${PATH}"
@@ -138,6 +138,7 @@ alias cl="cd ~/src/lithium/src"
 
 # Vim settings.
 alias v="vim"
+alias e="vim"
 
 # Benjamin Kalman is the author of this function.
 vl() {
