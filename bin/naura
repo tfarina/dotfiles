@@ -7,6 +7,9 @@
 # Die if any command dies.
 set -e
 
+# Default build mode is Debug.
+BUILD_MODE=Debug
+
 NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
 
 # Default target is chrome.
@@ -16,7 +19,5 @@ if [ -z "$TARGETS" ]; then
   TARGETS="chrome"
 fi
 
-# We can't run this script from anywhere, just inside ~/chromium/src/
-# TODO: Fix this!
-
+# FIXME: We can't run this script from anywhere, just inside ~/chromium/src/
 time ninja -C out_aura/"${BUILD_MODE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee errors

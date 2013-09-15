@@ -19,10 +19,5 @@ if [ -z "$TARGETS" ]; then
   TARGETS="chrome"
 fi
 
-# gets the location (absolute path) of this script, the directory.
-XCTOOL_DIR=$(cd $(dirname $0); pwd)
-
-# We can't run this script from anywhere, just inside ~/chromium/src/
-# TODO: Fix this!
-
+# FIXME: We can't run this script from anywhere, just inside ~/chromium/src/
 time ninja -C out_cros/"${BUILD_MODE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee errors
