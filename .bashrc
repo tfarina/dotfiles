@@ -138,7 +138,6 @@ alias cl="cd ~/src/lithium/src"
 
 # Vim settings.
 alias v="vim"
-alias e="vim"
 
 # Benjamin Kalman is the author of this function.
 vl() {
