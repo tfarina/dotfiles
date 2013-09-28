@@ -52,15 +52,14 @@ else
 fi
 unset color_prompt force_color_prompt
 
-GREEN='\[\033[01;32m\]'
-BLUE='\[\033[01;34m\]'
-YELLOW='\[\033[01;33m\]'
-CYAN='\[\033[1;36m\]'
+GREEN_BOLD='\[\033[01;32m\]'
+YELLOW_BOLD='\[\033[01;33m\]'
+BLUE_BOLD='\[\033[01;34m\]'
 NORMAL='\[\033[00m\]'
 PROMPT="\$"
 DIR="\w"
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="$GREEN\u:\h $BLUE$DIR$YELLOW\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
+export PS1="$GREEN_BOLD\u:\h $BLUE_BOLD$DIR$YELLOW_BOLD\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
 
 # Linus Torvalds bash prompt style.
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
