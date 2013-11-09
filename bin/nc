@@ -19,5 +19,5 @@ if [ "$1" != "" ]; then
   TARGET=$1
 fi
 
-#time ~/src/ninja/ninja -f out/Debug/build.ninja -k4 -j"${NUM_JOBS}" "${TARGET}" 2>&1 | tee errors
-time ninja -C out/Debug -k4 -j"${NUM_JOBS}" "${TARGET}" 2>&1 | tee errors
+#time ~/src/ninja/ninja -f out/Debug/build.ninja -k4 -j"${NUM_JOBS}" "${TARGET}" 2>&1 | tee ../errors
+time ninja -C out/Debug -k4 -j"${NUM_JOBS}" "${TARGET}" 2>&1 | tee ../errors

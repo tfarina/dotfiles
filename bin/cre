@@ -4,4 +4,4 @@
 #
 # 2012-03-27 Thiago Farina <tfarina@chromium.org>
 #
-grep error: errors
+grep error: ../errors

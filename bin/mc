@@ -20,4 +20,4 @@ if [ "$1" != "" ]; then
   TARGET=$1
 fi
 
-time make -k -j"${NUM_JOBS}" BUILDTYPE="${BUILD_TYPE}" "${TARGET}" 2>&1 | tee errors
+time make -k -j"${NUM_JOBS}" BUILDTYPE="${BUILD_TYPE}" "${TARGET}" 2>&1 | tee ../errors

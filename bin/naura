@@ -20,4 +20,4 @@ if [ -z "$TARGETS" ]; then
 fi
 
 # FIXME: We can't run this script from anywhere, just inside ~/chromium/src/
-time ninja -C out_aura/"${BUILD_MODE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee errors
+time ninja -C out_aura/"${BUILD_MODE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee ../errors
