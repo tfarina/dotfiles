@@ -3,6 +3,7 @@ if has("syntax")
     syntax on
 endif
 
+filetype plugin indent on
 map <C-K> :pyf ~/llvm-clang/llvm/tools/clang/tools/clang-format/clang-format.py<CR>
 
 " Syntax highlight shell scripts as per POSIX, not the original Bourne shell
@@ -91,7 +92,7 @@ function! SmartInclude()
 endfunction
 
 function! IncludeChromiumCopyrightLicense()
-  let filename = $HOME . "/.chromium_bsd_license"
+  let filename = $HOME . "/chromium/.chromium_bsd_license"
   execute ":0r " . filename
 endfunction
 
