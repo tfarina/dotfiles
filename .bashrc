@@ -112,7 +112,7 @@ alias gyp-cros='./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros -Gconfig
 #eval $(keychain --eval ~/.ssh/chromium)
 
 # Make my tools accessible everywhere.
-export PATH=~/src/bin:"${PATH}"
+export PATH=~/src/dotfiles/bin:"${PATH}"
 
 # Put ninja into PATH.
 export PATH=~/src/ninja:"${PATH}"
