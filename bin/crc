@@ -1,0 +1,83 @@
+#!/bin/bash
+
+show_help() {
+  echo "usage: cr <command> [<args>]"
+  echo ""
+  echo "The cr commands are:"
+  echo "   depot_tools   Install depot_tools"
+  echo "   clone         Download chromium sources"
+  echo "   update        Update chromium"
+  echo "   runhooks      Run gclient runhooks"
+  echo "   build         Build chromium"
+  echo "   help          Display this helpful message"
+  echo ""
+}
+
+check_git() {
+  command -v git >/dev/null 2>&1 || {
+    echo -n "Git is required to check out sources. Install git using apt-get? [Y/n]:"
+    read INSTALL_GIT_CUSTOM
+    if [ "$INSTALL_GIT_CUSTOM" == "n" ]; then
+      echo "Aborting. Please install git."
+      exit 0
+    fi
+    sudo apt-get install git
+  }
+}
+
+do_checkout_depot_tools() {
+  command -v gclient >/dev/null 2>&1 || {
+    if [ -z "$DEPOT_TOOLS_HOME" ]; then
+      DEPOT_TOOLS_HOME="~/depot_tools"
+    fi
+    echo -n "Where should I checkout depot_tools? [$DEPOT_TOOLS_HOME]:"
+    read DEPOT_TOOLS_HOME_CUSTOM
+    if [ -n "$DEPOT_TOOLS_HOME_CUSTOM" ]; then
+      DEPOT_TOOLS_HOME="$DEPOT_TOOLS_HOME_CUSTOM"
+    fi
+    check_git
+    git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git $DEPOT_TOOLS_HOME
+    export PATH="$PATH:$DEPOT_TOOLS_HOME"
+    if ! grep -qs "$DEPOT_TOOLS_HOME" $HOME/.bashrc; then
+      echo -e "\n# Add Chromium's depot_tools to the PATH" >> "$HOME/.bashrc"
+      echo "export PATH=\"\$PATH:$DEPOT_TOOLS_HOME\"" >> "$HOME/.bashrc"
+    fi
+  }
+  echo "gclient is installed as $(which gclient)"
+}
+
+do_clone() {
+  if [ -z "$CHROMIUM_HOME" ]; then
+    CHROMIUM_HOME=$(pwd)
+  fi
+
+  # Ask the user where to install Chromium.
+  echo -n "Where should I put Chromium sources? [$CHROMIUM_HOME]:"
+  read CHROMIUM_HOME_CUSTOM
+
+  if [ -n "$CHROMIUM_HOME_CUSTOM" ]; then
+    CHROMIUM_HOME="$CHROMIUM_HOME_CUSTOM"
+  fi
+  echo $CHROMIUM_HOME
+
+  # Make sure we have git installed.
+  check_git
+
+  # Make sure we have already checked out depot_tools.
+  do_checkout_depot_tools
+}
+
+case $1 in
+  depot_tools)
+    do_checkout_depot_tools
+  ;;
+  clone)
+    do_clone
+  ;;
+  help)
+    show_help
+  ;;
+  *)
+    show_help
+  ;;
+esac
