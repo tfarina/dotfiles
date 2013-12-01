@@ -117,11 +117,13 @@ export PATH=~/src/dotfiles/bin:"${PATH}"
 # Put ninja into PATH.
 export PATH=~/src/ninja:"${PATH}"
 
-# Put clang into PATH.
-export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
-
 # Put clang-format into PATH.
 export PATH=~/llvm-clang/build/bin:"${PATH}"
+
+# Put clang into PATH. This should come last, so it appears first in the PATH
+# list. Because we want/need to use the one provided by chromium, so the plugin
+# works.
+export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
 
 # Export GeometricTools path variable.
 export WM5_PATH=~/src/GeometricTools/WildMagic5
