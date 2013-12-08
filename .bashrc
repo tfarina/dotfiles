@@ -105,7 +105,7 @@ export LANG=C # so sort works in ASCII order
 alias cr="cd ${CR_DIR}"
 alias gyp-gtk='./build/gyp_chromium'
 alias gyp-aura='./build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura -Gconfig=Debug'
-alias gyp-cros='./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros -Gconfig=Debug'
+alias gyp-cros='GYP_DEFINES="$GYP_DEFINES chromeos=1" ./build/gyp_chromium -Goutput_dir=out_cros'
 
 # Chromium OS settings.
 #alias cros="cd ~/chromiumos/src"
