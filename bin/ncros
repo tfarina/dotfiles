@@ -7,8 +7,8 @@
 # Die if any command dies.
 set -e
 
-# Default build mode is Debug.
-BUILD_MODE=Debug
+# Default build type is Debug.
+CR_BUILDTYPE=Debug
 
 NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
 
@@ -20,4 +20,4 @@ if [ -z "$TARGETS" ]; then
 fi
 
 # FIXME: We can't run this script from anywhere, just inside ~/chromium/src/
-time ninja -C out_cros/"${BUILD_MODE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee ../errors
+time ninja -C out_cros/"${CR_BUILDTYPE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee ../errors
