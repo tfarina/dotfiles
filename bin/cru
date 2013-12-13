@@ -8,5 +8,7 @@
 # Die if any command dies.
 set -e
 
+NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
+
 git pull origin master
-gclient sync -j4
+gclient sync -j"${NUM_JOBS}"
