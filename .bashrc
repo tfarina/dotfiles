@@ -102,9 +102,10 @@ export GYP_GENERATORS="ninja"
 export GYP_PARALLEL=1
 export LD_LIBRARY_PATH="${CR_BUILD_DIR}":"${CR_BUILD_DIR}"/lib.target:"${LD_LIBRARY_PATH}"
 export LANG=C # so sort works in ASCII order
-alias cr="cd ${CR_DIR}"
+alias dev="cd ${CR_DIR}"
+alias bk="cd ${HOME}/blink/src/third_party/WebKit"
 alias gyp-gtk='./build/gyp_chromium'
-alias gyp-aura='./build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura -Gconfig=Debug'
+alias gyp-aura='GYP_DEFINES="$GYP_DEFINES use_aura=1" ./build/gyp_chromium -Goutput_dir=out_aura'
 alias gyp-cros='GYP_DEFINES="$GYP_DEFINES chromeos=1" ./build/gyp_chromium -Goutput_dir=out_cros'
 
 # Chromium OS settings.
