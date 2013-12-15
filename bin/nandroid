@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Copyright (c) 2013, Thiago Farina
+#
+# 2013-07-13 Thiago Farina <tfarina@chromium.org>
+#
+# Die if any command dies.
+set -e
+
+CHROMIUM_DIR="${HOME}/chromium"
+cd "${CHROMIUM_DIR}/src"
+
+# Default build type is Debug.
+CR_BUILDTYPE=Debug
+
+NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
+
+# Default target is content_shell_apk.
+TARGETS="$@"
+
+if [ -z "$TARGETS" ]; then
+  TARGETS="content_shell_apk"
+fi
+
+time ninja -C out_android_clang/"${CR_BUILDTYPE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee "${CHROMIUM_DIR}/errors"
