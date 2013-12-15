@@ -1,5 +1,11 @@
 #!/bin/bash
 
+set -e
+
+export PYTHONDONTWRITEBYTECODE=1
+
 cd /home/tfarina/chromium/src
-. build/android/envsetup.sh
-GYP_DEFINES="$GYP_DEFINES clang=1" android_gyp -Goutput_dir=out_android_clang
+(
+  . build/android/envsetup.sh &&
+  GYP_DEFINES="$GYP_DEFINES clang=1" android_gyp -Goutput_dir=out_android_clang
+)
