@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+GYP_DEFINES="$GYP_DEFINES use_aura=1" ./build/gyp_chromium -Goutput_dir=out_aura
