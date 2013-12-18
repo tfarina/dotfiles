@@ -11,4 +11,4 @@ set -e
 NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
 
 git pull origin master
-gclient sync -j"${NUM_JOBS}"
+GYP_CHROMIUM_NO_ACTION=1 gclient sync -j"${NUM_JOBS}"
