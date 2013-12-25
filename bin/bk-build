@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Copyright (c) 2013, Thiago Farina
+#
+# 2013-07-13 Thiago Farina <tfarina@chromium.org>
+#
+# Die if any command dies.
+set -e
+
+BLINK_DIR="${HOME}"/blink/src/
+cd "${BLINK_DIR}"
+
+# Default build type is Debug.
+CR_BUILDTYPE=Debug
+
+NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
+
+# Default target is chrome.
+TARGETS="$@"
+
+if [ -z "$TARGETS" ]; then
+  TARGETS="all_blink blink_tests content_shell content_unittests"
+fi
+
+time ninja -C out/"${CR_BUILDTYPE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee ../errors
