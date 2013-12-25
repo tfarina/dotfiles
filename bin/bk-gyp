@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+"${HOME}"/blink/src/build/gyp_chromium
