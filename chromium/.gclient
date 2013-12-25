@@ -2,7 +2,7 @@ solutions = [
   { "name"        : "src",
     "url"         : "https://chromium.googlesource.com/chromium/src.git",
     "deps_file"   : ".DEPS.git",
-    "managed"     : True,
+    "managed"     : False,
     "custom_deps" : {
       "src/chrome/test/data/extensions/api_test/permissions/nacl_enabled/bin": None,
       "src/chrome/tools/test/reference_build/chrome_frame": None,
@@ -18,3 +18,4 @@ solutions = [
     "safesync_url": "",
   },
 ]
+target_os = ['android']
