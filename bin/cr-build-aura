@@ -7,7 +7,7 @@
 # Die if any command dies.
 set -e
 
-CR_DIR=/home/tfarina/chromium/src/
+CR_DIR="${HOME}"/chromium/src/
 cd "${CR_DIR}"
 
 # Default build type is Debug.
