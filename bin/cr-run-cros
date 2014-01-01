@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# Copyright (c) 2013, Thiago Farina
+#
+# 2014-01-01 Thiago Farina <tfarina@chromium.org>
+#
+# Die if any command dies.
+set -e
+
+# Default build type is Debug.
+CR_BUILDTYPE=Debug
+
+# Default binary to run is chrome.
+BINARY="$1"
+
+if [ -z "$BINARY" ]; then
+  BINARY="chrome"
+fi
+
+"${CR_DIR}"/out_cros/"${CR_BUILDTYPE}"/$BINARY --no-sandbox
