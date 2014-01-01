@@ -18,8 +18,10 @@ if filereadable("~/src/ninja/misc/ninja.vim")
   source ~/src/ninja/misc/ninja.vim
 endif
 
-colorscheme greg
-set background=dark               " Use dark background.
+set background=dark
+se t_Co=16
+colorscheme solarized
+
 set number                        " Display line numbers.
 set numberwidth=1                 " Use only 1 column while possible.
 set colorcolumn=81
