@@ -19,7 +19,6 @@ if filereadable("~/src/ninja/misc/ninja.vim")
 endif
 
 set background=dark
-se t_Co=16
 colorscheme solarized
 
 set number                        " Display line numbers.
