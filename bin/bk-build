@@ -19,7 +19,7 @@ NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
 TARGETS="$@"
 
 if [ -z "$TARGETS" ]; then
-  TARGETS="all_blink blink_tests content_shell content_unittests"
+  TARGETS="blink_tests content_unittests"
 fi
 
 time ninja -C out/"${CR_BUILDTYPE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee ../errors
