@@ -2,4 +2,4 @@
 
 set -e
 
-./build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros
+./build/gyp_chromium -Goutput_dir=out_cros -Dchromeos=1
