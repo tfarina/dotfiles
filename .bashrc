@@ -156,6 +156,9 @@ alias open="xdg-open"
 
 # Get my ip address.
 alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
+function mylocalip {
+  /sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}';
+}
 
 # Make the autocompleton work with the g alias.
 complete -o bashdefault -o default -o nospace -F _git g
