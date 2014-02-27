@@ -1,5 +1,0 @@
-#!/bin/bash
-
-set -e
-
-./build/gyp_chromium -Goutput_dir=out_aura -Duse_aura=1

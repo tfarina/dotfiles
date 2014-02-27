@@ -1,5 +1,0 @@
-#!/bin/bash
-
-set -e
-
-"${HOME}"/chromium/src/build/gyp_chromium
