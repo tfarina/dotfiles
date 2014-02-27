@@ -6,11 +6,11 @@ CR_CONFIG=$1
 shift 1 # move the args so that $@ only passes args after "runtest <target>"
 
 if [ "$CR_CONFIG" == "aura" ]; then
-  "${HOME}"/chromium/src/build/gyp_chromium -Goutput_dir=out_aura -Duse_aura=1
+  "${CR_DIR}"/build/gyp_chromium -Goutput_dir=out_aura -Duse_aura=1
 elif [ "$CR_CONFIG" == "cros" ]; then
-  "${HOME}"/chromium/src/build/gyp_chromium -Goutput_dir=out_cros -Dchromeos=1
+  "${CR_DIR}"/build/gyp_chromium -Goutput_dir=out_cros -Dchromeos=1
 elif [ "$CR_CONFIG" == "gtk" ]; then
-  "${HOME}"/chromium/src/build/gyp_chromium
+  "${CR_DIR}"/build/gyp_chromium
 else
   echo "Usage: cr-gyp <aura|cros|gtk>"
 fi
