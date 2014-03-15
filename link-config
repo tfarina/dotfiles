@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# Original version of this script is from:
+# https://github.com/martine/config/blob/master/link-config
+
+set -o errexit
+
+trace () {
+    echo "Running:" $*
+    #$*
+}
+
+link() {
+    file=$1
+    target=~/.$file
+
+    if [ -e $target ]; then
+        link=$(readlink $target || echo)
+        if [ "${link%/}" != $pwd/$file ]; then
+            echo "Skipping $target -- remove it if it should be managed by config."
+        fi
+        continue
+    fi
+    trace ln -s $pwd/$file $target
+}
+
+link_subdir() {
+    target=$1
+    for dir in $(find $target -type d); do
+        mkdir -p ~/.$dir
+    done
+    for file in $(find $target -type f); do
+        link $file
+    done
+}
+
+pwd=$(pwd)
+for file in *; do
+    [ "$file" = "link-config" ] && continue
+    [ "$file" = "bin" ] && continue
+    [ "$file" = "chromium" ] && continue
+    [ "$file" = "wbin" ] && continue
+    [ "$file" = "." ] && continue
+
+    link $file
+done
