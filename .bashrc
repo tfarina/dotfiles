@@ -94,16 +94,14 @@ fi
 
 # Chromium settings.
 export CR_DIR="${HOME}/chromium/src"
-export CR_BUILD_DIR="${HOME}/chromium/src/out/Debug"
+alias dev="cd ${CR_DIR}"
+alias bk="cd ${HOME}/blink/src/third_party/WebKit"
 export PATH=~/depot_tools:"${PATH}"
 export CC="clang"
 export CXX="clang++" # -Wno-conversion-null
 export GYP_GENERATORS="ninja"
 export GYP_PARALLEL=1
-export LD_LIBRARY_PATH="${CR_BUILD_DIR}":"${CR_BUILD_DIR}"/lib.target:"${LD_LIBRARY_PATH}"
 export LANG=C # so sort works in ASCII order
-alias dev="cd ${CR_DIR}"
-alias bk="cd ${HOME}/blink/src/third_party/WebKit"
 
 # Chromium OS settings.
 #alias cros="cd ~/chromiumos/src"
