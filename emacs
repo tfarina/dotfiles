@@ -7,6 +7,11 @@
 ; Hide left scrollbar.
 (scroll-bar-mode -1)
 
+; Minimal interface.
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'blink-cursor-mode) (blink-cursor-mode -1))
+(transient-mark-mode t)
+
 (define-derived-mode gyp-mode python-mode "Gyp"
   "Major mode for editing Generate Your Project files."
     (setq indent-tabs-mode nil
