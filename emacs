@@ -32,3 +32,9 @@
 
 (setq load-path (cons "~/chromium/src/tools/gyp/tools/emacs" load-path))
 (require 'gyp)
+
+(setq cc-other-file-alist
+     '(("\\.cc"	(".h"))
+       ("\\.h"		(".cc"))))
+
+(global-set-key "\C-o" 'ff-find-other-file)
