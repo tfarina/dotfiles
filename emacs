@@ -21,15 +21,6 @@
 (add-to-list 'auto-mode-alist '("\\.gyp$" . gyp-mode))
 (add-to-list 'auto-mode-alist '("\\.gypi$" . gyp-mode))
 
-(require 'whitespace)
-(setq whitespace-style '(face indentation trailing empty lines-tail))
-(setq whitespace-line-column nil)
-(set-face-attribute 'whitespace-line nil
-		    :background "purple"
-		    :foreground "white"
-		    :weight 'bold)
-(global-whitespace-mode 1)
-
 (setq load-path (cons "~/chromium/src/tools/gyp/tools/emacs" load-path))
 (require 'gyp)
 
