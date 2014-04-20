@@ -1,7 +1,0 @@
-#!/bin/bash
-
-set -e
-
-echo 'Run . ./build/android/envsetup.sh before running this script'
-
-GYP_DEFINES="$GYP_DEFINES clang=1" android_gyp -Goutput_dir=out_android_clang
