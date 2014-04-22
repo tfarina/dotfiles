@@ -22,4 +22,4 @@ if [ -z "$TARGETS" ]; then
   TARGETS="content_shell_apk"
 fi
 
-time ninja -C out_android_clang/"${CR_BUILDTYPE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee "${CHROMIUM_DIR}/errors"
+time ninja -C out_android/"${CR_BUILDTYPE}" -k4 -j"${NUM_JOBS}" $TARGETS 2>&1 | tee "${CHROMIUM_DIR}/errors"
