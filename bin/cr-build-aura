@@ -15,6 +15,13 @@ CR_BUILDTYPE=Debug
 
 NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
 
+while getopts ":t:" opt ; do
+        case $opt in
+                t) CR_BUILDTYPE="$OPTARG";;
+        esac
+done
+shift $(( OPTIND - 1 ))
+
 # Default target is chrome.
 TARGETS="$@"
 
