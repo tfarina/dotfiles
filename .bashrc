@@ -127,6 +127,8 @@ export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
 # Export GeometricTools path variable.
 export WM5_PATH=~/src/GeometricTools/WildMagic5
 
+export EDITOR="vim"
+
 # LS alias.
 alias lld="ls -lUd */"
 alias ll="ls -alF"

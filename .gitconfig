@@ -2,7 +2,6 @@
 	name = Thiago Farina
 	email = tfarina@chromium.org
 [core]
-	editor = vim
 	deltaBaseCacheLimit = 1G
 [alias]
 	co  = checkout
@@ -21,6 +20,8 @@
 	g = grep --break --heading --line-number
         crtr = cl try -r HEAD
         cam = commit -a --amend
+        camn = commit -a --amend --no-edit
+        cq = cl set_commit
 [color]
 	branch      = auto
 	diff        = auto
@@ -30,5 +31,11 @@
 [sendemail]
 	smtpserver = /usr/bin/msmtp
 	suppresscc = self
+        #tocmd = ~/scripts/to.sh
+        #cccmd = ~/scripts/cc.sh
 [diff]
 	renames = copies
+[grep]
+#lineNumber = true
+[credential]
+	helper = cache
