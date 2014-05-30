@@ -114,10 +114,10 @@ export PATH=~/src/dotfiles/bin:"${PATH}"
 export PATH=~/src/ninja:"${PATH}"
 
 # Put clang-format into PATH.
-export PATH=~/llvm-clang/build/bin:"${PATH}"
+export PATH=~/llvm/build/bin:"${PATH}"
 
-export PATH=/usr/local/gcc/gcc-4.8.2/bin:"${PATH}"
-export LD_LIBRARY_PATH=/usr/local/gcc/gcc-4.8.2/lib64:"${LD_LIBRARY_PATH}"
+# Put arcanist into PATH.
+export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
 
 # Put clang into PATH. This should come last, so it appears first in the PATH
 # list. Because we want/need to use the one provided by chromium, so the plugin
