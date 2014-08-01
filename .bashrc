@@ -119,6 +119,13 @@ export PATH=~/llvm/build/bin:"${PATH}"
 # Put arcanist into PATH.
 export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
 
+# Go tool into PATH.
+export PATH=/usr/local/go/bin:"${PATH}"
+
+# Put Plan9 into PATH
+export PLAN9=/usr/local/plan9
+export PATH=$PATH:$PLAN9/bin
+
 # Put clang into PATH. This should come last, so it appears first in the PATH
 # list. Because we want/need to use the one provided by chromium, so the plugin
 # works.
