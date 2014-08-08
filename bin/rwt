@@ -4,4 +4,5 @@
 #
 # 2014-08-01 Thiago Farina <tfarina@chromium.org>
 #
-Tools/Scripts/run-webkit-tests --build --target Debug --results-directory layout-test-results --debug-rwt-logging
+third_party/WebKit/Tools/Scripts/run-webkit-tests --build --target Debug --results-directory layout-test-results --debug-rwt-logging \
+--child-processes=1 --additional-drt-flag="--no-sandbox" --nocheck-sys-deps $@
