@@ -21,4 +21,4 @@ fi
 
 git fetch
 git pull origin master
-GYP_CHROMIUM_NO_ACTION=1 gclient sync -j"${NUM_JOBS}"
+GYP_CHROMIUM_NO_ACTION=1 gclient sync -j"${NUM_JOBS}" --nohooks
