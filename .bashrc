@@ -111,7 +111,7 @@ export LANG=C # so sort works in ASCII order
 export PATH=~/src/dotfiles/bin:"${PATH}"
 
 # Put ninja into PATH.
-export PATH=~/src/ninja:"${PATH}"
+export PATH=~/src/repos/github.com/martine/ninja:"${PATH}"
 
 # Put clang-format into PATH.
 export PATH=~/llvm/build/bin:"${PATH}"
