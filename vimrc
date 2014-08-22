@@ -4,7 +4,7 @@ if has("syntax")
 endif
 
 filetype plugin indent on
-map <C-K> :pyf ~/llvm-clang/llvm/tools/clang/tools/clang-format/clang-format.py<CR>
+map <C-K> :pyf ~/chromium/src/buildtools/clang_format/script/clang-format.py<CR>
 
 " Syntax highlight shell scripts as per POSIX, not the original Bourne shell
 " which very few use.
@@ -14,12 +14,12 @@ if filereadable("~/chromium/src/tools/vim/filetypes.vim")
   source ~/chromium/src/tools/vim/filetypes.vim
 endif
 
-if filereadable("~/src/ninja/misc/ninja.vim")
-  source ~/src/ninja/misc/ninja.vim
+if filereadable("~/src/repos/github.com/martine/ninja/misc/ninja.vim")
+  source ~/src/repos/github.com/martine/ninja/misc/ninja.vim
 endif
 
 set background=dark
-colorscheme solarized
+colorscheme greg
 
 set number                        " Display line numbers.
 set numberwidth=1                 " Use only 1 column while possible.
