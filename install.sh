@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This command was take from
+# https://github.com/mikeyk/dotfiles/blob/master/setup_symlinks.sh
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
