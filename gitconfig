@@ -12,7 +12,7 @@
 	rbm = rebase master
 	bd  = branch -D
         cu  = cl upload
-        land = cl dcommit
+        land = cl land
         d   = diff
         sr  = svn rebase
 	bl  = blame
