@@ -2,10 +2,11 @@
 
 # This command was take from
 # https://github.com/mikeyk/dotfiles/blob/master/setup_symlinks.sh
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-
-ln -fs $DIR/bashrc ~/.bashrc
-ln -fs $DIR/vimrc ~/.vimrc
-ln -fs $DIR/emacs ~/.emacs
-ln -fs $DIR/gitconfig ~/.gitconfig
+# This ln command forces the creation of a symbolic link between the locall
+# file within this repo with the . one in $HOME.
+ln -fs $THIS_DIR/bashrc $HOME/.bashrc
+ln -fs $THIS_DIR/vimrc $HOME/.vimrc
+ln -fs $THIS_DIR/emacs $HOME/.emacs
+ln -fs $THIS_DIR/gitconfig $HOME/.gitconfig
