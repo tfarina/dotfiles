@@ -6,6 +6,23 @@ endif
 filetype plugin indent on
 map <C-K> :pyf ~/chromium/src/buildtools/clang_format/script/clang-format.py<CR>
 
+" Go {{{
+" Import syntax highlighting and other goodies for Go.
+
+if exists("g:did_load_filetypes")
+  filetype off
+  filetype plugin indent off
+endif
+set runtimepath+=$HOME/go/misc/vim
+filetype plugin indent on
+syntax on
+
+let g:gofmt_command = "goimports"
+
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+autocmd FileType go set textwidth=0
+" }}}
+
 " Syntax highlight shell scripts as per POSIX, not the original Bourne shell
 " which very few use.
 let g:is_posix = 1

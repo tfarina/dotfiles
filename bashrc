@@ -123,6 +123,7 @@ export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/golib
 export PATH=$GOROOT/bin:"${PATH}"
+export PATH=$GOPATH/bin:"${PATH}"
 
 # Put Plan9 into PATH.
 export PLAN9=/usr/local/plan9
