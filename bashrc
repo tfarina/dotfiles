@@ -1,3 +1,5 @@
+TERM=gnome-256color
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -119,7 +121,7 @@ export PATH=~/llvm/build/bin:"${PATH}"
 # Put arcanist into PATH.
 export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
 
-# Go tool into PATH.
+# Put Go toolset into PATH.
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/golib
 export PATH=$GOROOT/bin:"${PATH}"
