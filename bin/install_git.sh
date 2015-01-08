@@ -1,9 +1,9 @@
 #!/bin/bash
 
-VERSION=2.1.2
-wget https://www.kernel.org/pub/software/scm/git/git-$VERSION.tar.gz
-extract git-$VERSION.tar.gz
-cd git-$VERSION/
+GIT_VERSION=git-2.1.2
+wget https://www.kernel.org/pub/software/scm/git/$GIT_VERSION.tar.gz
+extract $GIT_VERSION.tar.gz
+cd $GIT_VERSION/
 make configure
 ./configure --prefix=/usr
 make all
