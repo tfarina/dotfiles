@@ -1,4 +1,5 @@
-TERM=gnome-256color
+export TERM=gnome-256color
+export EDITOR="vim"
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -116,7 +117,7 @@ export PATH=~/src/dotfiles/bin:"${PATH}"
 export PATH=~/src/repos/github.com/martine/ninja:"${PATH}"
 
 # Put clang-format into PATH.
-export PATH=~/llvm/build/bin:"${PATH}"
+#export PATH=~/src/repos/llvm/build/bin:"${PATH}"
 
 # Put arcanist into PATH.
 export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
@@ -139,7 +140,6 @@ export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
 # Export GeometricTools path variable.
 export WM5_PATH=~/src/GeometricTools/WildMagic5
 
-export EDITOR="vim"
 
 # LS alias.
 alias lld="ls -lUd */"
