@@ -95,6 +95,11 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# Microsoft Lifechat LX-3000
+# http://askubuntu.com/questions/153438/unable-to-make-sound-play-in-headset
+# http://askubuntu.com/questions/341836/volume-control-microsoft-lifechat-lx-3000
+alias headset="pulseaudio -k"
+
 # Chromium settings.
 export CR_DIR="${HOME}/chromium/src"
 alias dev="cd ${CR_DIR}"
