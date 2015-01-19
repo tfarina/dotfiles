@@ -12,13 +12,5 @@ NUM_JOBS="$(grep -c "^processor" /proc/cpuinfo)"
 
 cd "${HOME}/chromium/src"
 
-# Prevent syncing in work branches.
-if [[ `git rev-parse --abbrev-ref HEAD` != 'master' ]]
-then
-  echo 'You cannot sync outside the master branch!'
-  exit 1
-fi
-
-git fetch
-git pull origin master
+git pull --rebase
 GYP_CHROMIUM_NO_ACTION=1 gclient sync -j"${NUM_JOBS}" --nohooks
