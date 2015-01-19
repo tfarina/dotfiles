@@ -13,7 +13,6 @@ if exists("g:did_load_filetypes")
   filetype off
   filetype plugin indent off
 endif
-set runtimepath+=$HOME/go/misc/vim
 set runtimepath+=$GOPATH/src/github.com/golang/lint/misc/vim
 filetype plugin indent on
 syntax on
