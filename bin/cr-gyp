@@ -6,11 +6,11 @@ CR_CONFIG=$1
 shift 1 # move the args so that $@ only passes args after "runtest <target>"
 
 if [ "$CR_CONFIG" == "aura" ]; then
-  GYP_GENERATOR_OUTPUT="out_aura" "${CR_DIR}"/build/gyp_chromium -Duse_aura=1
+  "${CR_DIR}"/build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura
 elif [ "$CR_CONFIG" == "cros" ]; then
-  GYP_GENERATOR_OUTPUT="out_cros" "${CR_DIR}"/build/gyp_chromium -Dchromeos=1
+  "${CR_DIR}"/build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros
 elif [ "$CR_CONFIG" == "android" ]; then
-  GYP_GENERATOR_OUTPUT="out_android" "${CR_DIR}"/build/gyp_chromium -DOS=android
+  "${CR_DIR}"/build/gyp_chromium -DOS=android -Goutput_dir=out_android
 else
   echo "Usage: cr-gyp <aura|cros|android>"
 fi
