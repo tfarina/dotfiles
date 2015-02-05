@@ -6,6 +6,10 @@ endif
 filetype plugin indent on
 map <C-K> :pyf ~/chromium/src/buildtools/clang_format/script/clang-format.py<CR>
 
+" Markdown {{{
+au BufRead,BufNewFile *.md set filetype=markdown
+" }}}
+
 " Go {{{
 " Import syntax highlighting and other goodies for Go.
 
