@@ -1,3 +1,11 @@
+set nocompatible
+
+" We reset the vimrc augroup. Autocommands are added to this group throughout
+" the file.
+augroup vimrc
+  autocmd!
+augroup END
+
 " Enable syntax highlighting.
 if has("syntax")
     syntax on
@@ -40,7 +48,7 @@ if filereadable("~/src/repos/github.com/martine/ninja/misc/ninja.vim")
 endif
 
 set background=dark
-colorscheme greg
+colorscheme valloric
 
 set number                        " Display line numbers.
 set numberwidth=1                 " Use only 1 column while possible.
@@ -126,6 +134,15 @@ function! IncludeGuard()
   call append('$', '#endif  // ' . guard . '_')
 endfunction
 
+" Highlight Class and Function names.
+function! s:HighlightFunctionsAndClasses()
+  syn match cCustomFunc      "\w\+\s*\((\)\@="
+  syn match cCustomClass     "\w\+\s*\(::\)\@="
+
+  hi def link cCustomFunc      Function
+  hi def link cCustomClass     Function
+endfunction
+
 iab #i <C-R>=SmartInclude()<CR>
 
 " Insert chromium source code copyright policy at the top of the file on ,lb.
@@ -133,6 +150,8 @@ nmap ,lb :call IncludeChromiumCopyrightLicense()<CR>
 
 " Insert an include guard based on the file name on ,i.
 nmap ,i :call IncludeGuard()<CR>
+
+au vimrc Syntax * call s:HighlightFunctionsAndClasses()
 
 " Comment selected lines on ,c in visual mode.
 vmap ,c :s,^,// ,<CR>:noh<CR>
