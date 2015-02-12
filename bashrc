@@ -1,8 +1,10 @@
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
 export TERM=gnome-256color
 export EDITOR="vim"
 
-# If not running interactively, don't do anything
-[ -z "$PS1" ] && return
+PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
 # Append to the history file, don't overwrite it.
 shopt -s histappend
