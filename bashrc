@@ -100,6 +100,9 @@ fi
 # http://askubuntu.com/questions/341836/volume-control-microsoft-lifechat-lx-3000
 alias headset="pulseaudio -k"
 
+alias network_connect="wicd-cli --wired --connect"
+alias network_disconnect="wicd-cli --wired --disconnect"
+
 # Chromium settings.
 export CR_DIR="${HOME}/chromium/src"
 alias dev="cd ${CR_DIR}"
