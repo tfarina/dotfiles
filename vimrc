@@ -1,5 +1,17 @@
 set nocompatible
 
+filetype off
+
+" set the runtime path to include Vundle and initialize.
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+call vundle#end()
+filetype plugin indent on
+
 " We reset the vimrc augroup. Autocommands are added to this group throughout
 " the file.
 augroup vimrc
