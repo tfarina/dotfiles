@@ -5,12 +5,12 @@
 CR_CONFIG=$1
 shift 1 # move the args so that $@ only passes args after "runtest <target>"
 
-if [ "$CR_CONFIG" == "aura" ]; then
-  "${CR_DIR}"/build/gyp_chromium -Duse_aura=1 -Goutput_dir=out_aura
+if [ "$CR_CONFIG" == "linux" ]; then
+  "${CR_DIR}"/build/gyp_chromium
 elif [ "$CR_CONFIG" == "cros" ]; then
   "${CR_DIR}"/build/gyp_chromium -Dchromeos=1 -Goutput_dir=out_cros
 elif [ "$CR_CONFIG" == "android" ]; then
   "${CR_DIR}"/build/gyp_chromium -DOS=android -Goutput_dir=out_android
-else
-  echo "Usage: cr-gyp <aura|cros|android>"
+elif [ "$CR_CONFIG" == "help" ]; then
+  echo "Usage: cr-gyp <linux|cros|android>"
 fi
