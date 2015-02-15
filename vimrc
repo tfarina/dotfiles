@@ -9,6 +9,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/vim-operator-highlight'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 call vundle#end()
 filetype plugin indent on
