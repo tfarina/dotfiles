@@ -10,3 +10,4 @@ ln -fs $THIS_DIR/bashrc $HOME/.bashrc
 ln -fs $THIS_DIR/vimrc $HOME/.vimrc
 ln -fs $THIS_DIR/emacs $HOME/.emacs
 ln -fs $THIS_DIR/gitconfig $HOME/.gitconfig
+ln -fs $THIS_DIR/i3status.conf $HOME/.i3status.conf
