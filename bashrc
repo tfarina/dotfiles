@@ -107,8 +107,8 @@ alias network_disconnect="wicd-cli --wired --disconnect"
 
 # Chromium settings.
 export CR_DIR="${HOME}/chromium/src"
-alias dev="cd ${CR_DIR}"
-alias bk="cd ${HOME}/blink/src/third_party/WebKit"
+alias crd="cd ${CR_DIR}"
+alias bkd="cd ${HOME}/blink/src/third_party/WebKit"
 export PATH=~/depot_tools:"${PATH}"
 export CC="clang"
 export CXX="clang++" # -Wno-conversion-null
@@ -150,7 +150,6 @@ export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
 # Export GeometricTools path variable.
 export WM5_PATH=~/src/GeometricTools/WildMagic5
 
-
 # LS alias.
 alias lld="ls -lUd */"
 alias ll="ls -alF"
@@ -158,7 +157,7 @@ alias la="ls -A"
 alias l="ls -CF"
 
 # Lithium settings.
-alias cl="cd ~/src/lithium/src"
+alias ltd="cd ~/src/lithium/src"
 
 # Vim settings.
 alias v="vim"
