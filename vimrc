@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/vim-operator-highlight'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'sgraham/alt'
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 filetype plugin indent on
@@ -64,6 +65,8 @@ set expandtab
 set autoindent
 set cindent
 set smartindent
+
+set laststatus=2
 
 " In Makefiles, don't expand tabs to spaces, since we need the actual tabs.
 autocmd FileType make set noexpandtab
