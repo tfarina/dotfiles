@@ -44,6 +44,12 @@ endif
 set background=dark
 colorscheme valloric
 
+" http://vim.wikia.com/wiki/Backspace_and_delete_problems
+" Needed after upgrading to version 7.4.
+" https://groups.google.com/forum/#!topic/vim_use/nYFinm0hTjY
+set backspace=2 " make backspace work like most other apps
+"set backspace=indent,eol,start
+
 set number                        " Display line numbers.
 set numberwidth=1                 " Use only 1 column while possible.
 set colorcolumn=81
