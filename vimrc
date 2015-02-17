@@ -145,18 +145,20 @@ endfunction
 
 iab #i <C-R>=SmartInclude()<CR>
 
+let mapleader=","
+
 " Insert chromium source code copyright policy at the top of the file on ,lb.
-nmap ,lb :call IncludeChromiumCopyrightLicense()<CR>
+nmap <leader>lb :call IncludeChromiumCopyrightLicense()<CR>
 
 " Insert an include guard based on the file name on ,i.
-nmap ,i :call IncludeGuard()<CR>
+nmap <leader>i :call IncludeGuard()<CR>
 
 au vimrc Syntax * call s:HighlightFunctionsAndClasses()
 
 " Comment selected lines on ,c in visual mode.
-vmap ,c :s,^,// ,<CR>:noh<CR>
+vmap <leader>c :s,^,// ,<CR>:noh<CR>
 " Uncomment selected lines on ,u in visual mode.
-vmap ,u :s,^// ,,<CR>
+vmap <leader>u :s,^// ,,<CR>
 
 " Map a fold to F6.
 nmap <F6> /}<CR>zf%<ESC>:nohlsearch<CR>
