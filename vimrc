@@ -12,6 +12,7 @@ Plugin 'Valloric/vim-operator-highlight'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'sgraham/alt'
 Plugin 'bling/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
@@ -175,3 +176,14 @@ augroup NewFiles
   au!
   au BufNewFile *.h call IncludeGuard()
 augroup END
+
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf ='~/chromium/src/tools/vim/chromium.ycm_extra_conf.py'
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_min_num_identifier_candidate_chars = 4
+let g:ycm_filetype_specific_completion_to_disable = {'javascript': 1}
+
+nnoremap <leader>y :YcmForceCompileAndDiagnostics<cr>
+nnoremap <leader>pg :YcmCompleter GoTo<CR>
+nnoremap <leader>pd :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>pc :YcmCompleter GoToDeclaration<CR>
