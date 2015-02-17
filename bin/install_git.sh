@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT_VERSION=git-2.1.2
+GIT_VERSION=git-2.3.0
 wget https://www.kernel.org/pub/software/scm/git/$GIT_VERSION.tar.gz
 extract $GIT_VERSION.tar.gz
 cd $GIT_VERSION/
