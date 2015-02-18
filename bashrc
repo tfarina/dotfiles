@@ -158,6 +158,8 @@ alias reload="source ~/.bashrc"
 # http://askubuntu.com/questions/153438/unable-to-make-sound-play-in-headset
 # http://askubuntu.com/questions/341836/volume-control-microsoft-lifechat-lx-3000
 alias headset="pulseaudio -k"
+alias mute="pactl set-sink-mute 1 1"
+alias unmute="pactl set-sink-mute 1 0"
 
 alias network_connect="wicd-cli --wired --connect"
 alias network_disconnect="wicd-cli --wired --disconnect"
