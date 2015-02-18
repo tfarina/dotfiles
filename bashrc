@@ -189,11 +189,6 @@ export PATH=~/src/repos/github.com/martine/ninja:"${PATH}"
 # Put arcanist into PATH.
 export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
 
-# Put Go toolset into PATH.
-export GOROOT=/usr/local/go
-export PATH=$GOROOT/bin:"${PATH}"
-export PATH=$GOPATH/bin:"${PATH}"
-
 # Put Plan9 into PATH.
 export PLAN9=/usr/local/plan9
 export PATH="${PATH}":$PLAN9/bin
