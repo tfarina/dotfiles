@@ -170,6 +170,11 @@ export ehr="http://stream.europeanhitradio.com:8000/ehr.mp3"
 alias network_connect="wicd-cli --wired --connect"
 alias network_disconnect="wicd-cli --wired --disconnect"
 
+# Put LLVM binaries (clang, lldb, etc.) into PATH.
+# It needs to come after depot_tools, otherwise it will conflict with
+# depot_tools' clang-format.
+export PATH=~/src/repos/llvm/build/bin:"${PATH}"
+
 # Chromium settings.
 export CR_DIR="${HOME}/chromium/src"
 alias crd="cd ${CR_DIR}"
@@ -191,19 +196,18 @@ export PATH=~/src/dotfiles/bin:"${PATH}"
 # Put ninja into PATH.
 export PATH=~/src/repos/github.com/martine/ninja:"${PATH}"
 
-# Put clang-format into PATH.
-#export PATH=~/src/repos/llvm/build/bin:"${PATH}"
-
 # Put arcanist into PATH.
 export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
 
 # Put Plan9 into PATH.
 export PLAN9=/usr/local/plan9
+# Plan9 should be in the end of the PATH because there are some binaries there
+# that we don't want to use.
 export PATH="${PATH}":$PLAN9/bin
 
 # Put clang into PATH. This should come last, so it appears first in the PATH
-# list. Because we want/need to use the one provided by chromium, so the plugin
-# works.
+# list. It needs to come first to make sure we use the one from Chromium,
+#otherwise the chromium-style plugin won't work.
 export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
 
 # Export GeometricTools path variable.
