@@ -12,3 +12,5 @@ ln -fs $THIS_DIR/emacs $HOME/.emacs
 ln -fs $THIS_DIR/gitconfig $HOME/.gitconfig
 ln -fs $THIS_DIR/i3status.conf $HOME/.i3status.conf
 ln -fs $THIS_DIR/i3/config $HOME/.i3/config
+ln -fs $THIS_DIR/gdb/stl-views.gdb $HOME/.gdb/stl-views.gdb
+ln -fs $THIS_DIR/gdbinit $HOME/.gdbinit
