@@ -21,7 +21,7 @@
         crtr = cl try -r HEAD
         cam = commit -a --amend
         camn = commit -a --amend --no-edit
-        cq = cl set_commit
+        cq = cl set-commit
 [color]
 	branch      = auto
 	diff        = auto
@@ -39,3 +39,5 @@
 #lineNumber = true
 [credential]
 	helper = cache
+[http]
+	cookiefile = /home/tfarina/.gitcookies
