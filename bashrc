@@ -4,6 +4,7 @@
 export TERM=gnome-256color
 export EDITOR="vim"
 export PYTHONDONTWRITEBYTECODE=1
+export LANG="C" # so sort works in ASCII order.
 
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
@@ -119,7 +120,7 @@ PROMPT="\$"
 DIR="\w"
 TIME='\[\033[01;31m\]\t \[\033[01;32m\]'
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="$CYAN\u $YELLOW\h ${bldblu}$DIR$YELLOW_BOLD\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
+export PS1="$CYAN\u $YELLOW\h ${bldblu}$DIR$GREEN\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
 
 # Linus Torvalds bash prompt style.
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
@@ -180,11 +181,7 @@ export CR_DIR="${HOME}/chromium/src"
 alias crd="cd ${CR_DIR}"
 alias bkd="cd ${HOME}/blink/src/third_party/WebKit"
 export PATH=~/depot_tools:"${PATH}"
-export CC="clang"
-export CXX="clang++" # -Wno-conversion-null
 export GYP_GENERATORS="ninja"
-export GYP_PARALLEL=1
-export LANG=C # so sort works in ASCII order
 
 # Chromium OS settings.
 #alias cros="cd ~/chromiumos/src"
@@ -279,3 +276,8 @@ po() {
   unset print_owners
   cd "$old_dir"
 }
+
+### ... auto added next three lines
+### dmd 2.067 installed using prefix: /usr/local/dmd
+export PATH=/usr/local/dmd/bin:${PATH}
+export LD_LIBRARY_PATH=/usr/local/dmd/lib:${LD_LIBRARY_PATH}
