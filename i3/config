@@ -181,3 +181,7 @@ exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper-ubuntu-windows-imitation
 
 # Border control
 #hide_edge_borders both
+
+# start some utilities
+# from https://github.com/dominichamon/dotfiles/blob/master/.i3/config
+exec gnome-settings-daemon
