@@ -59,6 +59,16 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# Git settings.
+alias g="git"
+alias gd="git diff"
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
+
+# Make the autocompleton work with the g alias.
+complete -o bashdefault -o default -o nospace -F _git g
+complete -o default -o nospace -F _git g
+
 # https://github.com/jelera/dotfiles/blob/master/bash/bashrc
 #----------------------------------------------------------------------------//
 # => COLORS
@@ -228,16 +238,6 @@ vl() {
   line=`echo "$1" | cut -d: -f2`
   v "$file" +"$line"
 }
-
-# Git settings.
-alias g="git"
-alias gd="git diff"
-source ~/.git-completion.bash
-source ~/.git-prompt.sh
-
-# Make the autocompleton work with the g alias.
-complete -o bashdefault -o default -o nospace -F _git g
-complete -o default -o nospace -F _git g
 
 # Mac OS X 'open' alias.
 alias open="xdg-open"
