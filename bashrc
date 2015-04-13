@@ -235,6 +235,10 @@ alias gd="git diff"
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
+# Make the autocompleton work with the g alias.
+complete -o bashdefault -o default -o nospace -F _git g
+complete -o default -o nospace -F _git g
+
 # Mac OS X 'open' alias.
 alias open="xdg-open"
 
@@ -242,39 +246,6 @@ alias open="xdg-open"
 alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
 function mylocalip {
   /sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}';
-}
-
-# Make the autocompleton work with the g alias.
-complete -o bashdefault -o default -o nospace -F _git g
-complete -o default -o nospace -F _git g
-
-po() {
-  old_dir=`pwd`
-  if [ -d "$1" ]; then
-    cd "$1"
-  elif [ -f "$1" ]; then
-    cd `dirname "$1"`
-  else
-    echo "Couldn't find file or directory $1"
-    return 1
-  fi
-
-  print_owners() {
-    if [ -f OWNERS ]; then
-      echo "=== `pwd`"
-      cat OWNERS
-      echo
-    fi
-  }
-
-  while [ `pwd` != "$old_dir" -a `pwd` != / ]; do
-    print_owners
-    cd ..
-  done
-  print_owners
-
-  unset print_owners
-  cd "$old_dir"
 }
 
 ### ... auto added next three lines
