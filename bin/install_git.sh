@@ -11,3 +11,6 @@ make configure
 ./configure --prefix=/usr
 make all
 sudo make install
+cd ..
+rm -rf $GIT_VERSION
+rm $GIT_VERSION.tar.gz
