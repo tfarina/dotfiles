@@ -214,7 +214,6 @@ export PATH=~/src/repos/llvm/build/bin:"${PATH}"
 alias crd="cd ${HOME}/chromium/src"
 alias bkd="cd ${HOME}/blink/src/third_party/WebKit"
 export PATH=~/depot_tools:"${PATH}"
-export GYP_GENERATORS="ninja"
 
 # Make my tools accessible everywhere.
 export PATH=~/src/dotfiles/bin:"${PATH}"
