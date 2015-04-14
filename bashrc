@@ -62,6 +62,14 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# https://rtcamp.com/tutorials/nginx/troubleshooting/emerg-bind-failed-98-address-already-in-use/
+alias kill80="sudo fuser -k 80/tcp"
+# http://www.cyberciti.biz/faq/find-linux-what-running-on-port-80-command/
+alias whois80="sudo netstat -tulpn | grep :80"
+alias servers="sudo netstat -tulpn"
+# sudo fuser 80/tcp
+# ls -l /proc/12161/exe
+
 alias reload="source ~/.bashrc"
 
 # Vim settings.
