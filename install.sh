@@ -7,6 +7,7 @@ THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # This ln command forces the creation of a symbolic link between the locall
 # file within this repo with the . one in $HOME.
 ln -fs $THIS_DIR/bashrc $HOME/.bashrc
+ln -fs $THIS_DIR/bash_functions $HOME/.bash_functions
 ln -fs $THIS_DIR/vimrc $HOME/.vimrc
 ln -fs $THIS_DIR/emacs $HOME/.emacs
 ln -fs $THIS_DIR/gitconfig $HOME/.gitconfig

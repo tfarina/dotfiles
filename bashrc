@@ -1,6 +1,10 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+if [ -f ~/.bash_functions ]; then
+  source ~/.bash_functions
+fi
+
 export TERM=gnome-256color
 export EDITOR="vim"
 export PYTHONDONTWRITEBYTECODE=1
@@ -224,14 +228,6 @@ alias lld="ls -lUd */"
 alias ll="ls -alF"
 alias la="ls -A"
 alias l="ls -CF"
-
-# Benjamin Kalman is the author of this function.
-# Taken from https://github.com/kalman/rc/blob/master/profile#L60
-function vl() {
-  file=`echo "$1" | cut -d: -f1`
-  line=`echo "$1" | cut -d: -f2`
-  v "$file" +"$line"
-}
 
 # Mac OS X 'open' alias.
 alias open="xdg-open"
