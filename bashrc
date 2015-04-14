@@ -225,9 +225,6 @@ alias ll="ls -alF"
 alias la="ls -A"
 alias l="ls -CF"
 
-# Lithium settings.
-alias ltd="cd ~/src/lithium/src"
-
 # Benjamin Kalman is the author of this function.
 vl() {
   file=`echo "$1" | cut -d: -f1`
