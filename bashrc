@@ -196,10 +196,6 @@ alias bkd="cd ${HOME}/blink/src/third_party/WebKit"
 export PATH=~/depot_tools:"${PATH}"
 export GYP_GENERATORS="ninja"
 
-# Chromium OS settings.
-#alias cros="cd ~/chromiumos/src"
-#eval $(keychain --eval ~/.ssh/chromium)
-
 # Make my tools accessible everywhere.
 export PATH=~/src/dotfiles/bin:"${PATH}"
 
