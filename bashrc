@@ -71,8 +71,14 @@ alias v="vim"
 # Git settings.
 alias g="git"
 alias gd="git diff"
-source ~/.git-completion.bash
-source ~/.git-prompt.sh
+
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
+
+if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-prompt.sh
+fi
 
 # Make the autocompleton work with the g alias.
 complete -o bashdefault -o default -o nospace -F _git g
