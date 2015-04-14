@@ -59,6 +59,11 @@ else
 fi
 unset color_prompt force_color_prompt
 
+alias reload="source ~/.bashrc"
+
+# Vim settings.
+alias v="vim"
+
 # Git settings.
 alias g="git"
 alias gd="git diff"
@@ -163,8 +168,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias reload="source ~/.bashrc"
-
 # Microsoft Lifechat LX-3000
 # http://askubuntu.com/questions/153438/unable-to-make-sound-play-in-headset
 # http://askubuntu.com/questions/341836/volume-control-microsoft-lifechat-lx-3000
@@ -228,9 +231,6 @@ alias l="ls -CF"
 
 # Lithium settings.
 alias ltd="cd ~/src/lithium/src"
-
-# Vim settings.
-alias v="vim"
 
 # Benjamin Kalman is the author of this function.
 vl() {
