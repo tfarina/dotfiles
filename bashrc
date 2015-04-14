@@ -193,6 +193,18 @@ export ehr="http://stream.europeanhitradio.com:8000/ehr.mp3"
 alias network_connect="wicd-cli --wired --connect"
 alias network_disconnect="wicd-cli --wired --disconnect"
 
+# LS alias.
+alias lld="ls -lUd */"
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"
+
+# Mac OS X 'open' alias.
+alias open="xdg-open"
+
+# Get my ip address.
+alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
+
 # Put LLVM binaries (clang, lldb, etc.) into PATH.
 # It needs to come after depot_tools, otherwise it will conflict with
 # depot_tools' clang-format.
@@ -231,15 +243,3 @@ export WM5_PATH=~/src/GeometricTools/WildMagic5
 ### dmd 2.067 installed using prefix: /usr/local/dmd
 export PATH=/usr/local/dmd/bin:${PATH}
 export LD_LIBRARY_PATH=/usr/local/dmd/lib:${LD_LIBRARY_PATH}
-
-# LS alias.
-alias lld="ls -lUd */"
-alias ll="ls -alF"
-alias la="ls -A"
-alias l="ls -CF"
-
-# Mac OS X 'open' alias.
-alias open="xdg-open"
-
-# Get my ip address.
-alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
