@@ -199,7 +199,6 @@ alias network_disconnect="wicd-cli --wired --disconnect"
 export PATH=~/src/repos/llvm/build/bin:"${PATH}"
 
 # Chromium settings.
-export CR_DIR="${HOME}/chromium/src"
 alias crd="cd ${HOME}/chromium/src"
 alias bkd="cd ${HOME}/blink/src/third_party/WebKit"
 export PATH=~/depot_tools:"${PATH}"

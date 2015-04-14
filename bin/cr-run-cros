@@ -7,6 +7,8 @@
 # Die if any command dies.
 set -e
 
+CR_DIR="${HOME}"/chromium/src/
+
 # Default build type is Debug.
 CR_BUILDTYPE=Debug
 

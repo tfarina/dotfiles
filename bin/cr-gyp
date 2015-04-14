@@ -2,6 +2,7 @@
 
 #set -e
 
+CR_DIR="${HOME}"/chromium/src/
 CR_CONFIG=$1
 shift 1 # move the args so that $@ only passes args after "runtest <target>"
 
