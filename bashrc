@@ -228,6 +228,11 @@ export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
 # Export GeometricTools path variable.
 export WM5_PATH=~/src/GeometricTools/WildMagic5
 
+### ... auto added next three lines
+### dmd 2.067 installed using prefix: /usr/local/dmd
+export PATH=/usr/local/dmd/bin:${PATH}
+export LD_LIBRARY_PATH=/usr/local/dmd/lib:${LD_LIBRARY_PATH}
+
 # LS alias.
 alias lld="ls -lUd */"
 alias ll="ls -alF"
@@ -242,8 +247,3 @@ alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cg
 function mylocalip {
   /sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}';
 }
-
-### ... auto added next three lines
-### dmd 2.067 installed using prefix: /usr/local/dmd
-export PATH=/usr/local/dmd/bin:${PATH}
-export LD_LIBRARY_PATH=/usr/local/dmd/lib:${LD_LIBRARY_PATH}
