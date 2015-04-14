@@ -5,3 +5,7 @@ function vl() {
   line=`echo "$1" | cut -d: -f2`
   v "$file" +"$line"
 }
+
+function mylocalip() {
+  /sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}';
+}
