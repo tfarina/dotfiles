@@ -215,10 +215,10 @@ export PATH=~/src/repos/github.com/martine/ninja:"${PATH}"
 export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
 
 # Put Plan9 into PATH.
-export PLAN9=/usr/local/plan9
 # Plan9 should be in the end of the PATH because there are some binaries there
 # that we don't want to use.
-export PATH="${PATH}":$PLAN9/bin
+# http://sigkill.dk/writings/guides/plan_9_tools.html
+export PATH="${PATH}":/usr/local/plan9/bin
 
 # Put clang into PATH. This should come last, so it appears first in the PATH
 # list. It needs to come first to make sure we use the one from Chromium,
