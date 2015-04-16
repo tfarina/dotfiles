@@ -226,9 +226,6 @@ export PATH=~/depot_tools:"${PATH}"
 # Make my tools accessible everywhere.
 export PATH=~/src/dotfiles/bin:"${PATH}"
 
-# Put ninja into PATH.
-export PATH=~/src/repos/github.com/martine/ninja:"${PATH}"
-
 # Put arcanist into PATH.
 export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
 
