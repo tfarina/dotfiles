@@ -3,7 +3,7 @@
 function vl() {
   file=`echo "$1" | cut -d: -f1`
   line=`echo "$1" | cut -d: -f2`
-  v "$file" +"$line"
+  vim "$file" +"$line"
 }
 
 function mylocalip() {
