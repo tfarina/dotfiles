@@ -1,0 +1,9 @@
+#!/bin/sh
+# Original version is: https://github.com/mtklein/bin/blob/master/git-new
+
+if [ -z $1 ]; then
+    echo "git new needs branch name"
+    exit 1
+fi
+
+git checkout -b $1 origin/master
