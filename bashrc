@@ -213,14 +213,16 @@ alias open="xdg-open"
 # Get my ip address.
 alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
 
+# Some Chromium aliases that make me more productive.
+alias crd="cd ${HOME}/chromium/src"
+alias bkd="cd ${HOME}/blink/src/third_party/WebKit"
+
 # Put LLVM binaries (clang, lldb, etc.) into PATH.
 # It needs to come after depot_tools, otherwise it will conflict with
 # depot_tools' clang-format.
 export PATH=~/src/repos/llvm/build/bin:"${PATH}"
 
-# Chromium settings.
-alias crd="cd ${HOME}/chromium/src"
-alias bkd="cd ${HOME}/blink/src/third_party/WebKit"
+# Put depot_tools into PATH.
 export PATH=~/depot_tools:"${PATH}"
 
 # Make my tools accessible everywhere.
