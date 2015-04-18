@@ -5,6 +5,18 @@ if [ -f ~/.bash_functions ]; then
   source ~/.bash_functions
 fi
 
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
+
+if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-prompt.sh
+fi
+
+# Make the autocompleton work with the g alias.
+complete -o bashdefault -o default -o nospace -F _git g
+complete -o default -o nospace -F _git g
+
 export TERM=gnome-256color
 export EDITOR="vim"
 export PYTHONDONTWRITEBYTECODE=1
@@ -87,35 +99,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# https://rtcamp.com/tutorials/nginx/troubleshooting/emerg-bind-failed-98-address-already-in-use/
-alias kill80="sudo fuser -k 80/tcp"
-# http://www.cyberciti.biz/faq/find-linux-what-running-on-port-80-command/
-alias whois80="sudo netstat -tulpn | grep :80"
-alias servers="sudo netstat -tulpn"
-# sudo fuser 80/tcp
-# ls -l /proc/12161/exe
-
-alias reload="source ~/.bashrc"
-
-# Vim settings.
-alias v="vim"
-
-# Git settings.
-alias g="git"
-alias gd="git diff"
-
-if [ -f ~/.git-completion.bash ]; then
-  source ~/.git-completion.bash
-fi
-
-if [ -f ~/.git-prompt.sh ]; then
-  source ~/.git-prompt.sh
-fi
-
-# Make the autocompleton work with the g alias.
-complete -o bashdefault -o default -o nospace -F _git g
-complete -o default -o nospace -F _git g
-
 # https://github.com/jelera/dotfiles/blob/master/bash/bashrc
 #----------------------------------------------------------------------------//
 # => COLORS
@@ -184,6 +167,23 @@ export PS1="$CYAN\u $YELLOW\h ${bldblu}$DIR$GREEN\$(__git_ps1)\n$NORMAL$PROMPT$N
 
 # Junio Hamano bash prompt style:
 #export PS1=': \h \W$(__git_ps1 "/%s"); '
+
+alias reload="source ~/.bashrc"
+
+# Vim settings.
+alias v="vim"
+
+# Git settings.
+alias g="git"
+alias gd="git diff"
+
+# https://rtcamp.com/tutorials/nginx/troubleshooting/emerg-bind-failed-98-address-already-in-use/
+alias kill80="sudo fuser -k 80/tcp"
+# http://www.cyberciti.biz/faq/find-linux-what-running-on-port-80-command/
+alias whois80="sudo netstat -tulpn | grep :80"
+alias servers="sudo netstat -tulpn"
+# sudo fuser 80/tcp
+# ls -l /proc/12161/exe
 
 # Microsoft Lifechat LX-3000
 # http://askubuntu.com/questions/153438/unable-to-make-sound-play-in-headset
