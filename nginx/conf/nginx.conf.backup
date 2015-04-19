@@ -17,11 +17,11 @@ http {
 
     server {
         listen       80;
-        server_name  tfarina.org.uk www.tfarina.org.uk;
+        server_name  tfarina.org www.tfarina.org;
 
         location / {
-#            root   html;
-             root /data/www/farina.org;
+             #root   html;
+             root /data/www/tfarina.org;
              index  index.html index.htm;
         }
 
