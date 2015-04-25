@@ -242,6 +242,3 @@ export PATH="${PATH}":/usr/local/plan9/bin
 ### dmd 2.067 installed using prefix: /usr/local/dmd
 export PATH=/usr/local/dmd/bin:${PATH}
 export LD_LIBRARY_PATH=/usr/local/dmd/lib:${LD_LIBRARY_PATH}
-
-# Export GeometricTools path variable.
-export WM5_PATH=~/src/GeometricTools/WildMagic5
