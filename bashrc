@@ -227,7 +227,7 @@ export PATH=~/src/repos/llvm/build/bin:"${PATH}"
 export PATH=~/depot_tools:"${PATH}"
 
 # Make my tools accessible everywhere.
-export PATH=~/src/dotfiles/bin:"${PATH}"
+export PATH=~/bin:"${PATH}"
 
 # Put arcanist into PATH.
 export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
