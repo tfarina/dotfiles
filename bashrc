@@ -238,11 +238,6 @@ export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
 # http://sigkill.dk/writings/guides/plan_9_tools.html
 export PATH="${PATH}":/usr/local/plan9/bin
 
-# Put clang into PATH. This should come last, so it appears first in the PATH
-# list. It needs to come first to make sure we use the one from Chromium,
-#otherwise the chromium-style plugin won't work.
-export PATH=~/chromium/src/third_party/llvm-build/Release+Asserts/bin:"${PATH}"
-
 ### ... auto added next three lines
 ### dmd 2.067 installed using prefix: /usr/local/dmd
 export PATH=/usr/local/dmd/bin:${PATH}
