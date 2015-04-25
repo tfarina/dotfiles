@@ -161,6 +161,7 @@ DIR="\w"
 TIME='\[\033[01;31m\]\t \[\033[01;32m\]'
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1="$CYAN\u $YELLOW\h ${bldblu}$DIR$GREEN\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
+export PS1='\[\e[0m\]\h \w$(__git_ps1 " (%s)")\n$\[\e[0m\] '
 
 # Linus Torvalds bash prompt style.
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
