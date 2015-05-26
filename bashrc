@@ -201,6 +201,9 @@ export ehr="http://stream.europeanhitradio.com:8000/ehr.mp3"
 
 alias network_connect="wicd-cli --wired --connect"
 alias network_disconnect="wicd-cli --wired --disconnect"
+# http://www.cyberciti.biz/faq/howto-linux-renew-dhcp-client-ip-address/
+alias release_dhcp="sudo dhclient -v -r wlan0"
+alias renew_dhcp="sudo dhclient -v wlan0"
 
 # LS alias.
 alias lld="ls -lUd */"
