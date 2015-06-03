@@ -146,6 +146,7 @@ undwht='\e[4;37m' # White
 
 BLACK='\[\033[0;30m\]'
 RED='\[\033[0;31m\]'
+RED_BOLD='\[\033[01;31m\]'
 GREEN='\[\033[0;32m\]'
 GREEN_BOLD='\[\033[01;32m\]'
 YELLOW='\[\033[0;33m\]'
@@ -160,8 +161,9 @@ PROMPT="\$"
 DIR="\w"
 TIME='\[\033[01;31m\]\t \[\033[01;32m\]'
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="$CYAN\u $YELLOW\h ${bldblu}$DIR$GREEN\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
-export PS1='\[\e[0m\]\h \w$(__git_ps1 " (%s)")\n$\[\e[0m\] '
+#export PS1="$CYAN\u $YELLOW\h ${bldblu}$DIR$GREEN\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
+#export PS1='\[\e[0m\]\h \w$(__git_ps1 " (%s)")\n$\[\e[0m\] '
+export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[01;31m\]$(__git_ps1)\n\[\033[00m\]$ '
 
 # Linus Torvalds bash prompt style.
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
