@@ -1,11 +1,12 @@
 server {
-    listen       80;
-    server_name  tfarina.org www.tfarina.org;
+    listen       8080;
+    server_name  tfarinahome.mooo.com;
+
+    root /data/www/tfarina.org;
+    index index.php index.html index.htm;
 
     location / {
-        #root   html;
-        root /data/www/tfarina.org;
-        index  index.html index.htm;
+        try_files $uri $uri/ /index.html;
     }
 
     # redirect server error pages to the static page /50x.html
@@ -17,11 +18,12 @@ server {
 
     # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
     #
-    #location ~ \.php$ {
-    #    root           html;
-    #    fastcgi_pass   127.0.0.1:9000;
-    #    fastcgi_index  index.php;
-    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
-    #    include        fastcgi_params;
-    #}
+    location ~ \.php$ {
+        try_files $uri = 404;
+        # fastcgi_pass   unix:/var/run/php5-fpm.sock;
+        fastcgi_pass   127.0.0.1:9000;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
 }
