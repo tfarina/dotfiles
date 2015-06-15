@@ -20,7 +20,6 @@ complete -o default -o nospace -F _git g
 export TERM=gnome-256color
 export EDITOR="vim"
 export PYTHONDONTWRITEBYTECODE=1
-export LANG="C" # so sort works in ASCII order.
 
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
