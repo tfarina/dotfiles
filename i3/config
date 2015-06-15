@@ -27,6 +27,9 @@ bindsym Mod1+Shift+q kill
 # start dmenu (a program launcher)
 bindsym Mod1+d exec dmenu_run
 
+# start chrome
+bindsym Mod1+g exec google-chrome
+
 # change focus
 bindsym Mod1+j focus left
 bindsym Mod1+k focus down
