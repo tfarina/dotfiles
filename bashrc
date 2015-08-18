@@ -1,6 +1,10 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+if [ -f ~/.bash_aliases ]; then
+  source ~/.bash_aliases
+fi
+
 if [ -f ~/.bash_functions ]; then
   source ~/.bash_functions
 fi
@@ -169,15 +173,6 @@ export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033
 
 # Junio Hamano bash prompt style:
 #export PS1=': \h \W$(__git_ps1 "/%s"); '
-
-alias reload="source ~/.bashrc"
-
-# Vim settings.
-alias v="vim"
-
-# Git settings.
-alias g="git"
-alias gd="git diff"
 
 # https://rtcamp.com/tutorials/nginx/troubleshooting/emerg-bind-failed-98-address-already-in-use/
 alias kill80="sudo fuser -k 80/tcp"
