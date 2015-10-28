@@ -166,7 +166,7 @@ TIME='\[\033[01;31m\]\t \[\033[01;32m\]'
 export GIT_PS1_SHOWDIRTYSTATE=1
 #export PS1="$CYAN\u $YELLOW\h ${bldblu}$DIR$GREEN\$(__git_ps1)\n$NORMAL$PROMPT$NORMAL "
 #export PS1='\[\e[0m\]\h \w$(__git_ps1 " (%s)")\n$\[\e[0m\] '
-export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[01;31m\]$(__git_ps1)\n\[\033[00m\]$ '
+export PS1="${GREEN_BOLD}\u@\h${NORMAL}:${BLUE_BOLD}\w${NORMAL}${RED_BOLD}\$(__git_ps1)\n${NORMAL}$ "
 
 # Linus Torvalds bash prompt style.
 #export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
@@ -241,3 +241,7 @@ export PATH="${PATH}":/usr/local/plan9/bin
 ### dmd 2.067 installed using prefix: /usr/local/dmd
 export PATH=/usr/local/dmd/bin:${PATH}
 export LD_LIBRARY_PATH=/usr/local/dmd/lib:${LD_LIBRARY_PATH}
+
+# Stripe API KEYs
+export SECRET_KEY="sk_test_HkAaLt98f403QWqM7ky2JXXI"
+export PUBLISHABLE_KEY="pk_test_56TZyxm8NIlknBGQmWJsiH19"
