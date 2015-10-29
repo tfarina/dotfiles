@@ -133,7 +133,7 @@ function! IncludeChromiumCopyrightLicense()
   execute ":0r " . filename
 endfunction
 
-function! IncludeGuard()
+function! IncludeHeaderGuard()
   let guard = toupper(substitute(expand('%'), '[\./]', '_', 'g'))
   let guard = substitute(guard, '[\-/]', '_', 'g')
   call append(0, '#ifndef ' . guard . '_')
@@ -157,8 +157,8 @@ let mapleader=","
 " Insert chromium source code copyright policy at the top of the file on ,lb.
 nmap <leader>lb :call IncludeChromiumCopyrightLicense()<CR>
 
-" Insert an include guard based on the file name on ,i.
-nmap <leader>i :call IncludeGuard()<CR>
+" Insert an header guard based on the file name on ,hg.
+nmap <leader>hg :call IncludeHeaderGuard()<CR>
 
 au vimrc Syntax * call s:HighlightFunctionsAndClasses()
 
@@ -174,7 +174,7 @@ autocmd BufNewFile,BufRead * call SetCodingStyle()
 
 augroup NewFiles
   au!
-  au BufNewFile *.h call IncludeGuard()
+  au BufNewFile *.h call IncludeHeaderGuard()
 augroup END
 
 " YouCompleteMe
