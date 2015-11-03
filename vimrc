@@ -13,6 +13,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'sgraham/alt'
 Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on
