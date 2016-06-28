@@ -4,8 +4,12 @@
 # https://github.com/mikeyk/dotfiles/blob/master/setup_symlinks.sh
 THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+cp git-prompt.sh $HOME/.git-prompt.sh
+cp git-completion.bash $HOME/.git-completion.bash
+
 # This ln command forces the creation of a symbolic link between the locall
 # file within this repo with the . one in $HOME.
+echo "ln -fs $THIS_DIR/bashrc $HOME/.bashrc"
 ln -fs $THIS_DIR/bashrc $HOME/.bashrc
 ln -fs $THIS_DIR/bash_functions $HOME/.bash_functions
 ln -fs $THIS_DIR/bash_aliases $HOME/.bash_aliases

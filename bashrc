@@ -205,10 +205,6 @@ alias open="xdg-open"
 # Get my ip address.
 alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
 
-# Some Chromium aliases that make me more productive.
-alias crd="cd ${HOME}/chromium/src"
-alias bkd="cd ${HOME}/blink/src/third_party/WebKit"
-
 # Put LLVM binaries (clang, lldb, etc.) into PATH.
 # It needs to come after depot_tools, otherwise it will conflict with
 # depot_tools' clang-format.
@@ -222,6 +218,11 @@ export PATH=~/bin:"${PATH}"
 
 # Put arcanist into PATH.
 export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
+
+# Put Go tools into PATH.
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/src/goworkspace
+export PATH="${PATH}:$GOROOT/bin:$GOPATH/bin"
 
 # Put Plan9 into PATH.
 # Plan9 should be in the end of the PATH because there are some binaries there

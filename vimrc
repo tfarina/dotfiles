@@ -173,6 +173,8 @@ nmap <F6> /}<CR>zf%<ESC>:nohlsearch<CR>
 
 autocmd BufNewFile,BufRead * call SetCodingStyle()
 
+au BufRead,BufNewFile,BufEnter *.go set noexpandtab ts=2 shiftwidth=2 softtabstop=2 noexpandtab cc=120
+
 augroup NewFiles
   au!
   au BufNewFile *.h call IncludeHeaderGuard()

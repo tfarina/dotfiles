@@ -19,3 +19,7 @@ alias whois80="sudo netstat -tulpn | grep :80"
 alias servers="sudo netstat -tulpn"
 # sudo fuser 80/tcp
 # ls -l /proc/12161/exe
+
+# Some Chromium aliases that make me more productive.
+alias crd="cd ${HOME}/chromium/src"
+alias bkd="cd ${HOME}/blink/src/third_party/WebKit"
