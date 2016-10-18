@@ -1,3 +1,5 @@
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+
 ; Show line numbers.
 (global-linum-mode t)
 
@@ -11,6 +13,9 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'blink-cursor-mode) (blink-cursor-mode -1))
 (transient-mark-mode t)
+
+;; Better than the default.
+(load-theme 'tango-dark t)
 
 (define-derived-mode gyp-mode python-mode "Gyp"
   "Major mode for editing Generate Your Project files."
