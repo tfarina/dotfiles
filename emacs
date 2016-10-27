@@ -1,5 +1,9 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
+(require 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+;(add-hook 'c-mode-common-hook 'google-make-newline-indent)
+
 ; Show line numbers.
 (global-linum-mode t)
 
