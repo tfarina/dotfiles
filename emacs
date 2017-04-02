@@ -7,6 +7,9 @@
 ; Show line numbers.
 (global-linum-mode t)
 
+; Show column numbers.
+(column-number-mode t)
+
 ; Disable startup message.
 (setq inhibit-startup-message t)
 
@@ -34,8 +37,8 @@
 (require 'gyp)
 
 (setq cc-other-file-alist
-     '(("\\.cc"	(".h"))
-       ("\\.h"		(".cc"))))
+     '(("\\.cc" (".h"))
+       ("\\.h"	(".cc"))))
 
 (global-set-key "\C-o" 'ff-find-other-file)
 
