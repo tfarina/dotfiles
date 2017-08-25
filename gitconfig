@@ -1,6 +1,6 @@
 [user]
 	name = Thiago Farina
-	email = tfarina@chromium.org
+	email = tfransosi@gmail.com
 [core]
 	deltaBaseCacheLimit = 1G
 [alias]
@@ -11,7 +11,7 @@
 	cm  = checkout master
 	rbm = rebase master
 	bd  = branch -D
-        cu  = cl upload
+        cu  = cl upload --gerrit
         land = cl land
         d   = diff
         sr  = svn rebase
