@@ -1,22 +1,24 @@
+
+;; Elisp files go in ~/.emacs.d/lisp/
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+
+;; Disable startup message.
+(setq inhibit-startup-message t)
 
 (require 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 ;(add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
-; Show line numbers.
+;; Show line numbers.
 (global-linum-mode t)
 
-; Show column numbers.
+;; Show column numbers.
 (column-number-mode t)
 
-; Disable startup message.
-(setq inhibit-startup-message t)
-
-; Hide left scrollbar.
+;; Hide left scrollbar.
 (scroll-bar-mode -1)
 
-; Minimal interface.
+;; Minimal interface.
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'blink-cursor-mode) (blink-cursor-mode -1))
 (transient-mark-mode t)
@@ -49,3 +51,6 @@
 
 ;; create the autosave dir if necessary, since emacs won't.
 (make-directory "~/.emacs.d/autosaves/" t)
+
+;; Prefer UTF-8 to ISO-8859-1.
+(prefer-coding-system 'utf-8)
