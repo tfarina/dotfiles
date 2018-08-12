@@ -29,10 +29,14 @@
 	status      = auto
 	ui          = auto
 [sendemail]
-	smtpserver = /usr/bin/msmtp
+#	smtpserver = /usr/bin/msmtp
 	suppresscc = self
         #tocmd = ~/scripts/to.sh
         #cccmd = ~/scripts/cc.sh
+        smtpEncryption = tls
+        smtpServer = smtp.gmail.com
+        smtpUser = tfransosi@gmail.com
+        smtpServerPort = 587
 [diff]
 	renames = copies
 [grep]
