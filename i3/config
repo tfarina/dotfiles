@@ -9,6 +9,9 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# Mod1 == Alt
+# Mod4 == Win
+
 set $mod Mod1
 
 # font for window titles. ISO 10646 = Unicode
