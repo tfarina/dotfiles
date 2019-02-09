@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+    case "$1" in
+      toggle)
+          amixer -c 1 set Master toggle
+	  ;;
+      raise)
+	  amixer -c 1 set Master 1+
+	  ;;
+      lower)
+	  amixer -c 1 set Master 1-
+	  ;;
+      strong_raise)
+	  amixer -c 1 set Master 1%+
+	  ;;
+      strong_lower)
+	  amixer -c 1 set Master 1%-
+	  ;;
+    esac
