@@ -1,0 +1,8 @@
+distro: Ubuntu
+wm: bspwm
+terminal: rxvt-unicode
+shell: zsh
+browser: firefox
+editor: emacs
+bar: polybar
+launcher: rofi
