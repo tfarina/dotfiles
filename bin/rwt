@@ -1,9 +1,0 @@
-#!/bin/bash
-#
-# Copyright (c) 2014, Thiago Farina
-#
-# 2014-08-01 Thiago Farina <tfarina@chromium.org>
-#
-pushd ~/blink/src/third_party/WebKit
-./Tools/Scripts/run-webkit-tests --build --target Debug --results-directory layout-test-results --debug-rwt-logging \
---child-processes=1 --additional-drt-flag="--no-sandbox" --nocheck-sys-deps $@
