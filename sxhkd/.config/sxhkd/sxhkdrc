@@ -65,6 +65,18 @@ super + shift + e
 super + f
         bspc desktop -l next
 
+# alternate beetwen floating & tiled layout
+super + space
+        bspc node -t floating
+
+# just in case you want to go back to tiled mode
+super + t
+        bspc node -t tiled
+
+# move a floating window
+super + {Left,Down,Up,Right}
+        bspc node -v {-20 0,0 20,0 -20,20 0}
+
 # close process
 super + q
 	bspc node -c
@@ -85,10 +97,6 @@ alt + Tab
 alt + shift + Tab
         bspc node -f prev.local
 
-# set the window state
-super + {t, y, f}
-        bspc node -t {tiled, floating, fullscreen}
-
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
         bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
@@ -96,25 +104,3 @@ super + alt + {h,j,k,l}
 # contract a window by moving one of its side inward
 super + alt + shift + {h,j,k,l}
         bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
-
-# move a floating window
-super + {Left,Down,Up,Right}
-        bspc node -v {-20 0,0 20,0 -20,20 0}
-
-
-
-
-
-### NOT USED ###
-
-# Switch workspace
-ctrl + alt + {Left,Right}
-        bspc desktop -f {prev.local,next.local}
-
-# Switch to last opened workspace
-super + {Tab,grave}
-        bspc {node,desktop} -f last
-
-# Send focused window to another workspace
-super + {_,shift + }{1-6}
-        bspc {desktop -f,node -d} '^{1-6}'
