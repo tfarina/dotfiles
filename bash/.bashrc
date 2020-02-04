@@ -224,12 +224,6 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/src/goworkspace
 export PATH="${PATH}:$GOROOT/bin:$GOPATH/bin"
 
-# Put Plan9 into PATH.
-# Plan9 should be in the end of the PATH because there are some binaries there
-# that we don't want to use.
-# http://sigkill.dk/writings/guides/plan_9_tools.html
-export PATH="${PATH}":/usr/local/plan9/bin
-
 ### ... auto added next three lines
 ### dmd 2.067 installed using prefix: /usr/local/dmd
 export PATH=/usr/local/dmd/bin:${PATH}
