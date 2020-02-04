@@ -166,13 +166,6 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 #export PS1='\[\e[0m\]\h \w$(__git_ps1 " (%s)")\n$\[\e[0m\] '
 export PS1="${GREEN_BOLD}\u@\h${NORMAL}:${BLUE_BOLD}\w${NORMAL}${RED_BOLD}\$(__git_ps1)\n${NORMAL}$ "
 
-# Linus Torvalds bash prompt style.
-#export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-
-# Junio Hamano bash prompt style:
-#export PS1=': \h \W$(__git_ps1 "/%s"); '
-
-# Make my tools accessible everywhere.
 export PATH=~/bin:"${PATH}"
 
 ### ... auto added next three lines
