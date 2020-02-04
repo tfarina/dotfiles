@@ -219,11 +219,6 @@ export PATH=~/bin:"${PATH}"
 # Put arcanist into PATH.
 export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
 
-# Put Go tools into PATH.
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/src/goworkspace
-export PATH="${PATH}:$GOROOT/bin:$GOPATH/bin"
-
 ### ... auto added next three lines
 ### dmd 2.067 installed using prefix: /usr/local/dmd
 export PATH=/usr/local/dmd/bin:${PATH}
