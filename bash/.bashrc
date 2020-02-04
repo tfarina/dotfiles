@@ -216,9 +216,6 @@ export PATH=~/depot_tools:"${PATH}"
 # Make my tools accessible everywhere.
 export PATH=~/bin:"${PATH}"
 
-# Put arcanist into PATH.
-export PATH=~/src/repos/phabricator/arcanist/bin:"${PATH}"
-
 ### ... auto added next three lines
 ### dmd 2.067 installed using prefix: /usr/local/dmd
 export PATH=/usr/local/dmd/bin:${PATH}
