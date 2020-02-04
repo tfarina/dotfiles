@@ -234,7 +234,3 @@ export PATH="${PATH}":/usr/local/plan9/bin
 ### dmd 2.067 installed using prefix: /usr/local/dmd
 export PATH=/usr/local/dmd/bin:${PATH}
 export LD_LIBRARY_PATH=/usr/local/dmd/lib:${LD_LIBRARY_PATH}
-
-# Stripe API KEYs
-export SECRET_KEY="sk_test_HkAaLt98f403QWqM7ky2JXXI"
-export PUBLISHABLE_KEY="pk_test_56TZyxm8NIlknBGQmWJsiH19"
