@@ -167,8 +167,3 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1="${GREEN_BOLD}\u@\h${NORMAL}:${BLUE_BOLD}\w${NORMAL}${RED_BOLD}\$(__git_ps1)\n${NORMAL}$ "
 
 export PATH=~/bin:"${PATH}"
-
-### ... auto added next three lines
-### dmd 2.067 installed using prefix: /usr/local/dmd
-export PATH=/usr/local/dmd/bin:${PATH}
-export LD_LIBRARY_PATH=/usr/local/dmd/lib:${LD_LIBRARY_PATH}
