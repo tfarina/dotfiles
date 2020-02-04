@@ -172,9 +172,6 @@ export PS1="${GREEN_BOLD}\u@\h${NORMAL}:${BLUE_BOLD}\w${NORMAL}${RED_BOLD}\$(__g
 # Junio Hamano bash prompt style:
 #export PS1=': \h \W$(__git_ps1 "/%s"); '
 
-# Put depot_tools into PATH.
-export PATH=~/depot_tools:"${PATH}"
-
 # Make my tools accessible everywhere.
 export PATH=~/bin:"${PATH}"
 
