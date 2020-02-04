@@ -21,8 +21,6 @@ fi
 complete -o bashdefault -o default -o nospace -F _git g
 complete -o default -o nospace -F _git g
 
-export TERM=gnome-256color
-export EDITOR="vim"
 export PYTHONDONTWRITEBYTECODE=1
 
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
