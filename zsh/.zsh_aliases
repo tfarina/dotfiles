@@ -1,0 +1,16 @@
+alias g="git"
+alias gd="git diff"
+
+alias e='emacsclient -t -c -a ""'
+
+alias ls="ls -F --color"
+alias lld="ls -lUd */"
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"
+
+# Mac OS X 'open'.
+alias open="xdg-open"
+
+# Get my ip address.
+alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
