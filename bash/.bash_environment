@@ -1,0 +1,13 @@
+EDITOR="emacs -nw"
+PAGER="less"
+BROWSER="firefox"
+export EDITOR PAGER BROWSER
+
+LANG="C" # so sort works in ASCII order
+export LANG
+
+CC="gcc"
+CXX="clang++" # -Wno-conversion-null
+export CC CXX
+
+export PYTHONDONTWRITEBYTECODE=1
