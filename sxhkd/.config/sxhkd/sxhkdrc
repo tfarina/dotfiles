@@ -85,6 +85,10 @@ super + q
 super + shift + q
         bspc node -k
 
+# set focus to the given desktop
+super + {1-9}
+        bspc desktop -f ^{1-9}
+
 # split horizontal, split vertical, or cancel
 super + {h,v,r}
         bspc node -p {east,south,cancel}
