@@ -1,9 +1,12 @@
 alias reload="source ~/.bashrc"
 
-# Vim settings.
+# Emacs.
+alias e='emacsclient -t -c -a ""'
+
+# Vim.
 alias v="vim"
 
-# Git settings.
+# Git.
 alias g="git"
 alias gd="git diff"
 
@@ -44,6 +47,7 @@ alias release_dhcp="sudo dhclient -v -r wlan0"
 alias renew_dhcp="sudo dhclient -v wlan0"
 
 # LS alias.
+alias ls="ls -F --color"
 alias lld="ls -lUd */"
 alias ll="ls -alF"
 alias la="ls -A"
