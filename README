@@ -12,7 +12,7 @@ display manager: lightdm
 greeter: lightdm gtk greeter
 wm: bspwm
 terminal: rxvt-unicode
-terminal font: Liberation Mono
+terminal font: Inconsolata
 shell: zsh
 browser: firefox
 editor: emacs
