@@ -7,6 +7,7 @@
 
 kernel: Linux 3.2.0-29-generic-pae
 distro: Ubuntu 16.04.5 LTS i686
+resolution: 1280x800
 display server: X11
 display manager: lightdm
 greeter: lightdm gtk greeter
