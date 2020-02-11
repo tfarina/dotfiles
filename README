@@ -13,10 +13,10 @@ display server: X11
 display manager: lightdm
 greeter: lightdm gtk greeter
 wm: bspwm
+bar: polybar
+launcher: rofi
 terminal: rxvt-unicode
 terminal font: Inconsolata
 shell: zsh
-browser: firefox
 editor: emacs
-bar: polybar
-launcher: rofi
+browser: firefox
