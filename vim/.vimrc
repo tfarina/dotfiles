@@ -1,35 +1,9 @@
-set nocompatible
-
-filetype off
-
-" set the runtime path to include Vundle and initialize.
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/vim-operator-highlight'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'sgraham/alt'
-Plugin 'bling/vim-airline'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'fatih/vim-go'
-
-call vundle#end()
-filetype plugin indent on
-
-" We reset the vimrc augroup. Autocommands are added to this group throughout
-" the file.
-augroup vimrc
-  autocmd!
-augroup END
-
 " Enable syntax highlighting.
 if has("syntax")
     syntax on
 endif
 
-map <C-K> :pyf ~/chromium/src/buildtools/clang_format/script/clang-format.py<CR>
+map <C-K> :pyf ~/src/llvm/tools/clang/tools/clang-format/clang-format.py<CR>
 
 " Syntax highlight shell scripts as per POSIX, not the original Bourne shell
 " which very few use.
@@ -39,19 +13,12 @@ if filereadable("~/chromium/src/tools/vim/filetypes.vim")
   source ~/chromium/src/tools/vim/filetypes.vim
 endif
 
-if filereadable("~/src/repos/github.com/martine/ninja/misc/ninja.vim")
-  source ~/src/repos/github.com/martine/ninja/misc/ninja.vim
+if filereadable("~/src/ninja/misc/ninja.vim")
+  source ~/src/ninja/misc/ninja.vim
 endif
 
-set background=dark
-colorscheme valloric
-
-" http://vim.wikia.com/wiki/Backspace_and_delete_problems
-" Needed after upgrading to version 7.4.
-" https://groups.google.com/forum/#!topic/vim_use/nYFinm0hTjY
-set backspace=2 " make backspace work like most other apps
-"set backspace=indent,eol,start
-
+colorscheme greg
+set background=dark               " Use dark background.
 set number                        " Display line numbers.
 set numberwidth=1                 " Use only 1 column while possible.
 set colorcolumn=81
@@ -74,14 +41,8 @@ set autoindent
 set cindent
 set smartindent
 
-set laststatus=2
-
 " In Makefiles, don't expand tabs to spaces, since we need the actual tabs.
 autocmd FileType make set noexpandtab
-
-" Markdown {{{
-au BufRead,BufNewFile *.md set filetype=markdown
-" }}}
 
 " Flag problematic whitespace (trailing and spaces before tabs).
 " Note you get the same by doing let c_space_errors=1 but this rule really
@@ -130,11 +91,11 @@ function! SmartInclude()
 endfunction
 
 function! IncludeChromiumCopyrightLicense()
-  let filename = $HOME . "/chromium/.chromium_bsd_license"
+  let filename = $HOME . "/.chromium_bsd_license"
   execute ":0r " . filename
 endfunction
 
-function! IncludeHeaderGuard()
+function! IncludeGuard()
   let guard = toupper(substitute(expand('%'), '[\./]', '_', 'g'))
   let guard = substitute(guard, '[\-/]', '_', 'g')
   call append(0, '#ifndef ' . guard . '_')
@@ -142,51 +103,25 @@ function! IncludeHeaderGuard()
   call append('$', '#endif  // ' . guard . '_')
 endfunction
 
-" Highlight Class and Function names.
-function! s:HighlightFunctionsAndClasses()
-  syn match cCustomFunc      "\w\+\s*\((\)\@="
-  syn match cCustomClass     "\w\+\s*\(::\)\@="
-
-  hi def link cCustomFunc      Function
-  hi def link cCustomClass     Function
-endfunction
-
 iab #i <C-R>=SmartInclude()<CR>
 
-let mapleader=","
-
 " Insert chromium source code copyright policy at the top of the file on ,lb.
-nmap <leader>lb :call IncludeChromiumCopyrightLicense()<CR>
+nmap ,lb :call IncludeChromiumCopyrightLicense()<CR>
 
-" Insert an header guard based on the file name on ,hg.
-nmap <leader>hg :call IncludeHeaderGuard()<CR>
-
-au vimrc Syntax * call s:HighlightFunctionsAndClasses()
+" Insert an include guard based on the file name on ,i.
+nmap ,i :call IncludeGuard()<CR>
 
 " Comment selected lines on ,c in visual mode.
-vmap <leader>c :s,^,// ,<CR>:noh<CR>
+vmap ,c :s,^,// ,<CR>:noh<CR>
 " Uncomment selected lines on ,u in visual mode.
-vmap <leader>u :s,^// ,,<CR>
+vmap ,u :s,^// ,,<CR>
 
 " Map a fold to F6.
 nmap <F6> /}<CR>zf%<ESC>:nohlsearch<CR>
 
 autocmd BufNewFile,BufRead * call SetCodingStyle()
 
-au BufRead,BufNewFile,BufEnter *.go set noexpandtab ts=2 shiftwidth=2 softtabstop=2 noexpandtab cc=120
-
 augroup NewFiles
   au!
-  au BufNewFile *.h call IncludeHeaderGuard()
+  au BufNewFile *.h call IncludeGuard()
 augroup END
-
-" YouCompleteMe
-let g:ycm_global_ycm_extra_conf ='~/chromium/src/tools/vim/chromium.ycm_extra_conf.py'
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_min_num_identifier_candidate_chars = 4
-let g:ycm_filetype_specific_completion_to_disable = {'javascript': 1}
-
-nnoremap <leader>y :YcmForceCompileAndDiagnostics<cr>
-nnoremap <leader>pg :YcmCompleter GoTo<CR>
-nnoremap <leader>pd :YcmCompleter GoToDefinition<CR>
-nnoremap <leader>pc :YcmCompleter GoToDeclaration<CR>
