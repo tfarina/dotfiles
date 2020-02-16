@@ -35,9 +35,6 @@ bindsym $mod+d exec rofi -show run -terminal gnome-terminal
 # lock screen
 bindsym $mod+Ctrl+l exec i3lock -c 000000
 
-# start chrome
-bindsym $mod+g exec google-chrome
-
 # start nautilus
 bindsym $mod+n exec nautilus --no-desktop &
 
