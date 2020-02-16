@@ -124,7 +124,7 @@ bindsym $mod+Shift+C reload
 bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
-bindsym $mod+Shift+S exec /home/tfarina/.i3/i3-exit
+bindsym $mod+Shift+S exec ~/bin/i3gtkmenu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -183,4 +183,3 @@ bindsym $mod+u border none
 exec --no-startup-id gnome-sound-applet
 exec_always feh --bg-fill ~/src/wallpapers/ubuntu.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
