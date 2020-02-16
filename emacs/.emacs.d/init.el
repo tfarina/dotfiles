@@ -35,9 +35,6 @@
 (add-to-list 'auto-mode-alist '("\\.gyp$" . gyp-mode))
 (add-to-list 'auto-mode-alist '("\\.gypi$" . gyp-mode))
 
-(setq load-path (cons "~/chromium/src/tools/gyp/tools/emacs" load-path))
-(require 'gyp)
-
 (setq cc-other-file-alist
      '(("\\.cc" (".h"))
        ("\\.h"	(".cc"))))
