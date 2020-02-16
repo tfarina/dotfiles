@@ -14,7 +14,7 @@ display manager: lightdm
 greeter: lightdm gtk greeter
 wm: bspwm
 bar: polybar
-launcher: rofi
+application launcher: rofi
 terminal: rxvt-unicode
 terminal font: Inconsolata
 shell: zsh
