@@ -23,10 +23,6 @@ alias servers="sudo netstat -tulpn"
 # sudo fuser 80/tcp
 # ls -l /proc/12161/exe
 
-# Some Chromium aliases that make me more productive.
-alias crd="cd ${HOME}/chromium/src"
-alias bkd="cd ${HOME}/blink/src/third_party/WebKit"
-
 # Microsoft Lifechat LX-3000
 # http://askubuntu.com/questions/153438/unable-to-make-sound-play-in-headset
 # http://askubuntu.com/questions/341836/volume-control-microsoft-lifechat-lx-3000
