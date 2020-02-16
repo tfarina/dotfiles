@@ -15,7 +15,7 @@ greeter: lightdm gtk greeter
 wm: bspwm
 bar: polybar
 application launcher: rofi
-terminal: rxvt-unicode
+vt102 terminal emulator: rxvt-unicode
 terminal font: Inconsolata
 shell: zsh
 editor: emacs
