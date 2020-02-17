@@ -60,6 +60,7 @@ tray-transparent = true
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+modules-left = ewmh
 modules-right = date
 
 ;----------------
@@ -74,6 +75,25 @@ date = "%a"
 time = "%H:%M"
 
 label = %date% %time%
+
+[module/ewmh]
+type = internal/xworkspaces
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = true
+
+; Create click handler used to focus desktop
+; Default: true
+enable-click = false
+
+; Create scroll handlers used to cycle desktops
+; Default: true
+enable-scroll = false
 
 [module/powermenu]
 type = custom/menu
