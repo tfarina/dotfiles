@@ -135,7 +135,7 @@ cursor-scroll = ns-resize
 ;   modules-right = ipc clock
 modules-left = ubuntu ewmh
 modules-center = title
-modules-right = keyboard alsa battery date
+modules-right = keyboard alsa battery backlight date
 
 ; Restack the bar window and put it above the
 ; selected window manager's root
@@ -212,6 +212,18 @@ label-full = Fully Charged
 ;label-full-foreground = ${color.fg}
 ;label-full-background = ${color.mf}
 label-full-padding = 1
+
+[module/backlight]
+type = internal/xbacklight
+
+card = intel_backlight
+
+format = <label>
+;format-background = ${color.mf}
+;format-foreground = ${color.fg}
+format-padding = 1
+
+label = %percentage%%
 
 [module/date]
 type = internal/date
