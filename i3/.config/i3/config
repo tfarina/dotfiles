@@ -178,5 +178,5 @@ bindsym $mod+u border none
 #}
 
 exec --no-startup-id gnome-sound-applet
-exec_always feh --bg-fill ~/src/wallpapers/ubuntu.jpg
+exec_always feh --bg-fill /usr/share/backgrounds/ubuntu.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
