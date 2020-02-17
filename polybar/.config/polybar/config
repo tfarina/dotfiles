@@ -46,8 +46,8 @@ foreground = #FFFFFF
 line-size = 0
 line-color = #f00
 
-border-size = 3
-border-color = #c7ae95
+border-bottom-size = 3
+border-bottom-color = #1ABB9B
 
 ; Number of spaces to add at the beginning/end of the bar
 ; Individual side values can be defined using:
