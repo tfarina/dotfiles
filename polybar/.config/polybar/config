@@ -135,7 +135,7 @@ cursor-scroll = ns-resize
 ;   modules-right = ipc clock
 modules-left = ubuntu ewmh
 modules-center = title
-modules-right = alsa date
+modules-right = alsa battery date
 
 ; Restack the bar window and put it above the
 ; selected window manager's root
@@ -168,6 +168,35 @@ format-muted-padding = 1
 
 label-muted = "Muted"
 label-muted-foreground = ${color.red}
+
+[module/battery]
+type = internal/battery
+
+full-at = 99
+
+battery = BAT1
+adapter = ACAD
+
+poll-interval = 2
+time-format = %H:%M
+
+format-charging = <label-charging>
+;format-charging-background = ${color.mf}
+;format-charging-foreground = ${color.fg}
+format-charging-padding = 1
+
+format-discharging = <label-discharging>
+;format-discharging-background = ${color.mf}
+;format-discharging-foreground = ${color.fg}
+format-discharging-padding = 1
+
+label-charging = %percentage%%
+label-discharging = %percentage%%
+
+label-full = Fully Charged
+;label-full-foreground = ${color.fg}
+;label-full-background = ${color.mf}
+label-full-padding = 1
 
 [module/date]
 type = internal/date
