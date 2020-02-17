@@ -5,7 +5,6 @@
 . ~/.zsh_environment
 . ~/.zsh_aliases
 . ~/.zsh_functions
-. ~/.git-prompt.sh
 
 setopt no_verbose
 
@@ -15,6 +14,8 @@ autoload -U colors && colors
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
+
+eval `dircolors ~/.dircolors.d/dircolors.ansi-light`
 
 if ls --color=auto &> /dev/null
 then
@@ -51,29 +52,6 @@ unsetopt share_history
 DIRSTACKSIZE=8
 setopt autopushd pushdminus pushdsilent pushdtohome
 
-# Turn on and configure the version control system information
-autoload -Uz vcs_info
-
-precmd() {
-  vcs_info
-}
-
-zstyle ':vcs_info:*' get-revision true
-zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' formats '%u%c|%s:%b'
-zstyle ':vcs_info:*' actionformats '%c%u|%s@%a:%b'
-zstyle ':vcs_info:*' branchformat '%b@%r'
-zstyle ':vcs_info:*' unstagedstr "%{$fg_no_bold[red]%}"
-zstyle ':vcs_info:*' stagedstr "%{$fg_no_bold[yellow]%}"
-zstyle ':vcs_info:*' enable git hg
-
-# vcs-specific formatting...
-#zstyle ':vcs_info:hg*:*' hgrevformat "%r"
-#zstyle ':vcs_info:fossil:*' fsrevformat '%.5h'
-# Silly git doesn't honor branchformat
-zstyle ':vcs_info:git*:*' formats '%c%u%s:%b:%.5i'
-zstyle ':vcs_info:git*:*' actionformats '%c%u%s@%a:%b@%.5i'
-
 setopt prompt_subst
 
 #
@@ -91,5 +69,15 @@ PROMPT='
 %{$fg[white]%}on%{$reset_color%} \
 ${vcs_info_msg_0_}\
 
-%{$fg[red]%}%# %{$reset_color%}'
-#%{$fg[red]%}❯ %{$reset_color%}'
+%{$fg_bold[white]%}%# %{$reset_color%}'
+
+fpath+=$HOME/.zsh/pure
+
+autoload -U promptinit; promptinit
+
+PURE_PROMPT_SYMBOL="$"
+
+# change the color for `prompt:success`
+zstyle ':prompt:pure:prompt:*' color white
+
+prompt pure
