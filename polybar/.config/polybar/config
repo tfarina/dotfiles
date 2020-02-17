@@ -15,9 +15,18 @@
 [settings]
 screenchange-reload = true
 
+;; Global WM Settings
+
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+; Adjust the _NET_WM_STRUT_PARTIAL top value
+; Used for top aligned bars
+margin-bottom = 0
+
+; Adjust the _NET_WM_STRUT_PARTIAL bottom value
+; Used for bottom aligned bars
+margin-top = 0
+
+;; Bar Settings
 
 [bar/top]
 wm-restack = bspwm
