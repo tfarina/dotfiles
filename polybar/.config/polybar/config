@@ -32,7 +32,7 @@ radius = 0
 fixed-center = true
 
 background = #000000
-foreground = #c7ccd1
+foreground = #FFFFFF
 
 line-size = 0
 line-color = #f00
