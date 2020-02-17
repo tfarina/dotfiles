@@ -29,8 +29,6 @@ margin-top = 0
 ;; Bar Settings
 
 [bar/top]
-wm-restack = bspwm
-
 ; Use either of the following command to list available outputs:
 ; If unspecified, the application will pick the first one it finds.
 ; $ polybar -m | cut -d ':' -f 1
@@ -93,6 +91,17 @@ cursor-scroll = ns-resize
 modules-left = ewmh
 modules-center = title
 modules-right = date
+
+; Restack the bar window and put it above the
+; selected window manager's root
+;
+; Fixes the issue where the bar is being drawn
+; on top of fullscreen window's
+;
+; Currently supported WM's:
+;   bspwm
+;   i3 (requires: `override-redirect = true`)
+; wm-restack = bspwm
 
 ;----------------
 ; Modules
