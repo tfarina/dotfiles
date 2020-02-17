@@ -31,7 +31,7 @@ height = 35
 radius = 0
 fixed-center = true
 
-background = #1c2023
+background = #000000
 foreground = #c7ccd1
 
 line-size = 0
