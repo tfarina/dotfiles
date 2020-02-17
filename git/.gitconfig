@@ -44,4 +44,4 @@
 [credential]
 	helper = cache
 [http]
-	cookiefile = /home/tfarina/.gitcookies
+	cookiefile = ~/.gitcookies
