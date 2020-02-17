@@ -31,6 +31,10 @@ margin-top = 0
 [bar/top]
 wm-restack = bspwm
 
+; Use either of the following command to list available outputs:
+; If unspecified, the application will pick the first one it finds.
+; $ polybar -m | cut -d ':' -f 1
+; $ xrandr -q | grep " connected" | cut -d ' ' -f1
 monitor = ${env:MONITOR:LVDS1}
 
 width = 100%
