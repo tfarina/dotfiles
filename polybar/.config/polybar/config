@@ -135,7 +135,7 @@ cursor-scroll = ns-resize
 ;   modules-right = ipc clock
 modules-left = ubuntu ewmh
 modules-center = title
-modules-right = alsa battery date
+modules-right = keyboard alsa battery date
 
 ; Restack the bar window and put it above the
 ; selected window manager's root
@@ -151,6 +151,21 @@ modules-right = alsa battery date
 ;----------------
 ; Modules
 ;----------------
+
+[module/keyboard]
+type = internal/xkeyboard
+
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+
+format = <label-layout> <label-indicator>
+;format-background = ${color.mf}
+;format-foreground = ${color.fg}
+format-padding = 1
+
+label-layout = %layout%
+label-indicator = %name%
+;label-indicator-foreground = ${color.fg}
 
 [module/alsa]
 type = internal/alsa
