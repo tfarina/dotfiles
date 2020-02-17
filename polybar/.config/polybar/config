@@ -49,9 +49,15 @@ line-color = #f00
 border-size = 3
 border-color = #c7ae95
 
+; Number of spaces to add at the beginning/end of the bar
+; Individual side values can be defined using:
+;   padding-{left,right}
 padding-left = 1
-padding-right = 1
+padding-right = 2
 
+; Number of spaces to add before/after each module
+; Individual side values can be defined using:
+;   module-margin-{left,right}
 module-margin-left = 2
 module-margin-right = 2
 
