@@ -70,10 +70,10 @@ modules-right = date
 type = internal/date
 interval = 5
 
-date = " %a %d %b %Y"
-time = " %H:%M "
+date = "%a"
+time = "%H:%M"
 
-label = %date%%time%
+label = %date% %time%
 
 [module/powermenu]
 type = custom/menu
