@@ -137,3 +137,8 @@ super + alt + {h,j,k,l}
 # contract a window by moving one of its side inward
 super + alt + shift + {h,j,k,l}
         bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# https://github.com/jitsem/dotfiles/blob/503dedaff232533de148adeec1dd07e8cf858d00/.config/sxhkd/sxhkdrc
+# https://github.com/sammi-turner/FreeBSD-Dotfiles/blob/02342b0a457506004f93f8fde0f0e680784d3445/sxhkdrc
+# https://github.com/jbh/dotfiles/blob/00bb85d814bc7f6ecb2810b63e4c4324dc67fc00/.config/sxhkd/sxhkdrc
+# https://github.com/dixquatre/dotfiles.stow/blob/c2569306a74a421a2175efa82059602298760476/sxhkd/.config/sxhkd/cheatsheet_sxhkdrc.txt
