@@ -1,14 +1,15 @@
 # -*- mode: conf -*-
 
-# super = Windows key
-
-# make sxhkd reload its configuration files:
-super + s
-	pkill -USR1 -x sxhkd && notify-send -i key_bindings "Reloaded key bindings"
+# NOTE: The "super" key, aka "mod4", is the one that most keyboards mark
+# with the Windows logo.
 
 #
 # wm independent hotkeys
 #
+
+# make sxhkd reload its configuration files:
+super + s
+	pkill -USR1 -x sxhkd && notify-send -i key_bindings "Reloaded key bindings"
 
 # terminal emulator
 super + Return
@@ -30,21 +31,30 @@ super + l
 ctrl + alt + Delete
         poweroptionsmennu
 
-# backlight
+#
+# wm independent backlight hotkeys
 
+# increase brightness
 XF86MonBrightnessUp
 	xbacklight +5
 
+# decrease brightness
 XF86MonBrightnessDown
 	xbacklight -5
 
-# volume
+#
+# wm independent audio hotkeys
+#
+
+# increase volume
 XF86AudioRaiseVolume
 	pactl set-sink-volume 0 +5%
 
+# decrease volume
 XF86AudioLowerVolume
 	pactl set-sink-volume 0 -5%
 
+# mute audio
 XF86AudioMute
 	pactl set-sink-mute 0 toggle
 
@@ -53,29 +63,13 @@ XF86AudioMute
 # bspwm hotkeys
 #
 
-# restart window manager
-super + shift + r
-	bspc wm -r
-
-# exit window manager
+# quit bspwm
 super + shift + e
 	bspc quit
 
-# alternate between the tiled and monocle layout
-super + f
-        bspc desktop -l next
-
-# alternate beetwen floating & tiled layout
-super + space
-        bspc node -t floating
-
-# just in case you want to go back to tiled mode
-super + t
-        bspc node -t tiled
-
-# move a floating window
-super + {Left,Down,Up,Right}
-        bspc node -v {-20 0,0 20,0 -20,20 0}
+# restart bspwm
+super + shift + r
+	bspc wm -r
 
 # close process
 super + q
@@ -85,13 +79,25 @@ super + q
 super + shift + q
         bspc node -k
 
-# set focus to the given desktop
-super + {1-9}
-        bspc desktop -f ^{1-9}
+# alternate between the tiled and monocle layout
+super + f
+        bspc desktop -l next
 
-# split horizontal, split vertical, or cancel
-super + {h,v,r}
-        bspc node -p {east,south,cancel}
+#
+# bspwm state/flags
+#
+
+# set window state
+super + space
+        bspc node -t floating
+
+# just in case you want to go back to tiled layout
+super + t
+        bspc node -t tiled
+
+#
+# bspwm focus/swap
+#
 
 # focus the next node in the current desktop
 alt + Tab
@@ -100,6 +106,26 @@ alt + Tab
 # focus the previous node in the current desktop
 alt + shift + Tab
         bspc node -f prev.local
+
+# focus the given desktop
+super + {1-9}
+        bspc desktop -f '^{1-9}'
+
+#
+# bspwm preselect
+#
+
+# split horizontal, split vertical, or cancel
+super + {h,v,r}
+        bspc node -p {east,south,cancel}
+
+#
+# bspwm move/resize
+#
+
+# move a floating window
+super + {Left,Down,Up,Right}
+        bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
