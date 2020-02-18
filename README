@@ -12,6 +12,7 @@ display server: X11
 display manager: lightdm
 greeter: lightdm gtk greeter
 wm: bspwm
+hotkey daemon: sxhkd
 status bar: polybar
 application launcher: rofi
 vt102 terminal emulator: rxvt-unicode
