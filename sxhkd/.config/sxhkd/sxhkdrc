@@ -15,10 +15,6 @@ super + s
 super + Return
 	urxvt
 
-# old program launcher
-# super + d
-        #dmenu_run
-
 # program launcher (previously was @space)
 super + slash
         rofi -show run
