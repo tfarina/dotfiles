@@ -73,5 +73,5 @@ volume master {
 
 tztime local {
         #format = "%Y-%m-%d %H:%M:%S"
-        format = "%a %b %d %H:%M %p"
+        format = "%a %b %d %H:%M"
 }
