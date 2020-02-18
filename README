@@ -18,4 +18,4 @@ vt102 terminal emulator: rxvt-unicode
 terminal font: Inconsolata
 shell: zsh
 editor: emacs
-browser: firefox
+web browser: firefox
