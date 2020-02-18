@@ -97,6 +97,11 @@ super + m
 # bspwm focus/swap
 #
 
+# focus the node in the given direction
+# NOTE: super + l will conflict with lock screen
+#super + {h,j,k,l}
+#        bspc node --focus {west,south,north,east}
+
 # focus the next node in the current desktop
 alt + Tab
         bspc node -f next.local
