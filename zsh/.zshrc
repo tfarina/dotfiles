@@ -81,3 +81,6 @@ PURE_PROMPT_SYMBOL="$"
 zstyle ':prompt:pure:prompt:*' color white
 
 prompt pure
+
+# Print a greeting message when shell is started
+echo $USER@$HOST $(uname -srm) $(lsb_release -rcs)
