@@ -1,43 +1,121 @@
-URxvt*font:        xft:ubuntu mono:size=13:style=medium:antialias=true
-URxvt*boldFont:    xft:ubuntu mono:size=13:style=medium:antialias=true
+!---------------------------------------------------------------------!
+!                         Xft Font Configuration                      !
+!---------------------------------------------------------------------!
+Xft.dpi:       96 ! xdpyinfo | grep dots
+Xft.rgba:      rgb
+Xft.autohint:  0
+Xft.antialias: 1
+Xft.hinting:   1
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
 
+!! Cursor
+Xcursor.theme: Adwaita
+
+!---------------------------------------------------------------------!
+!                         URxvt Configuration                         !
+!---------------------------------------------------------------------!
+
+! Appearance
+!URxvt.depth: 0 !32
+!URxvt.geometry: 80x24
+URxvt.borderLess: False
+URxvt.externalBorder: 0
+URxvt.internalBorder: 10
+!URxvt.borderColor: #3B4252
+URxvt.cursorBlink: true
+
+!! Scrollbar
 URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.scrollBar_floating: false
+URxvt.scrollstyle: plain
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
+URxvt.secondaryScreen: true
+URxvt.secondaryScroll: false
+URxvt.saveLines: 10000
 
-! Hybrid Terminal Colours. Uses the palette from Tomorrow-Night:
-! https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night.vim
-! vim: ft=xdefaults
+! URLs
+URxvt.underlineURLs: true
+URxvt.url-select.autocopy: true
+URxvt.url-select.underline: true
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
 
-*background: #1D1F21
-*foreground: #C5C8C6
-! black
-*color0: #282A2E
-*color8: #373B41
-! red
-*color1: #A54242
-*color9: #CC6666
-! green
-*color2: #8C9440
-*color10: #B5BD68
-! yellow
-*color3: #DE935F
-*color11: #F0C674
-! blue
-*color4: #5F819D
-*color12: #81A2BE
-! magenta
-*color5: #85678F
-*color13: #B294BB
-! cyan
-*color6: #5E8D87
-*color14: #8ABEB7
-! white
-*color7: #707880
-*color15: #C5C8C6
+! Normal copy-paste keybindings without perls
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
-! Render setting for cairo -> pango -> gtk
-! http://awesome.naquadah.org/wiki/Better_Font_Rendering
-Xft.dpi:        96
-Xft.antialias:  true
-Xft.hinting:    true
-Xft.rgba:       rgb
-Xft.hintstyle:  hintslight
+! https://github.com/Valloric/dotfiles/blob/master/urxvt/Xdefaults
+
+! CAREFUL! DO NOT PUT SINGLE OR DOUBLE QUOTES IN COMMENTS!
+! You can ensure that your Xdefaults file parses correctly with:
+!   xrdb -n ~/.Xdefaults 2>&1 >/dev/null
+! If that does not show an error, you are good.
+!
+! RELOADING CONFIGURATION:
+! Changing this file will not do anything (even with urxvt restart):
+!
+! Replace .Xresources:
+!   xrdb -load ~/.Xresources
+!
+! Merge new changes:
+!   xrdb -merge ~/.Xresources
+!
+! You can query the state of loaded config with:
+!   xrdb -query
+
+!https://github.com/Lixxia/dotfiles/blob/master/.Xresources
+!URxvt.font:            xft:Monospace:size=10
+!URxvt.font:            xft:Iosevka:normal:pixelsize=16
+!URxvt.font:            xft:Iosevka:style=Medium:pixelsize=16
+!URxvt.boldFont:        xft:Iosevka:bold:pixelsize=16
+!URxvt.italicFont:      xft:Iosevka:italic::pixelsize=16
+!URxvt.boldItalicFont:  xft:Iosevka:italic::pixelsize=16
+!URxvt.font:            xft:DroidSansMono:style=Regular:size=10
+!URxvt.font:            xft:Meslo LG M DZ:style=Regular:pixelsize=13
+!URxvt.font:            xft:JetBrains Mono:style=Regular:pixelsize=13
+!URxvt.font:            xft:FiraCode:style=Regular:pixelsize=13
+!URxvt.font:            xft:Hack:style=Regular:pixelsize=13
+!URxvt.font:            xft:SF Mono:style=Regular:pixelsize=12
+!URxvt.font:            xft:Bitstream Vera Sans Mono:style=Regular:size=10
+!URxvt.boldFont:        xft:Bitstream Vera Sans Mono:style=Bold:size=10
+!URxvt.italicFont:      xft:Bitstream Vera Sans Mono:style=Italic:size=10
+!URxvt.bolditalicFont:  xft:Bitstream Vera Sans Mono:style=BoldItalic:size=10
+!URxvt*font:             xft:Liberation Mono:style=Regular:pixelsize=12
+!URxvt*boldFont:         xft:Liberation Mono:style=Bold:pixelsize=12
+!URxvt*italicFont:      xft:Liberation Mono:style=Italic:pixelsize=12
+!URxvt*bolditalicFont:  xft:Liberation Mono:style=BoldItalic:pixelsize=12
+
+URxvt.font:             xft:SF Mono:style=Regular:size=10
+URxvt.boldFont:         xft:Inconsolata:style=Bold:size=11
+URxvt.letterSpace: -1 !-7
+URxvt.lineSpace: 0
+
+!#include ".Xresources.d/monokai.dark"
+!#include ".Xresources.d/monokai.light"
+!#include ".Xresources.d/google.dark"
+!#include ".Xresources.d/solarized.light"
+!#include ".Xresources.d/solarized.dark"
+!#include ".Xresources.d/mocha.dark"
+!#include ".Xresources.d/default.dark"
+!#include ".Xresources.d/bespin.dark"
+!#include ".Xresources.d/trim-yer-beard"
+!#include ".Xresources.d/ashes.dark"
+!#include ".Xresources.d/default.dark"
+!#include ".Xresources.d/canvased"
+!#include ".Xresources.d/eqie6"
+!#include ".Xresources.d/ocean.dark"
+!#include ".Xresources.d/something.dark"
+!#include ".Xresources.d/atelierdune.dark"
+!#include ".Xresources.d/atelierforest.dark"
+!#include ".Xresources.d/themes/base16-3024"
+
+! Load color scheme
+#include ".Xresources.d/themes/default"
+
+! NOTE: Run `xrdb -merge ~/.Xresources` after modifying this file.
