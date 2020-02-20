@@ -20,3 +20,10 @@ terminal font: Inconsolata
 shell: zsh
 editor: emacs
 web browser: firefox
+
+RICE definition (by https://github.com/neeasade/):
+
+A potential backronym for rice is Race Inspired Cosmetic Enhancements,
+supposedly a term taken from the car mod community to refer to changes/mods
+that were done mostly for aesthetic reasons (i.e., performance was not
+affected or went down).
