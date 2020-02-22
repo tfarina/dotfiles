@@ -98,6 +98,10 @@ super + m
 #
 
 # focus the node in the given direction
+super + {a,s,w,d}
+        bspc node --focus {west,south,north,east}
+
+# focus the node in the given direction
 # NOTE: super + l will conflict with lock screen
 #super + {h,j,k,l}
 #        bspc node --focus {west,south,north,east}
