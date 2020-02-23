@@ -29,14 +29,15 @@ ctrl + alt + Delete
 
 #
 # wm independent backlight hotkeys
+#
 
 # increase brightness
 XF86MonBrightnessUp
-	xbacklight +5
+	light -A 5
 
 # decrease brightness
 XF86MonBrightnessDown
-	xbacklight -5
+	light -U 5
 
 #
 # wm independent audio hotkeys
