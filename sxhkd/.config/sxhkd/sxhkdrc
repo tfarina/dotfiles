@@ -15,7 +15,7 @@ super + Escape
 super + Return
 	urxvt
 
-# program launcher (previously was @space)
+# application launcher
 super + slash
         rofi -show run
 
@@ -123,9 +123,17 @@ super + {1-9}
 # bspwm preselect
 #
 
-# split horizontal, split vertical, or cancel
-super + {h,v,r}
-        bspc node -p {east,south,cancel}
+# split window horizontally
+super + h
+        bspc node -p south
+
+# split window vertically
+super + v
+        bspc node -p east
+
+# cancel window split
+super + r
+        bspc node -p cancel
 
 #
 # bspwm move/resize
