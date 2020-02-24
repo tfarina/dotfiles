@@ -1,0 +1,11 @@
+# Bash options.
+# https://www.gnu.org/software/bash/manual/bashref.html#The-Shopt-Builtin
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Append to the history file rather then overwriting it.
+shopt -s histappend
+
+# Check the window size after each command and, if necessary,
+# update the values of `LINES` and `COLUMNS`.
+shopt -s checkwinsize

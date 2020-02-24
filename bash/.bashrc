@@ -13,6 +13,10 @@ if [ -f ~/.bash_functions ]; then
   source ~/.bash_functions
 fi
 
+if [ -f ~/.bash_options ]; then
+  source ~/.bash_options
+fi
+
 if [ -f ~/.git-completion.bash ]; then
   source ~/.git-completion.bash
 fi
@@ -27,13 +31,6 @@ export PATH=~/bin:"${PATH}"
 # Make the autocompletion work with the 'g' alias.
 complete -o bashdefault -o default -o nospace -F _git g
 complete -o default -o nospace -F _git g
-
-# Append to the history file, don't overwrite it.
-shopt -s histappend
-
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
