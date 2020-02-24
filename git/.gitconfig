@@ -1,8 +1,10 @@
 [user]
 	name = Thiago Farina
 	email = tfransosi@gmail.com
+
 [core]
 	deltaBaseCacheLimit = 1G
+
 [alias]
 	co  = checkout
 	br  = branch
@@ -22,26 +24,26 @@
         cam = commit -a --amend
         camn = commit -a --amend --no-edit
         cq = cl set-commit
+
 [color]
 	branch      = auto
 	diff        = auto
 	interactive = auto
 	status      = auto
 	ui          = auto
+
 [sendemail]
-#	smtpserver = /usr/bin/msmtp
 	suppresscc = self
-        #tocmd = ~/scripts/to.sh
-        #cccmd = ~/scripts/cc.sh
         smtpEncryption = tls
         smtpServer = smtp.gmail.com
         smtpUser = tfransosi@gmail.com
         smtpServerPort = 587
+
 [diff]
 	renames = copies
-[grep]
-#lineNumber = true
+
 [credential]
 	helper = cache
+
 [http]
 	cookiefile = ~/.gitcookies
