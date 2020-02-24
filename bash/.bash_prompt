@@ -20,7 +20,11 @@ export PS1="$GREEN_BOLD\u@\h:$BLUE_BOLD$DIR$YELLOW_BOLD\$(__git_ps1)\n$NORMAL$PR
 # http://seanponeil.com/blog/2012/09/13/sexy-solarized-bash-prompt/
 
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]]  && infocmp
-   gnome-256color >/dev/null 2>&1; then TERM=gnome-256color; fi
+    gnome-256color >/dev/null 2>&1;
+then
+    TERM=gnome-256color;
+fi
+
 if tput setaf 1 &> /dev/null; then
     tput sgr0
     if [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
