@@ -1,7 +1,3 @@
-[user]
-	name = Thiago Farina
-	email = tfransosi@gmail.com
-
 [core]
 	deltaBaseCacheLimit = 1G
 
@@ -40,3 +36,25 @@
 
 [http]
 	cookiefile = ~/.gitcookies
+
+[user]
+        # Do not guess the user's identity.
+        # https://github.com/git/git/blob/90f7b16b3adc78d4bbabbd426fb69aa78c714f71/Documentation/config.txt#L2847-L2855
+
+        useConfigOnly = true
+
+        # [!] DO NOT store sensitive information such as the Git user
+        # credentials (`name` / `email`), or things such as the `signingkey`
+	# in this file, add them in `~/.gitconfig.local`!
+	#
+	# See also: https://github.com/alrra/dotfiles#gitconfiglocal
+
+[include]
+        # Load local configs.
+        # https://git-scm.com/docs/git-config#_includes
+	#
+	# [!] The following needs to remain at the end of this file in
+	#     order to allow any of the above configs to be overwritten
+	#     by the local ones
+
+        path = ~/.gitconfig.local
