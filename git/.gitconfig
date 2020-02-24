@@ -32,13 +32,6 @@
 	status      = auto
 	ui          = auto
 
-[sendemail]
-	suppresscc = self
-        smtpEncryption = tls
-        smtpServer = smtp.gmail.com
-        smtpUser = tfransosi@gmail.com
-        smtpServerPort = 587
-
 [diff]
 	renames = copies
 
