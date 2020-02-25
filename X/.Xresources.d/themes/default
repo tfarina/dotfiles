@@ -1,3 +1,4 @@
+! SEE https://github.com/bvanhai/dotfiles/blob/master/.colors.symlink/steel.xr
 ! Colors
 *.background: #000000
 *.foreground: #B2B2B2
@@ -19,7 +20,8 @@
 
 ! yellow
 !*.color3:  #B26818
-*.color3:  #F3F99D
+!*.color3:  #F3F99D
+*.color3:  #FFFF00
 *.color11: #FFFF54
 
 ! blue
