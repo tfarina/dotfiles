@@ -30,7 +30,8 @@
 *.color12: #5454FF
 
 ! purple
-*.color5:  #B218B2
+!*.color5:  #B218B2
+*.color5:  #FF00FF
 *.color13: #FF54FF
 
 ! cyan
