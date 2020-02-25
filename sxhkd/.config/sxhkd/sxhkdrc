@@ -77,7 +77,7 @@ super + shift + q
         bspc node -k
 
 #
-# bspwm node layout state and flags
+# bspwm node state and flags
 #
 
 super + t
@@ -89,8 +89,9 @@ super + space
 super + f
         bspc node -t ~fullscreen
 
-# Toggle monocle layout (maximise focused node).  If you use `-l
-# monocle` you lose the toggle functionality.
+# toggle between the tiled and monocle layout (maximise focused
+# node).
+# if you use `-l monocle` you lose the toggle functionality.
 super + m
         bspc desktop -l next
 
