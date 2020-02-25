@@ -135,7 +135,7 @@ cursor-scroll = ns-resize
 ;   modules-right = ipc clock
 modules-left = ubuntu bspwm
 modules-center = title
-modules-right = keyboard alsa battery backlight date
+modules-right = keyboard_i keyboard alsa battery backlight date
 
 ; Restack the bar window and put it above the
 ; selected window manager's root
@@ -152,13 +152,24 @@ modules-right = keyboard alsa battery backlight date
 ; Modules
 ;----------------
 
+[module/keyboard_i]
+type = internal/xkeyboard
+
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+
+format = 
+;format-background = ${color.blue-gray}
+;format-foreground = ${color.fg}
+;format-padding = 1
+
 [module/keyboard]
 type = internal/xkeyboard
 
 blacklist-0 = num lock
 blacklist-1 = scroll lock
 
-format = XKB <label-layout> <label-indicator>
+format = <label-layout> <label-indicator>
 ;format-background = ${color.mf}
 ;format-foreground = ${color.fg}
 format-padding = 1
