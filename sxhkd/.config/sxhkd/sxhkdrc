@@ -124,9 +124,17 @@ super + {1-9}
 # bspwm preselect
 #
 
+# preselect the split direction: left
+super + alt + Left
+        bspc node -p west
+
 # preselect the split direction: horizontally
 super + alt + Down
         bspc node -p south
+
+# preselect the split direction: top
+super + alt + Up
+        bspc node -p north
 
 # preselect the split direction: vertically
 super + alt + Right
