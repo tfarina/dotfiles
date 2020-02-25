@@ -124,15 +124,15 @@ super + {1-9}
 #
 
 # split window horizontally
-super + h
+super + alt + Down
         bspc node -p south
 
 # split window vertically
-super + v
+super + alt + Right
         bspc node -p east
 
 # cancel window split
-super + r
+super + alt + space
         bspc node -p cancel
 
 #
