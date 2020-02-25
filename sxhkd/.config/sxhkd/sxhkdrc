@@ -123,15 +123,15 @@ super + {1-9}
 # bspwm preselect
 #
 
-# split window horizontally
+# preselect the split direction: horizontally
 super + alt + Down
         bspc node -p south
 
-# split window vertically
+# preselect the split direction: vertically
 super + alt + Right
         bspc node -p east
 
-# cancel window split
+# cancel the preselection
 super + alt + space
         bspc node -p cancel
 
