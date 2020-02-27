@@ -1,0 +1,38 @@
+*background:  #16161B
+*foreground:  #FFFFFF
+*cursorColor: #C0C5CE
+
+! black
+*color0:      #16161B
+*color8:      #686868
+
+! red
+*color1:      #FF5C57
+*color9:      #FF5C57
+
+! green
+*color2:      #00DA90
+*color10:     #00DA90
+
+! yellow
+*color3:      #F8FB3C
+*color11:     #F8FB3C
+
+! blue
+*color4:      #009CE6
+*color12:     #009CE6
+
+! magenta
+*color5:      #EC26CD
+*color13:     #EC26CD
+
+! cyan
+*color6:      #13C7FE
+*color14:     #13C7FE
+
+! white
+*color7:      #F1F1F0
+*color15:     #FFFFFF
+
+! https://github.com/tylerreckart/hyperblue
+! https://github.com/LeonGr/urxvt-snazzy
