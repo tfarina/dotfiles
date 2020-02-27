@@ -76,4 +76,12 @@ else
     RESET="\033[m"
 fi
 
-PS1="$CYAN\u \[$BASE0\]at $GREEN\h \[$BASE0\]in $BLUE\w\[$YELLOW\]\$(__git_ps1) \[$BASE0\]\n$ $RESET"
+PS1="$CYAN\u "; # username
+PS1+="\[$BASE0\]at ";
+PS1+="$GREEN\h "; # hostname
+PS1+="\[$BASE0\]in ";
+PS1+="$BLUE\w"; # working directory full path
+PS1+="\[$YELLOW\]\$(__git_ps1) "; # git repository details
+PS1+="\[$BASE0\]\n";
+PS1+="$ $RESET"; # `$` (and reset color)
+export PS1;
