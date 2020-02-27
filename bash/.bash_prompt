@@ -68,5 +68,5 @@ PS1+="\[${BASE3}\] in ";
 PS1+="$BLUE\w"; # working directory full path
 PS1+="\[$YELLOW\]\$(__git_ps1) "; # git repository details
 PS1+="\n";
-PS1+="\[${BASE3}\]\$ $RESET"; # `$` (and reset color)
+PS1+="\[${BASE3}\]\$ \[${RESET}\]"; # `$` (and reset color)
 export PS1;
