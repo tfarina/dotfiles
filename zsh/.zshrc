@@ -15,8 +15,6 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
-eval `dircolors ~/.dircolors.d/dircolors.ansi-light`
-
 if ls --color=auto &> /dev/null
 then
     # GNU ls
