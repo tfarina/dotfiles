@@ -68,12 +68,12 @@ fi
 # USER at MACHINE in DIRECTORY (BRANCH STATE)
 # $ COMMAND
 #
-PS1="$CYAN\u"; # username
+PS1="\[${CYAN}\]\u"; # username
 PS1+="\[${WHITE}\] at ";
-PS1+="$GREEN\h"; # hostname
+PS1+="\[${GREEN}\]\h"; # hostname
 PS1+="\[${WHITE}\] in ";
-PS1+="$BLUE\w"; # working directory full path
-PS1+="\[$YELLOW\]\$(__git_ps1) "; # git repository details
+PS1+="\[${BLUE}\]\w"; # working directory full path
+PS1+="\[${YELLOW}\]\$(__git_ps1) "; # git repository details
 PS1+="\n";
 PS1+="\[${WHITE}\]\$ \[${RESET}\]"; # `$` (and reset color)
 export PS1;
