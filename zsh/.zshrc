@@ -41,9 +41,9 @@ HISTSIZE=1000000
 #
 SAVEHIST=1000000
 
-setopt EXTENDED_HISTORY
-setopt INC_APPEND_HISTORY
-setopt HIST_IGNORE_DUPS
+setopt extended_history
+setopt inc_append_history
+setopt hist_ignore_dups
 
 unsetopt share_history
 
