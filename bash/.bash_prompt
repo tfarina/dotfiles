@@ -12,6 +12,8 @@ fi
 
 if tput setaf 1 &> /dev/null; then
     tput sgr0
+    BOLD=$(tput bold)
+    RESET=$(tput sgr0)
     if [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
 	BASE03=$(tput setaf 234)
 	BASE02=$(tput setaf 235)
@@ -47,9 +49,9 @@ if tput setaf 1 &> /dev/null; then
 	CYAN=$(tput setaf 6)
 	GREEN=$(tput setaf 2)
     fi
-    BOLD=$(tput bold)
-    RESET=$(tput sgr0)
 else
+    BOLD=""
+    RESET="\033[m"
     # Linux console colors. I don't have the energy
     # to figure out the Solarized values
     MAGENTA="\033[1;31m"
@@ -57,14 +59,12 @@ else
     GREEN="\033[1;32m"
     PURPLE="\033[1;35m"
     WHITE="\033[1;37m"
-    BOLD=""
-    RESET="\033[m"
 fi
 
-PS1="$CYAN\u "; # username
-PS1+="\[$BASE0\]at ";
-PS1+="$GREEN\h "; # hostname
-PS1+="\[$BASE0\]in ";
+PS1="$CYAN\u"; # username
+PS1+="\[${BASE3}\] at ";
+PS1+="$GREEN\h"; # hostname
+PS1+="\[${BASE3}\] in ";
 PS1+="$BLUE\w"; # working directory full path
 PS1+="\[$YELLOW\]\$(__git_ps1) "; # git repository details
 PS1+="\[$BASE0\]\n";
