@@ -6,10 +6,8 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # Screenshot: http://img.gf3.ca/d54942f474256ec26a49893681c49b5a.png
 # http://seanponeil.com/blog/2012/09/13/sexy-solarized-bash-prompt/
 
-if [[ $COLORTERM = gnome-* && $TERM = xterm ]]  && infocmp
-    gnome-256color >/dev/null 2>&1;
-then
-    TERM=gnome-256color;
+if [[ $COLORTERM = gnome-* && $TERM = xterm ]]  && infocmp gnome-256color >/dev/null 2>&1; then
+  export TERM=gnome-256color;
 fi
 
 if tput setaf 1 &> /dev/null; then
