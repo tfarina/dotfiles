@@ -22,7 +22,7 @@ if tput setaf 1 &> /dev/null; then
 	BASE0=$(tput setaf 244)
 	BASE1=$(tput setaf 245)
 	BASE2=$(tput setaf 254)
-	BASE3=$(tput setaf 230)
+	WHITE=$(tput setaf 230)
 	YELLOW=$(tput setaf 136)
 	ORANGE=$(tput setaf 166)
 	RED=$(tput setaf 160)
@@ -39,7 +39,7 @@ if tput setaf 1 &> /dev/null; then
 	BASE0=$(tput setaf 12)
 	BASE1=$(tput setaf 14)
 	BASE2=$(tput setaf 7)
-	BASE3=$(tput setaf 15)
+	WHITE=$(tput setaf 15)
 	YELLOW=$(tput setaf 3)
 	ORANGE=$(tput setaf 9)
 	RED=$(tput setaf 1)
@@ -69,11 +69,11 @@ fi
 # $ COMMAND
 #
 PS1="$CYAN\u"; # username
-PS1+="\[${BASE3}\] at ";
+PS1+="\[${WHITE}\] at ";
 PS1+="$GREEN\h"; # hostname
-PS1+="\[${BASE3}\] in ";
+PS1+="\[${WHITE}\] in ";
 PS1+="$BLUE\w"; # working directory full path
 PS1+="\[$YELLOW\]\$(__git_ps1) "; # git repository details
 PS1+="\n";
-PS1+="\[${BASE3}\]\$ \[${RESET}\]"; # `$` (and reset color)
+PS1+="\[${WHITE}\]\$ \[${RESET}\]"; # `$` (and reset color)
 export PS1;
