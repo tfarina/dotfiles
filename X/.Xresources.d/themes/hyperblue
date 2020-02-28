@@ -1,3 +1,21 @@
+#define base00 ! Black
+#define base01 !
+#define base02 !
+#define base03 !
+#define base04 !
+#define base05 !
+#define base06 !
+#define base07 !
+#define base08 ! Red
+#define base09 !
+#define base0A ! Yellow
+#define base0B ! Green
+#define base0C ! Cyan
+#define base0D ! Blue
+#define base0E ! Magenta
+#define base0F
+
+! special
 *background:  #16161B
 *foreground:  #FFFFFF
 *cursorColor: #C0C5CE
@@ -19,8 +37,8 @@
 *color11:     #F8FB3C
 
 ! blue
-*color4:      #009CE6
-*color12:     #009CE6
+*color4:      #57C7FF
+*color12:     #57C7FF
 
 ! magenta
 *color5:      #EC26CD
