@@ -5,8 +5,8 @@
  \__,_| \___/  \__||_|  |_||_| \___||___/
 
 host: Gateway MT6707
-kernel: Linux 3.2.0-29-generic-pae
-distro: Ubuntu 16.04.5 LTS i686
+kernel: Linux 3.2.0-29-generic-pae i686
+distro: Ubuntu 16.04.5 LTS (Xenial Xerus)
 resolution: 1280x800
 display server: X11
 display manager: lightdm
