@@ -124,6 +124,10 @@ alt + shift + Tab
 super + {1-9}
         bspc desktop -f '^{1-9}'
 
+# send focused node to the given desktop
+super + shift + {1-9}
+        bspc node --to-desktop '^{1-9}'
+
 #
 # bspwm preselect
 #
