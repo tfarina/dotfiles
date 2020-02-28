@@ -8,7 +8,7 @@ host: Gateway MT6707
 kernel: Linux 3.2.0-29-generic-pae i686
 distro: Ubuntu 16.04.5 LTS (Xenial Xerus)
 resolution: 1280x800
-display server: X11
+display: x11 server: X.Org
 display manager: lightdm
 greeter: lightdm gtk greeter
 wm: bspwm
