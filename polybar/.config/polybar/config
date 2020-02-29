@@ -238,7 +238,7 @@ format-padding = 1
 type = internal/date
 interval = 5
 
-date = "%a"
+date = " %a"
 time = "%H:%M"
 
 label = %date% %time%
