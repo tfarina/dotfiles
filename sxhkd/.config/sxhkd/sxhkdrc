@@ -68,12 +68,12 @@ super + shift + q
 super + shift + r
 	bspc wm -r
 
-# close process
-super + q
+# close window
+super + x
 	bspc node -c
 
-# kill process
-super + shift + q
+# kill window
+super + shift + x
         bspc node -k
 
 #
