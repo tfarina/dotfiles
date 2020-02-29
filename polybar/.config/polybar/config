@@ -226,15 +226,13 @@ label-full-padding = 1
 
 [module/backlight]
 type = internal/xbacklight
-
 card = intel_backlight
 
-format = LGT <label>
+label = BLT %percentage%%
+format = <label>
 ;format-background = ${color.mf}
 ;format-foreground = ${color.fg}
 format-padding = 1
-
-label = %percentage%%
 
 [module/date]
 type = internal/date
