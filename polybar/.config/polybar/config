@@ -219,7 +219,7 @@ format-discharging-padding = 1
 label-charging = %percentage%%
 label-discharging = %percentage%%
 
-label-full = Fully Charged
+label-full = BAT 100%
 ;label-full-foreground = ${color.fg}
 ;label-full-background = ${color.mf}
 label-full-padding = 1
