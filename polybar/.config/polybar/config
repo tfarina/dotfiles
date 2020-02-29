@@ -279,30 +279,6 @@ content-padding = 1
 
 click-left = ~/bin/ubuntu-menu
 
-[module/powermenu]
-type = custom/menu
-format = <label-toggle> <menu>
-format-foreground = ${colors.foreground}
-format-padding = 0
-format-margin = 0
-menu-0-0 = " Shutdown"
-menu-0-0-exec = shutdown now
-menu-0-0-padding = 3
-menu-0-0-background = ${colors.color1}
-menu-0-0-foreground = ${colors.background}
-menu-0-1 = " Reboot"
-menu-0-1-exec = reboot
-menu-0-1-padding = 3
-menu-0-1-background = ${colors.color3}
-menu-0-1-foreground = ${colors.background}
-menu-0-2 = "× Back"
-menu-0-2-padding = 3
-menu-0-2-background = ${colors.background}
-menu-0-2-foreground = ${colors.foreground}
-label-open = 
-label-open-padding = 3
-label-close =
-
 [module/bspwm]
 type = internal/bspwm
 
