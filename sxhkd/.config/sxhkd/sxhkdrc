@@ -23,10 +23,6 @@ super + slash
 super + l
         i3lock -c 000000
 
-# invoke the session management menu (log out, lock, reboot, shutdown)
-ctrl + alt + Delete
-        poweroptionsmennu
-
 #
 # wm independent backlight hotkeys
 #
@@ -54,7 +50,6 @@ XF86AudioLowerVolume
 # mute audio
 XF86AudioMute
 	pactl set-sink-mute 0 toggle
-
 
 #
 # bspwm hotkeys
