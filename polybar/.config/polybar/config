@@ -135,7 +135,7 @@ cursor-scroll = ns-resize
 ;   modules-right = ipc clock
 modules-left = ubuntu bspwm
 modules-center = title
-modules-right = keyboard_i keyboard alsa battery backlight date
+modules-right = keyboard_i keyboard alsa battery backlight date_i date
 
 ; Restack the bar window and put it above the
 ; selected window manager's root
@@ -234,14 +234,33 @@ format = <label>
 ;format-foreground = ${color.fg}
 format-padding = 1
 
+[module/date_i]
+type = internal/date
+interval = 5
+
+time = ""
+time-alt = ""
+
+format = <label>
+;format-background = ${color.amber}
+;format-foreground = ${color.fg}
+format-padding = 1
+
+label = %time%
+
 [module/date]
 type = internal/date
 interval = 5
 
-date = " %a"
-time = "%H:%M"
+time = "%I:%M %p"
+time-alt = "%Y-%m-%d"
 
-label = %date% %time%
+format = <label>
+;format-background = ${color.mf}
+;format-foreground = ${color.fg}
+;format-padding = 1
+
+label = %time%
 
 [module/ewmh]
 type = internal/xworkspaces
