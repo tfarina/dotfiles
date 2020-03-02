@@ -76,7 +76,7 @@ autoload -U promptinit; promptinit
 #PURE_PROMPT_SYMBOL="$"
 
 # change the color for `prompt:success`
-#zstyle ':prompt:pure:prompt:*' color white
+zstyle ':prompt:pure:prompt:success' color green
 
 prompt pure
 
