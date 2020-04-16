@@ -79,6 +79,3 @@ autoload -U promptinit; promptinit
 zstyle ':prompt:pure:prompt:success' color green
 
 prompt pure
-
-# Print a greeting message when shell is started
-echo $USER@$HOST $(uname -srm) $(lsb_release -rcs)
