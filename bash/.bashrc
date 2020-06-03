@@ -117,27 +117,27 @@ if ! shopt -oq posix; then
 fi
 
 if [ -f ~/.bash_environment ]; then
-  source ~/.bash_environment
+    . ~/.bash_environment
 fi
 
 if [ -f ~/.bash_functions ]; then
-  source ~/.bash_functions
+    . ~/.bash_functions
 fi
 
 if [ -f ~/.bash_options ]; then
-  source ~/.bash_options
+    . ~/.bash_options
 fi
 
 if [ -f ~/.bash_prompt ]; then
-  source ~/.bash_prompt
+    . ~/.bash_prompt
 fi
 
 if [ -f ~/.git-completion.bash ]; then
-  source ~/.git-completion.bash
+    . ~/.git-completion.bash
 fi
 
 if [ -f ~/.git-prompt.sh ]; then
-  source ~/.git-prompt.sh
+    . ~/.git-prompt.sh
 fi
 
 # Put scripts (mostly) in PATH.
