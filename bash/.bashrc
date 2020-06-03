@@ -8,37 +8,6 @@ case $- in
       *) return;;
 esac
 
-if [ -f ~/.bash_environment ]; then
-  source ~/.bash_environment
-fi
-
-if [ -f ~/.bash_aliases ]; then
-  source ~/.bash_aliases
-fi
-
-if [ -f ~/.bash_functions ]; then
-  source ~/.bash_functions
-fi
-
-if [ -f ~/.bash_options ]; then
-  source ~/.bash_options
-fi
-
-if [ -f ~/.git-completion.bash ]; then
-  source ~/.git-completion.bash
-fi
-
-if [ -f ~/.git-prompt.sh ]; then
-  source ~/.git-prompt.sh
-fi
-
-# Put scripts (mostly) in PATH.
-export PATH=~/bin:"${PATH}"
-
-# Make the autocompletion work with the 'g' alias.
-complete -o bashdefault -o default -o nospace -F _git g
-complete -o default -o nospace -F _git g
-
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
@@ -119,6 +88,37 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+if [ -f ~/.bash_environment ]; then
+  source ~/.bash_environment
+fi
+
+if [ -f ~/.bash_aliases ]; then
+  source ~/.bash_aliases
+fi
+
+if [ -f ~/.bash_functions ]; then
+  source ~/.bash_functions
+fi
+
+if [ -f ~/.bash_options ]; then
+  source ~/.bash_options
+fi
+
 if [ -f ~/.bash_prompt ]; then
   source ~/.bash_prompt
 fi
+
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
+
+if [ -f ~/.git-prompt.sh ]; then
+  source ~/.git-prompt.sh
+fi
+
+# Put scripts (mostly) in PATH.
+export PATH=~/bin:"${PATH}"
+
+# Make the autocompletion work with the 'g' alias.
+complete -o bashdefault -o default -o nospace -F _git g
+complete -o default -o nospace -F _git g
