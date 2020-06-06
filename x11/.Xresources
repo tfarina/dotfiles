@@ -82,4 +82,3 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
 URxvt.font:             xft:SF Mono:style=Regular:size=10
 URxvt.boldFont:         xft:Inconsolata:style=Bold:size=11
-URxvt.letterSpace: -1 !-7
