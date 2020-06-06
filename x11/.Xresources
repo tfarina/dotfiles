@@ -13,6 +13,11 @@ Xft.lcdfilter: lcddefault
 !                         URxvt Configuration                         !
 !---------------------------------------------------------------------!
 
+! NOTE: Run `xrdb -merge ~/.Xresources` after modifying this file.
+
+! Load color scheme
+#include ".Xresources.d/themes/default"
+
 ! Appearance
 !URxvt.depth: 0 !32
 !URxvt.geometry: 80x24
@@ -92,8 +97,3 @@ URxvt.font:             xft:SF Mono:style=Regular:size=10
 URxvt.boldFont:         xft:Inconsolata:style=Bold:size=11
 URxvt.letterSpace: -1 !-7
 URxvt.lineSpace: 0
-
-! Load color scheme
-#include ".Xresources.d/themes/default"
-
-! NOTE: Run `xrdb -merge ~/.Xresources` after modifying this file.
