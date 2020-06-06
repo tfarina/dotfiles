@@ -19,15 +19,12 @@ Xft.lcdfilter: lcddefault
 #include ".Xresources.d/themes/default"
 
 ! Appearance
-!URxvt.depth: 0 !32
-!URxvt.geometry: 80x24
 URxvt.borderLess: False
 URxvt.externalBorder: 0
 URxvt.internalBorder: 10
-!URxvt.borderColor: #3B4252
 URxvt.cursorBlink: true
 
-!! Scrollbar
+! Scrollbar
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.scrollBar_floating: false
