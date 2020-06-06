@@ -33,7 +33,6 @@ URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
 URxvt.secondaryScroll: false
-URxvt.saveLines: 10000
 
 ! URLs
 URxvt.underlineURLs: true
