@@ -35,7 +35,6 @@ URxvt.scrollTtyKeypress: true
 URxvt.secondaryScroll: false
 
 ! URLs
-URxvt.underlineURLs: true
 URxvt.url-select.autocopy: true
 URxvt.url-select.underline: true
 URxvt.url-launcher: /usr/bin/firefox
