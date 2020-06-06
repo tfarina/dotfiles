@@ -2,7 +2,7 @@
 ! Colors
 *.background: #000000
 *.foreground: #B2B2B2
-*cursorColor: #c0c5ce
+*.cursorColor: #c0c5ce
 
 !*colorUL:       #18B218
 
