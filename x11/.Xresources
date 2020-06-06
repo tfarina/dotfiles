@@ -32,7 +32,6 @@ URxvt.scrollstyle: plain
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
-URxvt.secondaryScroll: false
 
 ! URLs
 URxvt.url-select.autocopy: true
