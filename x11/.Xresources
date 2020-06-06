@@ -32,7 +32,6 @@ URxvt.scrollstyle: plain
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
-URxvt.secondaryScreen: true
 URxvt.secondaryScroll: false
 URxvt.saveLines: 10000
 
