@@ -37,9 +37,6 @@ Xft.lcdfilter: lcddefault
 ! Load color scheme
 #include ".Xresources.d/themes/default"
 
-! Appearance
-URxvt.cursorBlink: true
-
 ! Scrollbar
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
