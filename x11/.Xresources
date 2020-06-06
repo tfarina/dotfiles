@@ -15,6 +15,25 @@ Xft.lcdfilter: lcddefault
 
 ! NOTE: Run `xrdb -merge ~/.Xresources` after modifying this file.
 
+! https://github.com/Valloric/dotfiles/blob/master/urxvt/Xdefaults
+
+! CAREFUL! DO NOT PUT SINGLE OR DOUBLE QUOTES IN COMMENTS!
+! You can ensure that your Xdefaults file parses correctly with:
+!   xrdb -n ~/.Xdefaults 2>&1 >/dev/null
+! If that does not show an error, you are good.
+!
+! RELOADING CONFIGURATION:
+! Changing this file will not do anything (even with urxvt restart):
+!
+! Replace .Xresources:
+!   xrdb -load ~/.Xresources
+!
+! Merge new changes:
+!   xrdb -merge ~/.Xresources
+!
+! You can query the state of loaded config with:
+!   xrdb -query
+
 ! Load color scheme
 #include ".Xresources.d/themes/default"
 
@@ -44,25 +63,6 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-
-! https://github.com/Valloric/dotfiles/blob/master/urxvt/Xdefaults
-
-! CAREFUL! DO NOT PUT SINGLE OR DOUBLE QUOTES IN COMMENTS!
-! You can ensure that your Xdefaults file parses correctly with:
-!   xrdb -n ~/.Xdefaults 2>&1 >/dev/null
-! If that does not show an error, you are good.
-!
-! RELOADING CONFIGURATION:
-! Changing this file will not do anything (even with urxvt restart):
-!
-! Replace .Xresources:
-!   xrdb -load ~/.Xresources
-!
-! Merge new changes:
-!   xrdb -merge ~/.Xresources
-!
-! You can query the state of loaded config with:
-!   xrdb -query
 
 !https://github.com/Lixxia/dotfiles/blob/master/.Xresources
 !URxvt.font:            xft:Monospace:size=10
