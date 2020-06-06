@@ -93,25 +93,6 @@ URxvt.boldFont:         xft:Inconsolata:style=Bold:size=11
 URxvt.letterSpace: -1 !-7
 URxvt.lineSpace: 0
 
-!#include ".Xresources.d/monokai.dark"
-!#include ".Xresources.d/monokai.light"
-!#include ".Xresources.d/google.dark"
-!#include ".Xresources.d/solarized.light"
-!#include ".Xresources.d/solarized.dark"
-!#include ".Xresources.d/mocha.dark"
-!#include ".Xresources.d/default.dark"
-!#include ".Xresources.d/bespin.dark"
-!#include ".Xresources.d/trim-yer-beard"
-!#include ".Xresources.d/ashes.dark"
-!#include ".Xresources.d/default.dark"
-!#include ".Xresources.d/canvased"
-!#include ".Xresources.d/eqie6"
-!#include ".Xresources.d/ocean.dark"
-!#include ".Xresources.d/something.dark"
-!#include ".Xresources.d/atelierdune.dark"
-!#include ".Xresources.d/atelierforest.dark"
-!#include ".Xresources.d/themes/base16-3024"
-
 ! Load color scheme
 #include ".Xresources.d/themes/default"
 
