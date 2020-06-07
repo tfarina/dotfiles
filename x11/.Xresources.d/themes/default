@@ -1,10 +1,10 @@
 ! SEE https://github.com/bvanhai/dotfiles/blob/master/.colors.symlink/steel.xr
-! Colors
+
 *.background: #000000
 *.foreground: #B2B2B2
 *.cursorColor: #c0c5ce
 
-!*colorUL:       #18B218
+! ANSI Colors
 
 ! black
 *.color0:  #080808
@@ -29,7 +29,7 @@
 *.color4:  #0000FF
 *.color12: #5454FF
 
-! purple
+! magenta
 !*.color5:  #B218B2
 *.color5:  #FF00FF
 *.color13: #FF54FF
