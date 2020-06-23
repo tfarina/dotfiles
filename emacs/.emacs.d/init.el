@@ -1,4 +1,3 @@
-
 ;; Elisp files go in ~/.emacs.d/lisp/
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
@@ -25,15 +24,6 @@
 
 ;; Better than the default.
 (load-theme 'tango-dark t)
-
-(define-derived-mode gyp-mode python-mode "Gyp"
-  "Major mode for editing Generate Your Project files."
-    (setq indent-tabs-mode nil
-          tab-width 2
-          python-indent 2))
-
-(add-to-list 'auto-mode-alist '("\\.gyp$" . gyp-mode))
-(add-to-list 'auto-mode-alist '("\\.gypi$" . gyp-mode))
 
 (setq cc-other-file-alist
      '(("\\.cc" (".h"))
