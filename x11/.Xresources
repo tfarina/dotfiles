@@ -13,13 +13,11 @@ Xft.lcdfilter: lcddefault
 !                         URxvt Configuration                         !
 !---------------------------------------------------------------------!
 
-! NOTE: Run `xrdb -merge ~/.Xresources` after modifying this file.
-
 ! https://github.com/Valloric/dotfiles/blob/master/urxvt/Xdefaults
-
+!
 ! CAREFUL! DO NOT PUT SINGLE OR DOUBLE QUOTES IN COMMENTS!
-! You can ensure that your Xdefaults file parses correctly with:
-!   xrdb -n ~/.Xdefaults 2>&1 >/dev/null
+! You can ensure that your Xresources file parses correctly with:
+!   xrdb -n ~/.Xresources 2>&1 >/dev/null
 ! If that does not show an error, you are good.
 !
 ! RELOADING CONFIGURATION:
