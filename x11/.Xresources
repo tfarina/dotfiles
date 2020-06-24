@@ -36,13 +36,7 @@ Xft.lcdfilter: lcddefault
 #include ".Xresources.d/themes/default"
 
 ! Scrollbar
-URxvt.scrollBar: false
-URxvt.scrollBar_right: false
-URxvt.scrollBar_floating: false
 URxvt.scrollstyle: plain
-URxvt.scrollTtyOutput: false
-URxvt.scrollWithBuffer: true
-URxvt.scrollTtyKeypress: true
 
 ! URLs
 URxvt.url-select.autocopy: true
