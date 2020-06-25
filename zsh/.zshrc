@@ -2,9 +2,18 @@
 # https://github.com/addy-dclxvi/almighty-dotfiles/blob/master/.oh-my-zsh/themes/clair.zsh-theme
 # https://blog.ysmood.org/my-ys-terminal-theme/
 
-. ~/.zsh_environment
-. ~/.zsh_aliases
-. ~/.zsh_functions
+# Alias definitions.
+if [ -f ~/.zsh_aliases ]; then
+    . ~/.zsh_aliases
+fi
+
+if [ -f ~/.zsh_environment ]; then
+    . ~/.zsh_environment
+fi
+
+if [ -f ~/.zsh_functions ]; then
+    . ~/.zsh_functions
+fi
 
 setopt no_verbose
 
