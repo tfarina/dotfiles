@@ -33,7 +33,7 @@ Xft.lcdfilter: lcddefault
 !   xrdb -query
 
 ! Load color scheme
-#include ".Xresources.d/themes/default"
+#include ".Xresources.d/themes/dark"
 
 ! Scrollbar
 URxvt.scrollstyle: plain
