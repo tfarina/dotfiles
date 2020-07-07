@@ -4,10 +4,6 @@
 ;; Disable startup message.
 (setq inhibit-startup-message t)
 
-(require 'google-c-style)
-(add-hook 'c-mode-common-hook 'google-set-c-style)
-;(add-hook 'c-mode-common-hook 'google-make-newline-indent)
-
 ;; Show line numbers.
 (global-linum-mode t)
 
@@ -36,7 +32,7 @@
   '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
   '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
 
-;; create the autosave dir if necessary, since emacs won't.
+;; Create the autosave dir if necessary, since emacs won't.
 (make-directory "~/.emacs.d/autosaves/" t)
 
 ;; Prefer UTF-8 to ISO-8859-1.
