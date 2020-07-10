@@ -4,9 +4,6 @@
 ;; Disable startup message.
 (setq inhibit-startup-message t)
 
-;; Show line numbers.
-(global-linum-mode t)
-
 ;; Show column numbers.
 (column-number-mode t)
 
