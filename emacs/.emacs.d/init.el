@@ -18,15 +18,6 @@
 (if (fboundp 'blink-cursor-mode) (blink-cursor-mode -1))
 (transient-mark-mode t)
 
-;; Better than the default.
-(load-theme 'tango-dark t)
-
-(setq cc-other-file-alist
-     '(("\\.cc" (".h"))
-       ("\\.h"	(".cc"))))
-
-(global-set-key "\C-o" 'ff-find-other-file)
-
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
 (custom-set-variables
   '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
