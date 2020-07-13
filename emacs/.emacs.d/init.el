@@ -4,16 +4,21 @@
 ;; Disable startup message.
 (setq inhibit-startup-message t)
 
-;; Show column numbers.
-(column-number-mode t)
+;; Hide menu bar.
+(menu-bar-mode -1)
+
+;; Hide tool bar.
+(tool-bar-mode -1)
 
 ;; Hide left scrollbar.
 (scroll-bar-mode -1)
 
 ;; Minimal interface.
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'blink-cursor-mode) (blink-cursor-mode -1))
 (transient-mark-mode t)
+
+;; Show column numbers.
+(column-number-mode t)
 
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
 (custom-set-variables
