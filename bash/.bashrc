@@ -140,9 +140,6 @@ if [ -f ~/.git-prompt.sh ]; then
     . ~/.git-prompt.sh
 fi
 
-# Put scripts (mostly) in PATH.
-export PATH=~/bin:"${PATH}"
-
 # Make the autocompletion work with the 'g' alias.
 complete -o bashdefault -o default -o nospace -F _git g
 complete -o default -o nospace -F _git g
