@@ -1,0 +1,29 @@
+setopt prompt_subst
+
+#
+# Prompt format:
+#
+# USER at MACHINE in DIRECTORY on git:BRANCH
+# $ COMMAND
+#
+PROMPT='
+%{$fg[cyan]%}%n \
+%{$fg[white]%}at \
+%{$fg[green]%}%m \
+%{$fg[white]%}in \
+%{$fg[blue]%}%~%{$reset_color%} \
+%{$fg[white]%}on%{$reset_color%} \
+${vcs_info_msg_0_}\
+
+%{$fg_bold[white]%}%# %{$reset_color%}'
+
+fpath+=$HOME/.zsh/pure
+
+autoload -U promptinit; promptinit
+
+#PURE_PROMPT_SYMBOL="$"
+
+# change the color for `prompt:success`
+zstyle ':prompt:pure:prompt:success' color green
+
+prompt pure
