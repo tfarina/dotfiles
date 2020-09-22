@@ -76,12 +76,12 @@ zstyle ':prompt:pure:prompt:success' color green
 
 prompt pure
 
-if [ -f ~/.zsh_aliases ]; then
-    . ~/.zsh_aliases
-fi
-
 if [ -f ~/.zsh_environment ]; then
     . ~/.zsh_environment
+fi
+
+if [ -f ~/.zsh_aliases ]; then
+    . ~/.zsh_aliases
 fi
 
 if [ -f ~/.zsh_functions ]; then
