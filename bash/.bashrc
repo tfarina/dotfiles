@@ -132,10 +132,6 @@ if [ -f ~/.bash_prompt ]; then
     . ~/.bash_prompt
 fi
 
-if [ -f ~/.git-prompt.sh ]; then
-    . ~/.git-prompt.sh
-fi
-
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi

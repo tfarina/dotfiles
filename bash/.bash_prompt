@@ -1,5 +1,9 @@
 # -*- mode: sh; -*-
 
+if [ -f ~/.git-prompt.sh ]; then
+    . ~/.git-prompt.sh
+fi
+
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 RED="\033[1;31m"
