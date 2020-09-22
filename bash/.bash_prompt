@@ -69,7 +69,7 @@ fi
 #
 # Prompt format:
 #
-# USER at MACHINE in DIRECTORY (BRANCH STATE)
+# USER at MACHINE in DIRECTORY (GIT BRANCH)
 # $ COMMAND
 #
 PS1="\[${CYAN}\]\u"; # username
