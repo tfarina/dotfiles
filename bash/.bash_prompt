@@ -18,8 +18,7 @@ RESET="\033[m"
 #
 # Prompt format:
 #
-# USER@MACHINE:DIRECTORY (GIT BRANCH)
-# $ COMMAND
+# USER@MACHINE:DIRECTORY (GIT BRANCH)$ COMMAND
 #
 PS1="\[${GREEN}\]\u";  # username
 PS1+="\[${GREEN}\]@";
