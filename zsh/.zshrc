@@ -4,22 +4,6 @@
 
 setopt no_verbose
 
-autoload -U colors && colors
-
-# enable color support of ls
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-fi
-
-if ls --color=auto &> /dev/null
-then
-    # GNU ls
-    alias ls='ls -F --color=auto'
-else
-    # BSD ls
-    alias ls='ls -GF'
-fi
-
 # https://github.com/ggreer/dotfiles/blob/master/home/.zshrc
 
 #
@@ -45,6 +29,22 @@ unsetopt share_history
 
 DIRSTACKSIZE=8
 setopt autopushd pushdminus pushdsilent pushdtohome
+
+autoload -U colors && colors
+
+# enable color support of ls
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
+
+if ls --color=auto &> /dev/null
+then
+    # GNU ls
+    alias ls='ls -F --color=auto'
+else
+    # BSD ls
+    alias ls='ls -GF'
+fi
 
 if [ -f ~/.zsh_environment ]; then
     . ~/.zsh_environment
