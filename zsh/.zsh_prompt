@@ -1,8 +1,14 @@
+if [ -f ~/.git-prompt.sh ]; then
+    . ~/.git-prompt.sh
+fi
+
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 autoload -U colors && colors
 
 #
 # Prompt format:
 #
-# USER@MACHINE:DIRECTORY% COMMAND
+# USER@MACHINE:DIRECTORY (GIT BRANCH)% COMMAND
 #
-PS1="%B%{$fg[green]%}%n%{$fg[green]%}@%{$fg[green]%}%M%{$reset_color%}:%{$fg[blue]%}%~%{$reset_color%}%#%b "
+PS1="%B%{$fg[green]%}%n%{$fg[green]%}@%{$fg[green]%}%M%{$reset_color%}:%{$fg[blue]%}%~%{$fg[yellow]%}$(__git_ps1)%{$reset_color%}%#%b "
