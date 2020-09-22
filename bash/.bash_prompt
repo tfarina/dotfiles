@@ -14,15 +14,15 @@ RESET="\033[m"
 #
 # Prompt format:
 #
-# USER at MACHINE in DIRECTORY (GIT BRANCH)
+# USER@MACHINE:DIRECTORY (GIT BRANCH)
 # $ COMMAND
 #
-PS1="\[${CYAN}\]\u"; # username
-PS1+="\[${WHITE}\] at ";
+PS1="\[${GREEN}\]\u";  # username
+PS1+="\[${GREEN}\]@";
 PS1+="\[${GREEN}\]\h"; # hostname
-PS1+="\[${WHITE}\] in ";
-PS1+="\[${BLUE}\]\w"; # working directory full path
+PS1+="\[${RESET}\]:";
+PS1+="\[${BLUE}\]\w";  # full current working directory path
 PS1+="\[${YELLOW}\]\$(__git_ps1) "; # git repository details
 PS1+="\n";
-PS1+="\[${WHITE}\]\$ \[${RESET}\]"; # `$` (and reset color)
+PS1+="\[${RESET}\]\$ ";
 export PS1;
