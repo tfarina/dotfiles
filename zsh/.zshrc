@@ -6,7 +6,7 @@ setopt no_verbose
 
 autoload -U colors && colors
 
-# https://michaelheap.com/getting-solarized-working-on-ubuntu/
+# enable color support of ls
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
