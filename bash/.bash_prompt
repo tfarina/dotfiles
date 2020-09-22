@@ -26,7 +26,6 @@ PS1+="\[${GREEN}\]@";
 PS1+="\[${GREEN}\]\h"; # hostname
 PS1+="\[${RESET}\]:";
 PS1+="\[${BLUE}\]\w";  # full current working directory path
-PS1+="\[${YELLOW}\]\$(__git_ps1) "; # git repository details
-PS1+="\n";
+PS1+="\[${YELLOW}\]\$(__git_ps1)"; # git repository details
 PS1+="\[${RESET}\]\$ ";
 export PS1;
