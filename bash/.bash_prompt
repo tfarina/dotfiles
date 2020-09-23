@@ -21,9 +21,7 @@ WHITE="\033[1;37m"
 #
 # USER@MACHINE:DIRECTORY (GIT BRANCH)$ COMMAND
 #
-PS1="\[${GREEN}\]\u";  # username
-PS1+="\[${GREEN}\]@";
-PS1+="\[${GREEN}\]\h"; # hostname
+PS1="\[${GREEN}\]\u@\h";  # username@hostname
 PS1+="\[${RESET}\]:";
 PS1+="\[${BLUE}\]\w";  # full current working directory path
 PS1+="\[${YELLOW}\]\$(__git_ps1)"; # git repository details
