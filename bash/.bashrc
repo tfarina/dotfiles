@@ -116,12 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -f ~/.bash_environment ]; then
-    . ~/.bash_environment
-fi
-
 if [ -f ~/.bash_options ]; then
     . ~/.bash_options
+fi
+
+if [ -f ~/.bash_environment ]; then
+    . ~/.bash_environment
 fi
 
 if [ -f ~/.bash_functions ]; then
