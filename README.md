@@ -17,8 +17,8 @@ $ git clone https://github.com/tfarina/dotfiles.git ~/dotfiles && cd ~/dotfiles
 For example, to install my `sxhkd` and my `zshrc` config use the command:
 
 ```sh
-$ stow sxhkd
-$ stow zsh
-$ stow whatever-dotfile-you-want
+$ stow -v -t ~/ -S sxhkd
+$ stow -v -t ~/ -S zsh
+$ stow -v -t ~/ -S whatever-dotfile-you-want
 ```
 This will symlink files to `~/.config/sxhkd/`, `~/.zshrc`, etc.
