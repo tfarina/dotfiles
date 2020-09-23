@@ -1,14 +1,21 @@
-alias reload="source ~/.bashrc"
-
-# Emacs.
-alias e='emacsclient -t -c -a ""'
-
-# Vim.
-alias v="vim"
-
-# Git.
 alias g="git"
 alias gd="git diff"
+
+alias e='emacsclient -t -c -a ""'
+alias v="vim"
+
+# Mac OS X 'open' alias.
+alias open="xdg-open"
+
+# Get my ip address.
+alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
+
+# LS aliases.
+alias ls="ls -F --color"
+alias lld="ls -lUd */"
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"
 
 alias bd="sudo biosdecode"
 alias bi="sudo hwinfo --bios | less"
@@ -41,16 +48,3 @@ alias network_disconnect="wicd-cli --wired --disconnect"
 # http://www.cyberciti.biz/faq/howto-linux-renew-dhcp-client-ip-address/
 alias release_dhcp="sudo dhclient -v -r wlan0"
 alias renew_dhcp="sudo dhclient -v wlan0"
-
-# LS alias.
-alias ls="ls -F --color"
-alias lld="ls -lUd */"
-alias ll="ls -alF"
-alias la="ls -A"
-alias l="ls -CF"
-
-# Mac OS X 'open' alias.
-alias open="xdg-open"
-
-# Get my ip address.
-alias myip="wget -O - -q http://www.networksecuritytoolkit.org/nst/cgi-bin/ip.cgi"
