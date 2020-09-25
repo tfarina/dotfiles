@@ -124,6 +124,10 @@ if [ -f ~/.bash_environment ]; then
     . ~/.bash_environment
 fi
 
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
 if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi

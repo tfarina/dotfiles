@@ -50,8 +50,8 @@ if [ -f ~/.zsh_environment ]; then
     . ~/.zsh_environment
 fi
 
-if [ -f ~/.zsh_aliases ]; then
-    . ~/.zsh_aliases
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
 fi
 
 if [ -f ~/.zsh_functions ]; then
