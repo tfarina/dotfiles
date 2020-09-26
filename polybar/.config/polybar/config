@@ -14,22 +14,6 @@
 ;                                                                             
 ;==============================================================================
 
-[color]
-
-background  =
-foreground  =
-
-transparent =
-
-black       = #000000
-red         = #EC7875
-green       = #61C766
-yellow      = #EBD369
-blue        = #75A4CD
-magenta     =
-cyan        = #00C7DF
-white       =
-
 [settings]
 screenchange-reload = true
 
@@ -43,6 +27,10 @@ margin-bottom = 0
 ; Adjust the _NET_WM_STRUT_PARTIAL bottom value
 ; Used for bottom aligned bars
 margin-top = 0
+
+;------------------------------------------------------------------------------
+
+include-file = ~/.config/polybar/color.ini
 
 ;; Bar Settings
 
@@ -130,9 +118,8 @@ modules-right = keyboard_i keyboard alsa battery backlight date_i date
 ;   i3 (requires: `override-redirect = true`)
 ; wm-restack = bspwm
 
-;----------------
+;------------------------------------------------------------------------------
 ; Modules
-;----------------
 
 [module/keyboard_i]
 type = internal/xkeyboard
