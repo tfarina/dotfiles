@@ -1,15 +1,17 @@
+;==============================================================================
+;
 ;  ____       _       _
 ; |  _ \ ___ | |_   _| |__   __ _ _ __
 ; | |_) / _ \| | | | | '_ \ / _` | '__|
 ; |  __/ (_) | | |_| | |_) | (_| | |
 ; |_|   \___/|_|\__, |_.__/ \__,_|_|
 ;               |___/
-;==============================================================================
-;   To learn more about how to configure Polybar                              =
-;   go to https://github.com/jaagr/polybar                                    =
-;                                                                             =
-;   The README contains alot of information                                   =
-;                                                                             =
+;
+;   To learn more about how to configure Polybar                              
+;   go to https://github.com/jaagr/polybar                                    
+;                                                                             
+;   The README contains alot of information                                   
+;                                                                             
 ;==============================================================================
 
 [color]
