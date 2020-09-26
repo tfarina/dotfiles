@@ -1,3 +1,7 @@
+# dotfiles
+
+They're managed using [GNU stow](https://www.gnu.org/software/stow/).
+
 ## Installation
 
 ### Before installing, be sure to read useful cowboy [gently-worded note](https://github.com/cowboy/dotfiles#heed-this-critically-important-warning-before-you-install) and this excellent article by Anish Athalye: [Dotfiles are NOT meant to be forked](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/). That said, let's go with the installation:
