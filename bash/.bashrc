@@ -120,8 +120,8 @@ if [ -f ~/.bash_options ]; then
     . ~/.bash_options
 fi
 
-if [ -f ~/.bash_environment ]; then
-    . ~/.bash_environment
+if [ -f ~/.environment ]; then
+    . ~/.environment
 fi
 
 if [ -f ~/.aliases ]; then

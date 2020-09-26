@@ -46,8 +46,8 @@ else
     alias ls='ls -GF'
 fi
 
-if [ -f ~/.zsh_environment ]; then
-    . ~/.zsh_environment
+if [ -f ~/.environment ]; then
+    . ~/.environment
 fi
 
 if [ -f ~/.aliases ]; then
