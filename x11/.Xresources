@@ -1,14 +1,3 @@
-!---------------------------------------------------------------------!
-!                         Xft Font Configuration                      !
-!---------------------------------------------------------------------!
-Xft.dpi:       96 ! xdpyinfo | grep dots
-Xft.rgba:      rgb
-Xft.autohint:  0
-Xft.antialias: 1
-Xft.hinting:   1
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcddefault
-
 ! https://github.com/Valloric/dotfiles/blob/master/urxvt/Xdefaults
 !
 ! CAREFUL! DO NOT PUT SINGLE OR DOUBLE QUOTES IN COMMENTS!
@@ -30,6 +19,19 @@ Xft.lcdfilter: lcddefault
 
 ! Load color scheme
 #include ".Xresources.d/themes/basic"
+
+
+!---------------------------------------------------------------------!
+!                         Xft Font Configuration                      !
+!---------------------------------------------------------------------!
+Xft.dpi:       96 ! xdpyinfo | grep dots
+Xft.rgba:      rgb
+Xft.autohint:  0
+Xft.antialias: 1
+Xft.hinting:   1
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
 
 !---------------------------------------------------------------------!
 !                         URxvt Configuration                         !
