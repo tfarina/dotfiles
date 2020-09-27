@@ -4,7 +4,7 @@ alias gd="git diff"
 alias e='emacsclient -t -c -a ""'
 alias v="vim"
 
-# Mac OS X 'open' alias.
+# macOS-like 'open' command for Linux.
 alias open="xdg-open"
 
 # Get my ip address.
