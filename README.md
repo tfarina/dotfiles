@@ -8,9 +8,9 @@ They're managed using [GNU stow](https://www.gnu.org/software/stow/).
 
 1. **Install GNU Stow:** GNU Stow is available for all GNU+Linux distros and most other unix-like distributions via your package manager.
 
-- `sudo apt install stow`
-- `sudo pacman -S stow`
-- `brew install stow`
+   Ubuntu:   `sudo apt install stow`
+   Arch:     `sudo pacman -S stow`
+   Mac:	     `brew install stow`
 
 2. **Clone this repo:**
 
