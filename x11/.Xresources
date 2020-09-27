@@ -9,10 +9,6 @@ Xft.hinting:   1
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-!---------------------------------------------------------------------!
-!                         URxvt Configuration                         !
-!---------------------------------------------------------------------!
-
 ! https://github.com/Valloric/dotfiles/blob/master/urxvt/Xdefaults
 !
 ! CAREFUL! DO NOT PUT SINGLE OR DOUBLE QUOTES IN COMMENTS!
@@ -34,6 +30,11 @@ Xft.lcdfilter: lcddefault
 
 ! Load color scheme
 #include ".Xresources.d/themes/basic"
+
+!---------------------------------------------------------------------!
+!                         URxvt Configuration                         !
+!---------------------------------------------------------------------!
+
 
 ! Scrollbar
 URxvt.scrollstyle: plain
