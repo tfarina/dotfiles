@@ -19,4 +19,5 @@ vt102 terminal emulator: rxvt-unicode
 terminal font: Inconsolata
 shell: zsh
 editor: emacs
+file manager: thunar
 web browser: firefox
