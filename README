@@ -22,3 +22,4 @@ editor: emacs
 file manager: thunar
 web browser: firefox
 image viewer: sxiv
+screen capture utility: scrot
