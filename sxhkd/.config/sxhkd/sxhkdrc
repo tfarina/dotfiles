@@ -43,11 +43,11 @@ super + l
 
 # increase brightness
 XF86MonBrightnessUp
-	light -A 5
+	brightnessctl set +5%
 
 # decrease brightness
 XF86MonBrightnessDown
-	light -U 5
+	brightnessctl set 5%-
 
 #
 # wm independent audio hotkeys
