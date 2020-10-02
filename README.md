@@ -7,6 +7,8 @@ My setup:
 - **Shell**                        : [Zsh](https://www.zsh.org)
 - **Application Launcher**         : [Rofi](https://github.com/davatorium/rofi)
 - **File Manager**                 : [Thunar](https://gitlab.xfce.org/xfce/thunar)
+- **Image Viewer**                 : [Sxiv](https://github.com/muennich/sxiv)
+- **Screen Capture**               : [Scrot](https://github.com/dreamer/scrot)
 
 ## Installation
 
