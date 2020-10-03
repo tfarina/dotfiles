@@ -115,7 +115,7 @@ cursor-scroll = ns-resize
 ;   modules-left = cpu ram
 ;   modules-center = xwindow xbacklight
 ;   modules-right = ipc clock
-modules-right = keyboard_i keyboard alsa battery backlight date_i date
+modules-right = keyboard_i keyboard volume battery backlight date_i date
 
 ;------------------------------------------------------------------------------
 ; Modules
@@ -146,7 +146,7 @@ label-layout = %layout%
 label-indicator = %name%
 ;label-indicator-foreground = ${color.fg}
 
-[module/alsa]
+[module/volume]
 type = internal/alsa
 
 format-volume = VOL <label-volume>
