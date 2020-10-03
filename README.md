@@ -9,6 +9,7 @@ My setup:
 - **File Manager**                 : [Thunar](https://gitlab.xfce.org/xfce/thunar)
 - **Image Viewer**                 : [Sxiv](https://github.com/muennich/sxiv)
 - **Screen Capture**               : [Scrot](https://github.com/dreamer/scrot)
+- **Document Viewer**              : [Zathura](https://pwmt.org/projects/zathura)
 
 ## Installation
 
