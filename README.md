@@ -10,6 +10,7 @@ My setup:
 - **Image Viewer**                 : [Sxiv](https://github.com/muennich/sxiv)
 - **Screen Capture**               : [Scrot](https://github.com/dreamer/scrot)
 - **Document Viewer**              : [Zathura](https://pwmt.org/projects/zathura)
+- **Clipboard Manager**            : [ClipIt](https://github.com/CristianHenzel/ClipIt)
 
 ## Installation
 

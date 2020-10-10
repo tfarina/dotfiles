@@ -24,3 +24,4 @@ web browser: firefox
 image viewer: sxiv
 screen capture utility: scrot
 document viewer: zathura
+clipboard manager: clipit
