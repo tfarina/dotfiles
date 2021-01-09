@@ -10,15 +10,18 @@ They're managed using [GNU stow](https://www.gnu.org/software/stow/).
 > they actually were - which was also known as "ricing".
 From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wiki_rice)
 
-My setup:
-- **Terminal Emulator**            : [URxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
-- **Shell**                        : [Zsh](https://www.zsh.org)
-- **Application Launcher**         : [Rofi](https://github.com/davatorium/rofi)
-- **File Manager**                 : [Thunar](https://gitlab.xfce.org/xfce/thunar)
-- **Image Viewer**                 : [Sxiv](https://github.com/muennich/sxiv)
-- **Screen Capture**               : [Scrot](https://github.com/dreamer/scrot)
-- **Document Viewer**              : [Zathura](https://pwmt.org/projects/zathura)
-- **Clipboard Manager**            : [ClipIt](https://github.com/CristianHenzel/ClipIt)
+## Programs
+
+| Role  | Program |
+| ------------- | ------------- |
+| Terminal Emulator | [URxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) |
+| Shell | [Zsh](https://www.zsh.org) |
+| Application Launcher | [Rofi](https://github.com/davatorium/rofi) |
+| File Manager | [Thunar](https://gitlab.xfce.org/xfce/thunar) |
+| Image Viewer | [Sxiv](https://github.com/muennich/sxiv) |
+| Screen Capture | [Scrot](https://github.com/dreamer/scrot) |
+| Document Viewer | [Zathura](https://pwmt.org/projects/zathura) |
+| Clipboard Manager | [ClipIt](https://github.com/CristianHenzel/ClipIt) |
 
 ## Installation
 
