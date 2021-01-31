@@ -37,6 +37,13 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Document Viewer | [Zathura](https://pwmt.org/projects/zathura) |
 | Clipboard Manager | [ClipIt](https://github.com/CristianHenzel/ClipIt) |
 
+# sxhkd key bindings
+
+| Key Binding | Associated Action | Category |
+| ------------- | ------------- | --------------------- |
+| super + Return | open terminal (urxvt) | General |
+| super + / | run application launcher (rofi) | General |
+
 ## Installation
 
 ### Before installing, be sure to read useful cowboy [gently-worded note](https://github.com/cowboy/dotfiles#heed-this-critically-important-warning-before-you-install) and this excellent article by Anish Athalye: [Dotfiles are NOT meant to be forked](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/). That said, let's go with the installation:
