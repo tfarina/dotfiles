@@ -35,8 +35,6 @@ alias servers="sudo netstat -tulpn"
 # http://askubuntu.com/questions/341836/volume-control-microsoft-lifechat-lx-3000
 alias headset="pulseaudio -k"
 # pactl list sinks | grep -A2 -B2 -i running
-alias mute="pactl set-sink-mute 1 1"
-alias unmute="pactl set-sink-mute 1 0"
 alias audiocards="cat /proc/asound/cards"
 alias audiodevices="sudo aplay -l"
 # mp3player $ehr or mp3player -C $ehr
