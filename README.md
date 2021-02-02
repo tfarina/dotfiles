@@ -31,6 +31,8 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Terminal Emulator | [URxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) |
 | Shell | [Zsh](https://www.zsh.org) |
 | Application Launcher | [Rofi](https://github.com/davatorium/rofi) |
+| Web Browser | [Firefox](https://www.mozilla.org/en-US/firefox/new) |
+| Mail Reader | [Claws Mail](https://www.claws-mail.org) |
 | File Manager | [Thunar](https://gitlab.xfce.org/xfce/thunar) |
 | Image Viewer | [Sxiv](https://github.com/muennich/sxiv) |
 | Screen Capture | [Scrot](https://github.com/dreamer/scrot) |
