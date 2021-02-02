@@ -55,15 +55,15 @@ XF86MonBrightnessDown
 
 # increase volume
 XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +5%
+	volume up
 
 # decrease volume
 XF86AudioLowerVolume
-	pactl set-sink-volume 0 -5%
+	volume down
 
-# mute audio
+# toggle volume
 XF86AudioMute
-	pactl set-sink-mute 0 toggle
+        volume toggle
 
 #
 # bspwm hotkeys
