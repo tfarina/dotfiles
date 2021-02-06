@@ -35,7 +35,7 @@ super + slash
 
 # lock screen
 super + l
-        i3lock -c 000000
+        lock
 
 #
 # wm independent backlight hotkeys

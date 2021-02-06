@@ -33,7 +33,7 @@ bindsym $mod+Shift+Q kill
 bindsym $mod+d exec rofi -show run -terminal gnome-terminal
 
 # lock screen
-bindsym $mod+Ctrl+l exec i3lock -c 000000
+bindsym $mod+Ctrl+l exec lock
 
 # start nautilus
 bindsym $mod+n exec nautilus --no-desktop &
