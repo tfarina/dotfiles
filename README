@@ -4,7 +4,7 @@
 | (_| || (_) || |_ |  _|| || ||  __/\__ \
  \__,_| \___/  \__||_|  |_||_| \___||___/
 
-host: Gateway MT6707
+host: Gateway MT6707 3408385R
 kernel: Linux 3.2.0-29-generic-pae i686
 distro: Ubuntu 16.04.5 LTS (Xenial Xerus)
 resolution: 1280x800
