@@ -28,6 +28,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 
 | Role  | Program |
 | ------------- | ------------- |
+| Display Manager | [LightDM](https://github.com/canonical/lightdm) |
 | Terminal Emulator | [URxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) |
 | Shell | [Zsh](https://www.zsh.org) |
 | Application Launcher | [Rofi](https://github.com/davatorium/rofi) |
