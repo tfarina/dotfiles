@@ -157,7 +157,7 @@ super + alt + Up
 super + alt + Right
         bspc node -p east
 
-# cancel the preselection
+# cancel the preselection for the focused node
 super + alt + space
         bspc node -p cancel
 
