@@ -21,10 +21,6 @@
 super + Escape
 	pkill -USR1 -x sxhkd && notify-send -i key_bindings "Reloaded key bindings"
 
-# show sxhkd cheatsheet
-super + s
-        rofi-sxhkd-cheatsheet
-
 # terminal emulator
 super + Return
 	urxvt
