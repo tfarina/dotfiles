@@ -98,7 +98,7 @@ super + space
 super + f
         bspc node -t ~fullscreen
 
-# toggle between the tiled and monocle layout (maximise focused
+# toggle between the tiled and monocle layout (maximize focused
 # node).
 # if you use `-l monocle` you lose the toggle functionality.
 super + m
