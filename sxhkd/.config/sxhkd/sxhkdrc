@@ -89,6 +89,7 @@ super + shift + x
 # bspwm node state and flags
 #
 
+# set the window state
 super + t
         bspc node -t ~tiled
 
