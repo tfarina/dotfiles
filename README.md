@@ -44,10 +44,10 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 
 | Key Binding | Associated Action | Category |
 | ------------- | ------------- | --------------------- |
-| super + Escape | make sxhkd reload its configuration file | General |
-| super + Return | open terminal (urxvt) | General |
-| super + / | run application launcher (rofi) | General |
-| super + l | lock screen (i3lock) | General |
+| super + Escape | Reload sxhkd configuration's file | General |
+| super + Return | Open a new terminal | General |
+| super + slash | Run application launcher | General |
+| super + l | Lock the screen | General |
 
 ## Installation
 
