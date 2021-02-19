@@ -75,6 +75,6 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 !URxvt*italicFont:      xft:Liberation Mono:style=Italic:pixelsize=12
 !URxvt*bolditalicFont:  xft:Liberation Mono:style=BoldItalic:pixelsize=12
 
-URxvt.font:             xft:Monospace:pixelsize=12
-URxvt.boldFont:         xft:Monospace:pixelsize=12
+URxvt.font:             xft:Ubuntu Mono:pixelsize=14,style=regular
+URxvt.boldFont:         xft:Ubuntu Mono:pixelsize=14,style=bold
 URxvt.letterSpace: -1
