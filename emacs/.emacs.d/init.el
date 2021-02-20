@@ -1,8 +1,8 @@
 ;; Elisp files go in ~/.emacs.d/lisp/
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
-;; Disable startup message.
-(setq inhibit-startup-message t)
+;; Disable the startup screen.
+(setq inhibit-startup-screen t)
 
 ;; Hide menu bar.
 (menu-bar-mode -1)
