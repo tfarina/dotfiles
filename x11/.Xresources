@@ -55,18 +55,7 @@ URxvt.iso14755_52: false
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
-!https://github.com/Lixxia/dotfiles/blob/master/.Xresources
-!URxvt.font:            xft:Monospace:size=10
-!URxvt.font:            xft:Iosevka:normal:pixelsize=16
-!URxvt.font:            xft:DroidSansMono:style=Regular:size=10
-!URxvt.font:            xft:Meslo LG M DZ:style=Regular:pixelsize=13
-!URxvt.font:            xft:JetBrains Mono:style=Regular:pixelsize=13
-!URxvt.font:            xft:FiraCode:style=Regular:pixelsize=13
-!URxvt.font:            xft:Hack:style=Regular:pixelsize=13
-!URxvt.font:            xft:SF Mono:style=Regular:pixelsize=12
-!URxvt.font:            xft:Bitstream Vera Sans Mono:style=Regular:size=10
-!URxvt.font:            xft:Liberation Mono:style=Regular:pixelsize=12
-
-URxvt.font:             xft:Monospace:pixelsize=12
+! Fonts
+URxvt.font: xft:Monospace:pixelsize=12
 
 URxvt.letterSpace: -1
