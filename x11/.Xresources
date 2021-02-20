@@ -17,7 +17,9 @@
 ! You can query the state of loaded config with:
 !   xrdb -query
 
-! Load color scheme
+!---------------------------------------------------------------------!
+!                         Color scheme                                !
+!---------------------------------------------------------------------!
 #include ".Xresources.d/themes/basic"
 
 
