@@ -58,10 +58,6 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 !https://github.com/Lixxia/dotfiles/blob/master/.Xresources
 !URxvt.font:            xft:Monospace:size=10
 !URxvt.font:            xft:Iosevka:normal:pixelsize=16
-!URxvt.font:            xft:Iosevka:style=Medium:pixelsize=16
-!URxvt.boldFont:        xft:Iosevka:bold:pixelsize=16
-!URxvt.italicFont:      xft:Iosevka:italic::pixelsize=16
-!URxvt.boldItalicFont:  xft:Iosevka:italic::pixelsize=16
 !URxvt.font:            xft:DroidSansMono:style=Regular:size=10
 !URxvt.font:            xft:Meslo LG M DZ:style=Regular:pixelsize=13
 !URxvt.font:            xft:JetBrains Mono:style=Regular:pixelsize=13
@@ -69,13 +65,7 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 !URxvt.font:            xft:Hack:style=Regular:pixelsize=13
 !URxvt.font:            xft:SF Mono:style=Regular:pixelsize=12
 !URxvt.font:            xft:Bitstream Vera Sans Mono:style=Regular:size=10
-!URxvt.boldFont:        xft:Bitstream Vera Sans Mono:style=Bold:size=10
-!URxvt.italicFont:      xft:Bitstream Vera Sans Mono:style=Italic:size=10
-!URxvt.bolditalicFont:  xft:Bitstream Vera Sans Mono:style=BoldItalic:size=10
-!URxvt*font:             xft:Liberation Mono:style=Regular:pixelsize=12
-!URxvt*boldFont:         xft:Liberation Mono:style=Bold:pixelsize=12
-!URxvt*italicFont:      xft:Liberation Mono:style=Italic:pixelsize=12
-!URxvt*bolditalicFont:  xft:Liberation Mono:style=BoldItalic:pixelsize=12
+!URxvt.font:            xft:Liberation Mono:style=Regular:pixelsize=12
 
 URxvt.font:             xft:Monospace:pixelsize=12
 URxvt.boldFont:         xft:Monospace:pixelsize=12
