@@ -68,5 +68,5 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 !URxvt.font:            xft:Liberation Mono:style=Regular:pixelsize=12
 
 URxvt.font:             xft:Monospace:pixelsize=12
-URxvt.boldFont:         xft:Monospace:pixelsize=12
+
 URxvt.letterSpace: -1
