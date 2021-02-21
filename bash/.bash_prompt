@@ -5,15 +5,18 @@ if [ -f ~/.git-prompt.sh ]; then
     . ~/.git-prompt.sh
 fi
 
-RESET="\033[00m"
-BLACK="\033[0;30m"
-RED="\033[0;31m"
-GREEN="\033[0;32m"
-YELLOW="\033[0;33m"
-BLUE="\033[0;34m"
-MAGENTA="\033[0;35m"
-CYAN="\033[0;36m"
-WHITE="\033[0;37m"
+COLOR_PREFIX="\[\033["
+COLOR_SUFFIX="m\]"
+
+RESET="${COLOR_PREFIX}00${COLOR_SUFFIX}"
+BLACK="${COLOR_PREFIX}0;30${COLOR_SUFFIX}"
+RED="${COLOR_PREFIX}0;31${COLOR_SUFFIX}"
+GREEN="${COLOR_PREFIX}0;32${COLOR_SUFFIX}"
+YELLOW="${COLOR_PREFIX}0;33${COLOR_SUFFIX}"
+BLUE="${COLOR_PREFIX}0;34${COLOR_SUFFIX}"
+MAGENTA="${COLOR_PREFIX}0;35${COLOR_SUFFIX}"
+CYAN="${COLOR_PREFIX}0;36${COLOR_SUFFIX}"
+WHITE="${COLOR_PREFIX}0;37${COLOR_SUFFIX}"
 
 PROMPT_SYMBOL="$"
 
@@ -22,9 +25,9 @@ PROMPT_SYMBOL="$"
 #
 # USER@HOST:DIRECTORY (GIT BRANCH)$ COMMAND
 #
-PS1="\[${GREEN}\]\u@\h";           # username@hostname
-PS1+="\[${RESET}\]:";
-PS1+="\[${BLUE}\]\w";              # current working directory with full path
-PS1+="\[${YELLOW}\]\$(__git_ps1)"; # git branch status
-PS1+="\[${RESET}\]\${PROMPT_SYMBOL} ";
+PS1="${GREEN}\u@\h";           # username@hostname
+PS1+="${RESET}:";
+PS1+="${BLUE}\w";              # current working directory with full path
+PS1+="${YELLOW}\$(__git_ps1)"; # git branch status
+PS1+="${RESET}\${PROMPT_SYMBOL} ";
 export PS1;
