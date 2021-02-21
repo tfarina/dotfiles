@@ -33,6 +33,13 @@
 !                         URxvt Configuration                         !
 !---------------------------------------------------------------------!
 
+! Font
+URxvt.font: xft:DejaVu Sans Mono:size=10
+
+! Fix font space. By default the distance between characters can feel too wide.
+! Reduce spacing by one pixel.
+! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
+URxvt.letterSpace: -1
 
 ! Scrollbar
 URxvt.scrollstyle: plain
@@ -48,11 +55,3 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-
-! Fonts
-URxvt.font: xft:DejaVu Sans Mono:size=10
-
-! Fix font space. By default the distance between characters can feel too wide.
-! Reduce spacing by one pixel.
-! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
-URxvt.letterSpace: -1
