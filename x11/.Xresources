@@ -50,8 +50,12 @@ URxvt.url-select.underline: true
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 
-! Normal copy-paste keybindings without perls
+! Copy/paste
+
+! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+
+! Normal copy-paste keybindings without perls
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
