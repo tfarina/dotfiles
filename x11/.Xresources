@@ -41,21 +41,15 @@ URxvt.font: xft:DejaVu Sans Mono:size=10
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: -1
 
-! Scrollbar
-URxvt.scrollstyle: plain
-
-! URLs
-URxvt.url-select.autocopy: true
-URxvt.url-select.underline: true
-URxvt.url-launcher: /usr/bin/firefox
-URxvt.matcher.button: 1
-
 ! Copy/paste
 
 ! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
-! Normal copy-paste keybindings without perls
+! Normal copy-paste keybindings without Perl.
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! Scrollbar
+URxvt.scrollstyle: plain
