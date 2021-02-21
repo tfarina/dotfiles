@@ -1,8 +1,7 @@
 if [ -f ~/.git-prompt.sh ]; then
+    GIT_PS1_SHOWDIRTYSTATE=1
     . ~/.git-prompt.sh
 fi
-
-export GIT_PS1_SHOWDIRTYSTATE=1
 
 autoload -U colors && colors
 
