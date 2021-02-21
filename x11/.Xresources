@@ -32,24 +32,4 @@
 !---------------------------------------------------------------------!
 !                         URxvt Configuration                         !
 !---------------------------------------------------------------------!
-
-! Font
-URxvt.font: xft:DejaVu Sans Mono:size=10
-
-! Fix font space. By default the distance between characters can feel too wide.
-! Reduce spacing by one pixel.
-! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
-URxvt.letterSpace: -1
-
-! Copy/paste
-
-! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
-URxvt.iso14755: false
-URxvt.iso14755_52: false
-
-! Normal copy-paste keybindings without Perl.
-URxvt.keysym.Meta-c: eval:selection_to_clipboard
-URxvt.keysym.Meta-v: eval:paste_clipboard
-
-! Scrollbar
-URxvt.scrollstyle: plain
+#include ".Xresources.d/urxvt"
