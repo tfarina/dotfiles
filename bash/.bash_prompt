@@ -16,6 +16,8 @@ MAGENTA="\033[0;35m"
 CYAN="\033[0;36m"
 WHITE="\033[0;37m"
 
+PROMPT_SYMBOL="$"
+
 #
 # Prompt format:
 #
@@ -25,5 +27,5 @@ PS1="\[${GREEN}\]\u@\h";           # username@hostname
 PS1+="\[${RESET}\]:";
 PS1+="\[${BLUE}\]\w";              # current working directory with full path
 PS1+="\[${YELLOW}\]\$(__git_ps1)"; # git branch status
-PS1+="\[${RESET}\]\$ ";
+PS1+="\[${RESET}\]\${PROMPT_SYMBOL} ";
 export PS1;
