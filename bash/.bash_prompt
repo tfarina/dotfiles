@@ -21,7 +21,7 @@ PROMPT_SYMBOL="$"
 #
 # Prompt format:
 #
-# USER@MACHINE:DIRECTORY (GIT BRANCH)$ COMMAND
+# USER@HOST:DIRECTORY (GIT BRANCH)$ COMMAND
 #
 PS1="\[${GREEN}\]\u@\h";           # username@hostname
 PS1+="\[${RESET}\]:";
