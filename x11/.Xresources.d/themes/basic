@@ -18,7 +18,7 @@
 
 ! yellow
 *.color3:  #999900
-*.color11: #E5E500
+*.color11: #FFFF00
 
 ! blue
 *.color4:  #0000B2
