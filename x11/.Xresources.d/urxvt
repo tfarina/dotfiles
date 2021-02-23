@@ -3,7 +3,7 @@
 !---------------------------------------------------------------------!
 
 ! Font
-URxvt.font: xft:DejaVu Sans Mono:size=10
+URxvt.font: xft:Hack-Regular:size=10
 
 ! Fix font space. By default the distance between characters can feel too wide.
 ! Reduce spacing by one pixel.
