@@ -6,7 +6,7 @@
 
 ! black
 *.color0:  #000000
-*.color8:  #666666
+*.color8:  #808080
 
 ! red
 *.color1:  #990000
