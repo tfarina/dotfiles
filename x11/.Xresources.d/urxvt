@@ -4,6 +4,9 @@
 
 ! Font
 URxvt.font: xft:Hack-Regular:size=10
+URxvt.boldFont: xft:Hack-Bold:size=10:weight=bold
+URxvt.italicFont: xft:Hack-Italic:size=10:slant=italic
+URxvt.boldItalicFont: xft:Hack-BoldItalic:size=10:weight=bold:slant=italic
 
 ! Fix font space. By default the distance between characters can feel too wide.
 ! Reduce spacing by one pixel.
