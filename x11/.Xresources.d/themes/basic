@@ -10,7 +10,7 @@
 
 ! red
 *.color1:  #990000
-*.color9:  #E50000
+*.color9:  #FF0000
 
 ! green
 *.color2:  #00CD00
