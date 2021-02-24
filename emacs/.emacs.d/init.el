@@ -30,3 +30,8 @@
 
 ;; Prefer UTF-8 to ISO-8859-1.
 (prefer-coding-system 'utf-8)
+
+;; eol type
+(setq eol-mnemonic-unix "LF")
+(setq eol-mnemonic-dos "CRLF")
+(setq eol-mnemonic-mac "CR")
