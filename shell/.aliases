@@ -1,7 +1,7 @@
 alias g="git"
 alias gd="git diff"
 
-alias e='emacsclient -t -c -a ""'
+alias e='emacsclient --alternate-editor "" --create-frame -nw'
 alias v="vim"
 
 # macOS-like 'open' command for Linux.
