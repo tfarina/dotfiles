@@ -1,8 +1,10 @@
 !---------------------------------------------------------------------!
-!                         URxvt Configuration                         !
+!                         URxvt Preferences                           !
 !---------------------------------------------------------------------!
 
-! Font
+! Appearence
+
+!! Font
 URxvt.font: xft:Hack-Regular:size=10
 URxvt.boldFont: xft:Hack-Bold:size=10:weight=bold
 URxvt.italicFont: xft:Hack-Italic:size=10:slant=italic
@@ -13,7 +15,9 @@ URxvt.boldItalicFont: xft:Hack-BoldItalic:size=10:weight=bold:slant=italic
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: 0
 
-! Copy/paste
+! General
+
+!! Clipboard
 
 ! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
 URxvt.iso14755: false
@@ -23,5 +27,5 @@ URxvt.iso14755_52: false
 URxvt.keysym.Meta-c: eval:selection_to_clipboard
 URxvt.keysym.Meta-v: eval:paste_clipboard
 
-! Scrollbar
+!! Scrolling
 URxvt.scrollstyle: plain
