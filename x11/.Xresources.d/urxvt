@@ -2,9 +2,16 @@
 !                         URxvt Preferences                           !
 !---------------------------------------------------------------------!
 
-! Appearence
-
-!! Font
+!---------------------------------------------------------------------
+!-- Appearence
+!----- Font
+!---------------------------------------------------------------------
+!  * `URxvt.font`           -> Font Regular
+!  * `URxvt.boldFont`       -> Font Bold
+!  * `URxvt.italicFont`     -> Font Italic
+!  * `URxvt.boldItalicFont` -> Font Bold Italic
+!  * `URxvt.letterSpace`    -> Space between two characters
+!---------------------------------------------------------------------
 URxvt.font: xft:Hack-Regular:size=10
 URxvt.boldFont: xft:Hack-Bold:size=10:weight=bold
 URxvt.italicFont: xft:Hack-Italic:size=10:slant=italic
@@ -27,5 +34,11 @@ URxvt.iso14755_52: false
 URxvt.keysym.Meta-c: eval:selection_to_clipboard
 URxvt.keysym.Meta-v: eval:paste_clipboard
 
-!! Scrolling
+!---------------------------------------------------------------------
+!-- General
+!----- Scrolling
+!---------------------------------------------------------------------
+!  * `URxvt.scrollstyle` -> Scroll bar style ('rxvt', 'plain', 'next',
+!                           'xterm')
+!---------------------------------------------------------------------
 URxvt.scrollstyle: plain
