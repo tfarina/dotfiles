@@ -17,6 +17,15 @@
 ! You can query the state of loaded config with:
 !   xrdb -query
 
+#if __has_include(".extend.Xresources")
+#include ".extend.Xresources"
+#endif
+
+! ^ The above lines are no comments!
+! Leave them as they are if a file ~/.extend.Xresources is being used on your system.
+! config can be added there or also here below.
+! For comments use "!"
+
 !---------------------------------------------------------------------!
 !                         Color scheme                                !
 !---------------------------------------------------------------------!
