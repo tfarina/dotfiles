@@ -34,11 +34,13 @@ URxvt.iso14755_52: false
 URxvt.keysym.Meta-c: eval:selection_to_clipboard
 URxvt.keysym.Meta-v: eval:paste_clipboard
 
-!---------------------------------------------------------------------
+!------------------------------------------------------------------------
 !-- General
 !----- Scrolling
+!------------------------------------------------------------------------
+!  * `URxvt.scrollBar_right` -> Enable/Disable to put scroll bar on right
+!  * `URxvt.scrollstyle`     -> Scroll bar style ('rxvt', 'plain', 'next',
+!                               'xterm')
 !---------------------------------------------------------------------
-!  * `URxvt.scrollstyle` -> Scroll bar style ('rxvt', 'plain', 'next',
-!                           'xterm')
-!---------------------------------------------------------------------
-URxvt.scrollstyle: plain
+URxvt.scrollBar_right: false
+URxvt.scrollstyle:     plain
