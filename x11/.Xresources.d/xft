@@ -1,6 +1,17 @@
 !---------------------------------------------------------------------!
 !                         Xft - X FreeType Font Configuration         !
 !---------------------------------------------------------------------!
+!  * `Xft.antialias` -> Whether glyphs can be antialiased
+!  * `Xft.autohint`  -> Use autohinter instead of normal hinter
+!  * `Xft.dpi`       -> Target dots per inch
+!  * `Xft.hinting`   -> Whether the rasterizer should use hinting
+!  * `Xft.hintstyle` -> Automatic hinting style ('hintnone', 'hintslight',
+!                       'hintmedium', 'hintfull')
+!  * `Xft.lcdfilter` -> Type of LCD filter ('lcdnone', 'lcddefault',
+!                       'lcdlight', 'lcdlegacy')
+!  * `Xft.rgba`      -> Type of subpixel geometry ('unknown', 'rgb', 'bgr',
+!                       'vrgb', 'none')
+!---------------------------------------------------------------------------
 Xft.dpi:       96 ! xdpyinfo | grep dots
 Xft.rgba:      rgb
 Xft.autohint:  0
