@@ -1,5 +1,6 @@
 if [ -f ~/.git-prompt.sh ]; then
     GIT_PS1_SHOWDIRTYSTATE=1
+    GIT_PS1_SHOWUNTRACKEDFILES=1
     . ~/.git-prompt.sh
 fi
 
