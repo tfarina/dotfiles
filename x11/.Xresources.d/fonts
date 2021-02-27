@@ -1,5 +1,5 @@
 !---------------------------------------------------------------------!
-!                         Xft Font Configuration                      !
+!                         Xft - X FreeType Font Configuration         !
 !---------------------------------------------------------------------!
 Xft.dpi:       96 ! xdpyinfo | grep dots
 Xft.rgba:      rgb
