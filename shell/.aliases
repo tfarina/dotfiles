@@ -1,5 +1,6 @@
 alias g="git"
 alias gd="git diff"
+alias gst="git status"
 
 alias e='emacsclient --alternate-editor "" --create-frame -nw'
 alias v="vim"
