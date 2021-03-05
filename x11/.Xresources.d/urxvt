@@ -22,11 +22,15 @@ URxvt.boldItalicFont: xft:Hack-BoldItalic:size=10:weight=bold:slant=italic
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: 0
 
-! General
-
-!! Clipboard
-
+!------------------------------------------------------------------------------
+!-- General
+!----- Clipboard
+!------------------------------------------------------------------------------
+!  * `URxvt.iso14755`    -> Enable/Disable ISO 14755
+!  * `URxvt.iso14755_52` -> Enable/Disable ISO 14755 5.2 mode
+!
 ! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
+!------------------------------------------------------------------------------
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
