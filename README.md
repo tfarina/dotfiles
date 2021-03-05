@@ -40,6 +40,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Screen Capture | [Scrot](https://github.com/dreamer/scrot) |
 | Document Viewer | [Zathura](https://pwmt.org/projects/zathura) |
 | Clipboard Manager | [ClipIt](https://github.com/CristianHenzel/ClipIt) |
+| Calculator | [galculator](http://galculator.mnim.org/) |
 
 # sxhkd key bindings
 
