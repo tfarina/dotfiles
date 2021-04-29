@@ -50,6 +50,8 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | super + Return | Open a new terminal | General |
 | super + slash | Run application launcher | General |
 | super + l | Lock the screen | General |
+| super + shift + q | Quit bspwm | BSPWM |
+| super + shift + r | Restart bspwm | BSPWM |
 
 ## Installation
 
