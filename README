@@ -6,6 +6,7 @@
 
 host: Gateway MT6707 3408385R
 architecture: i686
+cpu op-mode(s): 32-bit
 kernel: Linux 4.15.0-133-generic
 distro: Ubuntu 16.04.5 LTS (Xenial Xerus)
 resolution: 1280x800
