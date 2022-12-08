@@ -11,19 +11,19 @@ kernel: Linux 4.15.0-133-generic
 distro: Ubuntu 16.04.5 LTS (Xenial Xerus)
 resolution: 1280x800
 display: x11 server: X.Org
-display manager: lightdm
-greeter: lightdm gtk greeter
+display manager: lightdm (1.18.3)
+greeter: lightdm gtk greeter (2.0.1)
 wm: bspwm
 hotkey daemon: sxhkd
 status bar: polybar
 application launcher: rofi
-vt102 terminal emulator: rxvt-unicode
+vt102 terminal emulator: rxvt-unicode (v9.21)
 terminal font: DejaVu Sans Mono
-shell: zsh
-editor: emacs
-file manager: thunar
-web browser: firefox
+shell: zsh (5.1.1)
+editor: emacs (24.5.1)
+file manager: thunar (1.6.11)
+web browser: firefox (88.0)
 image viewer: sxiv
-screen capture utility: scrot
-document viewer: zathura
-clipboard manager: clipit
+screen capture utility: scrot (0.8)
+document viewer: zathura (0.3.5)
+clipboard manager: clipit (1.4.2)
