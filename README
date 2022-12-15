@@ -7,6 +7,13 @@
 host: Gateway MT6707 3408385R
 architecture: i686
 cpu op-mode(s): 32-bit
+BIOS Information
+     Vendor: Phoenix Technologies LTD
+     Version: 77.11
+     Release Date: 03/19/2007
+     Address: 0xE5A60
+     Runtime Size: 107936 bytes
+     ROM Size: 1024 kB
 kernel: Linux 4.15.0-133-generic
 distro: Ubuntu 16.04.5 LTS (Xenial Xerus)
 resolution: 1280x800
