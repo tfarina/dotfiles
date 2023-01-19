@@ -1,0 +1,4 @@
+!! Use the Caps Lock key as additional Ctrl key.
+remove Lock = Caps_Lock
+keysym Caps_Lock = Control_L
+add Control = Control_L
