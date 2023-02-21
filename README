@@ -27,7 +27,7 @@ status bar: polybar
 application launcher: rofi
 vt102 terminal emulator: rxvt-unicode (v9.21)
 terminal font: Menlo
-shell: zsh (5.1.1)
+shell: bash (4.3.48(1)-release)
 editor: emacs (24.5.1)
 file manager: thunar (1.6.11)
 web browser: firefox (88.0)
