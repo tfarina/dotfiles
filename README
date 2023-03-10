@@ -21,10 +21,14 @@ resolution: 1280x800
 display: x11 server: X.Org
 display manager: lightdm (1.18.3)
 greeter: lightdm gtk greeter (2.0.1)
-wm: bspwm
-hotkey daemon: sxhkd
-status bar: polybar
-application launcher: rofi
+wm: xfwm4
+panel: xfce4-panel
+desktop manager: xfdesktop
+session manager: xfce4-session
+setting system: xfce4-settings
+settings daemon: xfconf
+application launcher: xfce4-appfinder
+desktop environment: xfce (4.12)
 vt102 terminal emulator: rxvt-unicode (v9.21)
 terminal font: Menlo
 shell: bash (4.3.48(1)-release)
