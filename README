@@ -16,6 +16,7 @@ BIOS Information
      Runtime Size: 107936 bytes
      ROM Size: 1024 kB
 memory: DIMM DDR2 Synchronous 533 MHz (2 slots of 1024 MB each)
+disk: KINGSTON SA400S3 (120 GB) A400 SATA SSD (solid-state drive)
 kernel: Linux 4.15.0-133-generic
 distro: Ubuntu 16.04.5 LTS (Xenial Xerus)
 resolution: 1280x800
