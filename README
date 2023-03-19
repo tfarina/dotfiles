@@ -7,7 +7,6 @@
 host: Gateway MT6707 3408385R
 architecture: i686
 cpu op-mode(s): 32-bit
-Processor: Genuine Intel(R) CPU           T2060  @ 1.60GHz
 BIOS Information
      Vendor: Phoenix Technologies LTD
      Version: 77.11
@@ -15,6 +14,7 @@ BIOS Information
      Address: 0xE5A60
      Runtime Size: 107936 bytes
      ROM Size: 1024 kB
+cpu: Genuine Intel(R) CPU           T2060  @ 1.60GHz
 memory: DIMM DDR2 Synchronous 533 MHz (2 slots of 1024 MB each)
 disk: KINGSTON SA400S3 (120 GB) A400 SATA SSD (solid-state drive)
 kernel: Linux 4.15.0-133-generic
