@@ -1,4 +1,5 @@
 !! Use the Caps Lock key as additional Ctrl key.
-remove Lock = Caps_Lock
-keysym Caps_Lock = Control_L
-add Control = Control_L
+clear Lock
+clear Control
+keycode 66 = Control_L
+add Control = Control_L Control_R
