@@ -20,7 +20,7 @@ URxvt.boldItalicFont: xft:Menlo-BoldItalic:size=10:weight=bold:slant=italic
 ! Fix font space. By default the distance between characters can feel too wide.
 ! Reduce spacing by one pixel.
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
-URxvt.letterSpace: 0
+URxvt.letterSpace: -1
 
 !------------------------------------------------------------------------------
 !-- General
