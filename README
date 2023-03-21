@@ -26,7 +26,7 @@ display manager: lightdm (1.18.3)
 greeter: lightdm gtk greeter (2.0.1)
 session manager: xfce4-session
 setting system: xfce4-settings
-wm: xfwm4
+window manager: xfwm4
 desktop manager: xfdesktop
 panel: xfce4-panel
 settings daemon: xfconf
