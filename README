@@ -24,11 +24,11 @@ resolution: 1280x800
 display: x11 server: X.Org
 display manager: lightdm (1.18.3)
 greeter: lightdm gtk greeter (2.0.1)
-wm: xfwm4
-panel: xfce4-panel
-desktop manager: xfdesktop
 session manager: xfce4-session
 setting system: xfce4-settings
+wm: xfwm4
+desktop manager: xfdesktop
+panel: xfce4-panel
 settings daemon: xfconf
 application launcher: xfce4-appfinder
 desktop environment: xfce (4.12)
