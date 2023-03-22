@@ -37,7 +37,7 @@ shell: bash (4.3.48(1)-release)
 editor: emacs (24.5.1)
 file manager: thunar (1.6.11)
 web browser: firefox (88.0)
-image viewer: sxiv
+image viewer: ristretto (0.8.0)
 screen capture utility: scrot (0.8)
 document viewer: zathura (0.3.5)
 clipboard manager: clipit (1.4.2)
