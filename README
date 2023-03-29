@@ -17,6 +17,7 @@ BIOS Information
 cpu: Genuine Intel(R) CPU           T2060  @ 1.60GHz
 memory: DIMM DDR2 Synchronous 533 MHz (2 slots of 1024 MB each)
 disk: KINGSTON SA400S3 (120 GB) A400 SATA SSD (solid-state drive)
+wireless adapater: Realtek Semiconductor Corp. RTL8187 Wireless Adapter
 bootloader: grub 2.02~beta2-36ubuntu3.32
 kernel: Linux 4.15.0-142-generic
 distro: Ubuntu 16.04.7 LTS (Xenial Xerus)
