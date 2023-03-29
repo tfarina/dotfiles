@@ -20,6 +20,9 @@
 ;; Show column numbers.
 (column-number-mode t)
 
+;; Highlight trailing whitespace.
+(setq-default show-trailing-whitespace t)
+
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
 (custom-set-variables
   '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
