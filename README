@@ -15,7 +15,9 @@ BIOS Information
      Runtime Size: 107936 bytes
      ROM Size: 1024 kB
 cpu: Genuine Intel(R) CPU           T2060  @ 1.60GHz
-memory: DIMM DDR2 Synchronous 533 MHz (2 slots of 1024 MB each)
+memory:
+ slot 0: 1 GB DIMM DDR2 667 MHz - Samsung M470T2953CZ3-CE6
+ slot 1: 1 GB DIMM DDR2 667 MHz - Samsung M470T2953CZ3-CE6
 disk: KINGSTON SA400S3 (120 GB) A400 SATA SSD (solid-state drive)
 network:
  device 1: Marvell 88E8038 PCI-E Fast Ethernet
