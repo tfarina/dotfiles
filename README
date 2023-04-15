@@ -22,6 +22,7 @@ disk: KINGSTON SA400S3 (120 GB) A400 SATA SSD (solid-state drive)
 network:
  device 1: Marvell 88E8038 PCI-E Fast Ethernet
  device 2: Realtek Semiconductor Corp. RTL8187 Wireless Adapter
+sound: Intel NM10/ICH7 Family High Definition Audio Controller
 bootloader: grub 2.02~beta2-36ubuntu3.32
 kernel: Linux 4.15.0-142-generic
 distro: Ubuntu 16.04.7 LTS (Xenial Xerus)
