@@ -29,7 +29,7 @@ bootloader: grub 2.02~beta2-36ubuntu3.32
 kernel: Linux 4.15.0-142-generic
 distro: Ubuntu 16.04.7 LTS (Xenial Xerus)
 resolution: 1280x800
-display server: Xorg
+display server: Xorg (1.19.6)
 display manager: lightdm (1.18.3)
 greeter: lightdm gtk greeter (2.0.1)
 session manager: xfce4-session
