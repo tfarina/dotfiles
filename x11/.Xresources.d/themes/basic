@@ -22,8 +22,8 @@
 *.color1:  #990000
 *.color9:  #FF0000
 
-! green
-*.color2:  #00CD00
+! green: rgb(0,128,0)
+*.color2:  #008000
 *.color10: #00FF00
 
 ! yellow
