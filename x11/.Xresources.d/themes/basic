@@ -18,8 +18,8 @@
 *.color0:  #000000
 *.color8:  #808080
 
-! red: color9: rgb(255,0,0)
-*.color1:  #990000
+! red: color1: rgb(128,0,0) + color9: rgb(255,0,0)
+*.color1:  #800000
 *.color9:  #FF0000
 
 ! green: color2: rgb(0,128,0) + color10: rgb(0,255,0)
