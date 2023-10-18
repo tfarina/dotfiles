@@ -43,6 +43,7 @@ greeter: lightdm gtk greeter (2.0.1)
 session manager: xfce4-session
 settings daemon: xfsettingsd
 window manager: xfwm4
+window manager theme: Mojave-light-solid
 desktop manager: xfdesktop
 panel: xfce4-panel
 application launcher: xfce4-appfinder
