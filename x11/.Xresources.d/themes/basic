@@ -38,9 +38,9 @@
 *.color5:  #800080
 *.color13: #FF00FF
 
-! cyan
-*.color6:  #00A6B2
-*.color14: #00E5E5
+! cyan: color6: rgb(0,128,128) + color14: rgb(0,255,255)
+*.color6:  #008080
+*.color14: #00FFFF
 
 ! white: color7: rgb(192,192,192) + color15: rgb(255,255,255)
 *.color7:  #C0C0C0
