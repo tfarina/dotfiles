@@ -14,23 +14,23 @@
 
 ! ANSI Colors
 
-! black
+! black: color0: rgb(0,0,0) + color8: rgb(128,128,128)
 *.color0:  #000000
 *.color8:  #808080
 
-! red
+! red: color9: rgb(255,0,0)
 *.color1:  #990000
 *.color9:  #FF0000
 
-! green: rgb(0,128,0)
+! green: color2: rgb(0,128,0) + color10: rgb(0,255,0)
 *.color2:  #008000
 *.color10: #00FF00
 
-! yellow
+! yellow: color11: rgb(255,255,0)
 *.color3:  #999900
 *.color11: #FFFF00
 
-! blue
+! blue: color12: rgb(0,0,255)
 *.color4:  #0000EE
 *.color12: #0000FF
 
@@ -42,6 +42,6 @@
 *.color6:  #00A6B2
 *.color14: #00E5E5
 
-! white
+! white: color7: rgb(192,192,192) + color15: rgb(255,255,255)
 *.color7:  #C0C0C0
 *.color15: #FFFFFF
