@@ -30,8 +30,8 @@
 *.color3:  #999900
 *.color11: #FFFF00
 
-! blue: color12: rgb(0,0,255)
-*.color4:  #0000EE
+! blue: color4: rgb(0,0,128) + color12: rgb(0,0,255)
+*.color4:  #000080
 *.color12: #0000FF
 
 ! magenta
