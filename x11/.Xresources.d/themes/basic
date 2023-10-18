@@ -34,9 +34,9 @@
 *.color4:  #000080
 *.color12: #0000FF
 
-! magenta
-*.color5:  #B200B2
-*.color13: #E500E5
+! magenta: color5: rgb(128,0,128) + color13: rgb(255,0,255)
+*.color5:  #800080
+*.color13: #FF00FF
 
 ! cyan
 *.color6:  #00A6B2
