@@ -12,7 +12,7 @@
 !  * `Xft.rgba`      -> Type of subpixel geometry ('unknown', 'rgb', 'bgr',
 !                       'vrgb', 'none')
 !---------------------------------------------------------------------------
-Xft.dpi:       100 ! xdpyinfo | grep dots
+Xft.dpi:       96 ! xdpyinfo | grep dots
 Xft.rgba:      rgb
 Xft.autohint:  0
 Xft.antialias: 1
