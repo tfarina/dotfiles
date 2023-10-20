@@ -39,7 +39,7 @@ distro: Ubuntu 16.04.7 LTS (Xenial Xerus)
 resolution: 1280x800
 display server: Xorg (1.19.6)
 display manager: lightdm (1.18.3)
-greeter: lightdm gtk greeter (2.0.1)
+greeter: lightdm-gtk-greeter (2.0.1)
 session manager: xfce4-session
 settings daemon: xfsettingsd
 window manager: xfwm4
