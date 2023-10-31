@@ -44,6 +44,7 @@ session manager: xfce4-session
 settings daemon: xfsettingsd
 window manager: xfwm4
 window manager theme: Mojave-light-solid
+theme: Greybird [GTK2], Ambiance [GTK3]
 desktop manager: xfdesktop
 panel: xfce4-panel
 application launcher: xfce4-appfinder
