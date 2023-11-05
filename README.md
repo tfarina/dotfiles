@@ -31,7 +31,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Display Manager | [LightDM](https://github.com/canonical/lightdm) |
 | Greeter | [LightDM GTK+ Greeter](https://github.com/Xubuntu/lightdm-gtk-greeter) |
 | Terminal Emulator | [URxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) |
-| Shell | [Zsh](https://www.zsh.org) |
+| Shell | [Bash](https://www.gnu.org/software/bash/) |
 | Application Launcher | [Rofi](https://github.com/davatorium/rofi) |
 | Web Browser | [Firefox](https://www.mozilla.org/en-US/firefox/new) |
 | Mail Reader | [Claws Mail](https://www.claws-mail.org) |
