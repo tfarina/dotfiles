@@ -1,6 +1,11 @@
 ;; Elisp files go in ~/.emacs.d/lisp/
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
+;; Theme files go here:
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
+(load-theme 'vs-light t)
+
 ;; Disable the startup screen.
 (setq inhibit-startup-screen t)
 
