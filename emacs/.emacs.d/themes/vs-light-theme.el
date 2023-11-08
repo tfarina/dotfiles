@@ -43,7 +43,6 @@
    `(font-lock-function-name-face ((t (:foreground "#000000"))))
    `(font-lock-keyword-face ((t (:foreground "#0000FF"))))
    `(font-lock-string-face ((t (:foreground "#A31515"))))
-   ;`(font-lock-type-face ((t (:foreground "#2B91AF"))))
    `(font-lock-type-face ((t (:foreground "#0000FF"))))
    `(font-lock-variable-name-face ((t (:foreground "#000000"))))
    `(font-lock-preprocessor-face ((t (:foreground "#0000FF"))))
