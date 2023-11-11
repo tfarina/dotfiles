@@ -18,8 +18,10 @@
 ;; Hide left scrollbar.
 (scroll-bar-mode -1)
 
-;; Minimal interface.
+;; Don't blink the cursor.
 (if (fboundp 'blink-cursor-mode) (blink-cursor-mode -1))
+
+;; Activates the mark and highlights the region.
 (transient-mark-mode t)
 
 ;; Show column numbers.
