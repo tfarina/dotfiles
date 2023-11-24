@@ -46,7 +46,7 @@ window manager: xfwm4
 window manager theme: Mojave-light-solid
 theme: Greybird [GTK2], Ambiance [GTK3]
 icon theme: elementary Xfce dark (elementary-xfce-dark)
-cursor theme: Retrosmart White Color (retrosmart-x11-cursors)
+cursor theme: Chicago95 Standard (chicago95-standard-cursors)
 desktop manager: xfdesktop
 panel: xfce4-panel
 application launcher: xfce4-appfinder
