@@ -42,6 +42,13 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Clipboard Manager | [ClipIt](https://github.com/CristianHenzel/ClipIt) |
 | Calculator | [galculator](http://galculator.mnim.org/) |
 
+# Xfce Keyboard Shortcuts
+
+| Key Binding | Associated Action | Category |
+| ------------- | ------------- | --------------------- |
+| super + R | Run the Application Finder | General |
+| super + L | Lock the screen | General |
+
 # sxhkd key bindings
 
 | Key Binding | Associated Action | Category |
