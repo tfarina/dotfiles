@@ -46,7 +46,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 
 | Key Binding | Associated Action | Category |
 | ------------- | ------------- | --------------------- |
-| super + R | Run the Application Finder | General |
+| super + R | Open the Application Finder | General |
 | super + L | Lock the screen | General |
 
 # sxhkd key bindings
@@ -55,7 +55,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | ------------- | ------------- | --------------------- |
 | super + Escape | Reload sxhkd configuration's file | General |
 | super + Return | Open a new terminal | General |
-| super + slash | Run application launcher | General |
+| super + slash | Open the Application Finder | General |
 | super + l | Lock the screen | General |
 | super + shift + q | Quit bspwm | BSPWM |
 | super + shift + r | Restart bspwm | BSPWM |
