@@ -47,6 +47,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Key Binding | Associated Action | Category |
 | ------------- | ------------- | --------------------- |
 | super + R | Open the Application Finder | General |
+| super + E | Display Thunar File Manager | General |
 | super + L | Lock the screen | General |
 
 # sxhkd key bindings
