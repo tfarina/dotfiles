@@ -34,6 +34,7 @@ sound: Intel NM10/ICH7 Family High Definition Audio Controller
 printer: HP DeskJet 2721e All-in-One Printer series 26K68-00007
 monitor: Samsung LCD Monitor (Ultrabright Widescreen)
 keyboard: AT Translated Set 2 keyboard
+mouse: SynPS/2 Synaptics TouchPad
 bootloader: grub 2.02~beta2-36ubuntu3.32
 kernel: Linux 4.15.0-142-generic
 distro: Ubuntu 16.04.7 LTS (Xenial Xerus)
