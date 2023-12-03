@@ -45,9 +45,9 @@ greeter: lightdm-gtk-greeter (2.0.1)
 session manager: xfce4-session
 settings daemon: xfsettingsd
 window manager: xfwm4
-window manager theme: Mojave-Light-solid
-theme: Greybird [GTK2], Ambiance [GTK3]
-icon theme: elementary Xfce dark (elementary-xfce-dark)
+window manager theme: Clearlooks-Phenix
+theme: Adwaita [GTK2], Ambiance [GTK3]
+icon theme: elementary Xfce (elementary-xfce)
 cursor theme: Chicago95 Standard (chicago95-standard-cursors)
 desktop manager: xfdesktop
 panel: xfce4-panel
