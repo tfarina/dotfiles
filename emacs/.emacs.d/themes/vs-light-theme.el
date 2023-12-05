@@ -38,7 +38,7 @@
    `(default ((t (:foreground "#000000" :background "#FFFFFF"))))
    `(font-lock-builtin-face ((t (:foreground "#006FE0"))))
    `(font-lock-comment-face ((t (:foreground "#008000"))))
-   `(font-lock-constant-face ((t (:foreground "#2B91AF"))))
+   `(font-lock-constant-face ((t (:foreground "#000000"))))
    `(font-lock-doc-face ((t (:foreground "#008000"))))
    `(font-lock-function-name-face ((t (:foreground "#000000"))))
    `(font-lock-keyword-face ((t (:foreground "#0000FF"))))
