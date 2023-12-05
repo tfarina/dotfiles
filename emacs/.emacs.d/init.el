@@ -30,6 +30,9 @@
 ;; Highlight matching parentheses.
 (show-paren-mode t)
 
+;; Set cursor to vertical bar with default width.
+(set-default 'cursor-type 'bar)
+
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
 (custom-set-variables
   '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
