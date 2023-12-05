@@ -30,6 +30,9 @@
 ;; Highlight trailing whitespace.
 (setq-default show-trailing-whitespace t)
 
+;; Highlight matching parentheses.
+(show-paren-mode t)
+
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
 (custom-set-variables
   '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
