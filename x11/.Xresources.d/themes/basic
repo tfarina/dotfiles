@@ -14,36 +14,44 @@
 
 ! ANSI Colors
 
-! black: color0: rgb(0,0,0) + color8: rgb(128,128,128)
+! black: rgb(0,0,0)
 *.color0:  #000000
+! bright black: rgb(128,128,128)
 *.color8:  #808080
 
-! red: color1: rgb(128,0,0) + color9: rgb(255,0,0)
+! red: rgb(128,0,0)
 *.color1:  #800000
+! bright red: rgb(255,0,0)
 *.color9:  #FF0000
 
-! green: color2: rgb(0,128,0) + color10: rgb(0,255,0)
+! green: rgb(0,128,0)
 *.color2:  #008000
+! bright green: rgb(0,255,0)
 *.color10: #00FF00
 
-! yellow: color3: rgb(128,128,0) + color11: rgb(255,255,0)
+! yellow: rgb(128,128,0)
 *.color3:  #808000
+! bright yellow: rgb(255,255,0)
 *.color11: #FFFF00
 
-! blue: color4: rgb(0,0,128) + color12: rgb(0,0,255)
+! blue: rgb(0,0,128)
 *.color4:  #000080
+! bright blue: rgb(0,0,255)
 *.color12: #0000FF
 
-! magenta: color5: rgb(128,0,128) + color13: rgb(255,0,255)
+! magenta: rgb(128,0,128)
 *.color5:  #800080
+! bright magenta: rgb(255,0,255)
 *.color13: #FF00FF
 
-! cyan: color6: rgb(0,128,128) + color14: rgb(0,255,255)
+! cyan: rgb(0,128,128)
 *.color6:  #008080
+! bright cyan: rgb(0,255,255)
 *.color14: #00FFFF
 
-! white: color7: rgb(192,192,192) + color15: rgb(255,255,255)
+! white: rgb(192,192,192)
 *.color7:  #C0C0C0
+! bright white: rgb(255,255,255)
 *.color15: #FFFFFF
 
 !-----------------------------------------------------------------------------
