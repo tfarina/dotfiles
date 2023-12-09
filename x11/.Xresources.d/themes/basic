@@ -23,9 +23,12 @@
 #define BACKGROUND BRIGHT_WHITE
 #define FOREGROUND BLACK
 
+! rbg(127,127,127)
+#define GREY50 #7F7F7F
+
 *.background: BACKGROUND
 *.foreground: FOREGROUND
-*.cursorColor: #7F7F7F
+*.cursorColor: GREY50
 
 !-----------------------------------------------------------------------------
 !-- Colors
