@@ -28,7 +28,6 @@
 
 *.background: BACKGROUND
 *.foreground: FOREGROUND
-*.cursorColor: GREY50
 
 !-----------------------------------------------------------------------------
 !-- Colors
