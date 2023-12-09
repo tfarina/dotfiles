@@ -20,8 +20,11 @@
 #define BRIGHT_CYAN #00FFFF
 #define BRIGHT_WHITE #FFFFFF
 
-*.background: BRIGHT_WHITE
-*.foreground: BLACK
+#define BACKGROUND BRIGHT_WHITE
+#define FOREGROUND BLACK
+
+*.background: BACKGROUND
+*.foreground: FOREGROUND
 *.cursorColor: #7F7F7F
 
 !-----------------------------------------------------------------------------
