@@ -52,3 +52,10 @@ URxvt.scrollstyle:     plain
 
 !URxvt.iconFile: /usr/share/icons/elementary-xfce/apps/24/terminal.png
 URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
+
+!-----------------------------------------------------------------------------
+!-- Cursor
+!-----------------------------------------------------------------------------
+
+URxvt.cursorUnderline: false
+URxvt.cursorBlink: false
