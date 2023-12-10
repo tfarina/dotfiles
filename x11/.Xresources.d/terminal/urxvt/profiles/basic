@@ -1,0 +1,81 @@
+!---------------------------------------------------------------------!
+!                         URxvt Preferences                           !
+!---------------------------------------------------------------------!
+
+!-----------------------------------------------------------------------------
+!-- Colors
+!----- General
+!-----------------------------------------------------------------------------
+
+#define BLACK #000000
+#define RED #800000
+#define GREEN #008000
+#define YELLOW #808000
+#define BLUE #000080
+#define MAGENTA #800080
+#define CYAN #008080
+#define WHITE #C0C0C0
+#define BRIGHT_BLACK #808080
+#define BRIGHT_RED #FF0000
+#define BRIGHT_GREEN #00FF00
+#define BRIGHT_YELLOW #FFFF00
+#define BRIGHT_BLUE #0000FF
+#define BRIGHT_MAGENTA #FF00FF
+#define BRIGHT_CYAN #00FFFF
+#define BRIGHT_WHITE #FFFFFF
+
+#define BACKGROUND BRIGHT_WHITE
+#define FOREGROUND BLACK
+
+! rbg(127,127,127)
+#define GREY50 #7F7F7F
+
+URxvt.background: BACKGROUND
+URxvt.foreground: FOREGROUND
+
+!-----------------------------------------------------------------------------
+!-- Colors
+!----- Palette
+!-----------------------------------------------------------------------------
+
+! ANSI Colors
+
+! black: rgb(0,0,0)
+URxvt.color0:  BLACK
+! bright black: rgb(128,128,128)
+URxvt.color8:  BRIGHT_BLACK
+
+! red: rgb(128,0,0)
+URxvt.color1:  RED
+! bright red: rgb(255,0,0)
+URxvt.color9:  BRIGHT_RED
+
+! green: rgb(0,128,0)
+URxvt.color2:  GREEN
+! bright green: rgb(0,255,0)
+URxvt.color10: BRIGHT_GREEN
+
+! yellow: rgb(128,128,0)
+URxvt.color3:  YELLOW
+! bright yellow: rgb(255,255,0)
+URxvt.color11: BRIGHT_YELLOW
+
+! blue: rgb(0,0,128)
+URxvt.color4:  BLUE
+! bright blue: rgb(0,0,255)
+URxvt.color12: BRIGHT_BLUE
+
+! magenta: rgb(128,0,128)
+URxvt.color5:  MAGENTA
+! bright magenta: rgb(255,0,255)
+URxvt.color13: BRIGHT_MAGENTA
+
+! cyan: rgb(0,128,128)
+URxvt.color6:  CYAN
+! bright cyan: rgb(0,255,255)
+URxvt.color14: BRIGHT_CYAN
+
+! white: rgb(192,192,192)
+URxvt.color7:  WHITE
+! bright white: rgb(255,255,255)
+URxvt.color15: BRIGHT_WHITE
