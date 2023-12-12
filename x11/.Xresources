@@ -27,16 +27,11 @@
 ! For comments use "!"
 
 !---------------------------------------------------------------------!
-!                         Color scheme                                !
-!---------------------------------------------------------------------!
-#include ".Xresources.d/terminal/urxvt/profiles/basic"
-
-!---------------------------------------------------------------------!
-!                         Xft Font Configuration                      !
+!                         Xft font configuration                      !
 !---------------------------------------------------------------------!
 #include ".Xresources.d/xft"
 
 !---------------------------------------------------------------------!
-!                         URxvt Configuration                         !
+!                         URxvt configuration                         !
 !---------------------------------------------------------------------!
-#include ".Xresources.d/urxvt"
+#include ".Xresources.d/terminal/urxvt/profiles/basic"

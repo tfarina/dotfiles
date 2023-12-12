@@ -79,3 +79,197 @@ URxvt.color14: BRIGHT_CYAN
 URxvt.color7:  WHITE
 ! bright white: rgb(255,255,255)
 URxvt.color15: BRIGHT_WHITE
+
+!---------------------------------------------------------------------
+!-- Appearence
+!----- Font
+!---------------------------------------------------------------------
+!  * `URxvt.font`           -> Font Regular
+!  * `URxvt.boldFont`       -> Font Bold
+!  * `URxvt.italicFont`     -> Font Italic
+!  * `URxvt.boldItalicFont` -> Font Bold Italic
+!  * `URxvt.letterSpace`    -> Space between two characters
+!---------------------------------------------------------------------
+URxvt.font:           xft:Menlo-Regular:pixelsize=12
+URxvt.boldFont:       xft:Menlo-Bold:pixelsize=12:weight=bold
+URxvt.italicFont:     xft:Menlo-Italic:pixelsize=12:slant=italic
+URxvt.boldItalicFont: xft:Menlo-BoldItalic:pixelsize=12:weight=bold:slant=italic
+
+! Fix font space. By default the distance between characters can feel too wide.
+! Reduce spacing by one pixel.
+! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
+URxvt.letterSpace: 0
+
+!------------------------------------------------------------------------------
+!-- General
+!----- Clipboard
+!------------------------------------------------------------------------------
+!  * `URxvt.iso14755`    -> Enable/Disable ISO 14755
+!  * `URxvt.iso14755_52` -> Enable/Disable ISO 14755 5.2 mode
+!
+! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
+!------------------------------------------------------------------------------
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Rebind copy and paste key bindings.
+URxvt.keysym.Meta-c: eval:selection_to_clipboard
+URxvt.keysym.Meta-v: eval:paste_clipboard
+
+!------------------------------------------------------------------------
+!-- General
+!----- Scrolling
+!------------------------------------------------------------------------
+!  * `URxvt.scrollBar_right` -> Enable/Disable to put scroll bar on right
+!  * `URxvt.scrollstyle`     -> Scroll bar style ('rxvt', 'plain', 'next',
+!                               'xterm')
+!---------------------------------------------------------------------
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.scrollstyle:     plain
+
+!URxvt.iconFile: /usr/share/icons/elementary-xfce/apps/24/terminal.png
+URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
+
+!-----------------------------------------------------------------------------
+!-- Cursor
+!-----------------------------------------------------------------------------
+
+URxvt.cursorUnderline: false
+URxvt.cursorBlink: false
+URxvt.cursorColor: GREY50
+
+!termName:                       string
+!geometry:                       geometry
+!chdir:                          string
+!reverseVideo:                   boolean
+!loginShell:                     boolean
+!multiClickTime:                 number
+!jumpScroll:                     boolean
+!skipScroll:                     boolean
+!pastableTabs:                   boolean
+!scrollstyle:                    mode
+!scrollBar:                      boolean
+!scrollBar_right:                boolean
+!scrollBar_floating:             boolean
+!scrollBar_align:                mode
+!thickness:                      number
+!scrollTtyOutput:                boolean
+!scrollTtyKeypress:              boolean
+!scrollWithBuffer:               boolean
+!inheritPixmap:                  boolean
+!transparent:                    boolean
+!tintColor:                      color
+!shading:                        number
+!blurRadius:                     HxV
+!fading:                         number
+!fadeColor:                      color
+!utmpInhibit:                    boolean
+!urgentOnBell:                   boolean
+!visualBell:                     boolean
+!mapAlert:                       boolean
+!meta8:                          boolean
+!mouseWheelScrollPage:           boolean
+!tripleclickwords:               boolean
+!insecure:                       boolean
+!cursorUnderline:                boolean
+!cursorBlink:                    boolean
+!pointerBlank:                   boolean
+!background:                     color
+!foreground:                     color
+!color0:                         color
+!color1:                         color
+!color2:                         color
+!color3:                         color
+!color4:                         color
+!color5:                         color
+!color6:                         color
+!color7:                         color
+!color8:                         color
+!color9:                         color
+!color10:                        color
+!color11:                        color
+!color12:                        color
+!color13:                        color
+!color14:                        color
+!color15:                        color
+!colorBD:                        color
+!colorIT:                        color
+!colorUL:                        color
+!colorRV:                        color
+!underlineColor:                 color
+!scrollColor:                    color
+!troughColor:                    color
+!highlightColor:                 color
+!highlightTextColor:             color
+!cursorColor:                    color
+!cursorColor2:                   color
+!pointerColor:                   color
+!pointerColor2:                  color
+!borderColor:                    color
+!path:                           search path
+!backgroundPixmap:               file[;geom]
+!iconFile:                       file
+!font:                           fontname
+!boldFont:                       fontname
+!italicFont:                     fontname
+!boldItalicFont:                 fontname
+!intensityStyles:                boolean
+!inputMethod:                    name
+!preeditType:                    style
+!imLocale:                       string
+!imFont:                         fontname
+!title:                          string
+!iconName:                       string
+!saveLines:                      number
+!buffered:                       boolean
+!depth:                          number
+!visual:                         number
+!transient-for:                  windowid
+!override-redirect:              boolean
+!hold:                           boolean
+!externalBorder:                 number
+!internalBorder:                 number
+!borderLess:                     boolean
+!lineSpace:                      number
+!letterSpace:                    number
+!skipBuiltinGlyphs:              boolean
+!pointerBlankDelay:              number
+!backspacekey:                   string
+!deletekey:                      string
+!print-pipe:                     string
+!modifier:                       modifier
+!cutchars:                       string
+!answerbackString:               string
+!secondaryScreen:                boolean
+!secondaryScroll:                boolean
+!perl-lib:                       string
+!perl-eval:                      perl-eval
+!perl-ext-common:                string
+!perl-ext:                       string
+!iso14755:                       boolean
+!iso14755_52:                    boolean
+!xrm:                            string
+!keysym.sym:                     keysym
+!background.border:              boolean
+!background.expr:                string
+!background.interval:            seconds
+!bell-command:                   string
+!kuake.hotkey:                   string
+!matcher.button:                 string
+!matcher.launcher:               string
+!matcher.launcher.*:             string
+!matcher.pattern.*:              string
+!matcher.rend.*:                 string
+!remote-clipboard.fetch:         string
+!remote-clipboard.store:         string
+!searchable-scrollback:          string
+!selection-autotransform.*:      string
+!selection-pastebin.cmd:         string
+!selection-pastebin.url:         string
+!selection.pattern-0:            string
+!tab-bg:                         colour
+!tab-fg:                         colour
+!tabbar-bg:                      colour
+!tabbar-fg:                      colour
+!url-launcher:                   string
