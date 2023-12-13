@@ -34,4 +34,4 @@
 !---------------------------------------------------------------------!
 !                         URxvt configuration                         !
 !---------------------------------------------------------------------!
-#include ".Xresources.d/terminal/urxvt/profiles/basic"
+#include ".Xresources.d/terminal/urxvt/profiles/default"
