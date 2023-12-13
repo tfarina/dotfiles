@@ -84,10 +84,10 @@ URxvt.color15: BRIGHT_WHITE
 !-- Appearence
 !----- Font
 !---------------------------------------------------------------------
-!  * `URxvt.font`           -> Font Regular
-!  * `URxvt.boldFont`       -> Font Bold
-!  * `URxvt.italicFont`     -> Font Italic
-!  * `URxvt.boldItalicFont` -> Font Bold Italic
+!  * `URxvt.font`           -> Select the fonts to be used. This is a comma separated list of font names
+!  * `URxvt.boldFont`       -> The font list to use for displaying bold characters
+!  * `URxvt.italicFont`     -> The font list to use for displaying italic characters
+!  * `URxvt.boldItalicFont` -> The font list to use for displaying bold italic characters
 !  * `URxvt.letterSpace`    -> Space between two characters
 !---------------------------------------------------------------------
 URxvt.font:           xft:Menlo-Regular:pixelsize=12
@@ -104,8 +104,8 @@ URxvt.letterSpace: 0
 !-- General
 !----- Clipboard
 !------------------------------------------------------------------------------
-!  * `URxvt.iso14755`    -> Enable/Disable ISO 14755
-!  * `URxvt.iso14755_52` -> Enable/Disable ISO 14755 5.2 mode
+!  * `URxvt.iso14755`    -> Turn on/off ISO 14755
+!  * `URxvt.iso14755_52` -> Turn on/off ISO 14755 5.2 mode
 !
 ! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
 !------------------------------------------------------------------------------
