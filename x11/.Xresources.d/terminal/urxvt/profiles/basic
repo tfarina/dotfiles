@@ -123,11 +123,16 @@ URxvt.keysym.Meta-v: eval:paste_clipboard
 !  * `URxvt.scrollBar`       -> Turn on/off scrollbar
 !  * `URxvt.scrollBar_right` -> Put scrollbar on right/left
 !  * `URxvt.scrollstyle`     -> Set scrollbar style to rxvt, plain, next or xterm
-!---------------------------------------------------------------------
+!------------------------------------------------------------------------
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.scrollstyle:     plain
 
+!------------------------------------------------------------------------
+!-- General
+!------------------------------------------------------------------------
+!  * `URxvt.iconFile` -> Set the application icon pixmap
+!------------------------------------------------------------------------
 !URxvt.iconFile: /usr/share/icons/elementary-xfce/apps/24/terminal.png
 URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 
