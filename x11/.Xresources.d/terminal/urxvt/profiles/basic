@@ -152,8 +152,10 @@ URxvt.cursorColor: GREY50
 !-- General
 !------------------------------------------------------------------------
 !  * `URxvt.termName` -> Specify the terminal type name to be set in the TERM environment variable
+!  * `URxvt.geometry` -> Create the window with the specified X window geometry
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
+URxvt.geometry: 80x24
 
 !termName:                       string
 !geometry:                       geometry
