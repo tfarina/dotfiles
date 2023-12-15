@@ -148,6 +148,13 @@ URxvt.cursorUnderline: false
 URxvt.cursorBlink: false
 URxvt.cursorColor: GREY50
 
+!------------------------------------------------------------------------
+!-- General
+!------------------------------------------------------------------------
+!  * `URxvt.termName` -> Specify the terminal type name to be set in the TERM environment variable
+!------------------------------------------------------------------------
+URxvt.termName: rxvt-unicode-256color
+
 !termName:                       string
 !geometry:                       geometry
 !chdir:                          string
