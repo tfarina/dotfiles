@@ -154,10 +154,12 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.termName` -> Specify the terminal type name to be set in the TERM environment variable
 !  * `URxvt.geometry` -> Create the window with the specified X window geometry
 !  * `URxvt.reverseVideo` -> Turn on/off simulated reverse video
+!  * `URxvt.loginShell` -> Start as a login shell or as a normal sub-shell
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
 URxvt.reverseVideo: false
+URxvt.loginShell: false
 
 !termName:                       string
 !geometry:                       geometry
