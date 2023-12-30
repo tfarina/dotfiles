@@ -156,12 +156,14 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.reverseVideo` -> Turn on/off simulated reverse video
 !  * `URxvt.loginShell` -> Start as a login shell or as a normal sub-shell
 !  * `URxvt.skipScroll` -> Turn on/off skip scrolling (allow multiple screens per refresh)
+!  * `URxvt.saveLines` -> Default number of lines in the scrollback buffer
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
 URxvt.reverseVideo: false
 URxvt.loginShell: false
 URxvt.skipScroll: true
+URxvt.saveLines: 64
 
 !termName:                       string
 !geometry:                       geometry
