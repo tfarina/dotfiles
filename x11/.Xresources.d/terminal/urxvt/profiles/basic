@@ -157,6 +157,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.loginShell` -> Start as a login shell or as a normal sub-shell
 !  * `URxvt.skipScroll` -> Turn on/off skip scrolling (allow multiple screens per refresh)
 !  * `URxvt.saveLines` -> Default number of lines in the scrollback buffer
+!  * `URxvt.utmpInhibit` -> Inhibit/enable writing a utmp entry
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -164,6 +165,7 @@ URxvt.reverseVideo: false
 URxvt.loginShell: false
 URxvt.skipScroll: true
 URxvt.saveLines: 64
+URxvt.utmpInhibit: false
 
 !termName:                       string
 !geometry:                       geometry
