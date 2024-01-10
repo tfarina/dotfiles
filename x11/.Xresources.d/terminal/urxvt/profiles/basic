@@ -159,6 +159,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.saveLines` -> Default number of lines in the scrollback buffer
 !  * `URxvt.utmpInhibit` -> Inhibit/enable writing a utmp entry
 !  * `URxvt.buffered` -> Turn on/off double-buffering for xft
+!  * `URxvt.mapAlert` -> De-iconify (map) on receipt of a bell character
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -168,6 +169,7 @@ URxvt.skipScroll: true
 URxvt.saveLines: 64
 URxvt.utmpInhibit: false
 URxvt.buffered: true
+URxvt.mapAlert: false
 
 !termName:                       string
 !geometry:                       geometry
