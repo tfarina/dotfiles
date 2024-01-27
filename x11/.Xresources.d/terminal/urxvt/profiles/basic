@@ -163,6 +163,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.urgentOnBell` -> Set/unset the urgency hint for the wm on receipt of a bell character
 !  * `URxvt.visualBell` -> Turn on/off visual bell on receipt of a bell character
 !  * `URxvt.meta8` -> Handle Meta (Alt) + keypress to set the 8th bit or as an escape prefix
+!  * `URxvt.secondaryScreen` -> Turn on/off secondary screen
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -176,6 +177,7 @@ URxvt.mapAlert: false
 URxvt.urgentOnBell: false
 URxvt.visualBell: false
 URxvt.meta8: false
+URxvt.secondaryScreen: true
 
 !termName:                       string
 !geometry:                       geometry
