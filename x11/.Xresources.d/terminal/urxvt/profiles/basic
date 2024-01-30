@@ -164,6 +164,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.visualBell` -> Turn on/off visual bell on receipt of a bell character
 !  * `URxvt.meta8` -> Handle Meta (Alt) + keypress to set the 8th bit or as an escape prefix
 !  * `URxvt.secondaryScreen` -> Turn on/off secondary screen
+!  * `URxvt.secondaryScroll` -> Turn on/off secondary screen scroll
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -178,6 +179,7 @@ URxvt.urgentOnBell: false
 URxvt.visualBell: false
 URxvt.meta8: false
 URxvt.secondaryScreen: true
+URxvt.secondaryScroll: true
 
 !termName:                       string
 !geometry:                       geometry
