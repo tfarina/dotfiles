@@ -165,6 +165,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.meta8` -> Handle Meta (Alt) + keypress to set the 8th bit or as an escape prefix
 !  * `URxvt.secondaryScreen` -> Turn on/off secondary screen
 !  * `URxvt.secondaryScroll` -> Turn on/off secondary screen scroll
+!  * `URxvt.insecure` -> Enable "insecure" mode, which currently enables most of the escape sequences that echo strings.
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -180,6 +181,7 @@ URxvt.visualBell: false
 URxvt.meta8: false
 URxvt.secondaryScreen: true
 URxvt.secondaryScroll: true
+URxvt.insecure: false
 
 !termName:                       string
 !geometry:                       geometry
