@@ -166,6 +166,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.secondaryScreen` -> Turn on/off secondary screen
 !  * `URxvt.secondaryScroll` -> Turn on/off secondary screen scroll
 !  * `URxvt.insecure` -> Enable "insecure" mode, which currently enables most of the escape sequences that echo strings.
+!  * `URxvt.mouseWheelScrollPage` -> The mouse wheel scrolls a page full, otherwise it scrolls five lines
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -182,6 +183,7 @@ URxvt.meta8: false
 URxvt.secondaryScreen: true
 URxvt.secondaryScroll: true
 URxvt.insecure: false
+URxvt.mouseWheelScrollPage: false
 
 !termName:                       string
 !geometry:                       geometry
