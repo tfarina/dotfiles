@@ -168,6 +168,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.insecure` -> Enable "insecure" mode, which currently enables most of the escape sequences that echo strings.
 !  * `URxvt.mouseWheelScrollPage` -> The mouse wheel scrolls a page full, otherwise it scrolls five lines
 !  * `URxvt.pointerBlank` ->  Blank the pointer when a key is pressed or after a set number of seconds of inactivity
+!  * `URxvt.lineSpace` -> Specifies number of lines (pixel height) to insert between each row of the display
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -186,6 +187,7 @@ URxvt.secondaryScroll: true
 URxvt.insecure: false
 URxvt.mouseWheelScrollPage: false
 URxvt.pointerBlank: false
+URxvt.lineSpace: 0
 
 !termName:                       string
 !geometry:                       geometry
