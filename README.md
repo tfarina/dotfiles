@@ -38,7 +38,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | File Manager | [Thunar](https://gitlab.xfce.org/xfce/thunar) |
 | Image Viewer | [Sxiv](https://github.com/muennich/sxiv) |
 | Screen Capture | [Scrot](https://github.com/dreamer/scrot) |
-| Document Viewer | [Zathura](https://pwmt.org/projects/zathura) |
+| Document Viewer | [Evince](https://wiki.gnome.org/Apps/Evince) |
 | Clipboard Manager | [ClipIt](https://github.com/CristianHenzel/ClipIt) |
 | Calculator | [galculator](http://galculator.mnim.org/) |
 
