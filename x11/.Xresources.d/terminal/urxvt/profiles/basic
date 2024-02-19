@@ -124,11 +124,13 @@ URxvt.keysym.Meta-v: eval:paste_clipboard
 !  * `URxvt.scrollBar_right` -> Put scrollbar on right/left
 !  * `URxvt.scrollstyle`     -> Set scrollbar style to rxvt, plain, next or xterm
 !  * `URxvt.scrollBar_floating` -> Display rxvt (non XTerm/NeXT) scrollbar without (true value)/with (false value) a trough
+!  * `URxvt.scrollBar_align` ->  Align the top, bottom or centre of the scrollbar thumb with the pointer on middle button press/drag
 !------------------------------------------------------------------------
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.scrollstyle:     plain
 URxvt.scrollBar_floating: false
+URxvt.scrollBar_align: centre
 
 !------------------------------------------------------------------------
 !-- General
