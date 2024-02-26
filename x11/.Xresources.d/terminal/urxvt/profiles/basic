@@ -126,6 +126,7 @@ URxvt.keysym.Meta-v: eval:paste_clipboard
 !  * `URxvt.scrollBar_floating` -> Display rxvt (non XTerm/NeXT) scrollbar without (true value)/with (false value) a trough
 !  * `URxvt.scrollBar_align` ->  Align the top, bottom or centre of the scrollbar thumb with the pointer on middle button press/drag
 !  * `URxvt.thickness` -> Set the scrollbar width in pixels
+!  * `URxvt.scrollTtyOutput` -> Whether the terminal (tty) will scroll down when it receives output
 !------------------------------------------------------------------------
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
@@ -133,6 +134,7 @@ URxvt.scrollstyle:     plain
 URxvt.scrollBar_floating: false
 URxvt.scrollBar_align: centre
 URxvt.thickness: 5
+URxvt.scrollTtyOutput: true
 
 !------------------------------------------------------------------------
 !-- General
