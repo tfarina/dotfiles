@@ -127,6 +127,7 @@ URxvt.keysym.Meta-v: eval:paste_clipboard
 !  * `URxvt.scrollBar_align` ->  Align the top, bottom or centre of the scrollbar thumb with the pointer on middle button press/drag
 !  * `URxvt.thickness` -> Set the scrollbar width in pixels
 !  * `URxvt.scrollTtyOutput` -> Whether the terminal (tty) will scroll down when it receives output
+!  * `URxvt.scrollTtyKeypress` -> Turn on/off scroll-to-bottom on keypress
 !------------------------------------------------------------------------
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
@@ -135,6 +136,7 @@ URxvt.scrollBar_floating: false
 URxvt.scrollBar_align: centre
 URxvt.thickness: 5
 URxvt.scrollTtyOutput: true
+URxvt.scrollTtyKeypress: true
 
 !------------------------------------------------------------------------
 !-- General
