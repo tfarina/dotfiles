@@ -100,6 +100,13 @@ URxvt.boldItalicFont: xft:Menlo-BoldItalic:pixelsize=12:weight=bold:slant=italic
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: 0
 
+!---------------------------------------------------------------------
+!-- Appearence
+!----- Opening New Windows
+!  * `URxvt.borderLess` -> Set MWM hints to request a borderless window, i.e. if honoured by the WM, the rxvt-unicode window will not have window decorations
+!---------------------------------------------------------------------
+URxvt.borderLess: false
+
 !------------------------------------------------------------------------------
 !-- General
 !----- Clipboard
