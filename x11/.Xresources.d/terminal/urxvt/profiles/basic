@@ -104,8 +104,10 @@ URxvt.letterSpace: 0
 !-- Appearence
 !----- Opening New Windows
 !  * `URxvt.borderLess` -> Set MWM hints to request a borderless window, i.e. if honoured by the WM, the rxvt-unicode window will not have window decorations
+!  * `URxvt.internalBorder` -> Internal border of number pixels
 !---------------------------------------------------------------------
 URxvt.borderLess: false
+URxvt.internalBorder: 2
 
 !------------------------------------------------------------------------------
 !-- General
