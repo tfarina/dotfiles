@@ -7,28 +7,28 @@
 !----- General
 !-----------------------------------------------------------------------------
 
-#define BLACK #000000
-#define RED #800000
-#define GREEN #008000
-#define YELLOW #808000
-#define BLUE #000080
-#define MAGENTA #800080
-#define CYAN #008080
-#define WHITE #C0C0C0
-#define BRIGHT_BLACK #808080
-#define BRIGHT_RED #FF0000
-#define BRIGHT_GREEN #00FF00
-#define BRIGHT_YELLOW #FFFF00
-#define BRIGHT_BLUE #0000FF
-#define BRIGHT_MAGENTA #FF00FF
-#define BRIGHT_CYAN #00FFFF
-#define BRIGHT_WHITE #FFFFFF
+#define BLACK rgb:00/00/00
+#define RED rgb:80/00/00
+#define GREEN rgb:00/80/00
+#define YELLOW rgb:80/80/00
+#define BLUE rgb:00/00/80
+#define MAGENTA rgb:80/00/80
+#define CYAN rgb:00/80/80
+#define WHITE rgb:C0/C0/C0
+#define BRIGHT_BLACK rgb:80/80/80
+#define BRIGHT_RED rgb:FF/00/00
+#define BRIGHT_GREEN rgb:00/FF/00
+#define BRIGHT_YELLOW rgb:FF/FF/00
+#define BRIGHT_BLUE rgb:00/00/FF
+#define BRIGHT_MAGENTA rgb:FF/00/FF
+#define BRIGHT_CYAN rgb:00/FF/FF
+#define BRIGHT_WHITE rgb:FF/FF/FF
 
 #define BACKGROUND BRIGHT_WHITE
 #define FOREGROUND BLACK
 
 ! rbg(127,127,127)
-#define GREY50 #7F7F7F
+#define GREY50 rgb:7F/7F/7F
 
 URxvt.background: BACKGROUND
 URxvt.foreground: FOREGROUND
