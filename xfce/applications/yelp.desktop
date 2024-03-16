@@ -2,7 +2,7 @@
 Name=Help
 Comment=Get help with Unity
 Keywords=documentation;information;manual;
-OnlyShowIn=GNOME;Unity;
+OnlyShowIn=GNOME;Unity;XFCE;
 Exec=yelp %u
 Icon=help-browser
 StartupNotify=true
