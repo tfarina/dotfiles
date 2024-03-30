@@ -191,6 +191,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.pointerBlank` ->  Blank the pointer when a key is pressed or after a set number of seconds of inactivity
 !  * `URxvt.pointerBlankDelay` -> Specifies number of seconds before blanking the pointer
 !  * `URxvt.lineSpace` -> Specifies number of lines (pixel height) to insert between each row of the display
+!  * `URxvt.tripleclickwords` -> Instead of selecting a full line it will extend the selection to the end of the logical line only
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -211,6 +212,7 @@ URxvt.mouseWheelScrollPage: false
 URxvt.pointerBlank: false
 URxvt.pointerBlankDelay: 2
 URxvt.lineSpace: 0
+URxvt.tripleclickwords: false
 
 !termName:                       string
 !geometry:                       geometry
