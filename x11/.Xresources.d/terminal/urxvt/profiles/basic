@@ -192,6 +192,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.pointerBlankDelay` -> Specifies number of seconds before blanking the pointer
 !  * `URxvt.lineSpace` -> Specifies number of lines (pixel height) to insert between each row of the display
 !  * `URxvt.tripleclickwords` -> Instead of selecting a full line it will extend the selection to the end of the logical line only
+!  * `URxvt.override-redirect` ->  Sets override-redirect for the terminal window, making it almost invisible to window managers
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -213,6 +214,7 @@ URxvt.pointerBlank: false
 URxvt.pointerBlankDelay: 2
 URxvt.lineSpace: 0
 URxvt.tripleclickwords: false
+URxvt.override-redirect: false
 
 !termName:                       string
 !geometry:                       geometry
