@@ -193,6 +193,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.lineSpace` -> Specifies number of lines (pixel height) to insert between each row of the display
 !  * `URxvt.tripleclickwords` -> Instead of selecting a full line it will extend the selection to the end of the logical line only
 !  * `URxvt.override-redirect` ->  Sets override-redirect for the terminal window, making it almost invisible to window managers
+!  * `URxvt.skipBuiltinGlyphs` -> Disable the usage of the built-in block graphics/line drawing characters and just rely on what the specified fonts provide
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -215,6 +216,7 @@ URxvt.pointerBlankDelay: 2
 URxvt.lineSpace: 0
 URxvt.tripleclickwords: false
 URxvt.override-redirect: false
+URxvt.skipBuiltinGlyphs: true
 
 !termName:                       string
 !geometry:                       geometry
