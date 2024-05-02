@@ -300,6 +300,7 @@
 	</Menu>
 	<Layout>
 		<Filename>xfce4-about.desktop</Filename>
+		<Filename>update-manager.desktop</Filename>
 		<Separator/>
 		<Filename>exo-terminal-emulator.desktop</Filename>
 		<Filename>exo-file-manager.desktop</Filename>
