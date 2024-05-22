@@ -124,8 +124,8 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 ! Rebind copy and paste key bindings.
-URxvt.keysym.Meta-c: eval:selection_to_clipboard
-URxvt.keysym.Meta-v: eval:paste_clipboard
+URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 
 !------------------------------------------------------------------------
 !-- General
