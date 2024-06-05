@@ -87,3 +87,9 @@ $ stow -v -t ~/ -S zsh
 $ stow -v -t ~/ -S whatever-dotfile-you-want
 ```
 This will symlink files to `~/.config/sxhkd/`, `~/.zshrc`, etc.
+
+## How to disable overlay scrollbars
+
+```sh
+$ gsettings set com.canonical.desktop.interface scrollbar-mode normal
+```
