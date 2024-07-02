@@ -51,6 +51,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | super + T | Open the Terminal Emulator (urxvt) | General |
 | super + L | Lock the screen | General |
 | super + D | Show desktop | General |
+| shift + super + S | Open Gnome Screenshot | General |
 
 # sxhkd key bindings
 
