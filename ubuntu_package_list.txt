@@ -2514,6 +2514,7 @@ xfce4-power-manager
 xfce4-power-manager-data
 xfce4-power-manager-plugins
 xfce4-pulseaudio-plugin:i386
+xfce4-screenshooter
 xfce4-session
 xfce4-settings
 xfce4-terminal
