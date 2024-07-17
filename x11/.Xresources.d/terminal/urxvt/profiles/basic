@@ -196,6 +196,8 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.skipBuiltinGlyphs` -> Disable the usage of the built-in block graphics/line drawing characters and just rely on what the specified fonts provide
 !  * `URxvt.transparent` -> Turn on/off pseudo-transparency by using the root pixmap as background
 !  * `URxvt.intensityStyles` -> When font styles are not enabled, or this option is enabled, bold/blink font styles imply high intensity foreground/background colours.
+!  * `URxvt.backspacekey` -> The string to send when the backspace key is pressed.
+!  * `URxvt.deletekey` -> The string to send when the delete key (not the keypad delete key) is pressed.
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -221,6 +223,8 @@ URxvt.override-redirect: false
 URxvt.skipBuiltinGlyphs: true
 URxvt.transparent: false
 URxvt.intensityStyles: true
+URxvt.backspacekey: DEC
+URxvt.deletekey: \033[3~
 
 !termName:                       string
 !geometry:                       geometry
