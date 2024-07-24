@@ -90,7 +90,7 @@ URxvt.color15: BRIGHT_WHITE
 !  * `URxvt.boldItalicFont` -> The font list to use for displaying bold italic characters
 !  * `URxvt.letterSpace`    -> Space between two characters
 !---------------------------------------------------------------------
-URxvt.font:           xft:Menlo:style=Regular:pixelsize=12
+URxvt.font:           xft:Inconsolata:style=Regular:pixelsize=14
 URxvt.boldFont:       xft:Menlo:style=Bold:pixelsize=12:weight=bold
 URxvt.italicFont:     xft:Menlo:style=Italic:pixelsize=12:slant=italic
 URxvt.boldItalicFont: xft:Menlo:style=Bold Italic:pixelsize=12:weight=bold:slant=italic
