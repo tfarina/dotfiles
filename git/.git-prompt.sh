@@ -351,7 +351,7 @@ __git_ps1 ()
 			   [ "$(git config --bool bash.showUntrackedFiles)" != "false" ] &&
 			   [ -n "$(git ls-files --others --exclude-standard)" ]
 			then
-				u="%${ZSH_VERSION+%}"
+				u="?${ZSH_VERSION+?}"
 			fi
 
 			if [ -n "${GIT_PS1_SHOWUPSTREAM-}" ]; then
