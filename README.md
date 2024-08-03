@@ -94,3 +94,8 @@ This will symlink files to `~/.config/sxhkd/`, `~/.zshrc`, etc.
 ```sh
 $ gsettings set com.canonical.desktop.interface scrollbar-mode normal
 ```
+
+## How to show the GRUB menu?
+
+Press and hold Shift as soon as BIOS loads. If system had UEFI, you
+would have to press Esc.
