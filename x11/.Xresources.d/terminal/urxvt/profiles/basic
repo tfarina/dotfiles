@@ -198,6 +198,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.intensityStyles` -> When font styles are not enabled, or this option is enabled, bold/blink font styles imply high intensity foreground/background colours.
 !  * `URxvt.backspacekey` -> The string to send when the backspace key is pressed.
 !  * `URxvt.deletekey` -> The string to send when the delete key (not the keypad delete key) is pressed.
+!  * `URxvt.multiClickTime` -> The maximum time in milliseconds between multi-click select events.
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -225,6 +226,7 @@ URxvt.transparent: false
 URxvt.intensityStyles: true
 URxvt.backspacekey: DEC
 URxvt.deletekey: \033[3~
+URxvt.multiClickTime: 500
 
 !termName:                       string
 !geometry:                       geometry
