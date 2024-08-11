@@ -199,6 +199,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.backspacekey` -> The string to send when the backspace key is pressed.
 !  * `URxvt.deletekey` -> The string to send when the delete key (not the keypad delete key) is pressed.
 !  * `URxvt.multiClickTime` -> The maximum time in milliseconds between multi-click select events.
+!  * `URxvt.print-pipe` -> Specify a command pipe for vt100 printer.
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -227,6 +228,7 @@ URxvt.intensityStyles: true
 URxvt.backspacekey: DEC
 URxvt.deletekey: \033[3~
 URxvt.multiClickTime: 500
+URxvt.print-pipe: lpr
 
 !termName:                       string
 !geometry:                       geometry
