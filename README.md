@@ -46,6 +46,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 
 | Key Binding | Associated Action | Category |
 | ------------- | ------------- | --------------------- |
+| alt + F1  | Display the Start menu | General |
 | super + R | Open the Application Finder | General |
 | super + E | Display Thunar File Manager | General |
 | super + T | Open the Terminal Emulator (urxvt) | General |
