@@ -51,7 +51,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | super + E | Display Thunar File Manager | General |
 | super + T | Open the Terminal Emulator (urxvt) | General |
 | super + L | Lock the screen | General |
-| super + D | Show desktop | General |
+| super + D | Minimize or restore all windows | General |
 | shift + super + S | Open Gnome Screenshot | General |
 
 # sxhkd key bindings
