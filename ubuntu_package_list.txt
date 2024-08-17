@@ -81,6 +81,7 @@ cheese
 cheese-common
 claws-mail
 claws-mail-i18n
+clearlooks-phenix-theme
 clipit
 colord
 colord-data
@@ -400,6 +401,7 @@ gstreamer1.0-pulseaudio:i386
 gstreamer1.0-tools
 gstreamer1.0-x:i386
 gtk-3-examples
+gtk2-engines:i386
 gtk2-engines-murrine:i386
 gtk2-engines-pixbuf:i386
 gtk2-engines-xfce
