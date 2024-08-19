@@ -100,3 +100,10 @@ $ gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
 Press and hold Shift as soon as BIOS loads. If system had UEFI, you
 would have to press Esc.
+
+## How to disable gtk3-csd (client side decorations)?
+
+To disable the UGLY gtk3 csd (client side decorations) I downloaded
+and gtk3-nocsd_3-1_all.deb and libgtk3-nocsd0_3-1+b1_i386.deb
+from https://packages.debian.org/trixie/all/gtk3-nocsd/download, installed
+with dpkg -i and rebooted.
