@@ -44,15 +44,15 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 
 # Xfce Keyboard Shortcuts
 
-| Key Binding | Associated Action | Category |
+| Press         | To            | Category |
 | ------------- | ------------- | --------------------- |
 | alt + F1  | Display the Start menu | General |
 | super + R | Open the Application Finder | General |
-| super + E | Display Thunar File Manager | General |
+| super + E | Open the File Explorer (thunar) | General |
 | super + T | Open the Terminal Emulator (urxvt) | General |
 | super + L | Lock the screen | General |
 | super + D | Minimize or restore all windows | General |
-| shift + super + S | Open Gnome Screenshot | General |
+| shift + super + S | Open the Screenshot program (gnome-screenshot) | General |
 
 # sxhkd key bindings
 
