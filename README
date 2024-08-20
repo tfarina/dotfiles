@@ -55,7 +55,7 @@ desktop manager: xfdesktop
 panel: xfce4-panel
 application launcher: xfce4-appfinder
 desktop environment: xfce (4.12)
-vt102 terminal emulator: rxvt-unicode (v9.21)
+vt102 terminal emulator: urxvt (v9.21)
 terminal font: Menlo
 shell: bash (4.3.48(1)-release)
 editor: emacs (24.5.1)
