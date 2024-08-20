@@ -30,6 +30,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | ------------- | ------------- |
 | Display Manager | [LightDM](https://github.com/canonical/lightdm) |
 | Greeter | [LightDM GTK+ Greeter](https://github.com/Xubuntu/lightdm-gtk-greeter) |
+| Window Manager | [xfwm4](https://docs.xfce.org/xfce/xfwm4/start) |
 | Terminal Emulator | [URxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) |
 | Shell | [Bash](https://www.gnu.org/software/bash/) |
 | Editor | [Emacs](https://www.gnu.org/software/emacs/) |
