@@ -47,12 +47,12 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Press         | To            | Category |
 | ------------- | ------------- | --------------------- |
 | alt + F1  | Display the Start menu | General |
-| super + R | Open the Application Finder | General |
-| super + E | Open the File Explorer (thunar) | General |
-| super + T | Open the Terminal Emulator (urxvt) | General |
-| super + L | Lock the screen | General |
 | super + D | Minimize or restore all windows | General |
+| super + E | Open the File Explorer (thunar) | General |
+| super + L | Lock the screen | General |
+| super + R | Open the Application Finder | General |
 | shift + super + S | Open the Screenshot program (gnome-screenshot) | General |
+| super + T | Open the Terminal Emulator (urxvt) | General |
 
 # sxhkd key bindings
 
