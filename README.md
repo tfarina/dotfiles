@@ -56,17 +56,6 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | shift + super + S | Open the Screenshot program (gnome-screenshot) | General |
 | super + T | Open the Terminal Emulator (urxvt) | General |
 
-# sxhkd key bindings
-
-| Key Binding | Associated Action | Category |
-| ------------- | ------------- | --------------------- |
-| super + Escape | Reload sxhkd configuration's file | General |
-| super + Return | Open a new terminal | General |
-| super + slash | Open the Application Finder | General |
-| super + l | Lock the screen | General |
-| super + shift + q | Quit bspwm | BSPWM |
-| super + shift + r | Restart bspwm | BSPWM |
-
 ## Installation
 
 ### Before installing, be sure to read useful cowboy [gently-worded note](https://github.com/cowboy/dotfiles#heed-this-critically-important-warning-before-you-install) and this excellent article by Anish Athalye: [Dotfiles are NOT meant to be forked](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/). That said, let's go with the installation:
