@@ -46,15 +46,15 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 
 # Xfce Keyboard Shortcuts
 
-| Press         | To            | Category |
-| ------------- | ------------- | --------------------- |
-| alt + F1  | Display the Start menu | General |
-| super + D | Minimize or restore all windows | General |
-| super + E | Open the File Explorer | General |
-| super + L | Lock the screen | General |
-| super + R | Open the Application Finder | General |
-| shift + super + S | Open the Screenshot program | General |
-| super + T | Open the Terminal Emulator | General |
+| Press         | To            |
+| ------------- | ------------- |
+| alt + F1  | Display the Start menu |
+| super + D | Minimize or restore all windows |
+| super + E | Open the File Explorer |
+| super + L | Lock the screen |
+| super + R | Open the Application Finder |
+| shift + super + S | Open the Screenshot program |
+| super + T | Open the Terminal Emulator |
 
 ## Installation
 
