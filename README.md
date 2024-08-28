@@ -72,15 +72,11 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 $ git clone https://github.com/tfarina/dotfiles.git ~/dotfiles && cd ~/dotfiles
 ```
 3. **Symlink with GNU Stow the folder(s) you want to your home:** To install most of my dotfiles you execute `stow` with the folder name as the only argument.
-For example, to install my `sxhkd` and my `zshrc` config use the command:
 
 ```sh
-$ stow -v -t ~/ -S sxhkd
-$ stow -v -t ~/ -S zsh
-$ stow -v -t ~/ -S whatever-dotfile-you-want
+$ stow -v -t ~/ -S bash
+$ stow -v -t ~/ -S topic-name
 ```
-This will symlink files to `~/.config/sxhkd/`, `~/.zshrc`, etc.
-
 ## How to disable overlay scrollbars
 
 ```sh
