@@ -50,11 +50,11 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | ------------- | ------------- | --------------------- |
 | alt + F1  | Display the Start menu | General |
 | super + D | Minimize or restore all windows | General |
-| super + E | Open the File Explorer (thunar) | General |
+| super + E | Open the File Explorer | General |
 | super + L | Lock the screen | General |
 | super + R | Open the Application Finder | General |
-| shift + super + S | Open the Screenshot program (gnome-screenshot) | General |
-| super + T | Open the Terminal Emulator (urxvt) | General |
+| shift + super + S | Open the Screenshot program | General |
+| super + T | Open the Terminal Emulator | General |
 
 ## Installation
 
