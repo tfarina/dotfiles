@@ -56,7 +56,7 @@ panel: xfce4-panel
 application launcher: xfce4-appfinder
 desktop environment: xfce (4.12)
 vt102 terminal emulator: urxvt (v9.21)
-terminal font: Menlo
+terminal font: Inconsolata
 shell: bash (4.3.48(1)-release)
 editor: emacs (24.5.1)
 file manager: thunar (1.6.11)
