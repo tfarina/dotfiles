@@ -34,7 +34,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Terminal Emulator | [URxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) |
 | Shell | [Bash](https://www.gnu.org/software/bash/) |
 | Editor | [Emacs](https://www.gnu.org/software/emacs/) |
-| Application Launcher | [xfce4-appfinder](https://docs.xfce.org/xfce/xfce4-appfinder/start) |
+| Application Finder | [xfce4-appfinder](https://docs.xfce.org/xfce/xfce4-appfinder/start) |
 | Web Browser | [Firefox](https://www.mozilla.org/en-US/firefox/new) |
 | Mail Reader | [Claws Mail](https://www.claws-mail.org) |
 | File Manager | [Thunar](https://gitlab.xfce.org/xfce/thunar) |

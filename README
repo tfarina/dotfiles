@@ -53,7 +53,7 @@ icon theme: elementary Xfce (elementary-xfce)
 cursor theme: Chicago95 Standard (chicago95-standard-cursors)
 desktop manager: xfdesktop
 panel: xfce4-panel
-application launcher: xfce4-appfinder
+application finder: xfce4-appfinder
 desktop environment: xfce (4.12)
 vt102 terminal emulator: urxvt (v9.21)
 terminal font: Inconsolata
