@@ -50,7 +50,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | ------------- | ------------- |
 | alt + F1  | Display the Start menu |
 | super + D | Minimize or restore all windows |
-| super + E | Open the File Explorer |
+| super + E | Open the File Manager |
 | super + L | Lock the screen |
 | super + R | Open the Application Finder |
 | shift + super + S | Open the Screenshot program |
