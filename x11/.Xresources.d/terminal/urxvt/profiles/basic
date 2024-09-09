@@ -201,6 +201,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.multiClickTime` -> The maximum time in milliseconds between multi-click select events.
 !  * `URxvt.print-pipe` -> Specify a command pipe for vt100 printer.
 !  * `URxvt.answerbackString` -> Specify the reply urxvt sends to the shell when an ENQ (control-E) character is passed through.
+!  * `URxvt.cutchars` -> The characters used as delimiters for double-click word selection.
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -231,6 +232,7 @@ URxvt.deletekey: \033[3~
 URxvt.multiClickTime: 500
 URxvt.print-pipe: lpr
 URxvt.answerbackString: \033[?1;2c
+URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 
 !termName:                       string
 !geometry:                       geometry
