@@ -55,6 +55,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | super + R | Open the Application Finder |
 | shift + super + S | Open the Screenshot program |
 | super + T | Open the Terminal Emulator |
+| super + W | Open the Web Browser |
 
 ## Installation
 
