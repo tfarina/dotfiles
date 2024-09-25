@@ -203,6 +203,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.answerbackString` -> Specify the reply urxvt sends to the shell when an ENQ (control-E) character is passed through.
 !  * `URxvt.cutchars` -> The characters used as delimiters for double-click word selection.
 !  * `URxvt.title` -> Window title (-T still respected); the default title is the basename of the program specified after the -e option, if any, otherwise the application name.
+!  * `URxvt.iconName` -> Set the name used to label the window's icon or displayed in an icon manager window. The default name is the basename of the program.
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -235,6 +236,7 @@ URxvt.print-pipe: lpr
 URxvt.answerbackString: \033[?1;2c
 URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 !URxvt.title:
+!URxvt.iconName:
 
 !termName:                       string
 !geometry:                       geometry
