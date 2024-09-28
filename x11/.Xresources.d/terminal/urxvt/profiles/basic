@@ -204,6 +204,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.cutchars` -> The characters used as delimiters for double-click word selection.
 !  * `URxvt.title` -> Window title (-T still respected); the default title is the basename of the program specified after the -e option, if any, otherwise the application name.
 !  * `URxvt.iconName` -> Set the name used to label the window's icon or displayed in an icon manager window. The default name is the basename of the program.
+!  * `URxvt.modifier` -> Override detection of Meta modifier with specified key: alt, meta, hyper, super, mod1, mod2, mod3, mod4, mod5.
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -237,6 +238,7 @@ URxvt.answerbackString: \033[?1;2c
 URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 !URxvt.title:
 !URxvt.iconName:
+URxvt.modifier: alt
 
 !termName:                       string
 !geometry:                       geometry
