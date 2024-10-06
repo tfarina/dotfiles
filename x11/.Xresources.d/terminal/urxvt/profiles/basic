@@ -205,6 +205,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.title` -> Window title (-T still respected); the default title is the basename of the program specified after the -e option, if any, otherwise the application name.
 !  * `URxvt.iconName` -> Set the name used to label the window's icon or displayed in an icon manager window. The default name is the basename of the program.
 !  * `URxvt.modifier` -> Override detection of Meta modifier with specified key: alt, meta, hyper, super, mod1, mod2, mod3, mod4, mod5.
+!  * `URxvt.scrollColor` -> Use the specified colour for the scrollbar [default #B2B2B2].
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -239,6 +240,7 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 !URxvt.title:
 !URxvt.iconName:
 URxvt.modifier: alt
+URxvt.scrollColor: rgb:B2/B2/B2
 
 !termName:                       string
 !geometry:                       geometry
