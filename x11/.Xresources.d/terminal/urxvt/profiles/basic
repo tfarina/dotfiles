@@ -206,6 +206,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.iconName` -> Set the name used to label the window's icon or displayed in an icon manager window. The default name is the basename of the program.
 !  * `URxvt.modifier` -> Override detection of Meta modifier with specified key: alt, meta, hyper, super, mod1, mod2, mod3, mod4, mod5.
 !  * `URxvt.scrollColor` -> Use the specified colour for the scrollbar [default #B2B2B2].
+!  * `URxvt.troughColor` -> Use the specified colour for the scrollbar's trough area [default #969696].
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -241,6 +242,7 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 !URxvt.iconName:
 URxvt.modifier: alt
 URxvt.scrollColor: rgb:B2/B2/B2
+URxvt.troughColor: rgb:96/96/96
 
 !termName:                       string
 !geometry:                       geometry
