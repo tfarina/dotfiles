@@ -49,7 +49,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 
 | Press         | To            |
 | ------------- | ------------- |
-| alt + F1  | Display the Start menu |
+| ctrl + Esc  | Display the Start menu |
 | super + D | Minimize or restore all windows |
 | super + E | Open the File Manager |
 | super + L | Lock the screen |
