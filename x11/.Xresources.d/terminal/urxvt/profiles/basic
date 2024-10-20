@@ -208,6 +208,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.scrollColor` -> Use the specified colour for the scrollbar [default #B2B2B2].
 !  * `URxvt.troughColor` -> Use the specified colour for the scrollbar's trough area [default #969696].
 !  * `URxvt.borderColor` -> The colour of the border around the text area and between the scrollbar and the text.
+!  * `URxvt.jumpScroll` -> Specify that jump scrolling should be used.
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -245,6 +246,7 @@ URxvt.modifier: alt
 URxvt.scrollColor: rgb:B2/B2/B2
 URxvt.troughColor: rgb:96/96/96
 URxvt.borderColor: GREEN
+URxvt.jumpScroll: true
 
 !termName:                       string
 !geometry:                       geometry
