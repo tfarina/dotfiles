@@ -209,6 +209,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.troughColor` -> Use the specified colour for the scrollbar's trough area [default #969696].
 !  * `URxvt.borderColor` -> The colour of the border around the text area and between the scrollbar and the text.
 !  * `URxvt.jumpScroll` -> Specify that jump scrolling should be used.
+!  * `URxvt.pastableTabs` -> True: store tabs as wide characters. False: interpret tabs as cursor movement only.
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -247,6 +248,7 @@ URxvt.scrollColor: rgb:B2/B2/B2
 URxvt.troughColor: rgb:96/96/96
 URxvt.borderColor: GREEN
 URxvt.jumpScroll: true
+URxvt.pastableTabs: true
 
 !termName:                       string
 !geometry:                       geometry
