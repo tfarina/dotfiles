@@ -212,6 +212,7 @@ URxvt.cursorColor: GREY50
 !  * `URxvt.pastableTabs` -> True: store tabs as wide characters. False: interpret tabs as cursor movement only.
 !  * `URxvt.tintColor` -> Tint the transparent background with the given colour.
 !  * `URxvt.shading` -> Darken (0 .. 99) or lighten (101 .. 200) the transparent background. A value of 100 means no shading.
+!  * `URxvt.blurRadius` -> Apply gaussian blur with the specified radius to the transparent background.
 !------------------------------------------------------------------------
 URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 80x24
@@ -253,6 +254,7 @@ URxvt.jumpScroll: true
 URxvt.pastableTabs: true
 URxvt.tintColor: BRIGHT_WHITE
 URxvt.shading: 100
+URxvt.blurRadius: 0
 
 !termName:                       string
 !geometry:                       geometry
