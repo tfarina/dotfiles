@@ -49,14 +49,14 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 
 | Press         | To            |
 | ------------- | ------------- |
-| ctrl + Esc  | Display the Start menu |
-| super + D | Minimize or restore all windows |
-| super + E | Open the File Manager |
-| super + L | Lock the screen |
-| super + R | Open the Application Finder |
-| shift + super + S | Open the Screenshot program |
-| super + T | Open the Terminal Emulator |
-| super + W | Open the Web Browser |
+| Ctrl + Esc  | Display the Start menu |
+| Super + D | Minimize or restore all windows |
+| Super + E | Open the File Manager |
+| Super + L | Lock the screen |
+| Super + R | Open the Application Finder |
+| Shift + Super + S | Open the Screenshot program |
+| Super + T | Open the Terminal Emulator |
+| Super + W | Open the Web Browser |
 
 ## Installation
 
