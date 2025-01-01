@@ -70,3 +70,4 @@ clipboard manager: clipit (1.4.2)
 archive manager: file-roller (3.16.5), xarchiver (0.5.4)
 screen saver: xscreensaver 5.34
 system monitor: gkrellm (2.3.6-RC1)
+task manager: lxtask (0.1.10)
