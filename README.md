@@ -39,7 +39,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Web Browser | [Firefox](https://www.mozilla.org/en-US/firefox/new) |
 | Mail Reader | [Claws Mail](https://www.claws-mail.org) |
 | File Manager | [Thunar](https://gitlab.xfce.org/xfce/thunar) |
-| Image Viewer | [Sxiv](https://github.com/muennich/sxiv) [Ristretto](https://docs.xfce.org/apps/ristretto/start) |
+| Image Viewer | [Sxiv](https://github.com/muennich/sxiv), [Ristretto](https://docs.xfce.org/apps/ristretto/start) |
 | Screen Capture | [Scrot](https://github.com/dreamer/scrot), [GNOME Screenshot](https://gitlab.gnome.org/GNOME/gnome-screenshot), [Xfce Screenshooter](https://docs.xfce.org/apps/xfce4-screenshooter/start) |
 | Document Viewer | [Evince](https://wiki.gnome.org/Apps/Evince) |
 | Clipboard Manager | [ClipIt](https://github.com/CristianHenzel/ClipIt) |
