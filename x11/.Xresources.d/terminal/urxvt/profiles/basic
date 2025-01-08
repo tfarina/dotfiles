@@ -90,10 +90,10 @@ URxvt.color15: BRIGHT_WHITE
 !  * `URxvt.boldItalicFont` -> The font list to use for displaying bold italic characters
 !  * `URxvt.letterSpace`    -> Space between two characters
 !---------------------------------------------------------------------
-URxvt.font:           xft:Inconsolata:style=Regular:pixelsize=14
-URxvt.boldFont:       xft:Menlo:style=Bold:pixelsize=12:weight=bold
-URxvt.italicFont:     xft:Menlo:style=Italic:pixelsize=12:slant=italic
-URxvt.boldItalicFont: xft:Menlo:style=Bold Italic:pixelsize=12:weight=bold:slant=italic
+URxvt.font:           xft:Consolas:style=Regular:pixelsize=13
+URxvt.boldFont:       xft:Consolas:style=Bold:pixelsize=13:weight=bold
+URxvt.italicFont:     xft:Consolas:style=Italic:pixelsize=13:slant=italic
+URxvt.boldItalicFont: xft:Consolas:style=Bold Italic:pixelsize=13:weight=bold:slant=italic
 
 ! Fix font space. By default the distance between characters can feel too wide.
 ! Reduce spacing by one pixel.
