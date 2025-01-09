@@ -97,3 +97,9 @@ To disable the UGLY gtk3 csd (client side decorations) I downloaded
 and gtk3-nocsd_3-1_all.deb and libgtk3-nocsd0_3-1+b1_i386.deb
 from https://packages.debian.org/trixie/all/gtk3-nocsd/download, installed
 with dpkg -i and rebooted.
+
+## How to get monospace font name used by Emacs?
+
+```sh
+$ gsettings get org.gnome.desktop.interface monospace-font-name
+```
