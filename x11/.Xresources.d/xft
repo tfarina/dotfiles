@@ -11,6 +11,8 @@
 !                       'lcdlight', 'lcdlegacy')
 !  * `Xft.rgba`      -> Type of subpixel geometry ('unknown', 'rgb', 'bgr',
 !                       'vrgb', 'none')
+!
+!  https://wiki.archlinux.org/title/Font_configuration#Applications_without_Fontconfig_support
 !---------------------------------------------------------------------------
 Xft.dpi:       96 ! xdpyinfo | grep dots
 Xft.rgba:      rgb
