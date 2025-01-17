@@ -50,6 +50,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Press         | To            |
 | ------------- | ------------- |
 | Ctrl + Esc  | Display the Start menu |
+| Super | Display the Start menu |
 | Super + D | Minimize or restore all windows |
 | Super + E | Open the File Manager |
 | Super + L | Lock the screen |
