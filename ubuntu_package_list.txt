@@ -40,11 +40,13 @@ apturl-common
 aspell
 aspell-en
 aspell-pt-br
+astyle
 at
 at-spi2-core
 attr
 autoconf
 automake
+autopoint
 autotools-dev
 avahi-autoipd
 avahi-daemon
@@ -56,6 +58,7 @@ base-passwd
 bash
 bash-completion
 bc
+bcpp
 biber
 bind9-host
 binutils
@@ -103,6 +106,7 @@ cpu-checker
 cracklib-runtime
 crda
 cron
+csstidy
 cups
 cups-browsed
 cups-bsd
@@ -405,6 +409,7 @@ gtk2-engines:i386
 gtk2-engines-murrine:i386
 gtk2-engines-pixbuf:i386
 gtk2-engines-xfce
+gtk3-nocsd
 gucharmap
 guile-2.0-libs:i386
 gvfs:i386
@@ -424,6 +429,7 @@ hostname
 hplip
 hplip-data
 hud
+human-theme
 humanity-icon-theme
 hunspell-en-us
 hwdata
@@ -977,6 +983,7 @@ libgtk2.0-0:i386
 libgtk2.0-bin
 libgtk2.0-common
 libgtk2.0-dev
+libgtk3-nocsd0:i386
 libgtkglext1:i386
 libgtkmm-2.4-1v5:i386
 libgtkmm-3.0-1v5:i386
@@ -1370,6 +1377,8 @@ libqmi-proxy
 libqpdf17:i386
 libqpdf21:i386
 libqqwing2v5:i386
+libqscintilla2-12v5
+libqscintilla2-l10n
 libqt4-dbus:i386
 libqt4-declarative:i386
 libqt4-network:i386
@@ -1780,6 +1789,7 @@ libxss1:i386
 libxt-dev:i386
 libxt6:i386
 libxtables11:i386
+libxtst-dev:i386
 libxtst6:i386
 libxv1:i386
 libxvidcore4:i386
@@ -1803,6 +1813,7 @@ libzzip-0-13:i386
 light-themes
 lightdm
 lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 lintian
 linux-base
 linux-firmware
@@ -1966,6 +1977,7 @@ pcmciautils
 perl
 perl-base
 perl-modules-5.22
+perltidy
 pidgin
 pidgin-data
 pidgin-libnotify
@@ -2432,6 +2444,7 @@ unity-settings-daemon
 unity-webapps-common
 unity-webapps-qml
 unity-webapps-service
+universalindentgui
 uno-libs3
 unzip
 update-inetd
@@ -2490,6 +2503,7 @@ x11proto-fixes-dev
 x11proto-input-dev
 x11proto-kb-dev
 x11proto-randr-dev
+x11proto-record-dev
 x11proto-render-dev
 x11proto-xext-dev
 x11proto-xinerama-dev
@@ -2505,6 +2519,7 @@ xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
 xdiagnose
+xdm
 xdotool
 xfce4
 xfce4-appfinder
@@ -2537,6 +2552,7 @@ xinit
 xinput
 xkb-data
 xml-core
+xmlindent
 xorg
 xorg-docs-core
 xorg-sgml-doctools
