@@ -95,8 +95,8 @@ URxvt.boldFont:       xft:Consolas:style=Bold:pixelsize=13:weight=bold
 URxvt.italicFont:     xft:Consolas:style=Italic:pixelsize=13:slant=italic
 URxvt.boldItalicFont: xft:Consolas:style=Bold Italic:pixelsize=13:weight=bold:slant=italic
 
-! Fix font space. By default the distance between characters can feel too wide.
-! Reduce spacing by one pixel.
+! If the distance between the characters feel too wide on some font, this can
+! help fix it.
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: 0
 
