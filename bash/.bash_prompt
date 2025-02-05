@@ -29,12 +29,20 @@ BRIGHTWHITE="${COLOR_PREFIX}0;97${COLOR_SUFFIX}"
 
 PROMPT_SYMBOL=">"
 
+# Only display the hostname for an ssh connection
+if [ -n "${SSH_CONNECTION}" ] || [ -n "${SSH_CLIENT}" ] || [ -n "${SSH_TTY}" ]; then
+    PS1_HOSTNAME="@\h"
+else
+    PS1_HOSTNAME=""
+fi
+
 #
 # Prompt format:
 #
 # USER@HOST DIRECTORY (GIT BRANCH)$ COMMAND
 #
-PS1="${GREEN}\u@\h";           # username@hostname
+PS1="${GREEN}\u${PS1_HOSTNAME}";           # username@hostname
+#PS1="${GREEN}\u@\h";           # username@hostname
 PS1+="${RESET} ";
 PS1+="${BLUE}\w";              # current working directory with full path
 PS1+="${YELLOW}\$(__git_ps1)"; # git branch status
