@@ -105,6 +105,22 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.config/bash/git.aliases.bash ]; then
+    source ~/.config/bash/git.aliases.bash
+fi
+
+if [ -f ~/.config/bash/emacs.aliases.bash ]; then
+    source ~/.config/bash/emacs.aliases.bash
+fi
+
+if [ -f ~/.config/bash/vim.aliases.bash ]; then
+    source ~/.config/bash/vim.aliases.bash
+fi
+
+if [ -f ~/.config/bash/general.aliases.bash ]; then
+    source ~/.config/bash/general.aliases.bash
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -122,10 +138,6 @@ fi
 
 if [ -f ~/.environment ]; then
     . ~/.environment
-fi
-
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
 fi
 
 if [ -f ~/.bash_functions ]; then
