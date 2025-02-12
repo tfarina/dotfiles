@@ -8,6 +8,10 @@ case $- in
       *) return;;
 esac
 
+if [ -f ~/.config/bash/env.bash ]; then
+    source ~/.config/bash/env.bash
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -134,10 +138,6 @@ fi
 
 if [ -f ~/.bash_options ]; then
     . ~/.bash_options
-fi
-
-if [ -f ~/.environment ]; then
-    . ~/.environment
 fi
 
 if [ -f ~/.bash_functions ]; then
