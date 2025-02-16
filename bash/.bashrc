@@ -136,14 +136,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -f ~/.bash_options ]; then
-    . ~/.bash_options
-fi
-
-if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
-fi
-
 if [ -f ~/.bash_prompt ]; then
     . ~/.bash_prompt
 fi
