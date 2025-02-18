@@ -76,6 +76,10 @@ xterm*|rxvt*)
     ;;
 esac
 
+if [ -f ~/.bash_prompt ]; then
+    source ~/.bash_prompt
+fi
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -134,10 +138,6 @@ if ! shopt -oq posix; then
   elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
   fi
-fi
-
-if [ -f ~/.bash_prompt ]; then
-    . ~/.bash_prompt
 fi
 
 if [ -f ~/.git-completion.bash ]; then
