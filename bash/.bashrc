@@ -76,8 +76,8 @@ xterm*|rxvt*)
     ;;
 esac
 
-if [ -f ~/.bash_prompt ]; then
-    source ~/.bash_prompt
+if [ -f ~/.config/bash/command.prompt.bash ]; then
+    source ~/.config/bash/command.prompt.bash
 fi
 
 # enable color support of ls and also add handy aliases
