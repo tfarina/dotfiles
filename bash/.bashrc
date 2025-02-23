@@ -140,8 +140,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ -f ~/.git-completion.bash ]; then
-    . ~/.git-completion.bash
+if [ -f ~/.config/bash/git.completion.bash ]; then
+    source ~/.config/bash/git.completion.bash
 fi
 
 # Make the autocompletion work with the 'g' alias.
