@@ -1,9 +1,9 @@
 # -*- mode: sh; -*-
 
-if [ -f ~/.git-prompt.sh ]; then
+if [ -f ~/.config/bash/git.prompt.bash ]; then
     GIT_PS1_SHOWDIRTYSTATE=1
     GIT_PS1_SHOWUNTRACKEDFILES=1
-    . ~/.git-prompt.sh
+    . ~/.config/bash/git.prompt.bash
 fi
 
 COLOR_PREFIX="\[\033["
