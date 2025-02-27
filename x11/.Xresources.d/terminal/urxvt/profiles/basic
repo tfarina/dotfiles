@@ -32,6 +32,7 @@
 
 URxvt.background: BACKGROUND
 URxvt.foreground: FOREGROUND
+URxvt.cursorColor: GREY50
 
 !-----------------------------------------------------------------------------
 !-- Colors
@@ -162,12 +163,9 @@ URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 !------------------------------------------------------------------------
 !  * `URxvt.cursorUnderline` -> Make the cursor underlined
 !  * `URxvt.cursorBlink`     -> Blink the cursor
-!  * `URxvt.cursorColor`     -> Use the specified colour for the cursor
 !------------------------------------------------------------------------
-
 URxvt.cursorUnderline: false
 URxvt.cursorBlink: false
-URxvt.cursorColor: GREY50
 
 !------------------------------------------------------------------------
 !-- General
