@@ -88,10 +88,10 @@ URxvt.color15: BRIGHT_WHITE
 !  * `URxvt.boldItalicFont` -> The font list to use for displaying bold italic characters
 !  * `URxvt.letterSpace`    -> Space between two characters
 !---------------------------------------------------------------------
-URxvt.font:           xft:Ubuntu Mono:style=Regular:pixelsize=15
-URxvt.boldFont:       xft:Ubuntu Mono:style=Bold:pixelsize=15:weight=bold
-URxvt.italicFont:     xft:Ubuntu Mono:style=Italic:pixelsize=15:slant=italic
-URxvt.boldItalicFont: xft:Ubuntu Mono:style=Bold Italic:pixelsize=15:weight=bold:slant=italic
+URxvt.font:           xft:Ubuntu Mono:pixelsize=15:style=Regular
+URxvt.boldFont:       xft:Ubuntu Mono:pixelsize=15:style=Bold:weight=bold
+URxvt.italicFont:     xft:Ubuntu Mono:pixelsize=15:style=Italic:slant=italic
+URxvt.boldItalicFont: xft:Ubuntu Mono:pixelsize=15:style=Bold Italic:weight=bold:slant=italic
 
 ! If the distance between the characters feel too wide on some font, this can
 ! help fix it.
