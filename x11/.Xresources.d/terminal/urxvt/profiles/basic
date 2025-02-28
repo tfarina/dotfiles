@@ -32,7 +32,7 @@
 
 URxvt.background: BACKGROUND
 URxvt.foreground: FOREGROUND
-URxvt.cursorColor: GREY50
+URxvt.cursorColor: BLACK
 
 !-----------------------------------------------------------------------------
 !-- Colors
