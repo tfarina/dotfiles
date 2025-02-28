@@ -24,14 +24,11 @@
 #define BRIGHT_CYAN rgb:00/FF/FF
 #define BRIGHT_WHITE rgb:FF/FF/FF
 
-#define BACKGROUND BRIGHT_WHITE
-#define FOREGROUND BLACK
-
 ! rbg(127,127,127)
 #define GREY50 rgb:7F/7F/7F
 
-URxvt.background: BACKGROUND
-URxvt.foreground: FOREGROUND
+URxvt.background: BRIGHT_WHITE
+URxvt.foreground: BLACK
 URxvt.cursorColor: BLACK
 
 !-----------------------------------------------------------------------------
