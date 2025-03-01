@@ -44,7 +44,7 @@ fi
 PS1="${GREEN}\u${PS1_HOSTNAME}";           # username@hostname
 #PS1="${GREEN}\u@\h";           # username@hostname
 PS1+="${RESET} ";
-PS1+="${BLUE}\w";              # current working directory with full path
+PS1+="${BLACK}\w";              # current working directory with full path
 PS1+="${YELLOW}\$(__git_ps1)"; # git branch status
 PS1+="${RESET}\${PROMPT_SYMBOL}";
 export PS1;
