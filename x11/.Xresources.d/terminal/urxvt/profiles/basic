@@ -7,6 +7,23 @@
 !----- General
 !-----------------------------------------------------------------------------
 
+! black         = rgb(0,0,0)
+! red           = rgb(128,0,0)
+! green         = rgb(0,128,0)
+! yellow        = rgb(128,128,0)
+! blue          = rgb(0,0,128)
+! magenta       = rgb(128,0,128)
+! cyan          = rgb(0,128,128)
+! white         = rgb(192,192,192)
+! brightBlack   = rgb(128,128,128)
+! brightRed     = rgb(255,0,0)
+! brightGreen   = rgb(0,255,0)
+! brightYellow  = rgb(255,255,0)
+! brightBlue    = rgb(0,0,255)
+! brightMagenta = rgb(255,0,255)
+! brightCyan    = rgb(0,255,255)
+! brightWhite   = rgb(255,255,255)
+
 #define BLACK rgb:00/00/00
 #define RED rgb:80/00/00
 #define GREEN rgb:00/80/00
@@ -38,44 +55,36 @@ URxvt.cursorColor: BLACK
 
 ! ANSI Colors
 
-! black: rgb(0,0,0)
+! Black
 URxvt.color0:  BLACK
-! bright black: rgb(128,128,128)
 URxvt.color8:  BRIGHT_BLACK
 
-! red: rgb(128,0,0)
+! Red
 URxvt.color1:  RED
-! bright red: rgb(255,0,0)
 URxvt.color9:  BRIGHT_RED
 
-! green: rgb(0,128,0)
+! Green
 URxvt.color2:  GREEN
-! bright green: rgb(0,255,0)
 URxvt.color10: BRIGHT_GREEN
 
-! yellow: rgb(128,128,0)
+! Yellow
 URxvt.color3:  YELLOW
-! bright yellow: rgb(255,255,0)
 URxvt.color11: BRIGHT_YELLOW
 
-! blue: rgb(0,0,128)
+! Blue
 URxvt.color4:  BLUE
-! bright blue: rgb(0,0,255)
 URxvt.color12: BRIGHT_BLUE
 
-! magenta: rgb(128,0,128)
+! Magenta
 URxvt.color5:  MAGENTA
-! bright magenta: rgb(255,0,255)
 URxvt.color13: BRIGHT_MAGENTA
 
-! cyan: rgb(0,128,128)
+! Cyan
 URxvt.color6:  CYAN
-! bright cyan: rgb(0,255,255)
 URxvt.color14: BRIGHT_CYAN
 
-! white: rgb(192,192,192)
+! White
 URxvt.color7:  WHITE
-! bright white: rgb(255,255,255)
 URxvt.color15: BRIGHT_WHITE
 
 !---------------------------------------------------------------------
