@@ -161,7 +161,7 @@ URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 !  * `URxvt.cursorUnderline` -> Make the cursor underlined
 !  * `URxvt.cursorBlink`     -> Blink the cursor
 !------------------------------------------------------------------------
-URxvt.cursorUnderline: false
+URxvt.cursorUnderline: true
 URxvt.cursorBlink: false
 
 !------------------------------------------------------------------------
