@@ -90,43 +90,49 @@ URxvt.color15: BRIGHT_WHITE
 !-- Appearence
 !----- Font
 !---------------------------------------------------------------------
-!  * `URxvt.font`           -> Select the fonts to be used. This is a comma separated list of font names
-!  * `URxvt.boldFont`       -> The font list to use for displaying bold characters
-!  * `URxvt.italicFont`     -> The font list to use for displaying italic characters
-!  * `URxvt.boldItalicFont` -> The font list to use for displaying bold italic characters
-!  * `URxvt.letterSpace`    -> Space between two characters
-!---------------------------------------------------------------------
+
+! Select the fonts to be used. This is a comma separated list of font names.
 URxvt.font:           xft:Ubuntu Mono:size=12:style=Regular
+
+! The font list to use for displaying bold characters.
 URxvt.boldFont:       xft:Ubuntu Mono:size=12:style=Bold:weight=bold
+
+! The font list to use for displaying italic characters.
 URxvt.italicFont:     xft:Ubuntu Mono:size=12:style=Italic:slant=italic
+
+! The font list to use for displaying bold italic characters.
 URxvt.boldItalicFont: xft:Ubuntu Mono:size=12:style=Bold Italic:weight=bold:slant=italic
 
-! If the distance between the characters feel too wide on some font, this can
-! help fix it.
+! Space between two characters
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: 0
 
 !---------------------------------------------------------------------
 !-- Appearence
 !----- Opening New Windows
-!  * `URxvt.borderLess` -> Set MWM hints to request a borderless window, i.e. if honoured by the WM, the rxvt-unicode window will not have window decorations
-!  * `URxvt.internalBorder` -> Internal border of number pixels
-!  * `URxvt.externalBorder` -> External border of number pixels
 !---------------------------------------------------------------------
+
+! Set MWM hints to request a borderless window, i.e. if honoured by the WM,
+! the rxvt-unicode window will not have window decorations.
 URxvt.borderLess: false
+
+! Internal border of number pixels.
 URxvt.internalBorder: 2
+
+! External border of number pixels.
 URxvt.externalBorder: 0
 
 !------------------------------------------------------------------------------
 !-- General
 !----- Clipboard
 !------------------------------------------------------------------------------
-!  * `URxvt.iso14755`    -> Turn on/off ISO 14755
-!  * `URxvt.iso14755_52` -> Turn on/off ISO 14755 5.2 mode
-!
-! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
-!------------------------------------------------------------------------------
+
+! Turn on/off ISO 14755.
 URxvt.iso14755: false
+
+! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
+
+! Turn on/off ISO 14755 5.2 mode.
 URxvt.iso14755_52: false
 
 ! Rebind copy and paste key bindings.
@@ -137,130 +143,198 @@ URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 !-- General
 !----- Scrolling
 !------------------------------------------------------------------------
-!  * `URxvt.scrollBar`       -> Turn on/off scrollbar
-!  * `URxvt.scrollBar_right` -> Put scrollbar on right/left
-!  * `URxvt.scrollstyle`     -> Set scrollbar style to rxvt, plain, next or xterm
-!  * `URxvt.scrollBar_floating` -> Display rxvt (non XTerm/NeXT) scrollbar without (true value)/with (false value) a trough
-!  * `URxvt.scrollBar_align` ->  Align the top, bottom or centre of the scrollbar thumb with the pointer on middle button press/drag
-!  * `URxvt.thickness` -> Set the scrollbar width in pixels
-!  * `URxvt.scrollTtyOutput` -> Whether the terminal (tty) will scroll down when it receives output
-!  * `URxvt.scrollTtyKeypress` -> Turn on/off scroll-to-bottom on keypress
-!------------------------------------------------------------------------
+
+! Turn on/off scrollbar.
 URxvt.scrollBar: false
+
+! Put scrollbar on right/left.
 URxvt.scrollBar_right: false
+
+! Set scrollbar style to rxvt, plain, next or xterm.
 URxvt.scrollstyle:     plain
+
+! Display rxvt (non XTerm/NeXT) scrollbar without (true value)/
+! with (false value) a trough.
 URxvt.scrollBar_floating: false
+
+! Align the top, bottom or centre of the scrollbar thumb with the pointer
+! on middle button press/drag.
 URxvt.scrollBar_align: centre
+
+! Set the scrollbar width in pixels.
 URxvt.thickness: 5
+
+! Whether the terminal (tty) will scroll down when it receives output.
 URxvt.scrollTtyOutput: true
+
+! Turn on/off scroll-to-bottom on keypress.
 URxvt.scrollTtyKeypress: true
 
 !------------------------------------------------------------------------
 !-- General
 !------------------------------------------------------------------------
-!  * `URxvt.iconFile` -> Set the application icon pixmap
-!------------------------------------------------------------------------
+
+! Set the application icon pixmap.
 !URxvt.iconFile: /usr/share/icons/elementary-xfce/apps/24/terminal.png
 URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 
 !------------------------------------------------------------------------
 !-- Cursor
 !------------------------------------------------------------------------
-!  * `URxvt.cursorUnderline` -> Make the cursor underlined
-!  * `URxvt.cursorBlink`     -> Blink the cursor
-!------------------------------------------------------------------------
+
+! Make the cursor underlined.
 URxvt.cursorUnderline: true
+
+! Blink the cursor.
 URxvt.cursorBlink: false
 
 !------------------------------------------------------------------------
 !-- General
 !------------------------------------------------------------------------
-!  * `URxvt.termName` -> Specify the terminal type name to be set in the TERM environment variable
-!  * `URxvt.geometry` -> Create the window with the specified X window geometry
-!  * `URxvt.reverseVideo` -> Turn on/off simulated reverse video
-!  * `URxvt.loginShell` -> Start as a login shell or as a normal sub-shell
-!  * `URxvt.skipScroll` -> Turn on/off skip scrolling (allow multiple screens per refresh)
-!  * `URxvt.saveLines` -> Default number of lines in the scrollback buffer
-!  * `URxvt.utmpInhibit` -> Inhibit/enable writing a utmp entry
-!  * `URxvt.buffered` -> Turn on/off double-buffering for xft
-!  * `URxvt.mapAlert` -> De-iconify (map) on receipt of a bell character
-!  * `URxvt.urgentOnBell` -> Set/unset the urgency hint for the wm on receipt of a bell character
-!  * `URxvt.visualBell` -> Turn on/off visual bell on receipt of a bell character
-!  * `URxvt.meta8` -> Handle Meta (Alt) + keypress to set the 8th bit or as an escape prefix
-!  * `URxvt.secondaryScreen` -> Turn on/off secondary screen
-!  * `URxvt.secondaryScroll` -> Turn on/off secondary screen scroll
-!  * `URxvt.insecure` -> Enable "insecure" mode, which currently enables most of the escape sequences that echo strings.
-!  * `URxvt.mouseWheelScrollPage` -> The mouse wheel scrolls a page full, otherwise it scrolls five lines
-!  * `URxvt.pointerBlank` ->  Blank the pointer when a key is pressed or after a set number of seconds of inactivity
-!  * `URxvt.pointerBlankDelay` -> Specifies number of seconds before blanking the pointer
-!  * `URxvt.lineSpace` -> Specifies number of lines (pixel height) to insert between each row of the display
-!  * `URxvt.tripleclickwords` -> Instead of selecting a full line it will extend the selection to the end of the logical line only
-!  * `URxvt.override-redirect` ->  Sets override-redirect for the terminal window, making it almost invisible to window managers
-!  * `URxvt.skipBuiltinGlyphs` -> Disable the usage of the built-in block graphics/line drawing characters and just rely on what the specified fonts provide
-!  * `URxvt.transparent` -> Turn on/off pseudo-transparency by using the root pixmap as background
-!  * `URxvt.intensityStyles` -> When font styles are not enabled, or this option is enabled, bold/blink font styles imply high intensity foreground/background colours.
-!  * `URxvt.backspacekey` -> The string to send when the backspace key is pressed.
-!  * `URxvt.deletekey` -> The string to send when the delete key (not the keypad delete key) is pressed.
-!  * `URxvt.multiClickTime` -> The maximum time in milliseconds between multi-click select events.
-!  * `URxvt.print-pipe` -> Specify a command pipe for vt100 printer.
-!  * `URxvt.answerbackString` -> Specify the reply urxvt sends to the shell when an ENQ (control-E) character is passed through.
-!  * `URxvt.cutchars` -> The characters used as delimiters for double-click word selection.
-!  * `URxvt.title` -> Window title (-T still respected); the default title is the basename of the program specified after the -e option, if any, otherwise the application name.
-!  * `URxvt.iconName` -> Set the name used to label the window's icon or displayed in an icon manager window. The default name is the basename of the program.
-!  * `URxvt.modifier` -> Override detection of Meta modifier with specified key: alt, meta, hyper, super, mod1, mod2, mod3, mod4, mod5.
-!  * `URxvt.scrollColor` -> Use the specified colour for the scrollbar [default #B2B2B2].
-!  * `URxvt.troughColor` -> Use the specified colour for the scrollbar's trough area [default #969696].
-!  * `URxvt.borderColor` -> The colour of the border around the text area and between the scrollbar and the text.
-!  * `URxvt.jumpScroll` -> Specify that jump scrolling should be used.
-!  * `URxvt.pastableTabs` -> True: store tabs as wide characters. False: interpret tabs as cursor movement only.
-!  * `URxvt.tintColor` -> Tint the transparent background with the given colour.
-!  * `URxvt.shading` -> Darken (0 .. 99) or lighten (101 .. 200) the transparent background. A value of 100 means no shading.
-!  * `URxvt.blurRadius` -> Apply gaussian blur with the specified radius to the transparent background.
-!  * `URxvt.fading` -> Fade the text by the given percentage when focus is lost.
-!  * `URxvt.fadeColor` -> Fade to this colour, when fading is used.
-!------------------------------------------------------------------------
+
+! Specify the terminal type name to be set in the TERM environment variable.
 URxvt.termName: rxvt-unicode-256color
+
+! Create the window with the specified X window geometry.
 URxvt.geometry: 80x24
+
+! Turn on/off simulated reverse video.
 URxvt.reverseVideo: false
+
+! Start as a login shell or as a normal sub-shell.
 URxvt.loginShell: false
+
+! Turn on/off skip scrolling (allow multiple screens per refresh).
 URxvt.skipScroll: true
+
+! Default number of lines in the scrollback buffer.
 URxvt.saveLines: 64
+
+! Inhibit/enable writing a utmp entry.
 URxvt.utmpInhibit: false
+
+! Turn on/off double-buffering for xft.
 URxvt.buffered: true
+
+! De-iconify (map) on receipt of a bell character.
 URxvt.mapAlert: false
+
+! Set/unset the urgency hint for the wm on receipt of a bell character.
 URxvt.urgentOnBell: false
+
+! Turn on/off visual bell on receipt of a bell character.
 URxvt.visualBell: false
+
+! Handle Meta (Alt) + keypress to set the 8th bit or as an escape prefix.
 URxvt.meta8: false
+
+! Turn on/off secondary screen.
 URxvt.secondaryScreen: true
+
+! Turn on/off secondary screen scroll.
 URxvt.secondaryScroll: true
+
+! Enable "insecure" mode, which currently enables most of the escape
+! sequences that echo strings.
 URxvt.insecure: false
+
+! The mouse wheel scrolls a page full, otherwise it scrolls five lines.
 URxvt.mouseWheelScrollPage: false
+
+! Blank the pointer when a key is pressed or after a set number of seconds
+! of inactivity.
 URxvt.pointerBlank: false
+
+! Specifies number of seconds before blanking the pointer.
 URxvt.pointerBlankDelay: 2
+
+! Specifies number of lines (pixel height) to insert between each row of the
+! display.
 URxvt.lineSpace: 0
+
+! Instead of selecting a full line it will extend the selection to the end
+! of the logical line only.
 URxvt.tripleclickwords: false
+
+! Sets override-redirect for the terminal window, making it almost invisible
+! to window managers.
 URxvt.override-redirect: false
+
+! Disable the usage of the built-in block graphics/line drawing characters
+! and just rely on what the specified fonts provide.
 URxvt.skipBuiltinGlyphs: true
+
+! Turn on/off pseudo-transparency by using the root pixmap as background.
 URxvt.transparent: false
+
+! When font styles are not enabled, or this option is enabled, bold/blink
+! font styles imply high intensity foreground/background colours.
 URxvt.intensityStyles: true
+
+! The string to send when the backspace key is pressed.
 URxvt.backspacekey: DEC
+
+! The string to send when the delete key (not the keypad delete key) is
+! pressed.
 URxvt.deletekey: \033[3~
+
+! The maximum time in milliseconds between multi-click select events.
 URxvt.multiClickTime: 500
+
+! Specify a command pipe for vt100 printer.
 URxvt.print-pipe: lpr
+
+! Specify the reply urxvt sends to the shell when an ENQ (control-E)
+! character is passed through.
 URxvt.answerbackString: \033[?1;2c
+
+! The characters used as delimiters for double-click word selection.
 URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
+
+! Window title (-T still respected); the default title is the basename of
+! the program specified after the -e option, if any, otherwise the
+! application name.
 !URxvt.title:
+
+! Set the name used to label the window's icon or displayed in an icon manager
+! window. The default name is the basename of the program.
 !URxvt.iconName:
+
+! Override detection of Meta modifier with specified key: alt, meta, hyper,
+! super, mod1, mod2, mod3, mod4, mod5.
 URxvt.modifier: alt
+
+! Use the specified colour for the scrollbar [default #B2B2B2].
 URxvt.scrollColor: rgb:B2/B2/B2
+
+! Use the specified colour for the scrollbar's trough area [default #969696].
 URxvt.troughColor: rgb:96/96/96
+
+! The colour of the border around the text area and between the scrollbar and
+! the text.
 URxvt.borderColor: GREEN
+
+! Specify that jump scrolling should be used.
 URxvt.jumpScroll: true
+
+! True: store tabs as wide characters. False: interpret tabs as cursor
+! movement only.
 URxvt.pastableTabs: true
+
+! Tint the transparent background with the given colour.
 URxvt.tintColor: BRIGHT_WHITE
+
+! Darken (0 .. 99) or lighten (101 .. 200) the transparent background.
+! A value of 100 means no shading.
 URxvt.shading: 100
+
+! Apply gaussian blur with the specified radius to the transparent background.
 URxvt.blurRadius: 0
+
+! Fade the text by the given percentage when focus is lost.
 URxvt.fading: 10
+
+! Fade to this colour, when fading is used.
 URxvt.fadeColor: BLACK
 
 !termName:                       string
