@@ -43,9 +43,6 @@
 #define BRIGHT_CYAN    #00FFFF
 #define BRIGHT_WHITE   #FFFFFF
 
-! rbg(127,127,127)
-#define GREY50         #7F7F7F
-
 URxvt.background: BRIGHT_WHITE
 URxvt.foreground: BLACK
 URxvt.cursorColor: BLACK
