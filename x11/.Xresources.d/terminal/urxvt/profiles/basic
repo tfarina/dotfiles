@@ -43,8 +43,8 @@
 #define BRIGHT_CYAN    #00FFFF
 #define BRIGHT_WHITE   #FFFFFF
 
-URxvt.background: BRIGHT_WHITE
 URxvt.foreground: BLACK
+URxvt.background: BRIGHT_WHITE
 URxvt.cursorColor: BLACK
 
 !-----------------------------------------------------------------------------
