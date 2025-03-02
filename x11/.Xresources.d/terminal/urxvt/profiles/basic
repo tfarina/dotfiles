@@ -7,22 +7,24 @@
 !----- General
 !-----------------------------------------------------------------------------
 
-! black         = rgb(0,0,0)
-! red           = rgb(128,0,0)
-! green         = rgb(0,128,0)
-! yellow        = rgb(128,128,0)
-! blue          = rgb(0,0,128)
-! magenta       = rgb(128,0,128)
-! cyan          = rgb(0,128,128)
-! white         = rgb(192,192,192)
-! brightBlack   = rgb(128,128,128)
-! brightRed     = rgb(255,0,0)
-! brightGreen   = rgb(0,255,0)
-! brightYellow  = rgb(255,255,0)
-! brightBlue    = rgb(0,0,255)
-! brightMagenta = rgb(255,0,255)
-! brightCyan    = rgb(0,255,255)
-! brightWhite   = rgb(255,255,255)
+! RGB table
+
+! black         = 0, 0, 0
+! red           = 128, 0, 0
+! green         = 0, 128, 0
+! yellow        = 128, 128, 0
+! blue          = 0, 0, 128
+! magenta       = 128, 0, 128
+! cyan          = 0, 128, 128
+! white         = 192, 192, 192
+! brightBlack   = 128, 128, 128
+! brightRed     = 255, 0, 0
+! brightGreen   = 0, 255, 0
+! brightYellow  = 255, 255, 0
+! brightBlue    = 0, 0, 255
+! brightMagenta = 255, 0, 255
+! brightCyan    = 0, 255, 255
+! brightWhite   = 255, 255, 255
 
 #define BLACK          #000000
 #define RED            #800000
