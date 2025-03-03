@@ -141,7 +141,7 @@ URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 
 ! Set scrollbar style to rxvt, plain, next or xterm.
-URxvt.scrollstyle:     plain
+URxvt.scrollstyle: plain
 
 ! Display rxvt (non XTerm/NeXT) scrollbar without (true value)/
 ! with (false value) a trough.
