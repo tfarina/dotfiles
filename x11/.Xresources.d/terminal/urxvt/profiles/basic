@@ -173,6 +173,7 @@ URxvt.cursorBlink: false
 ! =======
 
 ! Specifies the terminal type name to be set in the TERM environment variable.
+! Accepts: string
 URxvt.termName: rxvt-unicode-256color
 
 ! Create the window with the specified X window geometry.
