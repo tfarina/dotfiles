@@ -87,7 +87,7 @@ URxvt.color7:  WHITE
 URxvt.color15: BRIGHT_WHITE
 
 !---------------------------------------------------------------------
-!-- Appearence
+!-- Appearance
 !----- Font
 !---------------------------------------------------------------------
 
@@ -108,7 +108,7 @@ URxvt.boldItalicFont: xft:Ubuntu Mono:size=12:style=Bold Italic:weight=bold:slan
 URxvt.letterSpace: 0
 
 !---------------------------------------------------------------------
-!-- Appearence
+!-- Appearance
 !----- Opening New Windows
 !---------------------------------------------------------------------
 
