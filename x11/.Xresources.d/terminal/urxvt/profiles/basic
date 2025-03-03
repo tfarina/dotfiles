@@ -2,12 +2,14 @@
 !                         URxvt Preferences                           !
 !---------------------------------------------------------------------!
 
-!-----------------------------------------------------------------------------
-!-- Colors
-!----- General
-!-----------------------------------------------------------------------------
+! Colors
+! ======
+
+! Color scheme
+! -------------
 
 ! RGB table
+! ----------
 
 ! black         = 0, 0, 0
 ! red           = 128, 0, 0
@@ -47,12 +49,8 @@ URxvt.foreground: BLACK
 URxvt.background: BRIGHT_WHITE
 URxvt.cursorColor: BLACK
 
-!-----------------------------------------------------------------------------
-!-- Colors
-!----- Palette
-!-----------------------------------------------------------------------------
-
-! ANSI Colors
+! ANSI Colors Palette
+! -------------------
 
 ! Black
 URxvt.color0:  BLACK
@@ -86,10 +84,8 @@ URxvt.color14: BRIGHT_CYAN
 URxvt.color7:  WHITE
 URxvt.color15: BRIGHT_WHITE
 
-!---------------------------------------------------------------------
-!-- Appearance
-!----- Font
-!---------------------------------------------------------------------
+! Fonts
+! =====
 
 ! Select the fonts to be used. This is a comma separated list of font names.
 URxvt.font:           xft:Ubuntu Mono:size=12:style=Regular
@@ -107,10 +103,8 @@ URxvt.boldItalicFont: xft:Ubuntu Mono:size=12:style=Bold Italic:weight=bold:slan
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: 0
 
-!---------------------------------------------------------------------
-!-- Appearance
-!----- Opening New Windows
-!---------------------------------------------------------------------
+! Appearance
+! ==========
 
 ! Set MWM hints to request a borderless window, i.e. if honoured by the WM,
 ! the rxvt-unicode window will not have window decorations.
@@ -122,10 +116,8 @@ URxvt.internalBorder: 2
 ! External border of number pixels.
 URxvt.externalBorder: 0
 
-!------------------------------------------------------------------------------
-!-- General
-!----- Clipboard
-!------------------------------------------------------------------------------
+! Clipboard
+! =========
 
 ! Turn on/off ISO 14755.
 URxvt.iso14755: false
@@ -139,10 +131,8 @@ URxvt.iso14755_52: false
 URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
 URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 
-!------------------------------------------------------------------------
-!-- General
-!----- Scrolling
-!------------------------------------------------------------------------
+! Scrolling
+! =========
 
 ! Turn on/off scrollbar.
 URxvt.scrollBar: false
@@ -170,9 +160,8 @@ URxvt.scrollTtyOutput: true
 ! Turn on/off scroll-to-bottom on keypress.
 URxvt.scrollTtyKeypress: true
 
-!------------------------------------------------------------------------
-!-- Cursor
-!------------------------------------------------------------------------
+! Cursor
+! ======
 
 ! Make the cursor underlined.
 URxvt.cursorUnderline: true
@@ -180,9 +169,8 @@ URxvt.cursorUnderline: true
 ! Blink the cursor.
 URxvt.cursorBlink: false
 
-!------------------------------------------------------------------------
-!-- General
-!------------------------------------------------------------------------
+! General
+! =======
 
 ! Specifies the terminal type name to be set in the TERM environment variable.
 URxvt.termName: rxvt-unicode-256color
