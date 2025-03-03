@@ -227,7 +227,6 @@ URxvt.secondaryScreen: true
 URxvt.secondaryScroll: true
 
 ! Set the application icon pixmap.
-!URxvt.iconFile: /usr/share/icons/elementary-xfce/apps/24/terminal.png
 URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 
 ! Enable "insecure" mode, which currently enables most of the escape
