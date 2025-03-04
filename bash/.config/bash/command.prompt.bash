@@ -41,8 +41,8 @@ fi
 #
 # USER@HOST DIRECTORY (GIT BRANCH)$ COMMAND
 #
-PS1="${GREEN}\u${PS1_HOSTNAME}";           # username@hostname
-#PS1="${GREEN}\u@\h";           # username@hostname
+PS1="${GREEN}\u";               # username
+PS1+="${PS1_HOSTNAME}";         # @hostname
 PS1+="${RESET} ";
 PS1+="${BLACK}\w";              # current working directory with full path
 PS1+="${YELLOW}\$(__git_ps1)"; # git branch status
