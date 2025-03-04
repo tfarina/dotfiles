@@ -174,7 +174,8 @@ URxvt.cursorBlink: false
 ! Accepts: string
 URxvt.termName: rxvt-unicode-256color
 
-! Create the window with the specified X window geometry.
+! Specifies the preferred size of this X window.
+! Accepts: string
 URxvt.geometry: 80x24
 
 ! Turn on/off simulated reverse video.
