@@ -104,3 +104,9 @@ with dpkg -i and rebooted.
 ```sh
 $ gsettings get org.gnome.desktop.interface monospace-font-name
 ```
+
+## How to get the name of default font on Xfce?
+
+```sh
+$ xfconf-query -c xsettings -p /Gtk/FontName
+```
