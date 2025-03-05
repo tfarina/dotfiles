@@ -161,10 +161,12 @@ URxvt.scrollTtyKeypress: true
 ! Cursor
 ! ======
 
-! Make the cursor underlined.
+! Specifies whether to make the cursor underlined or a box.
+! Accepts: boolean
 URxvt.cursorUnderline: true
 
-! Blink the cursor.
+! Specifies whether to make the cursor blink.
+! Accepts: boolean
 URxvt.cursorBlink: false
 
 ! General
