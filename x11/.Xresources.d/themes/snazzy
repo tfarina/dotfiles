@@ -1,3 +1,8 @@
+! Name: hype-snazzy
+! Author: Sindre Sorhus, Leon G
+! URL: https://github.com/sindresorhus/hyper-snazzy
+!      https://github.com/LeonGr/urxvt-snazzy
+
 *background:   [97]#282a36
 *foreground:   #eff0eb
 *cursorColor:  #9aedfe
@@ -18,6 +23,3 @@
 *color14:     #9aedfe
 *color7:      #eff0eb
 *color15:     #eff0eb
-
-! https://github.com/sindresorhus/hyper-snazzy
-! https://github.com/LeonGr/urxvt-snazzy/blob/master/.Xresources
