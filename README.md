@@ -37,7 +37,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Text Editor | [Gedit](https://gitlab.gnome.org/World/gedit/gedit/-/tree/master) |
 | Application Finder | [xfce4-appfinder](https://docs.xfce.org/xfce/xfce4-appfinder/start) |
 | Web Browser | [Firefox](https://www.mozilla.org/en-US/firefox/new) |
-| Mail Reader | [Claws Mail](https://www.claws-mail.org) |
+| Mail Reader | [Claws Mail](https://www.claws-mail.org), [Thunderbird](https://www.thunderbird.net/en-US/) |
 | File Manager | [Thunar](https://gitlab.xfce.org/xfce/thunar) |
 | Image Viewer | [Sxiv](https://github.com/muennich/sxiv), [Ristretto](https://docs.xfce.org/apps/ristretto/start) |
 | Screen Capture | [Scrot](https://github.com/dreamer/scrot), [GNOME Screenshot](https://gitlab.gnome.org/GNOME/gnome-screenshot), [Xfce Screenshooter](https://docs.xfce.org/apps/xfce4-screenshooter/start) |
