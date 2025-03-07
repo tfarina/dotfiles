@@ -76,10 +76,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-if [ -f ~/.config/bash/command.prompt.bash ]; then
-    source ~/.config/bash/command.prompt.bash
-fi
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -147,3 +143,11 @@ fi
 # Make the autocompletion work with the 'g' alias.
 complete -o bashdefault -o default -o nospace -F _git g
 complete -o default -o nospace -F _git g
+
+# Prompt setup.
+# KEEP IT HERE! ALWAYS AFTER /etc/bash_completion, because
+# that ends up sourcing /usr/lib/git-core/git-sh-prompt. If
+# that happens it will overwite our local git.prompt.bash.
+if [ -f ~/.config/bash/command.prompt.bash ]; then
+    source ~/.config/bash/command.prompt.bash
+fi
