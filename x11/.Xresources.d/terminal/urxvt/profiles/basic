@@ -148,10 +148,12 @@ URxvt.scrollTtyKeypress: true
 
 ! Specifies whether to make the cursor underlined or a box.
 ! Accepts: boolean
+! Default value: false
 URxvt.cursorUnderline: true
 
 ! Specifies whether to make the cursor blink.
 ! Accepts: boolean
+! Default value: false
 URxvt.cursorBlink: false
 
 ! General
@@ -163,6 +165,7 @@ URxvt.termName: rxvt-unicode-256color
 
 ! Specifies the preferred size of this X window.
 ! Accepts: string
+! Default value: 80x24
 URxvt.geometry: 80x24
 
 ! Turn on/off simulated reverse video.
