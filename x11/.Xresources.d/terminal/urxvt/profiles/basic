@@ -173,7 +173,11 @@ URxvt.geometry: 80x24
 ! Default: false
 URxvt.reverseVideo: false
 
-! Start as a login shell or as a normal sub-shell.
+! Specifies whether or not the shell to be run in the window
+! should be started as a login shell by prepending a `-' to
+! argv[0] of the shell.
+! Accepts: boolean
+! Default value: false
 URxvt.loginShell: false
 
 ! Turn on/off skip scrolling (allow multiple screens per refresh).
