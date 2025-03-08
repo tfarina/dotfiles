@@ -47,39 +47,24 @@ URxvt.foreground: BLACK
 URxvt.background: BRIGHT_WHITE
 URxvt.cursorColor: BLACK
 
-! ANSI Colors Palette
-! -------------------
+! ANSI colors
+! -----------
 
-! Black
 URxvt.color0:  BLACK
-URxvt.color8:  BRIGHT_BLACK
-
-! Red
 URxvt.color1:  RED
-URxvt.color9:  BRIGHT_RED
-
-! Green
 URxvt.color2:  GREEN
-URxvt.color10: BRIGHT_GREEN
-
-! Yellow
 URxvt.color3:  YELLOW
-URxvt.color11: BRIGHT_YELLOW
-
-! Blue
 URxvt.color4:  BLUE
-URxvt.color12: BRIGHT_BLUE
-
-! Magenta
 URxvt.color5:  MAGENTA
-URxvt.color13: BRIGHT_MAGENTA
-
-! Cyan
 URxvt.color6:  CYAN
-URxvt.color14: BRIGHT_CYAN
-
-! White
 URxvt.color7:  WHITE
+URxvt.color8:  BRIGHT_BLACK
+URxvt.color9:  BRIGHT_RED
+URxvt.color10: BRIGHT_GREEN
+URxvt.color11: BRIGHT_YELLOW
+URxvt.color12: BRIGHT_BLUE
+URxvt.color13: BRIGHT_MAGENTA
+URxvt.color14: BRIGHT_CYAN
 URxvt.color15: BRIGHT_WHITE
 
 ! Fonts
