@@ -168,7 +168,9 @@ URxvt.termName: rxvt-unicode-256color
 ! Default value: 80x24
 URxvt.geometry: 80x24
 
-! Turn on/off simulated reverse video.
+! Specifies whether or not reverse video should be simulated.
+! Accepts: boolean
+! Default: false
 URxvt.reverseVideo: false
 
 ! Start as a login shell or as a normal sub-shell.
