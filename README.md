@@ -31,6 +31,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Boot Loader | [GRUB 2](https://www.gnu.org/software/grub/index.html) |
 | Display Manager | [LightDM](https://github.com/canonical/lightdm) |
 | Greeter | [LightDM GTK+ Greeter](https://github.com/Xubuntu/lightdm-gtk-greeter) |
+| Session Manager | [xfce4-session](https://docs.xfce.org/xfce/xfce4-session/start) |
 | Window Manager | [xfwm4](https://docs.xfce.org/xfce/xfwm4/start) |
 | Terminal Emulator | [URxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) |
 | Shell | [Bash](https://www.gnu.org/software/bash/) |
