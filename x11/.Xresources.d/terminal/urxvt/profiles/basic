@@ -117,30 +117,50 @@ URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 ! Scrolling
 ! =========
 
-! Turn on/off scrollbar.
+! Specifies whether or not the scrollbar should be displayed.
+! Accepts: boolean
+! Default value: true
 URxvt.scrollBar: false
 
-! Put scrollbar on right/left.
+! Specifies whether or not the scrollbar should be displayed on
+! the right rather than the left.
+! Accepts: boolean
+! Default value: false
 URxvt.scrollBar_right: false
 
-! Set scrollbar style to rxvt, plain, next or xterm.
+! Specifies the style to be used for the scrollbar.
+! Accepts: mode
+! Choices: rxvt, plain, next or xterm
+! Default value: rxvt
 URxvt.scrollstyle: plain
 
-! Display rxvt (non XTerm/NeXT) scrollbar without (true value)/
+! Displays rxvt (non XTerm/NeXT) scrollbar without (true value)/
 ! with (false value) a trough.
+! Accepts: boolean
+! Default value: false
 URxvt.scrollBar_floating: false
 
-! Align the top, bottom or centre of the scrollbar thumb with the pointer
+! Aligns the top, bottom or centre of the scrollbar thumb with the pointer
 ! on middle button press/drag.
+! Accepts: mode
+! Default value: centre
 URxvt.scrollBar_align: centre
 
-! Set the scrollbar width in pixels.
+! Specifies the width in pixels of the scrollbar.
+! Accepts: number
+! Default value: 5
 URxvt.thickness: 5
 
-! Whether the terminal (tty) will scroll down when it receives output.
+! Specifies whether or not output to the terminal should automatically
+! cause the scrollbar to go to the bottom of the scrolling region.
+! Accepts: boolean
+! Default value: true
 URxvt.scrollTtyOutput: true
 
-! Turn on/off scroll-to-bottom on keypress.
+! Specifies whether or not pressing a key should automatically
+! cause the scrollbar to go to the bottom of the scrolling region.
+! Accepts: boolean
+! Default value: false
 URxvt.scrollTtyKeypress: true
 
 ! Cursor
