@@ -28,6 +28,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 
 | Role  | Program |
 | ------------- | ------------- |
+| Boot Loader | [GRUB 2](https://www.gnu.org/software/grub/index.html) |
 | Display Manager | [LightDM](https://github.com/canonical/lightdm) |
 | Greeter | [LightDM GTK+ Greeter](https://github.com/Xubuntu/lightdm-gtk-greeter) |
 | Window Manager | [xfwm4](https://docs.xfce.org/xfce/xfwm4/start) |
