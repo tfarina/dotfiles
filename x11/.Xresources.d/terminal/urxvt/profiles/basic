@@ -306,10 +306,10 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 URxvt.modifier: alt
 
 ! Use the specified colour for the scrollbar [default #B2B2B2].
-URxvt.scrollColor: rgb:B2/B2/B2
+URxvt.scrollColor: #B2B2B2
 
 ! Use the specified colour for the scrollbar's trough area [default #969696].
-URxvt.troughColor: rgb:96/96/96
+URxvt.troughColor: #969696
 
 ! Specifies the colour of the border around the text area and between the
 ! scrollbar and the text.
