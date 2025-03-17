@@ -57,7 +57,7 @@ panel: xfce4-panel
 application finder: xfce4-appfinder
 desktop environment: xfce (4.12)
 vt102 terminal emulator: urxvt (v9.21)
-terminal font: Inconsolata
+terminal font: Ubuntu Mono
 shell: bash (4.3.48(1)-release)
 editor: emacs (24.5.1)
 text editor: gedit (3.18.3)
