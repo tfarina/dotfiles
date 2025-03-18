@@ -2,6 +2,8 @@
 
 They're managed using [GNU stow](https://www.gnu.org/software/stow/).
 
+![img desktop](screenshots//ubuntu_xfce_desktop_emeraldcoast_background_2025-03-09_08-49-00.png)
+
 ## Intro
 
 > The legend goes that dot-files arose from a bug in the earliest days of
