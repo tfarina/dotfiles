@@ -2259,6 +2259,7 @@ samba-common-bin
 samba-dsdb-modules
 samba-libs:i386
 samba-vfs-modules
+sane-airscan
 sane-utils
 sbsigntool
 seabios
