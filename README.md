@@ -49,7 +49,7 @@ From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wi
 | Clipboard Manager | [ClipIt](https://github.com/CristianHenzel/ClipIt) |
 | Calculator | [galculator](http://galculator.mnim.org/) |
 
-# Xfce Keyboard Shortcuts
+## Xfce Keyboard Shortcuts
 
 | Press         | To            |
 | ------------- | ------------- |
