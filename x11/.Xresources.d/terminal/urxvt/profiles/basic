@@ -93,7 +93,8 @@ URxvt.letterSpace: 0
 ! the rxvt-unicode window will not have window decorations.
 URxvt.borderLess: false
 
-! Internal border of number pixels.
+! Specifies the number of pixesl between the characters and the window border.
+! Accepts: number
 URxvt.internalBorder: 2
 
 ! External border of number pixels.
