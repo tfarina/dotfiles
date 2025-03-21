@@ -95,6 +95,7 @@ URxvt.borderLess: false
 
 ! Specifies the number of pixesl between the characters and the window border.
 ! Accepts: number
+! Default value: 2
 URxvt.internalBorder: 2
 
 ! External border of number pixels.
