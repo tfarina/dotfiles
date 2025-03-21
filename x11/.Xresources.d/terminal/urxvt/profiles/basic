@@ -98,7 +98,8 @@ URxvt.borderLess: false
 ! Default value: 2
 URxvt.internalBorder: 2
 
-! External border of number pixels.
+! Specifies the number of pixels of the terminal external border.
+! Accepts: number
 URxvt.externalBorder: 0
 
 ! Clipboard
