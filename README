@@ -49,7 +49,7 @@ session manager: xfce4-session
 settings daemon: xfsettingsd
 window manager: xfwm4
 window manager theme: Chicago95
-theme: Adwaita [GTK2], Ambiance [GTK3]
+theme: Clearlooks-Phenix-Modified [GTK2], Ambiance [GTK3]
 icon theme: elementary Xfce (elementary-xfce)
 cursor theme: Chicago95 Standard (chicago95-standard-cursors)
 desktop manager: xfdesktop
