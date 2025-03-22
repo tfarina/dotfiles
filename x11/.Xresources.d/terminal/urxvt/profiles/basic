@@ -96,7 +96,7 @@ URxvt.borderLess: false
 ! Specifies the number of pixesl between the characters and the window border.
 ! Accepts: number
 ! Default value: 2
-URxvt.internalBorder: 2
+URxvt.internalBorder: 8
 
 ! Specifies the number of pixels of the terminal external border.
 ! Accepts: number
@@ -253,8 +253,9 @@ URxvt.pointerBlank: false
 ! Specifies number of seconds before blanking the pointer.
 URxvt.pointerBlankDelay: 2
 
-! Specifies number of lines (pixel height) to insert between each row of the
-! display.
+! Specifies the number of lines (pixel height) to insert between each row
+! of the display.
+! Accepts: number
 URxvt.lineSpace: 0
 
 ! Instead of selecting a full line it will extend the selection to the end
