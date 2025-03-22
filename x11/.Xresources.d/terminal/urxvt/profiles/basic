@@ -100,6 +100,7 @@ URxvt.internalBorder: 2
 
 ! Specifies the number of pixels of the terminal external border.
 ! Accepts: number
+! Default value: 0
 URxvt.externalBorder: 0
 
 ! Clipboard
