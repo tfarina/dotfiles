@@ -2,7 +2,7 @@
 
 They're managed using [GNU stow](https://www.gnu.org/software/stow/).
 
-![img desktop](screenshots//ubuntu_xfce_desktop_emeraldcoast_background_2025-03-09_08-49-00.png)
+![img desktop](screenshots/ubuntu_xfce_desktop_emeraldcoast_background_2025-03-22_09-01-37.png)
 
 ## Intro
 
