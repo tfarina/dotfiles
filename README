@@ -26,6 +26,7 @@ graphics:
  display: 1 UNCLAIMED
    description: Display controller
    product: Intel Mobile 945GM/GMS/GME, 943/940GML Express Integrated Graphics Controller
+cdrom: Optiarc DVD RW AD-7530A
 disk: KINGSTON SA400S3 (120 GB) A400 SATA SSD (solid-state drive)
 network:
  device 1: Marvell 88E8038 PCI-E Fast Ethernet
