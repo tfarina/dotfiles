@@ -82,7 +82,7 @@ URxvt.italicFont:     xft:Ubuntu Mono:size=12:style=Italic:slant=italic
 ! The font list to use for displaying bold italic characters.
 URxvt.boldItalicFont: xft:Ubuntu Mono:size=12:style=Bold Italic:weight=bold:slant=italic
 
-! Space between two characters
+! Specifies the number of extra dots (space) between columns (two characters).
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: 0
 
