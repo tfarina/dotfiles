@@ -256,6 +256,7 @@ URxvt.pointerBlankDelay: 2
 ! Specifies the number of lines (pixel height) to insert between each row
 ! of the display.
 ! Accepts: number
+! Default value: 0
 URxvt.lineSpace: 0
 
 ! Instead of selecting a full line it will extend the selection to the end
