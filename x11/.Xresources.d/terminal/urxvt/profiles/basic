@@ -84,6 +84,7 @@ URxvt.boldItalicFont: xft:Ubuntu Mono:size=12:style=Bold Italic:weight=bold:slan
 
 ! Specifies the number of extra dots (space) between columns (two characters).
 ! Accepts: number
+! Default value: 0
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: 0
 
