@@ -344,7 +344,7 @@ URxvt.shading: 100
 URxvt.blurRadius: 0
 
 ! Fade the text by the given percentage when focus is lost.
-URxvt.fading: 10
+URxvt.fading: 0
 
 ! Fade to this colour, when fading is used.
 URxvt.fadeColor: BLACK
