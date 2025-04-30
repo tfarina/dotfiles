@@ -333,7 +333,6 @@ style "evo_new_button_workaround" {
 
 # Desktop shortcut icon style & text shadow
 style "xfdesktop-icon-view" {
-	XfdesktopIconView::label-radius = 0.99
 	XfdesktopIconView::label-alpha = 255
 	XfdesktopIconView::selected-label-alpha = 255
 #	XfdesktopIconView::shadow-x-offset = 1			#Enable these if you want a shadow behind text
