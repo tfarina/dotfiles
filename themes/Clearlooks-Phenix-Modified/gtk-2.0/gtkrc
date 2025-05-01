@@ -344,7 +344,6 @@ style "xfdesktop-icon-view" {
 #	XfdesktopIconView::shadow-blur-radius = 2			#Enable this if you want a a blurry shadow behind text
 	XfdesktopIconView::cell-spacing = 2
 	XfdesktopIconView::cell-padding = 6
-	XfdesktopIconView::cell-color = "#c0c0c0"
 	XfdesktopIconView::cell-text-width-proportion = 1.9
 	XfdesktopIconView::ellipsize-icon-labels = 0
 	base[NORMAL] = "#008081"			#This is the desktop icon label background colour.
