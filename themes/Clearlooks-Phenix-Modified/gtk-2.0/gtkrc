@@ -346,9 +346,6 @@ style "xfdesktop-icon-view" {
 	XfdesktopIconView::cell-padding = 6
 	XfdesktopIconView::cell-text-width-proportion = 1.9
 	XfdesktopIconView::ellipsize-icon-labels = 0
-	base[NORMAL] = "#008081"			#This is the desktop icon label background colour.
-	base[SELECTED] = @selected_bg_color			#This is the desktop icon label background colour selected state.
-	base[ACTIVE] = @selected_bg_color			#This is the desktop icon label background colour active state.
 	fg[NORMAL] = @selected_fg_color			#This is the desktop icon label TEXT colour state.
 	fg[SELECTED] = @selected_fg_color			#This is the desktop icon label TEXT colour selected state.
 	fg[ACTIVE] = @selected_fg_color			#This is the desktop icon label TEXT colour active state.
