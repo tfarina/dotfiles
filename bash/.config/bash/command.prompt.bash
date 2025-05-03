@@ -36,6 +36,12 @@ else
     PS1_HOSTNAME=""
 fi
 
+# TODO: we should check the $TERM variable here, before doing a
+# colored prompt. Why? Because tty1 through tty6 terminals,
+# accessed with Ctrl+Alt+1 through Ctrl+Alt+6, have black background,
+# and with my path having a black background, I can't see it there.
+# On tty, the $TERM variable has the value "linux".
+
 #
 # Prompt format:
 #
