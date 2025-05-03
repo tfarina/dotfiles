@@ -52,7 +52,7 @@ window manager: xfwm4
 window manager theme: Chicago95
 theme: Clearlooks-Phenix-Modified [GTK2], Ambiance [GTK3]
 icon theme: elementary Xfce (elementary-xfce)
-cursor theme: Chicago95 Standard (chicago95-standard-cursors)
+cursor theme: Bluecurve-inverse
 desktop manager: xfdesktop
 panel: xfce4-panel
 application finder: xfce4-appfinder
