@@ -104,7 +104,7 @@ URxvt.borderLess: false
 ! Specifies the number of pixesl between the characters and the window border.
 ! Accepts: number
 ! Default value: 2
-URxvt.internalBorder: 8
+URxvt.internalBorder: 2
 
 ! Specifies the number of pixels of the terminal external border.
 ! Accepts: number
@@ -362,7 +362,7 @@ URxvt.troughColor: #969696
 ! Accepts: color in hex format: "#rgb" or "#rrggbb" or "rgb:rr/gg/bb"
 ! Default value:
 ! If unset, it uses the background color.
-URxvt.borderColor: GREEN
+URxvt.borderColor: BRIGHT_WHITE
 
 ! Specify that jump scrolling should be used.
 ! Specifies whether or not jump scroll should be used.
