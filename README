@@ -37,7 +37,7 @@ monitor: Samsung LCD Monitor (Ultrabright Widescreen)
 screen size: 15.7" (39.9 cm)
 keyboard: AT Translated Set 2 keyboard
 mouse: SynPS/2 Synaptics TouchPad
-hostname: apollo
+hostname: lp2
 bootloader: grub 2.02~beta2-36ubuntu3.32
 kernel: Linux 4.15.0-142-generic
 filesystem: ext4
