@@ -39,6 +39,7 @@ else
     PS1_HOSTNAME=""
 fi
 
+PS1_HOSTNAME="@\h"
 BP_HOST="${GREEN}${PS1_HOSTNAME}${RESET} "
 
 PS1_PWD="\w";
