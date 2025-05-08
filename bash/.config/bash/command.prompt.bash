@@ -29,6 +29,9 @@ BRIGHTWHITE="${COLOR_PREFIX}0;97${COLOR_SUFFIX}"
 
 PROMPT_SYMBOL=">"
 
+PS1_USERNAME="\u"
+BP_USER="${GREEN}${PS1_USERNAME}"
+
 # Only display the hostname for an ssh connection
 if [ -n "${SSH_CONNECTION}" ] || [ -n "${SSH_CLIENT}" ] || [ -n "${SSH_TTY}" ]; then
     PS1_HOSTNAME="@\h"
@@ -54,7 +57,7 @@ esac
 # USER@HOST DIRECTORY (GIT BRANCH)$ COMMAND
 #
 if [ "$color_prompt" = yes ]; then
-PS1="${GREEN}\u";               # username
+PS1="${BP_USER}";               # username
 PS1+="${BP_HOST}";              # @hostname
 PS1+="${RESET} ";
 PS1+="${BLACK}\w";              # current working directory with full path
