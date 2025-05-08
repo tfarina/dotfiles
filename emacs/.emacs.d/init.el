@@ -4,6 +4,7 @@
 ;; Theme files go here:
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
+;; Set color scheme.
 (load-theme 'vs-light t)
 
 ;; Disable the startup screen.
