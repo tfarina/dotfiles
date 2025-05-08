@@ -36,21 +36,34 @@ else
     PS1_HOSTNAME=""
 fi
 
-# TODO: we should check the $TERM variable here, before doing a
-# colored prompt. Why? Because tty1 through tty6 terminals,
-# accessed with Ctrl+Alt+1 through Ctrl+Alt+6, have black background,
-# and with my path having a black background, I can't see it there.
-# On tty, the $TERM variable has the value "linux".
+# Check if we want a fancy prompt (with color). Why? Because
+# the linux terminal in tty1 (up to tty6) has a black background.
+# Why is that an issue? It is an issue because I set the color of
+# the working path to black, and thus there it becomes invisible.
+# To fix that we should check this $TERM variable, and make a PS1
+# variable without colors.
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
 
 #
 # Prompt format:
 #
 # USER@HOST DIRECTORY (GIT BRANCH)$ COMMAND
 #
+if [ "$color_prompt" = yes ]; then
 PS1="${GREEN}\u";               # username
 PS1+="${PS1_HOSTNAME}";         # @hostname
 PS1+="${RESET} ";
 PS1+="${BLACK}\w";              # current working directory with full path
 PS1+="${YELLOW}\$(__git_ps1)"; # git branch status
 PS1+="${RESET}\${PROMPT_SYMBOL}";
+else
+PS1="\u";             # username
+PS1+="@\h";           # @hostname
+PS1+=" ";
+PS1+="\w";            # current working directory with full path
+PS1+="\$(__git_ps1)"; # git branch status
+PS1+="\${PROMPT_SYMBOL}";
+fi
 export PS1;
