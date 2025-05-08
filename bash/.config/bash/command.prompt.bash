@@ -36,6 +36,8 @@ else
     PS1_HOSTNAME=""
 fi
 
+BP_HOST="${GREEN}${PS1_HOSTNAME}"
+
 # Check if we want a fancy prompt (with color). Why? Because
 # the linux terminal in tty1 (up to tty6) has a black background.
 # Why is that an issue? It is an issue because I set the color of
@@ -53,7 +55,7 @@ esac
 #
 if [ "$color_prompt" = yes ]; then
 PS1="${GREEN}\u";               # username
-PS1+="${PS1_HOSTNAME}";         # @hostname
+PS1+="${BP_HOST}";              # @hostname
 PS1+="${RESET} ";
 PS1+="${BLACK}\w";              # current working directory with full path
 PS1+="${YELLOW}\$(__git_ps1)"; # git branch status
