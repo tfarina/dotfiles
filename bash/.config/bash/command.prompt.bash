@@ -41,6 +41,9 @@ fi
 
 BP_HOST="${GREEN}${PS1_HOSTNAME}"
 
+PS1_PWD="\w";
+BP_PWD="${BLACK}${PS1_PWD}"
+
 # Check if we want a fancy prompt (with color). Why? Because
 # the linux terminal in tty1 (up to tty6) has a black background.
 # Why is that an issue? It is an issue because I set the color of
@@ -60,7 +63,7 @@ if [ "$color_prompt" = yes ]; then
 PS1="${BP_USER}";               # username
 PS1+="${BP_HOST}";              # @hostname
 PS1+="${RESET} ";
-PS1+="${BLACK}\w";              # current working directory with full path
+PS1+="${BP_PWD}";              # current working directory with full path
 PS1+="${YELLOW}\$(__git_ps1)"; # git branch status
 PS1+="${RESET}\${PROMPT_SYMBOL}";
 else
