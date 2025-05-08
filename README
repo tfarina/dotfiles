@@ -50,7 +50,7 @@ greeter: lightdm-gtk-greeter (2.0.1)
 session manager: xfce4-session
 settings daemon: xfsettingsd
 window manager: xfwm4
-window manager theme: Chicago95
+window manager theme: Clearlooks-Phenix-Modified
 theme: Clearlooks-Phenix-Modified [GTK2], Ambiance [GTK3]
 icon theme: elementary Xfce (elementary-xfce)
 cursor theme: Bluecurve-inverse
