@@ -30,7 +30,7 @@ BRIGHTWHITE="${COLOR_PREFIX}0;97${COLOR_SUFFIX}"
 PROMPT_SYMBOL=">"
 
 PS1_USERNAME="\u"
-BP_USER="${GREEN}${PS1_USERNAME}"
+BP_USER="${GREEN}${PS1_USERNAME}${RESET}"
 
 # Only display the hostname for an ssh connection
 if [ -n "${SSH_CONNECTION}" ] || [ -n "${SSH_CLIENT}" ] || [ -n "${SSH_TTY}" ]; then
@@ -43,12 +43,12 @@ PS1_HOSTNAME="@\h"
 BP_HOST="${GREEN}${PS1_HOSTNAME}${RESET} "
 
 PS1_PWD="\W";
-BP_PWD="${BLACK}${PS1_PWD}"
+BP_PWD="${BLACK}${PS1_PWD}${RESET}"
 
 PS1_VCS="\$(__git_ps1)";
-BP_VCS="${YELLOW}${PS1_VCS}";
+BP_VCS="${YELLOW}${PS1_VCS}${RESET}";
 
-BP_PROMPT_SYMBOL="${RESET}\${PROMPT_SYMBOL}";
+BP_PROMPT_SYMBOL="\${PROMPT_SYMBOL}";
 
 # Check if we want a fancy prompt (with color). Why? Because
 # the linux terminal in tty1 (up to tty6) has a black background.
