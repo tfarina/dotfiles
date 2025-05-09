@@ -27,7 +27,12 @@ BRIGHTMAGENTA="${COLOR_PREFIX}0;95${COLOR_SUFFIX}"
 BRIGHTCYAN="${COLOR_PREFIX}0;96${COLOR_SUFFIX}"
 BRIGHTWHITE="${COLOR_PREFIX}0;97${COLOR_SUFFIX}"
 
-PROMPT_SYMBOL=">"
+# DO NOT USE '>' AS PROMPT SYMBOL! DO NOT CHANGE IT BACK TO '>'!
+# In Bash shell, '>' is a redirection operator.
+# If the PS1 Command Prompt is copy/pasted by accident it can cause a
+# redirection and get a file truncated to zero bytes! So, be careful
+# and do not use '>' as a prompt symbol in UNIX systems.
+PROMPT_SYMBOL="$"
 
 PS1_USERNAME="\u"
 BP_USER="${GREEN}${PS1_USERNAME}${RESET}"
