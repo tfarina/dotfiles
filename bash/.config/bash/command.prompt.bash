@@ -42,7 +42,7 @@ fi
 PS1_HOSTNAME="@\h"
 BP_HOST="${GREEN}${PS1_HOSTNAME}${RESET} "
 
-PS1_PWD="\w";
+PS1_PWD="\W";
 BP_PWD="${BLACK}${PS1_PWD}"
 
 PS1_VCS="\$(__git_ps1)";
@@ -68,13 +68,13 @@ esac
 if [ "$color_prompt" = yes ]; then
 PS1="${BP_USER}";               # username
 PS1+="${BP_HOST}";              # @hostname
-PS1+="${BP_PWD}";              # current working directory with full path
+PS1+="${BP_PWD}";              # basename of current working directory
 PS1+="${BP_VCS}";              # git branch status
 PS1+="${BP_PROMPT_SYMBOL}";
 else
 PS1="\u";             # username
 PS1+="@\h ";          # @hostname
-PS1+="\w";            # current working directory with full path
+PS1+="\W";            # basename of current working directory
 PS1+="\$(__git_ps1)"; # git branch status
 PS1+="\${PROMPT_SYMBOL}";
 fi
