@@ -53,7 +53,8 @@ BP_PWD="${BLUE}${PS1_PWD}${RESET}"
 PS1_VCS="\$(__git_ps1)";
 BP_VCS="${YELLOW}${PS1_VCS}${RESET}";
 
-BP_PROMPT_SYMBOL="\${PROMPT_SYMBOL}";
+# DO NOT REMOVE THE TRAILING WHITESPACE! THIS IS THE STANDARD PROMPT.
+BP_PROMPT_SYMBOL="\${PROMPT_SYMBOL} ";
 
 # Check if we want a fancy prompt (with color). Why? Because
 # the linux terminal in tty1 (up to tty6) has a black background.
@@ -81,6 +82,6 @@ PS1="\u";             # username
 PS1+="@\h ";          # @hostname
 PS1+="\W";            # basename of current working directory
 PS1+="\$(__git_ps1)"; # git branch status
-PS1+="\${PROMPT_SYMBOL}";
+PS1+="\${PROMPT_SYMBOL} ";
 fi
 export PS1;
