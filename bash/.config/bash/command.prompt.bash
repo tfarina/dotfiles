@@ -27,6 +27,9 @@ BRIGHTMAGENTA="${COLOR_PREFIX}0;95${COLOR_SUFFIX}"
 BRIGHTCYAN="${COLOR_PREFIX}0;96${COLOR_SUFFIX}"
 BRIGHTWHITE="${COLOR_PREFIX}0;97${COLOR_SUFFIX}"
 
+BP_START="[";
+BP_END="]";
+
 # DO NOT USE '>' AS PROMPT SYMBOL! DO NOT CHANGE IT BACK TO '>'!
 # In Bash shell, '>' is a redirection operator.
 # If the PS1 Command Prompt is copy/pasted by accident it can cause a
@@ -69,19 +72,23 @@ esac
 #
 # Prompt format:
 #
-# USER@HOST DIRECTORY (GIT BRANCH)$ COMMAND
+# [USER@HOST DIRECTORY (GIT BRANCH)]$ COMMAND
 #
 if [ "$color_prompt" = yes ]; then
-PS1="${BP_USER}";               # username
-PS1+="${BP_HOST}";              # @hostname
+PS1="${BP_START}";
+PS1+="${BP_USER}";             # username
+PS1+="${BP_HOST}";             # @hostname
 PS1+="${BP_PWD}";              # basename of current working directory
 PS1+="${BP_VCS}";              # git branch status
+PS1+="${BP_END}";
 PS1+="${BP_PROMPT_SYMBOL}";
 else
-PS1="\u";             # username
+PS1="[";
+PS1+="\u";            # username
 PS1+="@\h ";          # @hostname
 PS1+="\W";            # basename of current working directory
 PS1+="\$(__git_ps1)"; # git branch status
+PS1+="]";
 PS1+="\${PROMPT_SYMBOL} ";
 fi
 export PS1;
