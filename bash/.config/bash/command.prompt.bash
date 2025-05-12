@@ -37,6 +37,7 @@ BP_END="]";
 # and do not use '>' as a prompt symbol in UNIX systems.
 PROMPT_SYMBOL="$"
 
+# The username of the current user.
 PS1_USERNAME="\u"
 BP_USER="${GREEN}${PS1_USERNAME}${RESET}"
 
@@ -47,12 +48,15 @@ else
     PS1_HOSTNAME=""
 fi
 
+# The hostname, up to the first ‘.’.
 PS1_HOSTNAME="@\h"
 BP_HOST="${GREEN}${PS1_HOSTNAME}${RESET} "
 
+# The basename of $PWD, with $HOME abbreviated with a tilde.
 PS1_PWD="\W";
 BP_PWD="${BLUE}${PS1_PWD}${RESET}"
 
+# The current branch and status of a git repository.
 PS1_VCS="\$(__git_ps1)";
 BP_VCS="${YELLOW}${PS1_VCS}${RESET}";
 
@@ -76,10 +80,10 @@ esac
 #
 if [ "$color_prompt" = yes ]; then
 PS1="${BP_START}";
-PS1+="${BP_USER}";             # username
-PS1+="${BP_HOST}";             # @hostname
-PS1+="${BP_PWD}";              # basename of current working directory
-PS1+="${BP_VCS}";              # git branch status
+PS1+="${BP_USER}";
+PS1+="${BP_HOST}";
+PS1+="${BP_PWD}";
+PS1+="${BP_VCS}";
 PS1+="${BP_END}";
 PS1+="${BP_PROMPT_SYMBOL}";
 else
