@@ -83,12 +83,7 @@ PS1+="${BP_VCS}";              # git branch status
 PS1+="${BP_END}";
 PS1+="${BP_PROMPT_SYMBOL}";
 else
-PS1="[";
-PS1+="\u";            # username
-PS1+="@\h ";          # @hostname
-PS1+="\W";            # basename of current working directory
-PS1+="\$(__git_ps1)"; # git branch status
-PS1+="]";
-PS1+="\${PROMPT_SYMBOL} ";
+# DO NOT BREAK THIS INTO MULTIPLE LINES.
+PS1="[\u@\h \W\$(__git_ps1)]\${PROMPT_SYMBOL} ";
 fi
 export PS1;
