@@ -86,4 +86,3 @@ else
 # DO NOT BREAK THIS INTO MULTIPLE LINES.
 PS1="[\u@\h \W\$(__git_ps1)]\${PROMPT_SYMBOL} ";
 fi
-export PS1;
