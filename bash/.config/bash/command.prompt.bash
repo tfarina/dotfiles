@@ -79,13 +79,7 @@ esac
 # [USER@HOST DIRECTORY (GIT BRANCH)]$ COMMAND
 #
 if [ "$color_prompt" = yes ]; then
-PS1="${BP_START}";
-PS1+="${BP_USER}";
-PS1+="${BP_HOST}";
-PS1+="${BP_PWD}";
-PS1+="${BP_VCS}";
-PS1+="${BP_END}";
-PS1+="${BP_PROMPT_SYMBOL}";
+PS1="${BP_START}${BP_USER}${BP_HOST}${BP_PWD}${BP_VCS}${BP_END}${BP_PROMPT_SYMBOL}";
 else
 # DO NOT BREAK THIS INTO MULTIPLE LINES.
 PS1="[\u@\h \W\$(__git_ps1)]\${PROMPT_SYMBOL} ";
