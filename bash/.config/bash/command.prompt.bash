@@ -61,7 +61,7 @@ PS1_VCS="\$(__git_ps1)";
 BP_VCS="${YELLOW}${PS1_VCS}${RESET}";
 
 # DO NOT REMOVE THE TRAILING WHITESPACE! THIS IS THE STANDARD PROMPT.
-BP_PROMPT_SYMBOL="\${PROMPT_SYMBOL} ";
+BP_PROMPT_SYMBOL="\\${PROMPT_SYMBOL} ";
 
 # Check if we want a fancy prompt (with color). Why? Because
 # the linux terminal in tty1 (up to tty6) has a black background.
@@ -82,5 +82,5 @@ if [ "$color_prompt" = yes ]; then
 PS1="${BP_START}${BP_USER}${BP_HOST}${BP_PWD}${BP_VCS}${BP_END}${BP_PROMPT_SYMBOL}";
 else
 # DO NOT BREAK THIS INTO MULTIPLE LINES.
-PS1="[\u@\h \W\$(__git_ps1)]\${PROMPT_SYMBOL} ";
+PS1="[\u@\h \W\$(__git_ps1)]\\${PROMPT_SYMBOL} ";
 fi
