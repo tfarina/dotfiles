@@ -227,7 +227,9 @@ URxvt.skipScroll: true
 ! Default value: 64
 URxvt.saveLines: 64
 
-! Inhibit/enable writing a utmp entry.
+! Controls whether or not the terminal will update the utmp database
+! when a new terminal session is started. In other words, setting to
+! true prevents urxvt from making an entry in the utmp file.
 ! Accepts: boolean
 URxvt.utmpInhibit: false
 
