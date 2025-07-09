@@ -231,6 +231,7 @@ URxvt.saveLines: 64
 ! when a new terminal session is started. In other words, setting to
 ! true prevents urxvt from making an entry in the utmp file.
 ! Accepts: boolean
+! Default value: false
 URxvt.utmpInhibit: false
 
 ! Turn on/off double-buffering for xft.
