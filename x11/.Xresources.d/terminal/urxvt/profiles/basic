@@ -234,7 +234,9 @@ URxvt.saveLines: 64
 ! Default value: false
 URxvt.utmpInhibit: false
 
-! Turn on/off double-buffering for xft.
+! Enables or disables double-buffering to reduce flicker when updating
+! the terminal display. It controls how the terminal handles drawing to
+! the screen.
 ! Accepts: boolean
 ! Default value: true
 URxvt.buffered: true
