@@ -116,12 +116,14 @@ URxvt.externalBorder: 0
 
 ! Turn on/off ISO 14755.
 ! Accepts: boolean
+! Default value: true
 URxvt.iso14755: false
 
 ! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
 
 ! Turn on/off ISO 14755 5.2 mode.
 ! Accepts: boolean
+! Default value: true
 URxvt.iso14755_52: false
 
 ! Rebind copy and paste key bindings.
