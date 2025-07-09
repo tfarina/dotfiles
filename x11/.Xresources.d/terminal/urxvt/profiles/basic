@@ -236,6 +236,7 @@ URxvt.utmpInhibit: false
 
 ! Turn on/off double-buffering for xft.
 ! Accepts: boolean
+! Default value: true
 URxvt.buffered: true
 
 ! De-iconify (map) on receipt of a bell character.
