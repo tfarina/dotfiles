@@ -224,6 +224,7 @@ URxvt.skipScroll: true
 ! Specifies the number of lines the scrollback buffer will retain
 ! above the visible window.
 ! Accepts: number
+! Default value: 64
 URxvt.saveLines: 64
 
 ! Inhibit/enable writing a utmp entry.
