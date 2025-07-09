@@ -221,7 +221,8 @@ URxvt.loginShell: false
 ! Default value: true
 URxvt.skipScroll: true
 
-! Default number of lines in the scrollback buffer.
+! Specifies the number of lines the scrollback buffer will retain
+! above the visible window.
 ! Accepts: number
 URxvt.saveLines: 64
 
