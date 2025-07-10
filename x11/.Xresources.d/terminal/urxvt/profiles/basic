@@ -246,6 +246,7 @@ URxvt.buffered: true
 ! Useful for drawing attention to important activity when the terminal
 ! is not currently visible.
 ! Accepts: boolean
+! Default value: false
 URxvt.mapAlert: false
 
 ! Set/unset the urgency hint for the wm on receipt of a bell character.
