@@ -241,7 +241,10 @@ URxvt.utmpInhibit: false
 ! Default value: true
 URxvt.buffered: true
 
-! De-iconify (map) on receipt of a bell character.
+! Enables or disables automatic de-iconification of the terminal window
+! if a bell character is received while it is iconified (minimized).
+! Useful for drawing attention to important activity when the terminal
+! is not currently visible.
 ! Accepts: boolean
 URxvt.mapAlert: false
 
