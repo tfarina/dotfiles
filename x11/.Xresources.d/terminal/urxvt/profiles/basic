@@ -251,22 +251,27 @@ URxvt.mapAlert: false
 
 ! Set/unset the urgency hint for the wm on receipt of a bell character.
 ! Accepts: boolean
+! Default value: false
 URxvt.urgentOnBell: false
 
 ! Turn on/off visual bell on receipt of a bell character.
 ! Accepts: boolean
+! Default value: false
 URxvt.visualBell: false
 
 ! Handle Meta (Alt) + keypress to set the 8th bit or as an escape prefix.
 ! Accepts: boolean
+! Default value: false
 URxvt.meta8: false
 
 ! Turn on/off secondary screen.
 ! Accepts: boolean
+! Default value: true
 URxvt.secondaryScreen: true
 
 ! Turn on/off secondary screen scroll.
 ! Accepts: boolean
+! Default value: true
 URxvt.secondaryScroll: true
 
 ! Set the application icon pixmap.
@@ -276,19 +281,23 @@ URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 ! Enable "insecure" mode, which currently enables most of the escape
 ! sequences that echo strings.
 ! Accepts: boolean
+! Default value: false
 URxvt.insecure: false
 
 ! The mouse wheel scrolls a page full, otherwise it scrolls five lines.
 ! Accepts: boolean
+! Default value: false
 URxvt.mouseWheelScrollPage: false
 
 ! Blank the pointer when a key is pressed or after a set number of seconds
 ! of inactivity.
 ! Accepts: boolean
+! Default value: false
 URxvt.pointerBlank: false
 
 ! Specifies number of seconds before blanking the pointer.
 ! Accepts: number
+! Default value: 2
 URxvt.pointerBlankDelay: 2
 
 ! Specifies the number of lines (pixel height) to insert between each row
@@ -300,51 +309,62 @@ URxvt.lineSpace: 0
 ! Instead of selecting a full line it will extend the selection to the end
 ! of the logical line only.
 ! Accepts: boolean
+! Default value: false
 URxvt.tripleclickwords: false
 
 ! Sets override-redirect for the terminal window, making it almost invisible
 ! to window managers.
 ! Accepts: boolean
+! Default value: false
 URxvt.override-redirect: false
 
 ! Disable the usage of the built-in block graphics/line drawing characters
 ! and just rely on what the specified fonts provide.
 ! Accepts: boolean
+! Default value: false
 URxvt.skipBuiltinGlyphs: true
 
 ! Turn on/off pseudo-transparency by using the root pixmap as background.
 ! Accepts: boolean
+! Default value: false
 URxvt.transparent: false
 
 ! When font styles are not enabled, or this option is enabled, bold/blink
 ! font styles imply high intensity foreground/background colours.
 ! Accepts: boolean
+! Default value: true
 URxvt.intensityStyles: true
 
 ! The string to send when the backspace key is pressed.
 ! Accepts: string
+! Default value: DEC
 URxvt.backspacekey: DEC
 
 ! The string to send when the delete key (not the keypad delete key) is
 ! pressed.
 ! Accepts: string
+! Default value: \033[3~
 URxvt.deletekey: \033[3~
 
 ! The maximum time in milliseconds between multi-click select events.
 ! Accepts: number
+! Default value: 500
 URxvt.multiClickTime: 500
 
 ! Specify a command pipe for vt100 printer.
 ! Accepts: string
+! Default value: lpr
 URxvt.print-pipe: lpr
 
 ! Specify the reply urxvt sends to the shell when an ENQ (control-E)
 ! character is passed through.
 ! Accepts: string
+! Default value: \033[?1;2c
 URxvt.answerbackString: \033[?1;2c
 
 ! The characters used as delimiters for double-click word selection.
 ! Accepts: string
+! Default value: "\"&'()*,;<=>?@[\\]^`{|}"
 URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 
 ! Window title (-T still respected); the default title is the basename of
@@ -361,14 +381,17 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! Override detection of Meta modifier with specified key: alt, meta, hyper,
 ! super, mod1, mod2, mod3, mod4, mod5.
 ! Accepts: modifier
+! Default value: alt
 URxvt.modifier: alt
 
 ! Use the specified colour for the scrollbar [default #B2B2B2].
 ! Accepts: color
+! Default value: #B2B2B2
 URxvt.scrollColor: #B2B2B2
 
 ! Use the specified colour for the scrollbar's trough area [default #969696].
 ! Accepts: color
+! Default value: #969696
 URxvt.troughColor: #969696
 
 ! Specifies the colour of the border around the text area and between the
@@ -387,27 +410,33 @@ URxvt.jumpScroll: true
 ! True: store tabs as wide characters. False: interpret tabs as cursor
 ! movement only.
 ! Accepts: boolean
+! Default value: true
 URxvt.pastableTabs: true
 
 ! Tint the transparent background with the given colour.
 ! Accepts: color
+! Default value: BRIGHT_WHITE
 URxvt.tintColor: BRIGHT_WHITE
 
 ! Darken (0 .. 99) or lighten (101 .. 200) the transparent background.
 ! A value of 100 means no shading.
 ! Accepts: number
+! Default value: 100
 URxvt.shading: 100
 
 ! Apply gaussian blur with the specified radius to the transparent background.
 ! Accepts: HxV
+! Default value: 0
 URxvt.blurRadius: 0
 
 ! Fade the text by the given percentage when focus is lost.
 ! Accepts: number
+! Default value: 0
 URxvt.fading: 0
 
 ! Fade to this colour, when fading is used.
 ! Accepts: color
+! Default value: BLACK
 URxvt.fadeColor: BLACK
 
 !termName:                       string
