@@ -269,12 +269,17 @@ URxvt.visualBell: false
 ! Default value: false
 URxvt.meta8: false
 
-! Turn on/off secondary screen.
+! Enables or disables switching to the secondary screen buffer when an
+! alternate screen is requested.
+! Needed for full-screen terminal programs like text editors (e.g., emacs)
+! to use a separate scrollback buffer.
 ! Accepts: boolean
 ! Default value: true
 URxvt.secondaryScreen: true
 
-! Turn on/off secondary screen scroll.
+! Enables or disables scrollback in the secondary screen buffer.
+! Useful if you want to use the scrollback history while running full-screen
+! programs like Emacs.
 ! Accepts: boolean
 ! Default value: true
 URxvt.secondaryScroll: true
