@@ -249,12 +249,14 @@ URxvt.buffered: true
 ! Default value: false
 URxvt.mapAlert: false
 
-! Set/unset the urgency hint for the wm on receipt of a bell character.
+! Sets/unsets the window's urgency hint for the wm when the terminal
+! receives a bell character.
 ! Accepts: boolean
 ! Default value: false
 URxvt.urgentOnBell: false
 
-! Turn on/off visual bell on receipt of a bell character.
+! Enables or disables a visual flash when the terminal receives a bell
+! character, instead of playing a sound.
 ! Accepts: boolean
 ! Default value: false
 URxvt.visualBell: false
