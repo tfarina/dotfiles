@@ -261,7 +261,10 @@ URxvt.urgentOnBell: false
 ! Default value: false
 URxvt.visualBell: false
 
-! Handle Meta (Alt) + keypress to set the 8th bit or as an escape prefix.
+! Enables or disables sending an ESC prefix when the Meta (usually Alt)
+! key is pressed, instead of setting the 8th bit of the character.
+! Useful in UTF-8 environments where setting the 8th bit may interfere
+! with multibyte characters.
 ! Accepts: boolean
 ! Default value: false
 URxvt.meta8: false
