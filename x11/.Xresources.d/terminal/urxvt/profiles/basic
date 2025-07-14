@@ -290,8 +290,10 @@ URxvt.secondaryScroll: true
 ! Accepts: file
 URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 
-! Enable "insecure" mode, which currently enables most of the escape
-! sequences that echo strings.
+! Enables or disables potentially unsafe features like loading Perl
+! extensions from user-writable directories and escape sequences that
+! echo strings.
+! Should be disabled for security, especially on multi-user systems.
 ! Accepts: boolean
 ! Default value: false
 URxvt.insecure: false
