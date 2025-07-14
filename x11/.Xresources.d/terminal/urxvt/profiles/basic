@@ -284,7 +284,9 @@ URxvt.secondaryScreen: true
 ! Default value: true
 URxvt.secondaryScroll: true
 
-! Set the application icon pixmap.
+! Sets the path to an image file used as the terminal window's icon.
+! Useful for customizing the appearance of the terminal in window managers
+! or taskbars.
 ! Accepts: file
 URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 
