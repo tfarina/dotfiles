@@ -288,6 +288,8 @@ URxvt.secondaryScroll: true
 ! Useful for customizing the appearance of the terminal in window managers
 ! or taskbars.
 ! Accepts: file
+! Has no default value; if unset, the window manager or desktop environment
+! provides the icon.
 URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 
 ! Enables or disables potentially unsafe features like loading Perl
