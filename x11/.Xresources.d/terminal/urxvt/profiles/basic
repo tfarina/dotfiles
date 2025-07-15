@@ -300,7 +300,9 @@ URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 ! Default value: false
 URxvt.insecure: false
 
-! The mouse wheel scrolls a page full, otherwise it scrolls five lines.
+! Enables or disables scrolling by a full page when using the mouse wheel.
+! When disabled, the mouse wheel scrolls five lines per notch instead of
+! a full page.
 ! Accepts: boolean
 ! Default value: false
 URxvt.mouseWheelScrollPage: false
