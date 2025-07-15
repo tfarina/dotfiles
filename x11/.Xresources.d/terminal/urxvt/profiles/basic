@@ -314,7 +314,9 @@ URxvt.mouseWheelScrollPage: false
 ! Default value: false
 URxvt.pointerBlank: false
 
-! Specifies number of seconds before blanking the pointer.
+! Specifies how long (in seconds) the mouse pointer remains visible when
+! idle before being hidden.
+! Only takes effect if pointerBlank is enabled.
 ! Accepts: number
 ! Default value: 2
 URxvt.pointerBlankDelay: 2
