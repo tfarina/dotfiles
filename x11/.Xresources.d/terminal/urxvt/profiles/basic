@@ -307,8 +307,9 @@ URxvt.insecure: false
 ! Default value: false
 URxvt.mouseWheelScrollPage: false
 
-! Blank the pointer when a key is pressed or after a set number of seconds
-! of inactivity.
+! Hides the mouse pointer when a key is pressed or after a short period of
+! inactivity.
+! The pointer reappears automatically on mouse movement.
 ! Accepts: boolean
 ! Default value: false
 URxvt.pointerBlank: false
