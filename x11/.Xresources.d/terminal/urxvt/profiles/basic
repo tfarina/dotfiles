@@ -337,8 +337,15 @@ URxvt.lineSpace: 0
 ! Default value: false
 URxvt.tripleclickwords: false
 
-! Sets override-redirect for the terminal window, making it almost invisible
-! to window managers.
+! Bypasses the window manager and opens the terminal as an unmanaged,
+! borderless window.
+! When enabled, the window has no decorations (titlebar, borders), does
+! not appear in taskbars or window switchers, and cannot be moved or
+! resized by the window manager.
+! Useful for kiosk or scratchpad-style terminals, lightweight popups, or
+! embedding terminals inside other applications.
+! So, for our daily and common usage, setting this option to true is not
+! what we want. DO NOT CHANGE IT TO TRUE.
 ! Accepts: boolean
 ! Default value: false
 URxvt.override-redirect: false
