@@ -321,8 +321,10 @@ URxvt.pointerBlank: false
 ! Default value: 2
 URxvt.pointerBlankDelay: 2
 
-! Specifies the number of lines (pixel height) to insert between each row
-! of the display.
+! Specifies the number of lines (extra pixels) to insert between the lines
+! of text.
+! Can improve readability or adjust appearance for certain fonts.
+! Negative values are allowed and reduce the spacing between lines.
 ! Accepts: number
 ! Default value: 0
 URxvt.lineSpace: 0
