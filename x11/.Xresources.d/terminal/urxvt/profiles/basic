@@ -249,7 +249,7 @@ URxvt.buffered: true
 ! Default value: false
 URxvt.mapAlert: false
 
-! Sets/unsets the window's urgency hint for the wm when the terminal
+! Sets/unsets the urgency hint of the window for the wm when the terminal
 ! receives a bell character.
 ! Accepts: boolean
 ! Default value: false
@@ -284,7 +284,7 @@ URxvt.secondaryScreen: true
 ! Default value: true
 URxvt.secondaryScroll: true
 
-! Sets the path to an image file used as the terminal window's icon.
+! Sets the path to an image file used as the icon for the terminal window.
 ! Useful for customizing the appearance of the terminal in window managers
 ! or taskbars.
 ! Accepts: file
@@ -396,8 +396,8 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! Accepts: string
 !URxvt.title:
 
-! Set the name used to label the window's icon or displayed in an icon manager
-! window. The default name is the basename of the program.
+! Set the name used to label the icon of the window or displayed in an icon
+! manager window. The default name is the basename of the program.
 ! Accepts: string
 !URxvt.iconName:
 
@@ -412,7 +412,7 @@ URxvt.modifier: alt
 ! Default value: #B2B2B2
 URxvt.scrollColor: #B2B2B2
 
-! Use the specified colour for the scrollbar's trough area [default #969696].
+! Use the specified colour for the trough area of the scrollbar [default #969696].
 ! Accepts: color
 ! Default value: #969696
 URxvt.troughColor: #969696
