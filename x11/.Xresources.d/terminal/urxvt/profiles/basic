@@ -329,8 +329,10 @@ URxvt.pointerBlankDelay: 2
 ! Default value: 0
 URxvt.lineSpace: 0
 
-! Instead of selecting a full line it will extend the selection to the end
-! of the logical line only.
+! Changes triple-click selection to stop at the end of a logical line
+! instead of selecting the full physical line.
+! Useful for selecting long shell commands or wrapped output without
+! grabbing the next prompt.
 ! Accepts: boolean
 ! Default value: false
 URxvt.tripleclickwords: false
