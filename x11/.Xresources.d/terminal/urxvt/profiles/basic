@@ -360,7 +360,12 @@ URxvt.override-redirect: false
 ! Default value: false
 URxvt.skipBuiltinGlyphs: true
 
-! Turn on/off pseudo-transparency by using the root pixmap as background.
+! Enables a transparent terminal background that allows the root window
+! (or desktop background image) to show through.
+! Requires a compositor (like picom, compton, or xcompmgr) for true
+! transparency; otherwise, shows the background image beneath.
+! This creates the effect of a translucent terminal. Often used for
+! aesthetic setups.
 ! Accepts: boolean
 ! Default value: false
 URxvt.transparent: false
