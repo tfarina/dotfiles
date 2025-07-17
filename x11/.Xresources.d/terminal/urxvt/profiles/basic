@@ -350,8 +350,12 @@ URxvt.tripleclickwords: false
 ! Default value: false
 URxvt.override-redirect: false
 
-! Disable the usage of the built-in block graphics/line drawing characters
-! and just rely on what the specified fonts provide.
+! Disables urxvt’s internal fallback glyphs for box-drawing and pseudographic
+! characters.
+! Uses only the glyphs provided by the selected font, ensuring consistent
+! appearance.
+! If you want to use urxvt built-in bitmap font fallback glyphs, then set this
+! to false.
 ! Accepts: boolean
 ! Default value: false
 URxvt.skipBuiltinGlyphs: true
