@@ -370,8 +370,11 @@ URxvt.skipBuiltinGlyphs: true
 ! Default value: false
 URxvt.transparent: false
 
-! When font styles are not enabled, or this option is enabled, bold/blink
-! font styles imply high intensity foreground/background colours.
+! Controls how bold and italic text is displayed.
+! When enabled, urxvt uses separate font styles for bold and italic; when
+! disabled, it uses color instead.
+! Useful for making emphasis (bold/italic) visually distinct or consistent
+! with the regular font.
 ! Accepts: boolean
 ! Default value: true
 URxvt.intensityStyles: true
