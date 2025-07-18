@@ -389,8 +389,21 @@ URxvt.intensityStyles: true
 ! Default value: DEC
 URxvt.backspacekey: DEC
 
-! The string to send when the delete key (not the keypad delete key) is
+! Defines the string sent when the Delete key (not the keypad Delete) is
 ! pressed.
+! Common settings:
+!   \033[3~ — Sends the standard ANSI escape sequence (ESC [ 3 ~), used by
+!             most modern terminal applications.
+!             This matches the current behavior of the Delete key in many
+!             setups.
+!   \177 or \x7f — Sends the ASCII DEL character (decimal 127,
+!                  caret notation ^?), used by some legacy applications.
+!
+! If unset, urxvt may send a legacy sequence associated with the
+! Execute key, which is rarely useful.
+!
+! Use \033[3~ for broad compatibility, or \177 if a program specifically
+! requires the ASCII DEL character.
 ! Accepts: string
 ! Default value: \033[3~
 URxvt.deletekey: \033[3~
