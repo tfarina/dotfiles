@@ -447,7 +447,7 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! Default value: alt
 URxvt.modifier: alt
 
-! Use the specified colour for the scrollbar [default #B2B2B2].
+! Specifies the color of the scrollbar slider (also called the thumb).
 ! Accepts: color
 ! Default value: #B2B2B2
 URxvt.scrollColor: #B2B2B2
