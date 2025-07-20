@@ -408,7 +408,8 @@ URxvt.backspacekey: DEC
 ! Default value: \033[3~
 URxvt.deletekey: \033[3~
 
-! The maximum time in milliseconds between multi-click select events.
+! Specifies the maximum time (in milliseconds) between successive mouse
+! clicks.
 ! Accepts: number
 ! Default value: 500
 URxvt.multiClickTime: 500
