@@ -179,6 +179,20 @@ URxvt.scrollTtyOutput: true
 ! Default value: false
 URxvt.scrollTtyKeypress: true
 
+! Enables smooth scrolling through the scrollback buffer of the terminal,
+! even while new output is being written to the screen.
+! When this option is enabled, using the mouse wheel, touchpad, or scrollbar
+! allows you to move the visible area of the scrollback buffer without being
+! interrupted by new output. This makes it easier to review logs, command
+! history, or previous output while the terminal remains active.
+!
+! If disabled (the default), the visible region may be shifted by new
+! output — especially when scrollTtyOutput is also enabled — making it
+! harder to inspect previous output during periods of heavy terminal activity.
+! Accepts: boolean
+! Default: false
+URxvt.scrollWithBuffer: true
+
 ! Cursor
 ! ======
 
