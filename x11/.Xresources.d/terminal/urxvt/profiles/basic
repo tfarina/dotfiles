@@ -224,7 +224,7 @@ URxvt.loginShell: false
 ! delays in rendering until output pauses.
 ! Accepts: boolean
 ! Default value: true
-URxvt.skipScroll: true
+URxvt.skipScroll: false
 
 ! Specifies the number of lines the scrollback buffer will retain
 ! above the visible window.
