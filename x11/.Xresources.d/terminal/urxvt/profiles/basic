@@ -464,8 +464,11 @@ URxvt.troughColor: #969696
 ! If unset, it uses the background color.
 URxvt.borderColor: BRIGHT_WHITE
 
-! Specify that jump scrolling should be used.
-! Specifies whether or not jump scroll should be used.
+! Enables or disables jump scrolling, which improves performance by batching
+! multiple lines of output into a single scroll update, rather than redrawing
+! line by line. This can make fast-scrolling applications (like compilers or
+! logs) appear smoother.
+! When disabled, urxvt updates the screen for each new line of output.
 ! Accepts: boolean
 ! Default value: false
 URxvt.jumpScroll: true
