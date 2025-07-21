@@ -452,7 +452,7 @@ URxvt.modifier: alt
 ! Default value: #B2B2B2
 URxvt.scrollColor: #B2B2B2
 
-! Use the specified colour for the trough area of the scrollbar [default #969696].
+! Specifies the color for the trough area of the scrollbar.
 ! Accepts: color
 ! Default value: #969696
 URxvt.troughColor: #969696
