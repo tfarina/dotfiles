@@ -216,7 +216,12 @@ URxvt.reverseVideo: false
 ! Default value: false
 URxvt.loginShell: false
 
-! Specifies whether or not skip scroll should be used.
+! When enabled, suppresses screen updates entirely while output is being
+! received, only redrawing once the output stops. This can drastically
+! improve performance when large volumes of text are printed quickly
+! (e.g. compiling code).
+! Note: This is more aggressive than jumpScroll and may cause visible
+! delays in rendering until output pauses.
 ! Accepts: boolean
 ! Default value: true
 URxvt.skipScroll: true
