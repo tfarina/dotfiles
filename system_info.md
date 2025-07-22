@@ -9,6 +9,21 @@
 ## CPU
 - **Model**: Genuine Intel(R) CPU T2060 @ 1.60GHz
 
+## Motherboard
+
+- **Manufacturer**: Gateway
+- **Product Name**: *(not specified)*
+- **Version**: 77.11
+- **Serial Number**:
+
+### On-Board Devices (as reported by DMI)
+| Type     | Status   | Description                                                 |
+|----------|----------|-------------------------------------------------------------|
+| Video    | Disabled | Mobile Intel(R) 945GM Express Chipset Family                |
+| Ethernet | Disabled | Marvell Yukon Chipset Based Ethernet Controller             |
+| Sound    | Disabled | Sigmatel STAC-9250 Audio Codec                              |
+| Other    | Disabled | TI 7412 CardBus Controller
+
 ## BIOS
 - **Vendor**: Phoenix Technologies LTD
 - **Version**: 77.11
