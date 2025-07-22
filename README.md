@@ -78,37 +78,39 @@ $ stow -v -t ~/ -S bash
 $ stow -v -t ~/ -S emacs
 ```
 
-## How to disable overlay scrollbars
+## Tips & Troubleshooting
+
+### How to disable overlay scrollbars
 
 ```sh
 $ gsettings set com.canonical.desktop.interface scrollbar-mode normal
 ```
 
-## How to show the GRUB menu?
+### How to show the GRUB menu?
 
 Press and hold Shift as soon as BIOS loads. If system had UEFI, you
 would have to press Esc.
 
-## How to disable gtk3-csd (client side decorations)?
+### How to disable gtk3-csd (client side decorations)?
 
 To disable the UGLY gtk3 csd (client side decorations), first
 download gtk3-nocsd_3-1_all.deb and libgtk3-nocsd0_3-1+b1_i386.deb
 from https://packages.debian.org/trixie/all/gtk3-nocsd/download,
 then install them with dpkg -i and reboot.
 
-## How to get monospace font name used by Emacs?
+### How to get monospace font name used by Emacs?
 
 ```sh
 $ gsettings get org.gnome.desktop.interface monospace-font-name
 ```
 
-## How to get the name of default font on Xfce?
+### How to get the name of default font on Xfce?
 
 ```sh
 $ xfconf-query -c xsettings -p /Gtk/FontName
 ```
 
-## How to fix macOS keyboard typing issue?
+### How to fix macOS keyboard typing issue?
 
 Open System Preferences, and select Keyboard. Then set "Key Repeat" to the
 highest value "Fast". Also, set "Delay Until Repeat" to the highest value
