@@ -18,14 +18,6 @@ They're managed using [GNU stow](https://www.gnu.org/software/stow/).
 > Thus, the tradition of dot-files was born.
 > From [Quora](https://www.quora.com/What-are-dotfiles/answer/Costya-Perepelitsa)
 
-## What is a Rice?
-
-> "Rice" is a word that is commonly used to refer to making visual improvements
-> and customizations on one's desktop. It was inherited from the practice of
-> customizing cheap Asian import cars to make them appear to be faster than
-> they actually were - which was also known as "ricing".
-From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wiki_rice)
-
 ## **System Documentation**
 - [System Info](./system_info.md)
 - [Environment Setup](./environment.md)
