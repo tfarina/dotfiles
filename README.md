@@ -26,6 +26,10 @@ They're managed using [GNU stow](https://www.gnu.org/software/stow/).
 > they actually were - which was also known as "ricing".
 From [/r/unixporn](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wiki_rice)
 
+## **System Documentation**
+- [System Info](./system_info.md)
+- [Environment Setup](./environment.md)
+
 ## Programs
 
 | Role  | Program |
