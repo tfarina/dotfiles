@@ -58,23 +58,26 @@ They're managed using [GNU stow](https://www.gnu.org/software/stow/).
 
 Before installing, read cowboy’s [gently-worded warning](https://github.com/cowboy/dotfiles#heed-this-critically-important-warning-before-you-install) and Anish Athalye’s [Dotfiles are NOT meant to be forked](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/).
 
-1. **Install GNU Stow:** GNU Stow is available for all GNU+Linux distros and most other unix-like distributions via your package manager.
-
-   Ubuntu:   `sudo apt install stow` \
-   Arch:     `sudo pacman -S stow` \
-   Mac:	     `brew install stow`
-
-2. **Clone this repo:**
+1. **Install GNU Stow**
 
 ```sh
-$ git clone https://github.com/tfarina/dotfiles.git ~/dotfiles && cd ~/dotfiles
+$ sudo apt install stow
 ```
-3. **Symlink with GNU Stow the folder(s) you want to your home:** To install most of my dotfiles you execute `stow` with the folder name as the only argument.
+
+2. **Clone this repo**
+
+```sh
+$ git clone https://github.com/tfarina/dotfiles.git ~/dotfiles
+$ cd ~/dotfiles
+```
+
+3. **Stow desired config folders**
 
 ```sh
 $ stow -v -t ~/ -S bash
-$ stow -v -t ~/ -S topic-name
+$ stow -v -t ~/ -S emacs
 ```
+
 ## How to disable overlay scrollbars
 
 ```sh
