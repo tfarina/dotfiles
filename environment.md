@@ -8,41 +8,41 @@
 - **Init System**: systemd 229
 
 ## Display System
-- **Display Server**: Xorg (1.19.6)
-- **Display Manager**: lightdm (1.18.3)
-- **Greeter**: lightdm-gtk-greeter (2.0.1)
+- **Display Server**: Xorg 1.19.6
+- **Display Manager**: lightdm 1.18.3
+- **Greeter**: lightdm-gtk-greeter 2.0.1
 
 ## Desktop Environment: XFCE 4.12
-- **Session Manager**: xfce4-session
-- **Settings Daemon**: xfsettingsd
-- **Window Manager**: xfwm4
+- **Session Manager**: xfce4-session 4.12.1
+- **Settings Daemon**: xfsettingsd 4.12.0
+- **Window Manager**: xfwm4 4.12.3
 - **Window Manager Theme**: Clearlooks-Phenix-Modified
 - **GTK Themes**: Clearlooks-Phenix-Modified [GTK2], Ambiance [GTK3]
 - **Icon Theme**: elementary Xfce
 - **Cursor Theme**: Bluecurve-inverse
-- **Desktop Manager**: xfdesktop
-- **Panel**: xfce4-panel
-- **Application Finder**: xfce4-appfinder
+- **Desktop Manager**: xfdesktop 4.12.3
+- **Panel**: xfce4-panel 4.12.0
+- **Application Finder**: xfce4-appfinder 4.12.0
 
 ## Display Resolution
 - **Resolution**: 1280x800
 
 ## Terminal Environment
-- **Terminal Emulator**: urxvt (v9.21)
+- **Terminal Emulator**: urxvt v9.21
 - **Terminal Font**: Ubuntu Mono
-- **Shell**: bash (4.3.48(1)-release)
+- **Shell**: bash 4.3.48(1)-release
 
 ## Applications
-- **Editor**: emacs (24.5.1)
-- **Text Editor**: gedit (3.18.3)
-- **File Manager**: thunar (1.6.11)
-- **Web Browser**: firefox (128.0.3)
-- **Image Viewer**: ristretto (0.8.0)
-- **Screenshot Tools**: scrot (0.8), gnome-screenshot (3.18.0), xfce4-screenshooter (1.8.2)
-- **Document Viewer**: evince (3.18.2)
-- **Clipboard Manager**: clipit (1.4.2)
-- **Archive Managers**: file-roller (3.16.5), xarchiver (0.5.4)
-- **Screensaver**: xscreensaver (5.34)
-- **Screen Locker**: xscreensaver (5.34)
-- **System Monitor**: gkrellm (2.3.6-RC1)
-- **Task Manager**: lxtask (0.1.10)
+- **Editor**: emacs 24.5.1
+- **Text Editor**: gedit 3.18.3
+- **File Manager**: thunar 1.6.11
+- **Web Browser**: firefox 128.0.3
+- **Image Viewer**: ristretto 0.8.0
+- **Screenshot Tools**: scrot 0.8, gnome-screenshot 3.18.0, xfce4-screenshooter 1.8.2
+- **Document Viewer**: evince 3.18.2
+- **Clipboard Manager**: clipit 1.4.2
+- **Archive Managers**: file-roller 3.16.5, xarchiver 0.5.4
+- **Screensaver**: xscreensaver 5.34
+- **Screen Locker**: xscreensaver 5.34
+- **System Monitor**: gkrellm 2.3.6-RC1
+- **Task Manager**: lxtask 0.1.10
