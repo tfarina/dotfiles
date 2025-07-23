@@ -438,8 +438,41 @@ URxvt.multiClickTime: 500
 ! Default value: lpr
 URxvt.print-pipe: lpr
 
-! Specify the reply urxvt sends to the shell when an ENQ (control-E)
-! character is passed through.
+! Specifies the string urxvt sends in response to the ENQ (Enquiry) control
+! character, which is ASCII code 0x05 (pressing Ctrl-E or by writing \005).
+! This mechanism, a legacy feature from early terminal systems, known as
+! answerback, allows applications to identify or interact with the terminal
+! by requesting an "answer back" string and was traditionally used by
+! terminals to identify themselves to host systems or software.
+!
+! If unset, urxvt defaults to sending \033[?1;2c, a standard
+! Device Attributes (DA) response and it follows the format defined by
+! DEC VT-series terminals. Here's how to interpret it:
+!
+! - \033[ — Control Sequence Introducer (CSI)
+! - ?1 — Identifies the terminal as a VT100 with advanced options
+! - ;2 — Indicates the presence of a printer port (optional, historically)
+! - c — Terminates the DA response
+!
+! So together, ESC [ ?1;2c says:
+!   "I am a VT100 terminal (DEC-style), with printer port support."
+!
+! Why does urxvt send this?
+!
+! urxvt is emulating xterm, which itself emulates a DEC VT100-compatible
+! terminal. Many applications (especially older ones or terminal-based
+! programs) may send ENQ or a DA request (ESC [ c) to determine what kind
+! of terminal they're dealing with.
+!
+! By replying with \033[?1;2c, urxvt:
+!
+! - Maintains compatibility with legacy software that expects a known response
+! - Identifies itself as a DEC-style terminal, which is widely understood
+! - Avoids exposing user-specific info (unlike a custom answerbackString)
+!
+! Unless you have a specific reason, it's generally best to leave this option
+! unset or to use similarly innocuous sequences.
+!
 ! Accepts: string
 ! Default value: \033[?1;2c
 URxvt.answerbackString: \033[?1;2c
