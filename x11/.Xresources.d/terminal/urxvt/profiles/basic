@@ -171,7 +171,7 @@ URxvt.thickness: 5
 ! cause the scrollbar to go to the bottom of the scrolling region.
 ! Accepts: boolean
 ! Default value: true
-URxvt.scrollTtyOutput: true
+URxvt.scrollTtyOutput: false
 
 ! Specifies whether or not pressing a key should automatically
 ! cause the scrollbar to go to the bottom of the scrolling region.
