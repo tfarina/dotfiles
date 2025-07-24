@@ -477,7 +477,14 @@ URxvt.print-pipe: lpr
 ! Default value: \033[?1;2c
 URxvt.answerbackString: \033[?1;2c
 
-! The characters used as delimiters for double-click word selection.
+! Defines additional characters that should be treated as word separators
+! when performing double-click selection in the terminal. When you
+! double-click on a word, urxvt determines its boundaries by using spaces,
+! punctuation, and the characters specified in cutchars.
+!
+! By customizing this list, you control which characters stop the selection.
+! This can be useful when working with programming languages, command-line
+! output, or URLs.
 ! Accepts: string
 ! Default value: "\"&'()*,;<=>?@[\\]^`{|}"
 URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
