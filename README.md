@@ -1,6 +1,7 @@
 # dotfiles
 
-They're managed using [GNU stow](https://www.gnu.org/software/stow/).
+Minimal and maintainable dotfiles for a functional Linux desktop — neatly
+managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
 ![img desktop](screenshots/ubuntu_xfce_desktop_icon_position_web_browser_2025-07-22_10-05-35.png)
 
