@@ -91,12 +91,11 @@ $ gsettings set com.canonical.desktop.interface scrollbar-mode normal
 - Press and hold **Shift** as soon as BIOS loads.
 - On UEFI systems, press **Esc** instead.
 
-### How to disable gtk3-csd (client side decorations)?
+### How to disable GTK3 CSD (Client-Side Decorations)?
 
-To disable the UGLY gtk3 csd (client side decorations), first
-download gtk3-nocsd_3-1_all.deb and libgtk3-nocsd0_3-1+b1_i386.deb
-from https://packages.debian.org/trixie/all/gtk3-nocsd/download,
-then install them with dpkg -i and reboot.
+1. Download the `.deb` packages from [Debian's gtk3-nocsd package](https://packages.debian.org/trixie/all/gtk3-nocsd/download)
+
+2. Install with `dpkg -i` and reboot
 
 ### How to get monospace font name used by Emacs?
 
