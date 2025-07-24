@@ -5,12 +5,12 @@ managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
 ![img desktop](screenshots/ubuntu_xfce_desktop_icon_position_web_browser_2025-07-22_10-05-35.png)
 
-## Intro
+## What are dotfiles?
 
-> Dotfiles are user-specific configuration files on Unix-like systems,
-> typically hidden because their names begin with a dot (e.g. `.bashrc`,
-> `.profile`).
-> [Read more on their origin →](./history_of_dotfiles.md)
+Dotfiles are user-specific configuration files on Unix-like systems,
+typically hidden because their names begin with a dot (e.g. `.bashrc`,
+`.profile`).
+[Read more on their origin →](./history_of_dotfiles.md)
 
 ## **System Documentation**
 - [System Info](./system_info.md)
