@@ -111,6 +111,7 @@ $ xfconf-query -c xsettings -p /Gtk/FontName
 
 ### How to fix macOS keyboard typing issue?
 
-Open System Preferences, and select Keyboard. Then set "Key Repeat" to the
-highest value "Fast". Also, set "Delay Until Repeat" to the highest value
-"Short".
+- Go to **System Preferences** > **Keyboard**
+- Set the following:
+  - **Key Repeat**: Fast
+  - **Delay Until Repeat**: Short
