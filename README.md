@@ -88,8 +88,8 @@ $ gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
 ### How to show the GRUB menu?
 
-Press and hold Shift as soon as BIOS loads. If system had UEFI, you
-would have to press Esc.
+- Press and hold **Shift** as soon as BIOS loads.
+- On UEFI systems, press **Esc** instead.
 
 ### How to disable gtk3-csd (client side decorations)?
 
