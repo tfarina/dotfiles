@@ -62,21 +62,21 @@ Before installing, read cowboy’s [gently-worded warning](https://github.com/co
 1. **Install GNU Stow**
 
 ```sh
-$ sudo apt install stow
+sudo apt install stow
 ```
 
 2. **Clone this repo**
 
 ```sh
-$ git clone https://github.com/tfarina/dotfiles.git ~/dotfiles
-$ cd ~/dotfiles
+git clone https://github.com/tfarina/dotfiles.git ~/dotfiles
+cd ~/dotfiles
 ```
 
 3. **Stow desired config folders**
 
 ```sh
-$ stow -v -t ~/ -S bash
-$ stow -v -t ~/ -S emacs
+stow -v -t ~/ -S bash
+stow -v -t ~/ -S emacs
 ```
 
 ## Tips & Troubleshooting
@@ -84,7 +84,7 @@ $ stow -v -t ~/ -S emacs
 ### How to disable overlay scrollbars
 
 ```sh
-$ gsettings set com.canonical.desktop.interface scrollbar-mode normal
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
 ```
 
 ### How to show the GRUB menu?
@@ -101,13 +101,13 @@ $ gsettings set com.canonical.desktop.interface scrollbar-mode normal
 ### How to get monospace font name used by Emacs?
 
 ```sh
-$ gsettings get org.gnome.desktop.interface monospace-font-name
+gsettings get org.gnome.desktop.interface monospace-font-name
 ```
 
 ### How to get the name of default font on Xfce?
 
 ```sh
-$ xfconf-query -c xsettings -p /Gtk/FontName
+xfconf-query -c xsettings -p /Gtk/FontName
 ```
 
 ### How to fix macOS keyboard typing issue?
