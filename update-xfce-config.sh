@@ -17,7 +17,13 @@ DEST_DIR="xfce/.config/xfce4/xfconf/xfce-perchannel-xml"
 
 mkdir -p "$DEST_DIR"
 
-for file in xfwm4.xml xsettings.xml; do
+CONFIG_FILES=(
+    xfwm4.xml
+    xsettings.xml
+    xfce4-panel.xml
+)
+
+for file in "${CONFIG_FILES[@]}"; do
     src="$SRC_DIR/$file"
     dest="$DEST_DIR/$file"
 
