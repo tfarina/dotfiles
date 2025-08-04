@@ -3,7 +3,7 @@
 Minimal and maintainable dotfiles for a functional Linux desktop — neatly
 managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
-![img desktop](screenshots/ubuntu_xfce_desktop_icon_position_web_browser_2025-07-22_10-05-35.png)
+![img desktop](screenshots/ubuntu_xfce_desktop_launcher_mail_client_2025-08-04_11-09-54.png)
 
 ## What are dotfiles?
 
