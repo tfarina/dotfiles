@@ -31,4 +31,16 @@ for file in "${CONFIG_FILES[@]}"; do
     echo "Installed: $file"
 done
 
+# Sync panel directory (launchers and plugin data)
+PANEL_DIR_SRC="$HOME/.config/xfce4/panel"
+PANEL_DIR_DEST="xfce/.config/xfce4/panel"
+
+if [[ -d "$PANEL_DIR_SRC" ]]; then
+    mkdir -p "$PANEL_DIR_DEST"
+    cp -r "$PANEL_DIR_SRC/"* "$PANEL_DIR_DEST/"
+    echo "Synced panel directory to dotfiles"
+else
+    echo "Panel directory not found at: $PANEL_DIR_SRC"
+fi
+
 echo "XFCE config XML files synced from system to dotfiles."
