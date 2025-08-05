@@ -8,11 +8,16 @@ include in version control.
 
 ## Installation
 
-To install them for your user:
+XFCE 4.12 doesn't always load icons, themes, or backgrounds correctly
+from `~/.local/share`, so it's recommended to install them system-wide
+instead.
+
+To install for all users (requires root), use the provided `install-assets.sh`
+script:
 
 ```bash
-mkdir -p ~/.local/share/icons
-cp -r * ~/.local/share/icons/
+cd ~/dotfiles
+./install-assets.sh
 ```
 
 ## Activating the themes in XFCE 4.12
