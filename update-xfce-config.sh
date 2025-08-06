@@ -33,7 +33,7 @@ for file in "${CONFIG_FILES[@]}"; do
     dest="$DEST_DIR/$file"
 
     cp "$src" "$dest"
-    echo "Installed: $file"
+    echo "Synced: $file"
 done
 
 # Sync panel directory (launchers and plugin data)
