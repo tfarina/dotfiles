@@ -6,6 +6,7 @@
 # - xfwm4.xml and xsettings.xml (window manager and font/rendering settings)
 # - xfce4-panel.xml (panel layout)
 # - panel directory (~/.config/xfce4/panel) with launchers and plugin data
+# - xfce4-keyboard-shortcuts.xml
 #
 # Prompts before overwriting existing files or panel directory.
 #
@@ -26,6 +27,7 @@ CONFIG_FILES=(
     xfwm4.xml
     xsettings.xml
     xfce4-panel.xml
+    xfce4-keyboard-shortcuts.xml
 )
 
 PANEL_UPDATED=0

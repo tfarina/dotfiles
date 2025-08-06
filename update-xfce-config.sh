@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 #
 # Syncs XFCE configuration XML files from the current system into the
-# dotfiles repository. Specifically copies xfwm4.xml and xsettings.xml,
-# which may include font, window manager, and rendering settings.
+# dotfiles repository.
+# Copies:
+# - xfwm4.xml and xsettings.xml (window manager and font/rendering settings)
+# - xfce4-panel.xml (panel layout)
+# - panel directory (~/.config/xfce4/panel) with launchers and plugin data
+# - xfce4-keyboard-shortcuts.xml
 #
 # Run this script after making changes via the XFCE UI to preserve your
 # setup.
@@ -21,6 +25,7 @@ CONFIG_FILES=(
     xfwm4.xml
     xsettings.xml
     xfce4-panel.xml
+    xfce4-keyboard-shortcuts.xml
 )
 
 for file in "${CONFIG_FILES[@]}"; do
