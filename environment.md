@@ -36,6 +36,7 @@
 - **Editor**: emacs 24.5.1
 - **Text Editor**: gedit 3.18.3
 - **File Manager**: thunar 1.6.11
+- **Mail Reader**: thunderbird 68.10.0
 - **Web Browser**: firefox 128.0.3
 - **Image Viewer**: ristretto 0.8.0
 - **Screenshot Tools**: scrot 0.8, gnome-screenshot 3.18.0, xfce4-screenshooter 1.8.2
