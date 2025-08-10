@@ -13,7 +13,7 @@
 #      or ~/.profile (only if the above two are missing)
 
 # Load shared environment settings (optional)
-[ -f "$HOME/.config/shell/env.sh" ] && source "$HOME/.config/shell/env.sh"
+[ -f "$HOME/.config/bash/env.sh" ] && source "$HOME/.config/bash/env.sh"
 
 # Load interactive Bash config (aliases, prompt, etc.)
 [ -f "$HOME/.bashrc" ] && source "$HOME/.bashrc"
