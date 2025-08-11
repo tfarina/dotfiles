@@ -18,27 +18,7 @@ typically hidden because their names begin with a dot (e.g. `.bashrc`,
 
 ## Programs
 
-| Role  | Program |
-| ------------- | ------------- |
-| Boot Loader | [GRUB 2](https://www.gnu.org/software/grub/index.html) |
-| Display Manager | [LightDM](https://github.com/canonical/lightdm) |
-| Greeter | [LightDM GTK+ Greeter](https://github.com/Xubuntu/lightdm-gtk-greeter) |
-| Session Manager | [xfce4-session](https://docs.xfce.org/xfce/xfce4-session/start) |
-| Window Manager | [xfwm4](https://docs.xfce.org/xfce/xfwm4/start) |
-| Panel | [xfce4-panel](https://docs.xfce.org/xfce/xfce4-panel/start) |
-| Terminal Emulator | [URxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) |
-| Shell | [Bash](https://www.gnu.org/software/bash/) |
-| Editor | [Emacs](https://www.gnu.org/software/emacs/) |
-| Text Editor | [Gedit](https://gitlab.gnome.org/World/gedit/gedit/-/tree/master) |
-| Application Finder | [xfce4-appfinder](https://docs.xfce.org/xfce/xfce4-appfinder/start) |
-| Web Browser | [Firefox](https://www.mozilla.org/en-US/firefox/new) |
-| Mail Reader | [Claws Mail](https://www.claws-mail.org), [Thunderbird](https://www.thunderbird.net/en-US/) |
-| File Manager | [Thunar](https://gitlab.xfce.org/xfce/thunar) |
-| Image Viewer | [Sxiv](https://github.com/muennich/sxiv), [Ristretto](https://docs.xfce.org/apps/ristretto/start) |
-| Screen Capture | [Scrot](https://github.com/dreamer/scrot), [GNOME Screenshot](https://gitlab.gnome.org/GNOME/gnome-screenshot), [Xfce Screenshooter](https://docs.xfce.org/apps/xfce4-screenshooter/start) |
-| Document Viewer | [Evince](https://wiki.gnome.org/Apps/Evince) |
-| Clipboard Manager | [ClipIt](https://github.com/CristianHenzel/ClipIt) |
-| Calculator | [galculator](http://galculator.mnim.org/) |
+The complete list of programs I use is available in [environment.md](environment.md).
 
 ## Xfce Keyboard Shortcuts
 
