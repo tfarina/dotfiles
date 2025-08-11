@@ -12,9 +12,7 @@
 #########################################################################
 
 stow --verbose --target "$HOME" -S x11
-stow --verbose --target "$HOME" -S shell
 stow --verbose --target "$HOME" -S bash
-stow --verbose --target "$HOME" -S zsh
 stow --verbose --target "$HOME" -S git
 
 
