@@ -1,0 +1,24 @@
+// === Programming Font Torture Test ===
+// Covers: ambiguous letters/digits, punctuation, ligatures, box drawing,
+// code context
+
+// 1. Ambiguous characters
+Il1|!i O0o Qq Gg9 Pp Rr 5Ss 2Zz
+
+// 2. Punctuation & symbols
+{}[]()/\<>;:'",.?~`!@#$%^&*_-+=
+
+// 3. Operators & ligature checks
+-> <- => == != <= >= ++ -- /* */ // /** */ >>= <<= && || :: :=
+
+// 4. Realistic C/C++ style snippet (Visual Studio style)
+ij = l::oO(0xB81L);   // Hex, colons, zero vs O, L vs l
+
+// 5. Mixed-word lookalikes
+Illegal1 = O0bject_5tring;  S2atements = G6uard(zZebra);
+
+// 6. Box drawing alignment
+┌─┬─┐
+│ │ │
+└─┴─┘
+
