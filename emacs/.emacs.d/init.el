@@ -56,6 +56,10 @@
 ;; Do not blink the cursor.
 (setq visible-cursor nil)
 
+;; In GUI frames, disable cursor blinking for consistency with tty.
+(when (display-graphic-p)
+  (blink-cursor-mode 0))
+
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
 (custom-set-variables
   '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
