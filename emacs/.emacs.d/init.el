@@ -1,6 +1,25 @@
 ;; Elisp files go in ~/.emacs.d/lisp/
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
+;; --------------------------------
+;; Font configuration for Emacs GUI
+;; --------------------------------
+;;
+;; Emacs can run in two modes:
+;;   1. GUI (emacs, emacsclient -c)
+;;      - Font is set here.
+;;   2. Terminal (emacs -nw, emacsclient -t)
+;;      - Font comes from terminal emulator settings.
+;;
+;; To keep things consistent, set the same font family/size in both.
+
+(when (display-graphic-p)
+  (let ((my-font "Ubuntu Mono-12"))   ;; <--- change family/size here
+    ;; Apply font to the default frame (new windows)
+    (add-to-list 'default-frame-alist `(font . ,my-font))
+    ;; Apply font immediately to the current frame
+    (set-face-attribute 'default nil :font my-font)))
+
 ;; Theme files go here:
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
