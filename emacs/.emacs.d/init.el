@@ -50,8 +50,8 @@
 ;; Highlight matching parentheses.
 (show-paren-mode t)
 
-;; Set cursor to vertical bar with default width.
-(set-default 'cursor-type 'bar)
+;; Use box cursor in GUI for consistency with tty (which is always a box).
+(set-default 'cursor-type 'box)
 
 ;; Do not blink the cursor.
 (setq visible-cursor nil)
