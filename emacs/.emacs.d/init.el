@@ -53,6 +53,9 @@
 ;; Set cursor to vertical bar with default width.
 (set-default 'cursor-type 'bar)
 
+;; Do not blink the cursor.
+(setq visible-cursor nil)
+
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.
 (custom-set-variables
   '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
