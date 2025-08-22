@@ -1,15 +1,33 @@
 #!/usr/bin/env bash
-
-############################# How to use it #############################
-#                                                                       #
-# Uncomment the lines of the configs you want to install below.         #
-# Then run this script from within the dotfiles directory.              #
-# E.g. `cd ~/dotfiles; ./setup.sh`                                      #
-#                                                                       #
-# To uninstall the config later, run stow -D in the dotfiles directory. #
-# E.g. `cd ~/dotfiles; stow -D bash`                                    #
-#                                                                       #
-#########################################################################
+#
+# setup.sh — stow dotfiles from this repository into $HOME (or another target)
+#
+# Usage:
+#   ./setup.sh            # Stow all default modules (x11, bash, git)
+#   ./setup.sh git        # Stow only the git module
+#   ./setup.sh bash git   # Stow bash and git modules
+#
+# Unstowing / removing symlinks:
+#   To uninstall a module later, use stow -D inside the dotfiles directory.
+#   Example:
+#     cd ~/dotfiles
+#     stow -D bash
+#
+# Notes:
+# - Uses --restow to ensure idempotent symlinking
+# - TARGET variable can be modified to stow into a different directory
+# - Checks that each module directory exists; missing directories are
+#   skipped with a friendly message.
+#
+# Examples:
+#   # Default usage:
+#   ./setup.sh
+#
+#   # Selective stow:
+#   ./setup.sh bash git
+#
+#   # Change target directory:
+#   TARGET=$HOME/test ./setup.sh
 
 DOTFILES_DIR="$HOME/dotfiles"
 TARGET="$HOME"
