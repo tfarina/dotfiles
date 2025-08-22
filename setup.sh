@@ -13,6 +13,15 @@
 
 TARGET="$HOME"
 
-stow --verbose --target "$TARGET" --restow x11
-stow --verbose --target "$TARGET" --restow bash
-stow --verbose --target "$TARGET" --restow git
+# Explicit list of modules to stow
+MODULES=(
+    x11
+    bash
+    git
+    # add others here as needed
+)
+
+for dir in "${MODULES[@]}"; do
+    echo "==> Stowing $dir"
+    stow --verbose --target "$TARGET" --restow "$dir"
+done
