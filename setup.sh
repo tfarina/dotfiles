@@ -21,6 +21,11 @@ MODULES=(
     # add others here as needed
 )
 
+# If arguments are given, use them instead of the default list
+if [ $# -gt 0 ]; then
+    MODULES=("$@")
+fi
+
 for dir in "${MODULES[@]}"; do
     echo "==> Stowing $dir"
     stow --verbose --target "$TARGET" --restow "$dir"
