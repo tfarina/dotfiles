@@ -11,8 +11,6 @@
 #                                                                       #
 #########################################################################
 
-stow --verbose --target "$HOME" -S x11
-stow --verbose --target "$HOME" -S bash
-stow --verbose --target "$HOME" -S git
-
-
+stow --verbose --target "$HOME" --restow x11
+stow --verbose --target "$HOME" --restow bash
+stow --verbose --target "$HOME" --restow git
