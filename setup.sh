@@ -11,6 +11,7 @@
 #                                                                       #
 #########################################################################
 
+DOTFILES_DIR="$HOME/dotfiles"
 TARGET="$HOME"
 
 # Explicit list of modules to stow
@@ -27,6 +28,10 @@ if [ $# -gt 0 ]; then
 fi
 
 for dir in "${MODULES[@]}"; do
-    echo "==> Stowing $dir"
-    stow --verbose --target "$TARGET" --restow "$dir"
+    if [ -d "$DOTFILES_DIR/$dir" ]; then
+        echo "==> Stowing $dir"
+        stow --verbose --target "$TARGET" --restow "$dir"
+    else
+	echo "!! Skipping $dir (not a directory)"
+    fi
 done
