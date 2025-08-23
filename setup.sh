@@ -38,6 +38,7 @@ MODULES=(
     bash
     git
     emacs
+    xscreensaver
     # add others here as needed
 )
 
