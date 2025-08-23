@@ -37,6 +37,7 @@ MODULES=(
     x11
     bash
     git
+    emacs
     # add others here as needed
 )
 
