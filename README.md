@@ -54,9 +54,21 @@ cd ~/dotfiles
 
 3. **Stow desired config folders**
 
+Instead of running `stow` manually, use the provided `setup.sh` helper script:
+
 ```sh
-stow -v -t ~/ -S bash
-stow -v -t ~/ -S emacs
+# Stow all default modules (bash, emacs, git, x11, xscreensaver, …)
+./setup.sh
+
+# Stow only selected modules
+./setup.sh bash emacs
+```
+
+To **unstow** a module later, run the following inside the dotfiles directory:
+
+```sh
+cd ~/dotfiles
+stow -D emacs
 ```
 
 ## Tips & Troubleshooting
