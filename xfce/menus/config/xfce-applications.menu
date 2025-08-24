@@ -215,6 +215,7 @@
 		<Directory>xfce-system.directory</Directory>
 		<Layout>
 			<Merge type="menus"/>
+			<Filename>xfce4-about.desktop</Filename>
 			<Filename>apturl.desktop</Filename>
 			<Filename>Thunar-bulk-rename.desktop</Filename>
 			<Filename>org.gnome.baobab.desktop</Filename>
@@ -299,14 +300,6 @@
 		</Layout>
 	</Menu>
 	<Layout>
-		<Filename>xfce4-about.desktop</Filename>
-		<Filename>update-manager.desktop</Filename>
-		<Separator/>
-		<Filename>exo-terminal-emulator.desktop</Filename>
-		<Filename>exo-file-manager.desktop</Filename>
-		<Filename>exo-mail-reader.desktop</Filename>
-		<Filename>exo-web-browser.desktop</Filename>
-		<Separator/>
 		<Menuname>Accessories</Menuname>
 		<Menuname>Development</Menuname>
 		<Menuname>Education</Menuname>
