@@ -101,10 +101,3 @@ gsettings get org.gnome.desktop.interface monospace-font-name
 ```sh
 xfconf-query -c xsettings -p /Gtk/FontName
 ```
-
-### How to fix macOS keyboard typing issue?
-
-- Go to **System Preferences** > **Keyboard**
-- Set the following:
-  - **Key Repeat**: Fast
-  - **Delay Until Repeat**: Short
