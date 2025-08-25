@@ -70,17 +70,3 @@ To **unstow** a module later, run the following inside the dotfiles directory:
 cd ~/dotfiles
 stow -D emacs
 ```
-
-## Tips & Troubleshooting
-
-### How to get monospace font name used by Emacs?
-
-```sh
-gsettings get org.gnome.desktop.interface monospace-font-name
-```
-
-### How to get the name of default font on Xfce?
-
-```sh
-xfconf-query -c xsettings -p /Gtk/FontName
-```
