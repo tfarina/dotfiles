@@ -33,8 +33,9 @@
 - **Shell**: bash 4.3.48(1)-release
 
 ## Applications
-- **Editor**: emacs 24.5.1
-- **Text Editor**: gedit 3.18.3
+- **Text Editors**:
+  - emacs 24.5.1
+  - gedit 3.18.3
 - **File Manager**: thunar 1.6.11
 - **Mail Reader**: thunderbird 68.10.0
 - **Web Browser**: firefox 128.0.3
