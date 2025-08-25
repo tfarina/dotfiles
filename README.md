@@ -73,11 +73,6 @@ stow -D emacs
 
 ## Tips & Troubleshooting
 
-### How to show the GRUB menu?
-
-- Press and hold **Shift** as soon as BIOS loads.
-- On UEFI systems, press **Esc** instead.
-
 ### How to get monospace font name used by Emacs?
 
 ```sh
