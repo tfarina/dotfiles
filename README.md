@@ -73,22 +73,10 @@ stow -D emacs
 
 ## Tips & Troubleshooting
 
-### How to disable overlay scrollbars
-
-```sh
-gsettings set com.canonical.desktop.interface scrollbar-mode normal
-```
-
 ### How to show the GRUB menu?
 
 - Press and hold **Shift** as soon as BIOS loads.
 - On UEFI systems, press **Esc** instead.
-
-### How to disable GTK3 CSD (Client-Side Decorations)?
-
-1. Download the `.deb` packages from [Debian's gtk3-nocsd package](https://packages.debian.org/trixie/all/gtk3-nocsd/download)
-
-2. Install with `dpkg -i` and reboot
 
 ### How to get monospace font name used by Emacs?
 
