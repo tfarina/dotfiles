@@ -315,6 +315,7 @@
 		<Filename>yelp.desktop</Filename>
 		<Filename>xfce4-run.desktop</Filename>
 		<Separator/>
+		<Filename>lock-screen.desktop</Filename>
 		<Filename>xfce4-session-logout.desktop</Filename>
 	</Layout>
 </Menu>

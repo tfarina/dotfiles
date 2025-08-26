@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=xscreensaver-command -lock
+Icon=system-lock-screen
+StartupNotify=false
+Terminal=false
+Categories=X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Lock Screen
+Comment=Lock the screen using XScreenSaver
