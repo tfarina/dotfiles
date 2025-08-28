@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+TryExec=urxvt
+Exec=urxvt
+Icon=utilities-terminal
+StartupNotify=true
+Terminal=false
+Categories=Utility;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Urxvt Terminal Emulator
+Comment=Use the command line
+X-XFCE-Source=file:///usr/share/applications/rxvt-unicode.desktop
+Path=
