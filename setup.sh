@@ -39,6 +39,7 @@ MODULES=(
     git
     emacs
     xscreensaver
+    autostart
     # add others here as needed
 )
 
