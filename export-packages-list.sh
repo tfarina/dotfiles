@@ -1,10 +1,10 @@
 #!/bin/bash
-# regen_ubuntu_package_list.sh
-# Regenerates ubuntu_package_list.txt with all installed packages.
+
+# Generates packages.txt with all installed packages.
 
 set -euo pipefail
 
-OUTPUT_FILE="ubuntu_package_list.txt"
+OUTPUT_FILE="packages.txt"
 
 echo "Regenerating full package list of all installed packages..."
 

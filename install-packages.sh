@@ -1,10 +1,10 @@
 #!/bin/bash
-# restore_ubuntu_packages.sh
-# Installs all packages listed in ubuntu_package_list.txt
+
+# Installs all packages listed in packages.txt
 
 set -euo pipefail
 
-PACKAGE_LIST_FILE="ubuntu_package_list.txt"
+PACKAGE_LIST_FILE="packages.txt"
 
 if [[ ! -f "$PACKAGE_LIST_FILE" ]]; then
     echo "Error: $PACKAGE_LIST_FILE not found."
