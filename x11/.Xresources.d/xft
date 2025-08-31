@@ -1,16 +1,19 @@
 !---------------------------------------------------------------------!
 !                         Xft - X FreeType Font Configuration         !
 !---------------------------------------------------------------------!
-!  * `Xft.antialias` -> Whether glyphs can be antialiased
-!  * `Xft.autohint`  -> Use autohinter instead of normal hinter
-!  * `Xft.dpi`       -> Target dots per inch
-!  * `Xft.hinting`   -> Whether the rasterizer should use hinting
-!  * `Xft.hintstyle` -> Automatic hinting style ('hintnone', 'hintslight',
-!                       'hintmedium', 'hintfull')
-!  * `Xft.lcdfilter` -> Type of LCD filter ('lcdnone', 'lcddefault',
-!                       'lcdlight', 'lcdlegacy')
-!  * `Xft.rgba`      -> Type of subpixel geometry ('unknown', 'rgb', 'bgr',
-!                       'vrgb', 'none')
+!
+! Xft.* configuration options:
+!
+! - Xft.antialias   : Enable or disable glyph antialiasing
+! - Xft.autohint    : Use the autohinter instead of the native font hinter
+! - Xft.dpi         : Target display resolution in dots per inch
+! - Xft.hinting     : Enable or disable font hinting in the rasterizer
+! - Xft.hintstyle   : Hinting style
+!                     Values: 'hintnone', 'hintslight', 'hintmedium', 'hintfull'
+! - Xft.lcdfilter   : LCD filter type
+!                     Values: 'lcdnone', 'lcddefault', 'lcdlight', 'lcdlegacy'
+! - Xft.rgba        : Subpixel geometry
+!                     Values: 'unknown', 'rgb', 'bgr', 'vrgb', 'none'
 !
 !  https://wiki.archlinux.org/title/Font_configuration#Applications_without_Fontconfig_support
 !---------------------------------------------------------------------------
