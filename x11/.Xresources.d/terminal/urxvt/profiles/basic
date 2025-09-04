@@ -114,14 +114,19 @@ URxvt.externalBorder: 0
 ! Clipboard
 ! =========
 
-! Turn on/off ISO 14755.
+! Enables ISO-14755 support, a standard method for entering Unicode
+! characters. When enabled, the user can type a special key combination (
+! default: Ctrl+Shift) followed by a Unicode code point in hexadecimal to
+ !insert that character into the terminal.
 ! Accepts: boolean
 ! Default value: true
 URxvt.iso14755: false
 
 ! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
 
-! Turn on/off ISO 14755 5.2 mode.
+! Enables the ISO-14755 “5.2” lookup feature. When enabled, pressing
+! Ctrl+Shift while pointing with the mouse queries the character under
+! the cursor and displays its Unicode code point.
 ! Accepts: boolean
 ! Default value: true
 URxvt.iso14755_52: false
