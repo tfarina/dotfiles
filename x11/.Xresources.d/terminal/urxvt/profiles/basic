@@ -158,12 +158,6 @@ URxvt.scrollBar: false
 ! Default value: false
 URxvt.scrollBar_right: false
 
-! Specifies the style to be used for the scrollbar.
-! Accepts: mode
-! Choices: rxvt, plain, next or xterm
-! Default value: rxvt
-URxvt.scrollstyle: plain
-
 ! Displays rxvt (non XTerm/NeXT) scrollbar without (true value)/
 ! with (false value) a trough.
 ! Accepts: boolean
@@ -175,6 +169,12 @@ URxvt.scrollBar_floating: false
 ! Accepts: mode
 ! Default value: centre
 URxvt.scrollBar_align: centre
+
+! Specifies the style to be used for the scrollbar.
+! Accepts: mode
+! Choices: rxvt, plain, next or xterm
+! Default value: rxvt
+URxvt.scrollstyle: plain
 
 ! Specifies the width in pixels of the scrollbar.
 ! Accepts: number

@@ -12,15 +12,15 @@
 - [x] `pastableTabs`
 
 ## Scrollbar
-- [ ] `scrollstyle`
-- [ ] `scrollBar`
-- [ ] `scrollBar_right`
-- [ ] `scrollBar_floating`
-- [ ] `scrollBar_align`
-- [ ] `thickness`
-- [ ] `scrollTtyOutput`
-- [ ] `scrollTtyKeypress`
-- [ ] `scrollWithBuffer`
+- [x] `scrollBar`
+- [x] `scrollBar_right`
+- [x] `scrollBar_floating`
+- [x] `scrollBar_align`
+- [x] `scrollstyle`
+- [x] `thickness`
+- [x] `scrollTtyOutput`
+- [x] `scrollTtyKeypress`
+- [x] `scrollWithBuffer`
 
 ## Transparency & Background
 - [ ] `inheritPixmap`
