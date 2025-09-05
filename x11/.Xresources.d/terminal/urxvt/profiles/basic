@@ -414,16 +414,6 @@ URxvt.override-redirect: false
 ! Default value: false
 URxvt.skipBuiltinGlyphs: true
 
-! Enables a transparent terminal background that allows the root window
-! (or desktop background image) to show through.
-! Requires a compositor (like picom, compton, or xcompmgr) for true
-! transparency; otherwise, shows the background image beneath.
-! This creates the effect of a translucent terminal. Often used for
-! aesthetic setups.
-! Accepts: boolean
-! Default value: false
-URxvt.transparent: false
-
 ! Controls how bold and italic text is displayed.
 ! When enabled, urxvt uses separate font styles for bold and italic; when
 ! disabled, it uses color instead.
@@ -551,6 +541,19 @@ URxvt.troughColor: #969696
 ! Default value:
 ! If unset, it uses the background color.
 URxvt.borderColor: BRIGHT_WHITE
+
+! Transparency & Background
+! =========================
+
+! Enables a transparent terminal background that allows the root window
+! (or desktop background image) to show through.
+! Requires a compositor (like picom, compton, or xcompmgr) for true
+! transparency; otherwise, shows the background image beneath.
+! This creates the effect of a translucent terminal. Often used for
+! aesthetic setups.
+! Accepts: boolean
+! Default value: false
+URxvt.transparent: false
 
 ! Tint the transparent background with the given colour.
 ! Accepts: color
