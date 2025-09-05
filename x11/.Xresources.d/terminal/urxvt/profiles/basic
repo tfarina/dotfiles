@@ -220,8 +220,8 @@ URxvt.cursorUnderline: false
 ! Default value: false
 URxvt.cursorBlink: false
 
-! General
-! =======
+! Core
+! ====
 
 ! Specifies the terminal type name to be set in the TERM environment variable.
 ! Accepts: string
@@ -244,6 +244,21 @@ URxvt.reverseVideo: false
 ! Default value: false
 URxvt.loginShell: false
 
+! Specifies the maximum time (in milliseconds) between successive mouse
+! clicks.
+! Accepts: number
+! Default value: 500
+URxvt.multiClickTime: 500
+
+! Enables or disables jump scrolling, which improves performance by batching
+! multiple lines of output into a single scroll update, rather than redrawing
+! line by line. This can make fast-scrolling applications (like compilers or
+! logs) appear smoother.
+! When disabled, urxvt updates the screen for each new line of output.
+! Accepts: boolean
+! Default value: false
+URxvt.jumpScroll: true
+
 ! When enabled, suppresses screen updates entirely while output is being
 ! received, only redrawing once the output stops. This can drastically
 ! improve performance when large volumes of text are printed quickly
@@ -253,6 +268,12 @@ URxvt.loginShell: false
 ! Accepts: boolean
 ! Default value: true
 URxvt.skipScroll: false
+
+! True: store tabs as wide characters. False: interpret tabs as cursor
+! movement only.
+! Accepts: boolean
+! Default value: true
+URxvt.pastableTabs: true
 
 ! Specifies the number of lines the scrollback buffer will retain
 ! above the visible window.
@@ -441,12 +462,6 @@ URxvt.backspacekey: DEC
 ! Default value: \033[3~
 URxvt.deletekey: \033[3~
 
-! Specifies the maximum time (in milliseconds) between successive mouse
-! clicks.
-! Accepts: number
-! Default value: 500
-URxvt.multiClickTime: 500
-
 ! Specify a command pipe for vt100 printer.
 ! Accepts: string
 ! Default value: lpr
@@ -536,21 +551,6 @@ URxvt.troughColor: #969696
 ! Default value:
 ! If unset, it uses the background color.
 URxvt.borderColor: BRIGHT_WHITE
-
-! Enables or disables jump scrolling, which improves performance by batching
-! multiple lines of output into a single scroll update, rather than redrawing
-! line by line. This can make fast-scrolling applications (like compilers or
-! logs) appear smoother.
-! When disabled, urxvt updates the screen for each new line of output.
-! Accepts: boolean
-! Default value: false
-URxvt.jumpScroll: true
-
-! True: store tabs as wide characters. False: interpret tabs as cursor
-! movement only.
-! Accepts: boolean
-! Default value: true
-URxvt.pastableTabs: true
 
 ! Tint the transparent background with the given colour.
 ! Accepts: color
