@@ -144,7 +144,7 @@ URxvt.iso14755_52: false
 URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
 URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 
-! Scrolling
+! Scrollbar
 ! =========
 
 ! Specifies whether or not the scrollbar should be displayed.
