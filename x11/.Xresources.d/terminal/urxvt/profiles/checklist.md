@@ -24,12 +24,12 @@
 
 ## Transparency & Background
 - [ ] `inheritPixmap`
-- [ ] `transparent`
-- [ ] `tintColor`
-- [ ] `shading`
-- [ ] `blurRadius`
-- [ ] `fading`
-- [ ] `fadeColor`
+- [x] `transparent`
+- [x] `tintColor`
+- [x] `shading`
+- [x] `blurRadius`
+- [x] `fading`
+- [x] `fadeColor`
 - [ ] `backgroundPixmap`
 - [ ] `background.border`
 - [ ] `background.expr`
