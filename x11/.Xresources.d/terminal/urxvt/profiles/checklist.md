@@ -1,15 +1,15 @@
 # urxvt Configuration Checklist
 
 ## Core
-- [ ] `termName`
-- [ ] `geometry`
+- [x] `termName`
+- [x] `geometry`
 - [ ] `chdir`
-- [ ] `reverseVideo`
-- [ ] `loginShell`
-- [ ] `multiClickTime`
-- [ ] `jumpScroll`
-- [ ] `skipScroll`
-- [ ] `pastableTabs`
+- [x] `reverseVideo`
+- [x] `loginShell`
+- [x] `multiClickTime`
+- [x] `jumpScroll`
+- [x] `skipScroll`
+- [x] `pastableTabs`
 
 ## Scrollbar
 - [ ] `scrollstyle`
