@@ -44,12 +44,8 @@
 ## Cursor & Pointer
 - [ ] `cursorUnderline`
 - [ ] `cursorBlink`
-- [ ] `cursorColor`
-- [ ] `cursorColor2`
 - [ ] `pointerBlank`
 - [ ] `pointerBlankDelay`
-- [ ] `pointerColor`
-- [ ] `pointerColor2`
 
 ## Colors
 - [ ] `foreground`
@@ -59,6 +55,10 @@
 - [ ] `colorIT`
 - [ ] `colorUL`
 - [ ] `colorRV`
+- [ ] `cursorColor`
+- [ ] `cursorColor2`
+- [ ] `pointerColor`
+- [ ] `pointerColor2`
 - [ ] `underlineColor`
 - [ ] `scrollColor`
 - [ ] `troughColor`
