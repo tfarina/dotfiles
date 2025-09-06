@@ -278,8 +278,8 @@ URxvt.pointerBlank: false
 ! Default value: 2
 URxvt.pointerBlankDelay: 2
 
-! Core
-! ====
+! >>> Core {{{
+! =============
 
 ! Specifies the terminal type name to be set in the TERM environment variable.
 ! Accepts: string
@@ -332,6 +332,8 @@ URxvt.skipScroll: false
 ! Accepts: boolean
 ! Default value: true
 URxvt.pastableTabs: true
+
+! <<< Core }}}
 
 ! Specifies the number of lines the scrollback buffer will retain
 ! above the visible window.
