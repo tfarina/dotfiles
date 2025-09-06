@@ -36,7 +36,6 @@
 - [ ] `background.interval`
 
 ## Bell & Alerts
-- [ ] `utmpInhibit`
 - [ ] `urgentOnBell`
 - [ ] `visualBell`
 - [ ] `mapAlert`
@@ -143,6 +142,7 @@
 ## Misc
 - [ ] `path`
 - [ ] `insecure`
+- [ ] `utmpInhibit`
 - [ ] `mouseWheelScrollPage`
 - [ ] `tripleclickwords`
 - [ ] `print-pipe`
