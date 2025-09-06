@@ -71,15 +71,15 @@
 - [ ] `tabbar-fg`
 
 ## Fonts
-- [ ] `font`
-- [ ] `boldFont`
-- [ ] `italicFont`
-- [ ] `boldItalicFont`
-- [ ] `intensityStyles`
+- [x] `font`
+- [x] `boldFont`
+- [x] `italicFont`
+- [x] `boldItalicFont`
 - [ ] `imFont`
-- [ ] `lineSpace`
-- [ ] `letterSpace`
-- [ ] `skipBuiltinGlyphs`
+- [x] `skipBuiltinGlyphs`
+- [x] `intensityStyles`
+- [x] `lineSpace`
+- [x] `letterSpace`
 
 ## Window & Borders
 - [ ] `iconFile`
