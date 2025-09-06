@@ -42,10 +42,10 @@
 - [ ] `bell-command`
 
 ## Cursor & Pointer
-- [ ] `cursorUnderline`
-- [ ] `cursorBlink`
-- [ ] `pointerBlank`
-- [ ] `pointerBlankDelay`
+- [x] `cursorUnderline`
+- [x] `cursorBlink`
+- [x] `pointerBlank`
+- [x] `pointerBlankDelay`
 
 ## Colors
 - [ ] `foreground`
