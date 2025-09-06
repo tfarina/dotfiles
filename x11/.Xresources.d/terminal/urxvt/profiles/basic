@@ -67,6 +67,23 @@ URxvt.color13: BRIGHT_MAGENTA
 URxvt.color14: BRIGHT_CYAN
 URxvt.color15: BRIGHT_WHITE
 
+! Specifies the color of the scrollbar slider (also called the thumb).
+! Accepts: color
+! Default value: #B2B2B2
+URxvt.scrollColor: #B2B2B2
+
+! Specifies the color for the trough area of the scrollbar.
+! Accepts: color
+! Default value: #969696
+URxvt.troughColor: #969696
+
+! Specifies the colour of the border around the text area and between the
+! scrollbar and the text.
+! Accepts: color in hex format: "#rgb" or "#rrggbb" or "rgb:rr/gg/bb"
+! Default value:
+! If unset, it uses the background color.
+URxvt.borderColor: BRIGHT_WHITE
+
 ! Fonts
 ! =====
 
@@ -527,23 +544,6 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! Accepts: modifier
 ! Default value: alt
 URxvt.modifier: alt
-
-! Specifies the color of the scrollbar slider (also called the thumb).
-! Accepts: color
-! Default value: #B2B2B2
-URxvt.scrollColor: #B2B2B2
-
-! Specifies the color for the trough area of the scrollbar.
-! Accepts: color
-! Default value: #969696
-URxvt.troughColor: #969696
-
-! Specifies the colour of the border around the text area and between the
-! scrollbar and the text.
-! Accepts: color in hex format: "#rgb" or "#rrggbb" or "rgb:rr/gg/bb"
-! Default value:
-! If unset, it uses the background color.
-URxvt.borderColor: BRIGHT_WHITE
 
 ! Transparency & Background
 ! =========================
