@@ -103,6 +103,33 @@ URxvt.italicFont:     xft:Ubuntu Mono:size=12:style=Italic:slant=italic
 ! Accepts: fontname
 URxvt.boldItalicFont: xft:Ubuntu Mono:size=12:style=Bold Italic:weight=bold:slant=italic
 
+! Disables urxvt’s internal fallback glyphs for box-drawing and pseudographic
+! characters.
+! Uses only the glyphs provided by the selected font, ensuring consistent
+! appearance.
+! If you want to use urxvt built-in bitmap font fallback glyphs, then set this
+! to false.
+! Accepts: boolean
+! Default value: false
+URxvt.skipBuiltinGlyphs: true
+
+! Controls how bold and italic text is displayed.
+! When enabled, urxvt uses separate font styles for bold and italic; when
+! disabled, it uses color instead.
+! Useful for making emphasis (bold/italic) visually distinct or consistent
+! with the regular font.
+! Accepts: boolean
+! Default value: true
+URxvt.intensityStyles: true
+
+! Specifies the number of lines (extra pixels) to insert between the lines
+! of text.
+! Can improve readability or adjust appearance for certain fonts.
+! Negative values are allowed and reduce the spacing between lines.
+! Accepts: number
+! Default value: 0
+URxvt.lineSpace: 0
+
 ! Specifies the number of extra dots (space) between columns (two characters).
 ! Accepts: number
 ! Default value: 0
@@ -395,14 +422,6 @@ URxvt.insecure: false
 ! Default value: false
 URxvt.mouseWheelScrollPage: false
 
-! Specifies the number of lines (extra pixels) to insert between the lines
-! of text.
-! Can improve readability or adjust appearance for certain fonts.
-! Negative values are allowed and reduce the spacing between lines.
-! Accepts: number
-! Default value: 0
-URxvt.lineSpace: 0
-
 ! Changes triple-click selection to stop at the end of a logical line
 ! instead of selecting the full physical line.
 ! Useful for selecting long shell commands or wrapped output without
@@ -423,25 +442,6 @@ URxvt.tripleclickwords: false
 ! Accepts: boolean
 ! Default value: false
 URxvt.override-redirect: false
-
-! Disables urxvt’s internal fallback glyphs for box-drawing and pseudographic
-! characters.
-! Uses only the glyphs provided by the selected font, ensuring consistent
-! appearance.
-! If you want to use urxvt built-in bitmap font fallback glyphs, then set this
-! to false.
-! Accepts: boolean
-! Default value: false
-URxvt.skipBuiltinGlyphs: true
-
-! Controls how bold and italic text is displayed.
-! When enabled, urxvt uses separate font styles for bold and italic; when
-! disabled, it uses color instead.
-! Useful for making emphasis (bold/italic) visually distinct or consistent
-! with the regular font.
-! Accepts: boolean
-! Default value: true
-URxvt.intensityStyles: true
 
 ! Defines the character sent when the Backspace key is pressed.
 ! When set to DEC (or left unset), sends DEL (`^?`, ASCII 127); with Ctrl,
