@@ -207,8 +207,8 @@ URxvt.scrollTtyKeypress: true
 ! Default: false
 URxvt.scrollWithBuffer: true
 
-! Cursor
-! ======
+! Cursor & Pointer
+! ================
 
 ! Specifies whether to make the cursor underlined or a box.
 ! Accepts: boolean
@@ -219,6 +219,20 @@ URxvt.cursorUnderline: false
 ! Accepts: boolean
 ! Default value: false
 URxvt.cursorBlink: false
+
+! Hides the mouse pointer when a key is pressed or after a short period of
+! inactivity.
+! The pointer reappears automatically on mouse movement.
+! Accepts: boolean
+! Default value: false
+URxvt.pointerBlank: false
+
+! Specifies how long (in seconds) the mouse pointer remains visible when
+! idle before being hidden.
+! Only takes effect if pointerBlank is enabled.
+! Accepts: number
+! Default value: 2
+URxvt.pointerBlankDelay: 2
 
 ! Core
 ! ====
@@ -363,20 +377,6 @@ URxvt.insecure: false
 ! Accepts: boolean
 ! Default value: false
 URxvt.mouseWheelScrollPage: false
-
-! Hides the mouse pointer when a key is pressed or after a short period of
-! inactivity.
-! The pointer reappears automatically on mouse movement.
-! Accepts: boolean
-! Default value: false
-URxvt.pointerBlank: false
-
-! Specifies how long (in seconds) the mouse pointer remains visible when
-! idle before being hidden.
-! Only takes effect if pointerBlank is enabled.
-! Accepts: number
-! Default value: 2
-URxvt.pointerBlankDelay: 2
 
 ! Specifies the number of lines (extra pixels) to insert between the lines
 ! of text.
