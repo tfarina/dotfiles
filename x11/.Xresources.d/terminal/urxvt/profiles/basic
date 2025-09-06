@@ -1,7 +1,7 @@
 ! URxvt configuration
 
-! Colors
-! ======
+! >>> Colors {{{
+! ==============
 
 ! Color scheme
 ! -------------
@@ -84,8 +84,10 @@ URxvt.troughColor: #969696
 ! If unset, it uses the background color.
 URxvt.borderColor: BRIGHT_WHITE
 
-! Fonts
-! =====
+! <<< Colors }}}
+
+! >>> Fonts {{{
+! =============
 
 ! Select the fonts to be used. This is a comma separated list of font names.
 ! Accepts: fontname
@@ -136,8 +138,10 @@ URxvt.lineSpace: 0
 ! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: 0
 
-! Appearance
-! ==========
+! <<< Fonts }}}
+
+! >>> Appearance {{{
+! ==================
 
 ! Set MWM hints to request a borderless window, i.e. if honoured by the WM,
 ! the rxvt-unicode window will not have window decorations.
@@ -155,8 +159,10 @@ URxvt.internalBorder: 2
 ! Default value: 0
 URxvt.externalBorder: 0
 
-! Clipboard
-! =========
+! <<< Appearance }}}
+
+! >>> Clipboard {{{
+! =================
 
 ! Controls urxvt’s built-in support for the ISO 14755 method of entering
 ! Unicode characters. When enabled, urxvt itself intercepts Ctrl+Shift+u
@@ -188,8 +194,10 @@ URxvt.iso14755_52: false
 URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
 URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 
-! Scrollbar
-! =========
+! <<< Clipboard }}}
+
+! >>> Scrollbar {{{
+! =================
 
 ! Specifies whether or not the scrollbar should be displayed.
 ! Accepts: boolean
@@ -251,8 +259,10 @@ URxvt.scrollTtyKeypress: true
 ! Default: false
 URxvt.scrollWithBuffer: true
 
-! Cursor & Pointer
-! ================
+! <<< Scrollbar }}}
+
+! >>> Cursor & Pointer {{{
+! ========================
 
 ! Specifies whether to make the cursor underlined or a box.
 ! Accepts: boolean
@@ -277,6 +287,8 @@ URxvt.pointerBlank: false
 ! Accepts: number
 ! Default value: 2
 URxvt.pointerBlankDelay: 2
+
+! <<< Cursor & Pointer }}}
 
 ! >>> Core {{{
 ! =============
@@ -355,8 +367,8 @@ URxvt.utmpInhibit: false
 ! Default value: true
 URxvt.buffered: true
 
-! Bell & Alerts
-! =============
+! >>> Bell & Alerts {{{
+! =====================
 
 ! Enables or disables automatic de-iconification of the terminal window
 ! if a bell character is received while it is iconified (minimized).
@@ -377,6 +389,8 @@ URxvt.urgentOnBell: false
 ! Accepts: boolean
 ! Default value: false
 URxvt.visualBell: false
+
+! <<< Bell & Alerts }}}
 
 ! Enables or disables sending an ESC prefix when the Meta (usually Alt)
 ! key is pressed, instead of setting the 8th bit of the character.
@@ -547,8 +561,8 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! Default value: alt
 URxvt.modifier: alt
 
-! Transparency & Background
-! =========================
+! >>> Transparency & Background {{{
+! =================================
 
 ! Enables a transparent terminal background that allows the root window
 ! (or desktop background image) to show through.
@@ -585,6 +599,8 @@ URxvt.fading: 0
 ! Accepts: color
 ! Default value: BLACK
 URxvt.fadeColor: BLACK
+
+! <<< Transparency & Background }}}
 
 !termName:                       string
 !geometry:                       geometry
