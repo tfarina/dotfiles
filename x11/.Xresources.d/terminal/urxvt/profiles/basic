@@ -295,6 +295,9 @@ URxvt.utmpInhibit: false
 ! Default value: true
 URxvt.buffered: true
 
+! Bell & Alerts
+! =============
+
 ! Enables or disables automatic de-iconification of the terminal window
 ! if a bell character is received while it is iconified (minimized).
 ! Useful for drawing attention to important activity when the terminal
