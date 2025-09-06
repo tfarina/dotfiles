@@ -48,23 +48,23 @@
 - [x] `pointerBlankDelay`
 
 ## Colors
-- [ ] `foreground`
-- [ ] `background`
-- [ ] `color0` → `color15`
+- [x] `foreground`
+- [x] `background`
+- [x] `color0` → `color15`
 - [ ] `colorBD`
 - [ ] `colorIT`
 - [ ] `colorUL`
 - [ ] `colorRV`
-- [ ] `cursorColor`
+- [x] `cursorColor`
 - [ ] `cursorColor2`
 - [ ] `pointerColor`
 - [ ] `pointerColor2`
 - [ ] `underlineColor`
-- [ ] `scrollColor`
-- [ ] `troughColor`
+- [x] `scrollColor`
+- [x] `troughColor`
 - [ ] `highlightColor`
 - [ ] `highlightTextColor`
-- [ ] `borderColor`
+- [x] `borderColor`
 - [ ] `tab-bg`
 - [ ] `tab-fg`
 - [ ] `tabbar-bg`
