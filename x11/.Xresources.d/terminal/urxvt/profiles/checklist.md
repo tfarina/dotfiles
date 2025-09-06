@@ -36,9 +36,9 @@
 - [ ] `background.interval`
 
 ## Bell & Alerts
-- [ ] `urgentOnBell`
-- [ ] `visualBell`
-- [ ] `mapAlert`
+- [x] `urgentOnBell`
+- [x] `visualBell`
+- [x] `mapAlert`
 - [ ] `bell-command`
 
 ## Cursor & Pointer
