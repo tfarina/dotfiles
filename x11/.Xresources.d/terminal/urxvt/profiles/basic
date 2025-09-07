@@ -560,7 +560,9 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! Default value: alt
 URxvt.modifier: alt
 
-! Rebind copy and paste key bindings.
+! Rebinds copy/paste to match GNOME Terminal convention.
+! Ctrl+Shift+C copies to the clipboard, Ctrl+Shift+V pastes from the
+! clipboard.
 URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
 URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 
