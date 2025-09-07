@@ -82,19 +82,19 @@
 - [x] `letterSpace`
 
 ## Window & Borders
-- [ ] `iconFile`
-- [ ] `title`
-- [ ] `iconName`
-- [ ] `saveLines`
-- [ ] `buffered`
+- [x] `iconFile`
+- [x] `title`
+- [x] `iconName`
+- [x] `saveLines`
+- [x] `buffered`
 - [ ] `depth`
 - [ ] `visual`
 - [ ] `transient-for`
-- [ ] `override-redirect`
+- [x] `override-redirect`
 - [ ] `hold`
-- [ ] `externalBorder`
-- [ ] `internalBorder`
-- [ ] `borderLess`
+- [x] `externalBorder`
+- [x] `internalBorder`
+- [x] `borderLess`
 
 ## Input / Keyboard
 - [ ] `backspacekey`
