@@ -140,8 +140,53 @@ URxvt.letterSpace: 0
 
 ! <<< Fonts }}}
 
-! >>> Appearance {{{
+! >>> Window & Borders {{{
 ! ==================
+
+! Sets the path to an image file used as the icon for the terminal window.
+! Useful for customizing the appearance of the terminal in window managers
+! or taskbars.
+! Accepts: file
+! Has no default value; if unset, the window manager or desktop environment
+! provides the icon.
+URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
+
+! Window title (-T still respected); the default title is the basename of
+! the program specified after the -e option, if any, otherwise the
+! application name.
+! Accepts: string
+!URxvt.title:
+
+! Set the name used to label the icon of the window or displayed in an icon
+! manager window. The default name is the basename of the program.
+! Accepts: string
+!URxvt.iconName:
+
+! Specifies the number of lines the scrollback buffer will retain
+! above the visible window.
+! Accepts: number
+! Default value: 64
+URxvt.saveLines: 64
+
+! Enables or disables double-buffering to reduce flicker when updating
+! the terminal display. It controls how the terminal handles drawing to
+! the screen.
+! Accepts: boolean
+! Default value: true
+URxvt.buffered: true
+
+! Bypasses the window manager and opens the terminal as an unmanaged,
+! borderless window.
+! When enabled, the window has no decorations (titlebar, borders), does
+! not appear in taskbars or window switchers, and cannot be moved or
+! resized by the window manager.
+! Useful for kiosk or scratchpad-style terminals, lightweight popups, or
+! embedding terminals inside other applications.
+! So, for our daily and common usage, setting this option to true is not
+! what we want. DO NOT CHANGE IT TO TRUE.
+! Accepts: boolean
+! Default value: false
+URxvt.override-redirect: false
 
 ! Set MWM hints to request a borderless window, i.e. if honoured by the WM,
 ! the rxvt-unicode window will not have window decorations.
@@ -159,7 +204,7 @@ URxvt.internalBorder: 2
 ! Default value: 0
 URxvt.externalBorder: 0
 
-! <<< Appearance }}}
+! <<< Window & Borders }}}
 
 ! >>> Clipboard {{{
 ! =================
@@ -347,25 +392,12 @@ URxvt.pastableTabs: true
 
 ! <<< Core }}}
 
-! Specifies the number of lines the scrollback buffer will retain
-! above the visible window.
-! Accepts: number
-! Default value: 64
-URxvt.saveLines: 64
-
 ! Controls whether or not the terminal will update the utmp database
 ! when a new terminal session is started. In other words, setting to
 ! true prevents urxvt from making an entry in the utmp file.
 ! Accepts: boolean
 ! Default value: false
 URxvt.utmpInhibit: false
-
-! Enables or disables double-buffering to reduce flicker when updating
-! the terminal display. It controls how the terminal handles drawing to
-! the screen.
-! Accepts: boolean
-! Default value: true
-URxvt.buffered: true
 
 ! >>> Bell & Alerts {{{
 ! =====================
@@ -415,14 +447,6 @@ URxvt.secondaryScreen: true
 ! Default value: true
 URxvt.secondaryScroll: true
 
-! Sets the path to an image file used as the icon for the terminal window.
-! Useful for customizing the appearance of the terminal in window managers
-! or taskbars.
-! Accepts: file
-! Has no default value; if unset, the window manager or desktop environment
-! provides the icon.
-URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
-
 ! Enables or disables potentially unsafe features like loading Perl
 ! extensions from user-writable directories and escape sequences that
 ! echo strings.
@@ -445,19 +469,6 @@ URxvt.mouseWheelScrollPage: false
 ! Accepts: boolean
 ! Default value: false
 URxvt.tripleclickwords: false
-
-! Bypasses the window manager and opens the terminal as an unmanaged,
-! borderless window.
-! When enabled, the window has no decorations (titlebar, borders), does
-! not appear in taskbars or window switchers, and cannot be moved or
-! resized by the window manager.
-! Useful for kiosk or scratchpad-style terminals, lightweight popups, or
-! embedding terminals inside other applications.
-! So, for our daily and common usage, setting this option to true is not
-! what we want. DO NOT CHANGE IT TO TRUE.
-! Accepts: boolean
-! Default value: false
-URxvt.override-redirect: false
 
 ! Defines the character sent when the Backspace key is pressed.
 ! When set to DEC (or left unset), sends DEL (`^?`, ASCII 127); with Ctrl,
@@ -543,17 +554,6 @@ URxvt.answerbackString: \033[?1;2c
 ! Accepts: string
 ! Default value: "\"&'()*,;<=>?@[\\]^`{|}"
 URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
-
-! Window title (-T still respected); the default title is the basename of
-! the program specified after the -e option, if any, otherwise the
-! application name.
-! Accepts: string
-!URxvt.title:
-
-! Set the name used to label the icon of the window or displayed in an icon
-! manager window. The default name is the basename of the program.
-! Accepts: string
-!URxvt.iconName:
 
 ! Override detection of Meta modifier with specified key: alt, meta, hyper,
 ! super, mod1, mod2, mod3, mod4, mod5.
