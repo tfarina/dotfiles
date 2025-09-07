@@ -237,15 +237,6 @@ URxvt.iso14755_52: false
 
 ! <<< ISO14755 (Unicode input) }}}
 
-! >>> Clipboard {{{
-! =================
-
-! Rebind copy and paste key bindings.
-URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
-URxvt.keysym.Control-Shift-V: eval:paste_clipboard
-
-! <<< Clipboard }}}
-
 ! >>> Scrollbar {{{
 ! =================
 
@@ -568,6 +559,10 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! Accepts: modifier
 ! Default value: alt
 URxvt.modifier: alt
+
+! Rebind copy and paste key bindings.
+URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 
 ! <<< Input / Keyboard }}}
 
