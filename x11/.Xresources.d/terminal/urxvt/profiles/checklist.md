@@ -117,8 +117,8 @@
 - [ ] `perl-ext`
 
 ## ISO14755 (Unicode input)
-- [ ] `iso14755`
-- [ ] `iso14755_52`
+- [x] `iso14755`
+- [x] `iso14755_52`
 
 ## URL / Matcher
 - [ ] `matcher.button`
