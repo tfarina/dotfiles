@@ -475,6 +475,9 @@ URxvt.mouseWheelScrollPage: false
 ! Default value: false
 URxvt.tripleclickwords: false
 
+! >>> Input / Keyboard {{{
+! ========================
+
 ! Defines the character sent when the Backspace key is pressed.
 ! When set to DEC (or left unset), sends DEL (`^?`, ASCII 127); with Ctrl,
 ! sends BS (`^H`, ASCII 8).
@@ -565,6 +568,8 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! Accepts: modifier
 ! Default value: alt
 URxvt.modifier: alt
+
+! <<< Input / Keyboard }}}
 
 ! >>> Transparency & Background {{{
 ! =================================
