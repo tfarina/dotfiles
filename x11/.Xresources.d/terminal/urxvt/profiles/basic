@@ -206,8 +206,8 @@ URxvt.externalBorder: 0
 
 ! <<< Window & Borders }}}
 
-! >>> Clipboard {{{
-! =================
+! >>> ISO14755 (Unicode input) {{{
+! ================================
 
 ! Controls urxvt’s built-in support for the ISO 14755 method of entering
 ! Unicode characters. When enabled, urxvt itself intercepts Ctrl+Shift+u
@@ -234,6 +234,11 @@ URxvt.iso14755: false
 ! Accepts: boolean
 ! Default value: true
 URxvt.iso14755_52: false
+
+! <<< ISO14755 (Unicode input) }}}
+
+! >>> Clipboard {{{
+! =================
 
 ! Rebind copy and paste key bindings.
 URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
