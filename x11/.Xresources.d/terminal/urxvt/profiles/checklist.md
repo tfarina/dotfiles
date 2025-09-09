@@ -97,12 +97,12 @@
 - [x] `borderLess`
 
 ## Input / Keyboard
-- [ ] `backspacekey`
-- [ ] `deletekey`
-- [ ] `modifier`
-- [ ] `cutchars`
-- [ ] `answerbackString`
-- [ ] `keysym.sym`
+- [x] `backspacekey`
+- [x] `deletekey`
+- [x] `modifier`
+- [x] `cutchars`
+- [x] `answerbackString`
+- [x] `keysym.sym`
 - [ ] `kuake.hotkey`
 
 ## Internationalization (IME)
