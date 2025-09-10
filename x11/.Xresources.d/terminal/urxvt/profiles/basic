@@ -614,6 +614,13 @@ URxvt.fadeColor: BLACK
 
 ! Input method settings (needed only for IME, e.g. IBus, SCIM, XIM).
 ! Currently not configured since Latin script input is sufficient.
+!
+! Note: IME options (inputMethod, preeditType, imLocale) are for
+! enabling external input methods (e.g. IBus, SCIM, fcitx) used
+! mainly for CJK (Chinese, Japanese, or Korean) input. This is
+! different from Ctrl+Shift+u, which is an X input shortcut to
+! enter arbitrary Unicode code points (e.g. Greek, Cyrillic, Hebrew)
+! and does not depend on urxvt IME settings.
 
 !URxvt.inputMethod: ibus
 !URxvt.preeditType: OverTheSpot
