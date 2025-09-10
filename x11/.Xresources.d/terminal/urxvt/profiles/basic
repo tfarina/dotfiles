@@ -609,6 +609,18 @@ URxvt.fadeColor: BLACK
 
 ! <<< Transparency & Background }}}
 
+! >>> Internationalization (IME) {{{
+! ==================================
+
+! Input method settings (needed only for IME, e.g. IBus, SCIM, XIM).
+! Currently not configured since Latin script input is sufficient.
+
+!URxvt.inputMethod: ibus
+!URxvt.preeditType: OverTheSpot
+!URxvt.imLocale: ja_JP.UTF-8
+
+! <<< Internationalization (IME) }}}
+
 !termName:                       string
 !geometry:                       geometry
 !chdir:                          string
