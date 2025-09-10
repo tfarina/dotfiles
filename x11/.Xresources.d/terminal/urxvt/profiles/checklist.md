@@ -106,9 +106,9 @@
 - [ ] `kuake.hotkey`
 
 ## Internationalization (IME)
-- [ ] `inputMethod`
-- [ ] `preeditType`
-- [ ] `imLocale`
+- [x] `inputMethod`
+- [x] `preeditType`
+- [x] `imLocale`
 
 ## Perl Extensions
 - [ ] `perl-lib`
