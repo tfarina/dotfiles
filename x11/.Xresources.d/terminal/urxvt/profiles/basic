@@ -628,6 +628,36 @@ URxvt.fadeColor: BLACK
 
 ! <<< Internationalization (IME) }}}
 
+! >>> Perl Extensions {{{
+! =======================
+!
+! urxvt supports small helper scripts called Perl extensions. They add
+! features like improved selection, menus, or integration with external
+! tools. By default, if perl-ext-common is not set explicitly, urxvt loads
+! the following extensions:
+!
+! - default : basic setup needed for extensions
+! - selection : enhanced text selection behavior
+! - option-popup : right-click menu for options
+! - readline : readline-style editing in input fields
+!
+! Other useful extensions (e.g. clipboard, matcher) will be added later
+! for extra functionality.
+
+! Add directories for custom scripts (not used yet)
+!URxvt.perl-lib: /home/you/.urxvt/ext
+
+! Evaluate Perl code at startup (not used)
+!URxvt.perl-eval:
+
+! Load common Perl extensions
+URxvt.perl-ext-common: default,selection,option-popup,readline
+
+! Per-instance extension overrides (not configured)
+!URxvt.perl-ext:
+
+! <<< Perl Extensions }}}
+
 !termName:                       string
 !geometry:                       geometry
 !chdir:                          string
