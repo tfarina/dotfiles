@@ -111,10 +111,10 @@
 - [x] `imLocale`
 
 ## Perl Extensions
-- [ ] `perl-lib`
-- [ ] `perl-eval`
-- [ ] `perl-ext-common`
-- [ ] `perl-ext`
+- [x] `perl-lib`
+- [x] `perl-eval`
+- [x] `perl-ext-common`
+- [x] `perl-ext`
 
 ## ISO14755 (Unicode input)
 - [x] `iso14755`
