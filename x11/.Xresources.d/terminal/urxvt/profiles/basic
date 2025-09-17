@@ -658,6 +658,25 @@ URxvt.perl-ext-common: default,selection,option-popup,readline
 
 ! <<< Perl Extensions }}}
 
+! >>> URL / Matcher {{{
+! =====================
+!
+! urxvt’s matcher extension highlights and makes URLs
+! clickable inside the terminal. It allows customization
+! of mouse buttons, launchers, regex patterns, and styles.
+!
+! The following options are available, but not yet
+! configured in this setup:
+!
+!URxvt.matcher.button: not configured yet
+!URxvt.matcher.launcher: not configured yet
+!URxvt.matcher.launcher.*: not configured yet
+!URxvt.matcher.pattern.*: not configured yet
+!URxvt.matcher.rend.*: not configured yet
+!URxvt.url-launcher: not configured yet
+!
+! <<< URL / Matcher }}}
+
 !termName:                       string
 !geometry:                       geometry
 !chdir:                          string
