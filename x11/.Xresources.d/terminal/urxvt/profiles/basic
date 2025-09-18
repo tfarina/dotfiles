@@ -662,19 +662,30 @@ URxvt.perl-ext-common: default,selection,option-popup,readline
 ! =====================
 !
 ! urxvt’s matcher extension highlights and makes URLs
-! clickable inside the terminal. It allows customization
-! of mouse buttons, launchers, regex patterns, and styles.
-!
-! The following options are available, but not yet
-! configured in this setup:
-!
-!URxvt.matcher.button: not configured yet
-!URxvt.matcher.launcher: not configured yet
-!URxvt.matcher.launcher.*: not configured yet
-!URxvt.matcher.pattern.*: not configured yet
-!URxvt.matcher.rend.*: not configured yet
-!URxvt.url-launcher: not configured yet
-!
+! clickable inside the terminal. You can configure which
+! button activates them, what launcher is used, add custom
+! patterns, and even style the matches visually.
+
+! Mouse button to open matched URLs (default: 1 = left click)
+!URxvt.matcher.button: 1
+
+! Program to launch URLs
+!URxvt.matcher.launcher: firefox
+
+! Per-scheme launchers
+!URxvt.matcher.launcher.http: firefox
+!URxvt.matcher.launcher.https: firefox
+!URxvt.matcher.launcher.mailto: thunderbird
+
+! Add custom regex patterns (example: Git commit hashes)
+!URxvt.matcher.pattern.1: \b[0-9a-f]{7,40}\b
+
+! Visual style for matches (e.g., underline + bold)
+!URxvt.matcher.rend.0: Uline Bold
+
+! Legacy option, alias for matcher.launcher
+!URxvt.url-launcher: firefox
+
 ! <<< URL / Matcher }}}
 
 !termName:                       string
