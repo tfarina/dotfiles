@@ -651,7 +651,7 @@ URxvt.fadeColor: BLACK
 !URxvt.perl-eval:
 
 ! Load common Perl extensions
-URxvt.perl-ext-common: default,selection,option-popup,readline
+URxvt.perl-ext-common: default,selection,option-popup,readline,matcher
 
 ! Per-instance extension overrides (not configured)
 !URxvt.perl-ext:
@@ -667,21 +667,21 @@ URxvt.perl-ext-common: default,selection,option-popup,readline
 ! patterns, and even style the matches visually.
 
 ! Mouse button to open matched URLs (default: 1 = left click)
-!URxvt.matcher.button: 1
+URxvt.matcher.button: 1
 
 ! Program to launch URLs
-!URxvt.matcher.launcher: firefox
+URxvt.matcher.launcher: firefox
 
 ! Per-scheme launchers
-!URxvt.matcher.launcher.http: firefox
-!URxvt.matcher.launcher.https: firefox
-!URxvt.matcher.launcher.mailto: thunderbird
+URxvt.matcher.launcher.http: firefox
+URxvt.matcher.launcher.https: firefox
+URxvt.matcher.launcher.mailto: thunderbird
 
 ! Add custom regex patterns (example: Git commit hashes)
-!URxvt.matcher.pattern.1: \b[0-9a-f]{7,40}\b
+URxvt.matcher.pattern.1: \b[0-9a-f]{7,40}\b
 
 ! Visual style for matches (e.g., underline + bold)
-!URxvt.matcher.rend.0: Uline Bold
+URxvt.matcher.rend.0: Uline Bold
 
 ! Legacy option, alias for matcher.launcher
 !URxvt.url-launcher: firefox
