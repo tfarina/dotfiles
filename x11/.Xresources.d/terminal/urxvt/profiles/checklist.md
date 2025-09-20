@@ -121,12 +121,12 @@
 - [x] `iso14755_52`
 
 ## URL / Matcher
-- [ ] `matcher.button`
-- [ ] `matcher.launcher`
-- [ ] `matcher.launcher.*`
-- [ ] `matcher.pattern.*`
-- [ ] `matcher.rend.*`
-- [ ] `url-launcher`
+- [x] `matcher.button`
+- [x] `matcher.launcher`
+- [x] `matcher.launcher.*`
+- [x] `matcher.pattern.*`
+- [x] `matcher.rend.*`
+- [x] `url-launcher`
 
 ## Remote Clipboard
 - [ ] `remote-clipboard.fetch`
