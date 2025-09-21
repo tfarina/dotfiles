@@ -712,6 +712,30 @@ URxvt.matcher.rend.0: Uline Bold
 !
 ! <<< Remote Clipboard }}}
 
+! >>> Selection & Clipboard {{{
+! =============================
+!
+! urxvt supports advanced selection and clipboard features.
+! In addition to the standard copy/paste behavior (already
+! mapped to Ctrl+Shift+C/V), thnese options allow custom
+! transformations, pastebin integration, and regex-based
+! selection matching.
+!
+! selection-autotransform.* : rules to automatically transform
+!                             selected text (e.g., lowercase,
+!                             strip whitespace, etc.)
+!
+! selection-pastebin.cmd    : command to upload selection
+!                             to a pastebin service (not set)
+!
+! selection-pastebin.url    : URL template for the pastebin
+!                             service (not set)
+!
+! selection.pattern-0       : regex defining what count as a "word"
+!                             when selecting (not set)
+!
+! <<< Selection & Clipboard }}}
+
 !termName:                       string
 !geometry:                       geometry
 !chdir:                          string
