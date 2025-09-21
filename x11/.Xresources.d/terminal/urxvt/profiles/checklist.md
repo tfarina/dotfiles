@@ -129,8 +129,8 @@
 - [x] `url-launcher`
 
 ## Remote Clipboard
-- [ ] `remote-clipboard.fetch`
-- [ ] `remote-clipboard.store`
+- [x] `remote-clipboard.fetch`
+- [x] `remote-clipboard.store`
 
 ## Selection & Clipboard
 - [ ] `searchable-scrollback`
