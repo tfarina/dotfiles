@@ -688,6 +688,30 @@ URxvt.matcher.rend.0: Uline Bold
 
 ! <<< URL / Matcher }}}
 
+! >>> Remote Clipboard {{{
+! ========================
+!
+! urxvt can integrate with remote clipboards by running
+! external commands. This is most useful when working over
+! SSH and you want copy/paste to bridge between machines.
+!
+! remote-clipboard.fetch : command to fetch clipboard
+! remote-clipboard.store : command to store clipboard
+!
+! Example (using xsel locally):
+!   URxvt.remote-clipboard.fetch:  xsel -o -b
+!   URxvt.remote-clipboard.store:  xsel -i -b
+!
+! Note: local clipboard copy/paste is already available
+! via the 'selection' extension (enabled by default),
+! even without the 'clipboard' extension. Remote clipboard
+! options are left unconfigured for now.
+!
+!URxvt.remote-clipboard.fetch: not configured yet
+!URxvt.remote-clipboard.store: not configured yet
+!
+! <<< Remote Clipboard }}}
+
 !termName:                       string
 !geometry:                       geometry
 !chdir:                          string
