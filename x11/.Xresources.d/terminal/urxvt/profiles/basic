@@ -708,6 +708,13 @@ URxvt.matcher.rend.0: Uline Bold
 ! Some improve usability (mouse scrolling, triple-click behavior),
 ! others affect security, printing, or environment handling.
 
+! Directory list for searching configuration files and resources.
+! Useful if you want urxvt to look for additional config fragments
+! or resources outside the default paths.
+! Accepts: colon-separated list of directories
+! Default value: (compiled-in, usually /usr/lib/urxvt:/usr/local/lib/urxvt)
+!URxvt.path:
+
 ! Enables or disables potentially unsafe features like loading Perl
 ! extensions from user-writable directories and escape sequences that
 ! echo strings.
@@ -742,6 +749,13 @@ URxvt.tripleclickwords: false
 ! Accepts: string
 ! Default value: lpr
 URxvt.print-pipe: lpr
+
+! Adds extra X resources, overriding or complementing those loaded
+! from ~/.Xresources or the system database.
+! Useful for testing or per-instance tweaks without modifying global files.
+! Accepts: string (X resource entries)
+! Default value: unset
+!URxvt.xrm:
 
 ! <<< Misc }}}
 
