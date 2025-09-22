@@ -134,10 +134,10 @@
 
 ## Selection & Clipboard
 - [ ] `searchable-scrollback`
-- [ ] `selection-autotransform.*`
-- [ ] `selection-pastebin.cmd`
-- [ ] `selection-pastebin.url`
-- [ ] `selection.pattern-0`
+- [x] `selection-autotransform.*`
+- [x] `selection-pastebin.cmd`
+- [x] `selection-pastebin.url`
+- [x] `selection.pattern-0`
 
 ## Misc
 - [ ] `path`
