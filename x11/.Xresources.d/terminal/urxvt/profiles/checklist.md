@@ -140,10 +140,10 @@
 - [x] `selection.pattern-0`
 
 ## Misc
-- [ ] `path`
-- [ ] `insecure`
-- [ ] `utmpInhibit`
-- [ ] `mouseWheelScrollPage`
-- [ ] `tripleclickwords`
-- [ ] `print-pipe`
-- [ ] `xrm`
+- [x] `path`
+- [x] `insecure`
+- [x] `utmpInhibit`
+- [x] `mouseWheelScrollPage`
+- [x] `tripleclickwords`
+- [x] `print-pipe`
+- [x] `xrm`
