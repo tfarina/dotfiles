@@ -543,6 +543,14 @@ URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 ! >>> Transparency & Background {{{
 ! =================================
 
+! Inherit the background pixmap of the root window instead of drawing
+! a separate background. This can be useful when a desktop wallpaper
+! manager sets the background at the root level and you want urxvt
+! to blend with it.
+! Accepts: boolean
+! Default value: false
+!URxvt.inheritPixmap: false
+
 ! Enables a transparent terminal background that allows the root window
 ! (or desktop background image) to show through.
 ! Requires a compositor (like picom, compton, or xcompmgr) for true
