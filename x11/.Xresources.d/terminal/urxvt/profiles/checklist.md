@@ -3,7 +3,7 @@
 ## Core
 - [x] `termName`
 - [x] `geometry`
-- [ ] `chdir`
+- [x] `chdir`
 - [x] `reverseVideo`
 - [x] `loginShell`
 - [x] `multiClickTime`
