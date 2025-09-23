@@ -343,6 +343,13 @@ URxvt.termName: rxvt-unicode-256color
 ! Default value: 80x24
 URxvt.geometry: 80x24
 
+! Sets the working directory that urxvt should start in.
+! If not specified, urxvt inherits the current shell's
+! working directory when launched.
+! Accepts: string (path to directory)
+! Default value: (none)
+!URxvt.chdir: /path/to/start/directory
+
 ! Specifies whether or not reverse video should be simulated.
 ! Accepts: boolean
 ! Default: false
