@@ -587,6 +587,14 @@ URxvt.fading: 0
 ! Default value: BLACK
 URxvt.fadeColor: BLACK
 
+! Sets a pixmap (image file) to be used as the terminal background.
+! The file path must point to a valid X11-supported image format.
+! Depending on your system, additional utilities may be required
+! (e.g. `xrdb` settings or external loaders).
+! Accepts: string (path to image file)
+! Default value: none
+!URxvt.backgroundPixmap: /path/to/image.xpm
+
 ! <<< Transparency & Background }}}
 
 ! >>> Internationalization (IME) {{{
