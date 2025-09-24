@@ -595,6 +595,13 @@ URxvt.fadeColor: BLACK
 ! Default value: none
 !URxvt.backgroundPixmap: /path/to/image.xpm
 
+! Sets the border width (in pixels) used when drawing the background
+! pixmap. This affects how the background image is tiled or aligned
+! within the terminal window.
+! Accepts: integer (pixel value)
+! Default value: 0
+!URxvt.background.border: 2
+
 ! <<< Transparency & Background }}}
 
 ! >>> Internationalization (IME) {{{
