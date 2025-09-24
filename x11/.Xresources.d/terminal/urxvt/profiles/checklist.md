@@ -23,17 +23,17 @@
 - [x] `scrollWithBuffer`
 
 ## Transparency & Background
-- [ ] `inheritPixmap`
+- [x] `inheritPixmap`
 - [x] `transparent`
 - [x] `tintColor`
 - [x] `shading`
 - [x] `blurRadius`
 - [x] `fading`
 - [x] `fadeColor`
-- [ ] `backgroundPixmap`
-- [ ] `background.border`
-- [ ] `background.expr`
-- [ ] `background.interval`
+- [x] `backgroundPixmap`
+- [x] `background.border`
+- [x] `background.expr`
+- [x] `background.interval`
 
 ## Bell & Alerts
 - [x] `urgentOnBell`
