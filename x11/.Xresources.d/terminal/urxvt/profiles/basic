@@ -602,6 +602,15 @@ URxvt.fadeColor: BLACK
 ! Default value: 0
 !URxvt.background.border: 2
 
+! Defines an expression for dynamically generating or transforming
+! the terminal background. This is an advanced option intended for
+! users who want to compute backgrounds based on functions rather
+! than using static images or colors.
+! Accepts: string (expression syntax is rarely used and may depend
+! on external patches or extensions)
+! Default value: none
+!URxvt.background.expr: some_expression
+
 ! <<< Transparency & Background }}}
 
 ! >>> Internationalization (IME) {{{
