@@ -611,6 +611,13 @@ URxvt.fadeColor: BLACK
 ! Default value: none
 !URxvt.background.expr: some_expression
 
+! Internal resource related to urxvt’s background rendering.
+! Rarely configured directly by users; mostly intended for
+! debugging or development purposes.
+! Accepts: boolean
+! Default value: false
+!URxvt.background.internal: false
+
 ! <<< Transparency & Background }}}
 
 ! >>> Internationalization (IME) {{{
