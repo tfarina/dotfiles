@@ -418,6 +418,20 @@ URxvt.urgentOnBell: false
 ! Default value: false
 URxvt.visualBell: false
 
+! External command to execute when the terminal bell is triggered.
+! This allows replacing or supplementing the default visual or
+! audible bell with a custom action (e.g. playing a sound,
+! sending a desktop notification, or logging the event).
+!
+! Accepts: string (command line to execute)
+! Default value: (none) – no external command is run
+! Example:
+!   URxvt.bell-command: paplay /usr/share/sounds/freedesktop/stereo/bell.oga
+!
+! Note: If set, this runs in addition to other bell mechanisms
+! (visualBell, urgentOnBell).
+!URxvt.bell-command:
+
 ! <<< Bell & Alerts }}}
 
 ! Enables or disables sending an ESC prefix when the Meta (usually Alt)
