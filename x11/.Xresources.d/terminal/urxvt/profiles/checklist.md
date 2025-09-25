@@ -39,7 +39,7 @@
 - [x] `urgentOnBell`
 - [x] `visualBell`
 - [x] `mapAlert`
-- [ ] `bell-command`
+- [x] `bell-command`
 
 ## Cursor & Pointer
 - [x] `cursorUnderline`
