@@ -75,7 +75,7 @@
 - [x] `boldFont`
 - [x] `italicFont`
 - [x] `boldItalicFont`
-- [ ] `imFont`
+- [x] `imFont`
 - [x] `skipBuiltinGlyphs`
 - [x] `intensityStyles`
 - [x] `lineSpace`
