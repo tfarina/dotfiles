@@ -105,6 +105,13 @@ URxvt.italicFont:     xft:Ubuntu Mono:size=12:style=Italic:slant=italic
 ! Accepts: fontname
 URxvt.boldItalicFont: xft:Ubuntu Mono:size=12:style=Bold Italic:weight=bold:slant=italic
 
+! Specifies the font to be used for input method (IM) pre-edit text.
+! This option allows a separate font to be chosen for text entered
+! through input methods, independent of the main terminal font.
+! Accepts: Xft font string
+! Default value: none (falls back to main font)
+!URxvt.imFont:
+
 ! Disables urxvt’s internal fallback glyphs for box-drawing and pseudographic
 ! characters.
 ! Uses only the glyphs provided by the selected font, ensuring consistent
