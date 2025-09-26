@@ -87,11 +87,11 @@
 - [x] `iconName`
 - [x] `saveLines`
 - [x] `buffered`
-- [ ] `depth`
-- [ ] `visual`
-- [ ] `transient-for`
+- [x] `depth`
+- [x] `visual`
+- [x] `transient-for`
 - [x] `override-redirect`
-- [ ] `hold`
+- [x] `hold`
 - [x] `externalBorder`
 - [x] `internalBorder`
 - [x] `borderLess`
