@@ -175,6 +175,39 @@ URxvt.saveLines: 64
 ! Default value: true
 URxvt.buffered: true
 
+! Specifies the color depth (bits per pixel) used by urxvt.
+! This can influence how colors are rendered and whether certain
+! visual effects (like transparency or shading) are available.
+!
+! Common values include:
+!   8   = 256 colors
+!   16  = high-color (65k colors)
+!   24  = truecolor (16.7M colors)
+!   32  = truecolor with alpha channel
+!
+! Accepts: number
+! Default value: 24 (truecolor)
+!URxvt.depth:
+
+! Selects the X11 visual type used when creating the window.
+! This controls how pixel values are interpreted (direct color,
+! indexed colormap, etc.). Normally left unspecified to use the
+! server's default visual.
+!
+! Typical values: default, TrueColor, DirectColor, PseudoColor
+!
+! Accepts: string (e.g. default, TrueColor)
+! Default value: default
+!URxvt.visual:
+
+! Sets the WM_TRANSIENT_FOR hint so this window is treated as a
+! transient child of another top-level window. Useful for dialogs
+! or when you want the window manager to keep windows grouped.
+!
+! Accepts: window id (hexadecimal), e.g. 0x3a00007
+! Default value: none
+!URxvt.transient-for:
+
 ! Bypasses the window manager and opens the terminal as an unmanaged,
 ! borderless window.
 ! When enabled, the window has no decorations (titlebar, borders), does
@@ -187,6 +220,14 @@ URxvt.buffered: true
 ! Accepts: boolean
 ! Default value: false
 URxvt.override-redirect: false
+
+! Keeps the terminal window open after the child process (shell
+! or command) exits, instead of closing immediately. Handy for
+! inspecting program output before the window disappears.
+!
+! Accepts: boolean
+! Default value: false
+!URxvt.hold:
 
 ! Set MWM hints to request a borderless window, i.e. if honoured by the WM,
 ! the rxvt-unicode window will not have window decorations.
