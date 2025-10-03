@@ -600,6 +600,13 @@ URxvt.modifier: alt
 URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
 URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 
+! Defines a global hotkey to toggle urxvt in "Kuake mode"
+! (drop-down terminal style, similar to the Quake console).
+! Only effective if urxvt is built with Kuake support.
+! Accepts: string (key combination, e.g. Control+Shift+F12)
+! Default value: (none)
+!URxvt.kuake.hotkey:
+
 ! <<< Input / Keyboard }}}
 
 ! >>> Transparency & Background {{{
