@@ -21,6 +21,8 @@
 - [x] `scrollTtyOutput`
 - [x] `scrollTtyKeypress`
 - [x] `scrollWithBuffer`
+- [ ] `secondaryScreen`
+- [ ] `secondaryScroll`
 
 ## Transparency & Background
 - [x] `inheritPixmap`
@@ -99,6 +101,7 @@
 ## Input / Keyboard
 - [x] `backspacekey`
 - [x] `deletekey`
+- [ ] `meta8`
 - [x] `modifier`
 - [x] `cutchars`
 - [x] `answerbackString`
