@@ -103,7 +103,7 @@
 - [x] `cutchars`
 - [x] `answerbackString`
 - [x] `keysym.sym`
-- [ ] `kuake.hotkey`
+- [x] `kuake.hotkey`
 
 ## Internationalization (IME)
 - [x] `inputMethod`
