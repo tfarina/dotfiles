@@ -84,6 +84,27 @@ URxvt.troughColor: #969696
 ! If unset, it uses the background color.
 URxvt.borderColor: BRIGHT_WHITE
 
+! Sets the foreground color for bold text.
+! Accepts: color name or #rrggbb
+! Default value: color1 (usually bright red, but depends on theme)
+!URxvt.colorBD:
+
+! Sets the foreground color for italic text.
+! Accepts: color name or #rrggbb
+! Default value: foreground
+!URxvt.colorIT:
+
+! Sets the foreground color for underlined text.
+! Accepts: color name or #rrggbb
+! Default value: foreground
+!URxvt.colorUL:
+
+! Sets the color used for drawing the underline itself (instead of the text).
+! Useful for distinguishing underline from text color.
+! Accepts: color name or #rrggbb
+! Default value: colorUL (falls back to foreground if not set)
+!URxvt.underlineColor:
+
 ! <<< Colors }}}
 
 ! >>> Fonts {{{
