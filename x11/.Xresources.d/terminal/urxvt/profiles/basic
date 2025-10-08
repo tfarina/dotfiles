@@ -105,6 +105,24 @@ URxvt.borderColor: BRIGHT_WHITE
 ! Default value: colorUL (falls back to foreground if not set)
 !URxvt.underlineColor:
 
+! Sets the background color of the text cursor when it is inactive
+! or unfocused. Useful when cursorColor is too bright or similar
+! to the text color.
+! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
+! Default value: none (cursor uses cursorColor)
+!URxvt.cursorColor2:
+
+! Sets the primary color of the mouse pointer (cursor).
+! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
+! Default value: black
+!URxvt.pointerColor:
+
+! Sets the secondary color of the mouse pointer (cursor).
+! This color is typically used for contrast or as an outline.
+! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
+! Default value: white
+!URxvt.pointerColor2:
+
 ! <<< Colors }}}
 
 ! >>> Fonts {{{
