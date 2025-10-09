@@ -123,6 +123,16 @@ URxvt.borderColor: BRIGHT_WHITE
 ! Default value: white
 !URxvt.pointerColor2:
 
+! Sets the background color used when text is highlighted (selected).
+! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
+! Default value: reverse video of text and background colors
+!URxvt.highlightColor:
+
+! Sets the text color used when text is highlighted (selected).
+! Accepts: color name or hexadecimal RGB value
+! Default value: reverse video of text and background colors
+!URxvt.highlightTextColor:
+
 ! <<< Colors }}}
 
 ! >>> Fonts {{{
