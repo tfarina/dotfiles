@@ -26,9 +26,6 @@
 - **Icon Theme**: elementary Xfce
 - **Cursor Theme**: Bluecurve-inverse
 
-## Display Resolution
-- **Resolution**: 1280x800
-
 ## Terminal Environment
 - **Terminal Emulator**: urxvt v9.21
 - **Terminal Font**: Ubuntu Mono

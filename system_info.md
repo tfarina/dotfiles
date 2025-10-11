@@ -59,6 +59,7 @@
 ## Monitor
 - **Model**: Samsung LCD Monitor (Ultrabright Widescreen)
 - **Screen Size**: 15.7" (39.9 cm)
+- **Resolution**: 1280x800
 
 ## Input Devices
 - **Keyboard**: AT Translated Set 2
