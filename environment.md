@@ -16,13 +16,15 @@
 - **Session Manager**: xfce4-session 4.12.1
 - **Settings Daemon**: xfsettingsd 4.12.0
 - **Window Manager**: xfwm4 4.12.3
+- **Desktop Manager**: xfdesktop 4.12.3
+- **Panel**: xfce4-panel 4.12.0
+- **Application Finder**: xfce4-appfinder 4.12.0
+
+## Theme and Appearance
 - **Window Manager Theme**: Clearlooks-Phenix-Modified
 - **GTK Themes**: Clearlooks-Phenix-Modified [GTK2], Ambiance [GTK3]
 - **Icon Theme**: elementary Xfce
 - **Cursor Theme**: Bluecurve-inverse
-- **Desktop Manager**: xfdesktop 4.12.3
-- **Panel**: xfce4-panel 4.12.0
-- **Application Finder**: xfce4-appfinder 4.12.0
 
 ## Display Resolution
 - **Resolution**: 1280x800
