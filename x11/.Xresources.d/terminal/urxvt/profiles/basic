@@ -133,6 +133,35 @@ URxvt.borderColor: BRIGHT_WHITE
 ! Default value: reverse video of text and background colors
 !URxvt.highlightTextColor:
 
+! Sets the background color of inactive tabs.
+! Has no effect unless the “tabbed” Perl extension is enabled
+! through the “perl-ext-common” resource.
+! Accepts: color name or hexadecimal RGB value
+! Default value: none (inherits terminal background)
+!URxvt.tab-bg:
+
+! Sets the foreground (text) color of inactive tabs.
+! Only applies if the “tabbed” Perl extension is enabled
+! via the “perl-ext-common” resource.
+! Accepts: color name or hexadecimal RGB value
+! Default value: none (inherits terminal foreground)
+!URxvt.tab-fg:
+
+! Sets the background color of the tab bar.
+! This defines the color behind all tab buttons. Has no effect
+! unless the “tabbed” Perl extension is enabled through the
+! “perl-ext-common” resource.
+! Accepts: color name or hexadecimal RGB value
+! Default value: none (inherits terminal background)
+!URxvt.tabbar-bg:
+
+! Sets the foreground (text) color of the tab bar.
+! Only takes effect when the “tabbed” Perl extension is active
+! and listed in “perl-ext-common”.
+! Accepts: color name or hexadecimal RGB value
+! Default value: none (inherits terminal foreground)
+!URxvt.tabbar-fg:
+
 ! <<< Colors }}}
 
 ! >>> Fonts {{{
