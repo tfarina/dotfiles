@@ -99,6 +99,12 @@ URxvt.borderColor: BRIGHT_WHITE
 ! Default value: foreground
 !URxvt.colorUL:
 
+! Sets the foreground color of reversed video text in urxvt.
+! Reversed video swaps the foreground and background colors of text.
+! Accepts: color name or hexadecimal RGB value
+! Default value: none (inherits terminal foreground)
+!URxvt.colorRV:
+
 ! Sets the color used for drawing the underline itself (instead of the text).
 ! Useful for distinguishing underline from text color.
 ! Accepts: color name or #rrggbb
