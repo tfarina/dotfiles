@@ -566,14 +566,6 @@ URxvt.visualBell: false
 
 ! <<< Bell & Alerts }}}
 
-! Enables or disables sending an ESC prefix when the Meta (usually Alt)
-! key is pressed, instead of setting the 8th bit of the character.
-! Useful in UTF-8 environments where setting the 8th bit may interfere
-! with multibyte characters.
-! Accepts: boolean
-! Default value: false
-URxvt.meta8: false
-
 ! Enables or disables switching to the secondary screen buffer when an
 ! alternate screen is requested.
 ! Needed for full-screen terminal programs like text editors (e.g., emacs)
@@ -620,6 +612,14 @@ URxvt.backspacekey: DEC
 ! Accepts: string
 ! Default value: \033[3~
 URxvt.deletekey: \033[3~
+
+! Enables or disables sending an ESC prefix when the Meta (usually Alt)
+! key is pressed, instead of setting the 8th bit of the character.
+! Useful in UTF-8 environments where setting the 8th bit may interfere
+! with multibyte characters.
+! Accepts: boolean
+! Default value: false
+URxvt.meta8: false
 
 ! Specifies the string urxvt sends in response to the ENQ (Enquiry) control
 ! character, which is ASCII code 0x05 (pressing Ctrl-E or by writing \005).
