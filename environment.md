@@ -28,7 +28,7 @@
 
 ## Terminal Environment
 - **Terminal Emulator**: urxvt v9.21
-- **Terminal Font**: Ubuntu Mono
+- **Terminal Font**: Ubuntu Mono 12
 - **Shell**: bash 4.3.48(1)-release
 
 ## Applications
