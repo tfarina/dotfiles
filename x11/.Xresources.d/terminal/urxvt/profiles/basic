@@ -566,6 +566,9 @@ URxvt.visualBell: false
 
 ! <<< Bell & Alerts }}}
 
+! >>> Scrollback {{{
+! ========================
+
 ! Enables or disables switching to the secondary screen buffer when an
 ! alternate screen is requested.
 ! Needed for full-screen terminal programs like text editors (e.g., emacs)
@@ -580,6 +583,8 @@ URxvt.secondaryScreen: true
 ! Accepts: boolean
 ! Default value: true
 URxvt.secondaryScroll: true
+
+! <<< Scrollback }}}
 
 ! >>> Input / Keyboard {{{
 ! ========================
