@@ -98,8 +98,8 @@
 
 ## Scrollback
 
-- [ ] `secondaryScreen`
-- [ ] `secondaryScroll`
+- [x] `secondaryScreen`
+- [x] `secondaryScroll`
 
 ## Input / Keyboard
 - [x] `backspacekey`
