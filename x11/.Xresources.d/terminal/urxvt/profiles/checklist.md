@@ -104,7 +104,7 @@
 ## Input / Keyboard
 - [x] `backspacekey`
 - [x] `deletekey`
-- [ ] `meta8`
+- [x] `meta8`
 - [x] `modifier`
 - [x] `cutchars`
 - [x] `answerbackString`
