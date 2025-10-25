@@ -75,7 +75,6 @@
 - [x] `boldFont`
 - [x] `italicFont`
 - [x] `boldItalicFont`
-- [x] `imFont`
 - [x] `skipBuiltinGlyphs`
 - [x] `intensityStyles`
 - [x] `lineSpace`
@@ -115,6 +114,7 @@
 - [x] `inputMethod`
 - [x] `preeditType`
 - [x] `imLocale`
+- [x] `imFont`
 
 ## Perl Extensions
 - [x] `perl-lib`
