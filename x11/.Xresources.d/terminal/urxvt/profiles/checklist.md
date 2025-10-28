@@ -99,6 +99,7 @@
 
 - [x] `secondaryScreen`
 - [x] `secondaryScroll`
+- [ ] `searchable-scrollback`
 
 ## Input / Keyboard
 - [x] `backspacekey`
@@ -139,7 +140,6 @@
 - [x] `remote-clipboard.store`
 
 ## Selection & Clipboard
-- [ ] `searchable-scrollback`
 - [x] `selection-autotransform.*`
 - [x] `selection-pastebin.cmd`
 - [x] `selection-pastebin.url`
