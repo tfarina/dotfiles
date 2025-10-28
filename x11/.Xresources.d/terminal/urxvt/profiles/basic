@@ -812,6 +812,23 @@ URxvt.fadeColor: BLACK
 !
 ! Other useful extensions (e.g. clipboard, matcher) will be added later
 ! for extra functionality.
+!
+! 'searchable-scrollback' extension enables incremental search through the
+! scrollback buffer.
+! When active, pressing Ctrl+Shift+F opens a search prompt
+! at the bottom of the terminal, allowing text search through
+! previously printed output.
+!
+! Requires adding 'searchable-scrollback' to perl-ext-common.
+! Accepts: n/a (enabled by inclusion)
+! Default value: not loaded
+!
+! Example:
+!   URxvt.perl-ext-common: default,selection,option-popup,readline,matcher,searchable-scrollback
+!
+! Optional keybinding to start the searchable scrollback prompt manually
+! (Alt+s by default in most setups)
+!URxvt.keysym.M-s: perl:searchable-scrollback:start
 
 ! Add directories for custom scripts (not used yet)
 !URxvt.perl-lib: /home/you/.urxvt/ext
