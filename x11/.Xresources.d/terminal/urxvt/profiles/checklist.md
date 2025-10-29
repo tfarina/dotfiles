@@ -99,7 +99,6 @@
 
 - [x] `secondaryScreen`
 - [x] `secondaryScroll`
-- [ ] `searchable-scrollback`
 
 ## Input / Keyboard
 - [x] `backspacekey`
@@ -121,6 +120,9 @@
 - [x] `perl-lib`
 - [x] `perl-eval`
 - [x] `perl-ext-common`
+  - [x] `clipboard`
+  - [x] `matcher`
+  - [x] `searchable-scrollback`
 - [x] `perl-ext`
 
 ## ISO14755 (Unicode input)
