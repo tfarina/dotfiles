@@ -173,20 +173,27 @@ URxvt.borderColor: BRIGHT_WHITE
 ! >>> Fonts {{{
 ! =============
 
-! Select the fonts to be used. This is a comma separated list of font names.
-! Accepts: fontname
+! Sets the primary font used for normal text display in the terminal.
+! Accepts: XLFD font name, Xft pattern, or fontconfig family (e.g.,
+! xft:monospace:size=10)
+! Default value: fixed (the default X11 bitmap font)
 URxvt.font:           xft:Ubuntu Mono:size=12:style=Regular
 
-! The font list to use for displaying bold characters.
-! Accepts: fontname
+! Sets the font used for bold text. If not specified, bold text is
+! rendered by overstriking the normal font.
+! Accepts: XLFD font name, Xft pattern, or fontconfig family
+! Default value: none (derived from URxvt.font)
 URxvt.boldFont:       xft:Ubuntu Mono:size=12:style=Bold:weight=bold
 
-! The font list to use for displaying italic characters.
-! Accepts: fontname
+! Sets the font used for italic text. If not specified, italic text is
+! emulated or replaced by the normal font.
+! Accepts: XLFD font name, Xft pattern, or fontconfig family
+! Default value: none (derived from URxvt.font)
 URxvt.italicFont:     xft:Ubuntu Mono:size=12:style=Italic:slant=italic
 
-! The font list to use for displaying bold italic characters.
-! Accepts: fontname
+! Sets the font used for bold and italic text combined.
+! Accepts: XLFD font name, Xft pattern, or fontconfig family
+! Default value: none (derived from URxvt.font)
 URxvt.boldItalicFont: xft:Ubuntu Mono:size=12:style=Bold Italic:weight=bold:slant=italic
 
 ! Disables urxvt’s internal fallback glyphs for box-drawing and pseudographic
