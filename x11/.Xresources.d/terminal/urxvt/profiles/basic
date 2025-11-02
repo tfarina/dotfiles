@@ -456,6 +456,34 @@ URxvt.pointerBlankDelay: 2
 
 ! <<< Cursor & Pointer }}}
 
+! >>> Mouse {{{
+! =============
+!
+! Settings that control mouse-related behaviour and timings.
+
+! Specifies the maximum time (in milliseconds) between successive mouse
+! clicks.
+! Accepts: number
+! Default value: 500
+URxvt.multiClickTime: 500
+
+! Enables or disables scrolling by a full page when using the mouse wheel.
+! When disabled, the mouse wheel scrolls five lines per notch instead of
+! a full page.
+! Accepts: boolean
+! Default value: false
+URxvt.mouseWheelScrollPage: false
+
+! Changes triple-click selection to stop at the end of a logical line
+! instead of selecting the full physical line.
+! Useful for selecting long shell commands or wrapped output without
+! grabbing the next prompt.
+! Accepts: boolean
+! Default value: false
+URxvt.tripleclickwords: false
+
+! <<< Mouse }}}
+
 ! >>> Core {{{
 ! =============
 
@@ -486,12 +514,6 @@ URxvt.reverseVideo: false
 ! Accepts: boolean
 ! Default value: false
 URxvt.loginShell: false
-
-! Specifies the maximum time (in milliseconds) between successive mouse
-! clicks.
-! Accepts: number
-! Default value: 500
-URxvt.multiClickTime: 500
 
 ! Enables or disables jump scrolling, which improves performance by batching
 ! multiple lines of output into a single scroll update, rather than redrawing
@@ -950,21 +972,6 @@ URxvt.insecure: false
 ! Accepts: boolean
 ! Default value: false
 URxvt.utmpInhibit: false
-
-! Enables or disables scrolling by a full page when using the mouse wheel.
-! When disabled, the mouse wheel scrolls five lines per notch instead of
-! a full page.
-! Accepts: boolean
-! Default value: false
-URxvt.mouseWheelScrollPage: false
-
-! Changes triple-click selection to stop at the end of a logical line
-! instead of selecting the full physical line.
-! Useful for selecting long shell commands or wrapped output without
-! grabbing the next prompt.
-! Accepts: boolean
-! Default value: false
-URxvt.tripleclickwords: false
 
 ! Specify a command pipe for vt100 printer.
 ! Accepts: string

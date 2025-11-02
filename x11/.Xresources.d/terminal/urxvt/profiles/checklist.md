@@ -6,7 +6,6 @@
 - [x] `chdir`
 - [x] `reverseVideo`
 - [x] `loginShell`
-- [x] `multiClickTime`
 - [x] `jumpScroll`
 - [x] `skipScroll`
 - [x] `pastableTabs`
@@ -46,6 +45,11 @@
 - [x] `cursorBlink`
 - [x] `pointerBlank`
 - [x] `pointerBlankDelay`
+
+## Mouse
+- [x] `multiClickTime`
+- [x] `mouseWheelScrollPage`
+- [x] `tripleclickwords`
 
 ## Colors
 - [x] `foreground`
@@ -151,7 +155,5 @@
 - [x] `path`
 - [x] `insecure`
 - [x] `utmpInhibit`
-- [x] `mouseWheelScrollPage`
-- [x] `tripleclickwords`
 - [x] `print-pipe`
 - [x] `xrm`
