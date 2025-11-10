@@ -326,7 +326,7 @@ URxvt.override-redirect: false
 ! Default value: false
 URxvt.borderLess: false
 
-! Specifies the number of pixesl between the characters and the window border.
+! Specifies the number of pixels between the characters and the window border.
 ! Accepts: number
 ! Default value: 2
 URxvt.internalBorder: 2
@@ -932,7 +932,7 @@ URxvt.matcher.rend.0: Uline Bold
 !
 ! urxvt supports advanced selection and clipboard features.
 ! In addition to the standard copy/paste behavior (already
-! mapped to Ctrl+Shift+C/V), thnese options allow custom
+! mapped to Ctrl+Shift+C/V), these options allow custom
 ! transformations, pastebin integration, and regex-based
 ! selection matching.
 !
