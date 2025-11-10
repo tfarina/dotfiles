@@ -55,24 +55,24 @@
 - [x] `foreground`
 - [x] `background`
 - [x] `color0` → `color15`
-- [ ] `colorBD`
-- [ ] `colorIT`
-- [ ] `colorUL`
-- [ ] `colorRV`
+- [x] `colorBD`
+- [x] `colorIT`
+- [x] `colorUL`
+- [x] `colorRV`
 - [x] `cursorColor`
-- [ ] `cursorColor2`
-- [ ] `pointerColor`
-- [ ] `pointerColor2`
-- [ ] `underlineColor`
+- [x] `cursorColor2`
+- [x] `pointerColor`
+- [x] `pointerColor2`
+- [x] `underlineColor`
 - [x] `scrollColor`
 - [x] `troughColor`
-- [ ] `highlightColor`
-- [ ] `highlightTextColor`
+- [x] `highlightColor`
+- [x] `highlightTextColor`
 - [x] `borderColor`
-- [ ] `tab-bg`
-- [ ] `tab-fg`
-- [ ] `tabbar-bg`
-- [ ] `tabbar-fg`
+- [x] `tab-bg`
+- [x] `tab-fg`
+- [x] `tabbar-bg`
+- [x] `tabbar-fg`
 
 ## Fonts
 - [x] `font`
