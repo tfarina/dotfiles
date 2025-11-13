@@ -242,15 +242,18 @@ URxvt.letterSpace: 0
 ! provides the icon.
 URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 
-! Window title (-T still respected); the default title is the basename of
-! the program specified after the -e option, if any, otherwise the
-! application name.
+! Sets the title of the urxvt window (the -T option is still respected).
+! When unspecified, the default title is the basename of the program
+! specified after -e, or the application name if no program is given.
 ! Accepts: string
+! Default value: program basename or application name
 !URxvt.title:
 
-! Set the name used to label the icon of the window or displayed in an icon
-! manager window. The default name is the basename of the program.
+! Sets the name used to label the window icon or the name shown in an icon
+! manager. When unspecified, it defaults to the basename of the running
+! program.
 ! Accepts: string
+! Default value: program basename
 !URxvt.iconName:
 
 ! Specifies the number of lines the scrollback buffer will retain
