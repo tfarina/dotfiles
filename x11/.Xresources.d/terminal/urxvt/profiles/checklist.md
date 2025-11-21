@@ -88,7 +88,6 @@
 - [x] `iconFile`
 - [x] `title`
 - [x] `iconName`
-- [x] `saveLines`
 - [x] `buffered`
 - [x] `depth`
 - [x] `visual`
@@ -100,7 +99,7 @@
 - [x] `borderLess`
 
 ## Scrollback
-
+- [x] `saveLines`
 - [x] `secondaryScreen`
 - [x] `secondaryScroll`
 

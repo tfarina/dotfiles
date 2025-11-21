@@ -256,12 +256,6 @@ URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 ! Default value: program basename
 !URxvt.iconName:
 
-! Specifies the number of lines the scrollback buffer will retain
-! above the visible window.
-! Accepts: number
-! Default value: 64
-URxvt.saveLines: 64
-
 ! Enables or disables double-buffering to reduce flicker when updating
 ! the terminal display. It controls how the terminal handles drawing to
 ! the screen.
@@ -593,6 +587,12 @@ URxvt.visualBell: false
 
 ! >>> Scrollback {{{
 ! ========================
+
+! Specifies the number of lines the scrollback buffer will retain
+! above the visible window.
+! Accepts: number
+! Default value: 64
+URxvt.saveLines: 64
 
 ! Enables or disables switching to the secondary screen buffer when an
 ! alternate screen is requested.
