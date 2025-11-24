@@ -312,13 +312,13 @@ URxvt.override-redirect: false
 ! Keeps the terminal window open after the child process (shell
 ! or command) exits, instead of closing immediately. Handy for
 ! inspecting program output before the window disappears.
-!
 ! Accepts: boolean
 ! Default value: false
 !URxvt.hold:
 
-! Set MWM hints to request a borderless window, i.e. if honoured by the WM,
-! the rxvt-unicode window will not have window decorations.
+! Requests a borderless window by setting MWM hints. If the window manager
+! honors this request, the rxvt-unicode window will display without
+! window decorations (title bar, borders, etc.).
 ! Accepts: boolean
 ! Default value: false
 URxvt.borderLess: false
