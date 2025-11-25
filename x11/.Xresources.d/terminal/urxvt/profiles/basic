@@ -538,8 +538,10 @@ URxvt.jumpScroll: true
 ! Default value: true
 URxvt.skipScroll: false
 
-! True: store tabs as wide characters. False: interpret tabs as cursor
-! movement only.
+! Controls whether tabs are stored as actual tab characters or treated only as
+! cursor movement. When enabled, tabs are preserved as wide characters, making
+! them copy-and-paste friendly. When disabled, tabs are interpreted solely as
+! horizontal cursor motion and are not stored as characters.
 ! Accepts: boolean
 ! Default value: true
 URxvt.pastableTabs: true
