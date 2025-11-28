@@ -182,35 +182,6 @@
 		</Layout>
 	</Menu>
 	<Menu>
-		<Name>Other</Name>
-		<Directory>xfce-other.directory</Directory>
-		<Layout>
-			<Merge type="menus"/>
-			<Filename>gcr-prompter.desktop</Filename>
-			<Filename>signon-ui.desktop</Filename>
-			<Filename>update-accounts.desktop</Filename>
-			<Filename>ubuntu-amazon-default.desktop</Filename>
-			<Filename>mount-archive.desktop</Filename>
-			<Filename>checkbox-converged.desktop</Filename>
-			<Filename>compiz.desktop</Filename>
-			<Filename>nautilus-connect-server.desktop</Filename>
-			<Filename>panel-desktop-handler.desktop</Filename>
-			<Filename>gnome-disk-image-mounter.desktop</Filename>
-			<Filename>gnome-disk-image-writer.desktop</Filename>
-			<Filename>snap-handle-link.desktop</Filename>
-			<Filename>ibus-setup-table.desktop</Filename>
-			<Filename>libreoffice-xsltfilter.desktop</Filename>
-			<Filename>nm-applet.desktop</Filename>
-			<Filename>openjdk-8-java.desktop</Filename>
-			<Filename>openjdk-9-java.desktop</Filename>
-			<Filename>xdg-desktop-portal-gtk.desktop</Filename>
-			<Filename>nautilus-autorun-software.desktop</Filename>
-			<Filename>unitywebappsqmllauncher.desktop</Filename>
-			<Filename>gcr-viewer.desktop</Filename>
-			<Merge type="files"/>
-		</Layout>
-	</Menu>
-	<Menu>
 		<Name>System</Name>
 		<Directory>xfce-system.directory</Directory>
 		<Layout>
@@ -308,7 +279,6 @@
 		<Menuname>Network</Menuname>
 		<Menuname>Multimedia</Menuname>
 		<Menuname>Office</Menuname>
-		<Menuname>Other</Menuname>
 		<Menuname>System</Menuname>
 		<Separator/>
 		<Menuname>Settings</Menuname>
