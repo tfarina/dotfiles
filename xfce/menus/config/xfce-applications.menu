@@ -16,7 +16,6 @@
 		<Directory>xfce-accessories.directory</Directory>
 		<Layout>
 			<Merge type="menus"/>
-			<Filename>xfce4-about.desktop</Filename>
 			<Filename>activity-log-manager.desktop</Filename>
 			<Filename>xfce4-appfinder.desktop</Filename>
 			<Filename>file-roller.desktop</Filename>
