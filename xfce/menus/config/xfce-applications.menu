@@ -40,7 +40,6 @@
 			<Filename>galculator.desktop</Filename>
 			<Filename>emacs24.desktop</Filename>
 			<Filename>emacs24-term.desktop</Filename>
-			<Filename>yelp.desktop</Filename>
 			<Filename>logout.desktop</Filename>
 			<Filename>menulibre.desktop</Filename>
 			<Filename>onboard.desktop</Filename>
@@ -65,6 +64,9 @@
 			<Filename>debian-xterm.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
+		<Exclude>
+		  <Filename>yelp.desktop</Filename>
+		</Exclude>
 	</Menu>
 	<Menu>
 		<Name>Development</Name>
