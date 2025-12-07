@@ -187,8 +187,8 @@
 		</Layout>
 	</Menu>
 	<Menu>
-		<Name>System</Name>
-		<Directory>xfce-system.directory</Directory>
+		<Name>System Tools</Name>
+		<Directory>xfce-system-tools.directory</Directory>
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>apturl.desktop</Filename>
@@ -214,6 +214,13 @@
 			<Filename>debian-xterm.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
+		<Include>
+		  <And>
+		    <Category>System</Category>
+		    <Not><Category>Settings</Category></Not>
+		    <Not><Category>Screensaver</Category></Not>
+		  </And>
+		</Include>
 	</Menu>
 	<Menu>
 		<Name>Settings</Name>
@@ -283,7 +290,7 @@
 		<Menuname>Network</Menuname>
 		<Menuname>Multimedia</Menuname>
 		<Menuname>Office</Menuname>
-		<Menuname>System</Menuname>
+		<Menuname>System Tools</Menuname>
 		<Separator/>
 		<Menuname>Settings</Menuname>
 		<Filename>yelp.desktop</Filename>
