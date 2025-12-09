@@ -371,8 +371,6 @@ URxvt.externalBorder: 0
 ! Default value: true
 URxvt.iso14755: false
 
-! https://unix.stackexchange.com/questions/444773/how-to-disable-the-ctrlshift-binding-iso-14755-in-urxvt
-
 ! Enables the Section 5.2 lookup feature of the ISO 14755 standard. When
 ! enabled, pressing Ctrl+Shift while pointing with the mouse queries the
 ! character under the cursor and displays its Unicode code point.
