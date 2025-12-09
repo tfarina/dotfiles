@@ -223,10 +223,27 @@ URxvt.intensityStyles: true
 ! Default value: 0
 URxvt.lineSpace: 0
 
-! Specifies the number of extra dots (space) between columns (two characters).
-! Accepts: number
+! Specifies extra horizontal spacing (dots) inserted between columns
+! (between characters). Positive values add space; negative values
+! reduce space. This affects monospaced layout and can be used to
+! fine-tune glyph spacing for certain fonts or to compensate for
+! font rendering differences on some systems.
+!
+! Example: small tighter spacing for a particular font
+!URxvt.letterSpace: -1
+!
+! Notes:
+!  - Units: integer number of device pixels / dots.
+!  - Small positive values (1..3) can improve readability with some
+!    bitmap or heavily hinted fonts; negative values can tighten
+!    very wide fonts, but may break alignment for tabular text.
+!  - When adjusted, test by viewing monospace tables, code, and box
+!    drawing characters to ensure alignment remains acceptable.
+!  - Use sparingly — large values will noticeably alter layout and may
+!    make text look spaced out or cause line-wrapping differences.
+!
+! Accepts: number (integer, positive or negative, device pixels)
 ! Default value: 0
-! https://wiki.archlinux.org/index.php/Rxvt-unicode#Font_spacing
 URxvt.letterSpace: 0
 
 ! <<< Fonts }}}
