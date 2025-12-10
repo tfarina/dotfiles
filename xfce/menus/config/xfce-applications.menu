@@ -64,6 +64,7 @@
 			<Merge type="files"/>
 		</Layout>
 		<Exclude>
+		  <Filename>lightdm-gtk-greeter-settings.desktop</Filename>
 		  <Filename>yelp.desktop</Filename>
 		</Exclude>
 	</Menu>
