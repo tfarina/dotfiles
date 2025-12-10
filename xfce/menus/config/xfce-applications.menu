@@ -43,7 +43,6 @@
 			<Filename>logout.desktop</Filename>
 			<Filename>menulibre.desktop</Filename>
 			<Filename>onboard.desktop</Filename>
-			<Filename>onboard-settings.desktop</Filename>
 			<Filename>Thunar-folder-handler.desktop</Filename>
 			<Filename>globaltime.desktop</Filename>
 			<Filename>orca.desktop</Filename>
@@ -65,6 +64,7 @@
 		</Layout>
 		<Exclude>
 		  <Filename>lightdm-gtk-greeter-settings.desktop</Filename>
+		  <Filename>onboard-settings.desktop</Filename>
 		  <Filename>yelp.desktop</Filename>
 		</Exclude>
 	</Menu>
