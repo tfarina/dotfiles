@@ -28,7 +28,6 @@
 			<Filename>deja-dup.desktop</Filename>
 			<Filename>deja-dup-preferences.desktop</Filename>
 			<Filename>bluetooth-sendto.desktop</Filename>
-			<Filename>Thunar-bulk-rename.desktop</Filename>
 			<Filename>gnome-calculator.desktop</Filename>
 			<Filename>org.gnome.Calendar.desktop</Filename>
 			<Filename>gucharmap.desktop</Filename>
@@ -63,6 +62,7 @@
 			<Merge type="files"/>
 		</Layout>
 		<Exclude>
+		  <Filename>Thunar-bulk-rename.desktop</Filename>
 		  <Filename>lightdm-gtk-greeter-settings.desktop</Filename>
 		  <Filename>onboard-settings.desktop</Filename>
 		  <Filename>yelp.desktop</Filename>
