@@ -40,7 +40,6 @@
 			<Filename>emacs24.desktop</Filename>
 			<Filename>emacs24-term.desktop</Filename>
 			<Filename>logout.desktop</Filename>
-			<Filename>menulibre.desktop</Filename>
 			<Filename>onboard.desktop</Filename>
 			<Filename>Thunar-folder-handler.desktop</Filename>
 			<Filename>globaltime.desktop</Filename>
@@ -62,8 +61,10 @@
 			<Merge type="files"/>
 		</Layout>
 		<Exclude>
+		  <Filename>alacarte.desktop</Filename>
 		  <Filename>Thunar-bulk-rename.desktop</Filename>
 		  <Filename>lightdm-gtk-greeter-settings.desktop</Filename>
+		  <Filename>menulibre.desktop</Filename>
 		  <Filename>onboard-settings.desktop</Filename>
 		  <Filename>yelp.desktop</Filename>
 		</Exclude>
