@@ -54,7 +54,6 @@
 			<Filename>exo-terminal-emulator.desktop</Filename>
 			<Filename>gedit.desktop</Filename>
 			<Filename>org.gnome.gedit.desktop</Filename>
-			<Filename>Thunar.desktop</Filename>
 			<Filename>debian-uxterm.desktop</Filename>
 			<Filename>xarchiver.desktop</Filename>
 			<Filename>debian-xterm.desktop</Filename>
@@ -66,6 +65,7 @@
 		  <Filename>lightdm-gtk-greeter-settings.desktop</Filename>
 		  <Filename>menulibre.desktop</Filename>
 		  <Filename>onboard-settings.desktop</Filename>
+		  <Filename>Thunar.desktop</Filename>
 		  <Filename>yelp.desktop</Filename>
 		</Exclude>
 	</Menu>
