@@ -34,7 +34,6 @@
 			<Filename>clipit.desktop</Filename>
 			<Filename>org.gnome.DiskUtility.desktop</Filename>
 			<Filename>exo-file-manager.desktop</Filename>
-			<Filename>nautilus.desktop</Filename>
 			<Filename>org.gnome.font-viewer.desktop</Filename>
 			<Filename>galculator.desktop</Filename>
 			<Filename>emacs24.desktop</Filename>
@@ -64,6 +63,7 @@
 		  <Filename>Thunar-bulk-rename.desktop</Filename>
 		  <Filename>lightdm-gtk-greeter-settings.desktop</Filename>
 		  <Filename>menulibre.desktop</Filename>
+		  <Filename>nautilus.desktop</Filename>
 		  <Filename>onboard-settings.desktop</Filename>
 		  <Filename>Thunar.desktop</Filename>
 		  <Filename>yelp.desktop</Filename>
