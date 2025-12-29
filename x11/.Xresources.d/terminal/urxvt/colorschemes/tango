@@ -1,0 +1,44 @@
+! Name: Tango
+! Author: Tango Desktop Project
+! URL: http://tango.freedesktop.org/
+! Notes: Tango palette – balanced, color-blind aware, low-saturation defaults
+
+! RGB table
+! ----------
+
+! BLACK          = 0, 0, 0
+! RED            = 204, 0, 0
+! GREEN          = 78, 154, 6
+! YELLOW         = 196, 160, 0
+! BLUE           = 52, 101, 164
+! MAGENTA        = 117, 80, 123
+! CYAN           = 6, 152, 154
+! WHITE          = 211, 215, 207
+! BRIGHT_BLACK   = 85, 87, 83
+! BRIGHT_RED     = 239, 41, 41
+! BRIGHT_GREEN   = 138, 226, 52
+! BRIGHT_YELLOW  = 252, 233, 79
+! BRIGHT_BLUE    = 114, 159, 207
+! BRIGHT_MAGENTA = 173, 127, 168
+! BRIGHT_CYAN    = 52, 226, 226
+! BRIGHT_WHITE   = 238, 238, 236
+
+! Hexadecimal values
+! ------------------
+
+#define BLACK          #000000
+#define RED            #CC0000
+#define GREEN          #4E9A06
+#define YELLOW         #C4A000
+#define BLUE           #3465A4
+#define MAGENTA        #75507B
+#define CYAN           #06989A
+#define WHITE          #D3D7CF
+#define BRIGHT_BLACK   #555753
+#define BRIGHT_RED     #EF2929
+#define BRIGHT_GREEN   #8AE234
+#define BRIGHT_YELLOW  #FCE94F
+#define BRIGHT_BLUE    #729FCF
+#define BRIGHT_MAGENTA #AD7FA8
+#define BRIGHT_CYAN    #34E2E2
+#define BRIGHT_WHITE   #EEEEEC
