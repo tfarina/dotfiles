@@ -1,0 +1,44 @@
+! Name: cmd-legacy
+! Classic Windows Command Prompt (pre-Windows Terminal)
+! Author: unknown
+! URL: https://github.com/microsoft/terminal/blob/264ef4ebda47e3b8f74fe95a9c855629438c279d/src/tools/ColorTool/schemes/cmd-legacy.ini
+
+! RGB table
+! ----------
+
+! BLACK          = 0, 0, 0
+! RED            = 128, 0, 0
+! GREEN          = 0, 128, 0
+! YELLOW         = 128, 128, 0
+! BLUE           = 0, 0, 128
+! MAGENTA        = 128, 0, 128
+! CYAN           = 0, 128, 128
+! WHITE          = 192, 192, 192
+! BRIGHT_BLACK   = 128, 128, 128
+! BRIGHT_RED     = 255, 0, 0
+! BRIGHT_GREEN   = 0, 255, 0
+! BRIGHT_YELLOW  = 255, 255, 0
+! BRIGHT_BLUE    = 0, 0, 255
+! BRIGHT_MAGENTA = 255, 0, 255
+! BRIGHT_CYAN    = 0, 255, 255
+! BRIGHT_WHITE   = 255, 255, 255
+
+! Hexadecimal values
+! ------------------
+
+#define BLACK          #000000
+#define RED            #800000
+#define GREEN          #008000
+#define YELLOW         #808000
+#define BLUE           #000080
+#define MAGENTA        #800080
+#define CYAN           #008080
+#define WHITE          #C0C0C0
+#define BRIGHT_BLACK   #808080
+#define BRIGHT_RED     #FF0000
+#define BRIGHT_GREEN   #00FF00
+#define BRIGHT_YELLOW  #FFFF00
+#define BRIGHT_BLUE    #0000FF
+#define BRIGHT_MAGENTA #FF00FF
+#define BRIGHT_CYAN    #00FFFF
+#define BRIGHT_WHITE   #FFFFFF
