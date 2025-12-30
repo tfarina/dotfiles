@@ -4,44 +4,12 @@
 ! ==============
 
 ! Color scheme
-! -------------
+! ------------
 
-! RGB table
-! ----------
+#include "../colorschemes/cmd-legacy"
 
-! black         = 0, 0, 0
-! red           = 128, 0, 0
-! green         = 0, 128, 0
-! yellow        = 128, 128, 0
-! blue          = 0, 0, 128
-! magenta       = 128, 0, 128
-! cyan          = 0, 128, 128
-! white         = 192, 192, 192
-! brightBlack   = 128, 128, 128
-! brightRed     = 255, 0, 0
-! brightGreen   = 0, 255, 0
-! brightYellow  = 255, 255, 0
-! brightBlue    = 0, 0, 255
-! brightMagenta = 255, 0, 255
-! brightCyan    = 0, 255, 255
-! brightWhite   = 255, 255, 255
-
-#define BLACK          #000000
-#define RED            #800000
-#define GREEN          #008000
-#define YELLOW         #808000
-#define BLUE           #000080
-#define MAGENTA        #800080
-#define CYAN           #008080
-#define WHITE          #C0C0C0
-#define BRIGHT_BLACK   #808080
-#define BRIGHT_RED     #FF0000
-#define BRIGHT_GREEN   #00FF00
-#define BRIGHT_YELLOW  #FFFF00
-#define BRIGHT_BLUE    #0000FF
-#define BRIGHT_MAGENTA #FF00FF
-#define BRIGHT_CYAN    #00FFFF
-#define BRIGHT_WHITE   #FFFFFF
+! Foreground / background / cursor
+! --------------------------------
 
 URxvt.foreground: BLACK
 URxvt.background: BRIGHT_WHITE
