@@ -38,18 +38,15 @@
 			<Filename>galculator.desktop</Filename>
 			<Filename>emacs24.desktop</Filename>
 			<Filename>emacs24-term.desktop</Filename>
-			<Filename>logout.desktop</Filename>
 			<Filename>onboard.desktop</Filename>
 			<Filename>Thunar-folder-handler.desktop</Filename>
 			<Filename>globaltime.desktop</Filename>
 			<Filename>orca.desktop</Filename>
 			<Filename>seahorse.desktop</Filename>
-			<Filename>reboot.desktop</Filename>
 			<Filename>apport-gtk.desktop</Filename>
 			<Filename>xfce4-run.desktop</Filename>
 			<Filename>rxvt-unicode.desktop</Filename>
 			<Filename>org.gnome.Screenshot.desktop</Filename>
-			<Filename>shutdown.desktop</Filename>
 			<Filename>exo-terminal-emulator.desktop</Filename>
 			<Filename>gedit.desktop</Filename>
 			<Filename>org.gnome.gedit.desktop</Filename>
@@ -62,10 +59,13 @@
 		  <Filename>alacarte.desktop</Filename>
 		  <Filename>Thunar-bulk-rename.desktop</Filename>
 		  <Filename>lightdm-gtk-greeter-settings.desktop</Filename>
+		  <Filename>logout.desktop</Filename>
 		  <Filename>menulibre.desktop</Filename>
 		  <Filename>nautilus.desktop</Filename>
 		  <Filename>onboard-settings.desktop</Filename>
+		  <Filename>reboot.desktop</Filename>
 		  <Filename>Thunar.desktop</Filename>
+		  <Filename>shutdown.desktop</Filename>
 		  <Filename>yelp.desktop</Filename>
 		</Exclude>
 	</Menu>
