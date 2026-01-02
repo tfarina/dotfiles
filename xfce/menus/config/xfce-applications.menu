@@ -300,5 +300,6 @@
 		<Separator/>
 		<Filename>lock-screen.desktop</Filename>
 		<Filename>xfce4-session-logout.desktop</Filename>
+		<Filename>xfce4-session-shutdown.desktop</Filename>
 	</Layout>
 </Menu>
