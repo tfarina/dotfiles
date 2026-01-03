@@ -22,7 +22,6 @@
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>activity-log-manager.desktop</Filename>
-			<Filename>xfce4-appfinder.desktop</Filename>
 			<Filename>file-roller.desktop</Filename>
 			<Filename>org.gnome.FileRoller.desktop</Filename>
 			<Filename>deja-dup.desktop</Filename>
@@ -65,6 +64,7 @@
 		  <Filename>reboot.desktop</Filename>
 		  <Filename>Thunar.desktop</Filename>
 		  <Filename>shutdown.desktop</Filename>
+		  <Filename>xfce4-appfinder.desktop</Filename>
 		  <Filename>yelp.desktop</Filename>
 		</Exclude>
 	</Menu>
