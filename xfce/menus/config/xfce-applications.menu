@@ -55,6 +55,7 @@
 		</Layout>
 		<Exclude>
 		  <Filename>alacarte.desktop</Filename>
+		  <Filename>gnome-search-tool.desktop</Filename>
 		  <Filename>Thunar-bulk-rename.desktop</Filename>
 		  <Filename>lightdm-gtk-greeter-settings.desktop</Filename>
 		  <Filename>logout.desktop</Filename>
@@ -291,6 +292,8 @@
 		<Menuname>Multimedia</Menuname>
 		<Menuname>Office</Menuname>
 		<Menuname>System Tools</Menuname>
+		<Separator/>
+		<Filename>gnome-search-tool.desktop</Filename>
 		<Separator/>
 		<Menuname>Settings</Menuname>
 		<Filename>yelp.desktop</Filename>
