@@ -21,7 +21,6 @@
 		<Directory>xfce-accessories.directory</Directory>
 		<Layout>
 			<Merge type="menus"/>
-			<Filename>activity-log-manager.desktop</Filename>
 			<Filename>file-roller.desktop</Filename>
 			<Filename>org.gnome.FileRoller.desktop</Filename>
 			<Filename>deja-dup.desktop</Filename>
@@ -54,6 +53,7 @@
 			<Merge type="files"/>
 		</Layout>
 		<Exclude>
+		  <Filename>activity-log-manager.desktop</Filename>
 		  <Filename>alacarte.desktop</Filename>
 		  <Filename>gnome-search-tool.desktop</Filename>
 		  <Filename>Thunar-bulk-rename.desktop</Filename>
