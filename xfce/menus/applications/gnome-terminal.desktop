@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Terminal
+Name=GNOME Terminal
 Comment=Use the command line
 Keywords=shell;prompt;command;commandline;cmd;
 TryExec=gnome-terminal
@@ -14,7 +14,6 @@ X-GNOME-Bugzilla-Version=3.18.3
 Categories=GNOME;GTK;System;TerminalEmulator;
 StartupNotify=true
 X-GNOME-SingleWindow=false
-OnlyShowIn=GNOME;Unity;
 Actions=New
 X-Ubuntu-Gettext-Domain=gnome-terminal
 

@@ -209,6 +209,7 @@
 			<Filename>rxvt-unicode.desktop</Filename>
 			<Filename>debian-xterm.desktop</Filename>
 			<Filename>debian-uxterm.desktop</Filename>
+			<Filename>gnome-terminal.desktop</Filename>
 			<Filename>xfce4-terminal.desktop</Filename>
 			<Filename>xdiagnose.desktop</Filename>
 			<Merge type="files"/>
