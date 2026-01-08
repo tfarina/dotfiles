@@ -42,14 +42,11 @@
 			<Filename>orca.desktop</Filename>
 			<Filename>seahorse.desktop</Filename>
 			<Filename>apport-gtk.desktop</Filename>
-			<Filename>rxvt-unicode.desktop</Filename>
 			<Filename>org.gnome.Screenshot.desktop</Filename>
 			<Filename>exo-terminal-emulator.desktop</Filename>
 			<Filename>gedit.desktop</Filename>
 			<Filename>org.gnome.gedit.desktop</Filename>
-			<Filename>debian-uxterm.desktop</Filename>
 			<Filename>xarchiver.desktop</Filename>
-			<Filename>debian-xterm.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 		<Exclude>
@@ -209,10 +206,11 @@
 			<Filename>gnome-system-monitor.desktop</Filename>
 			<Filename>hardinfo.desktop</Filename>
 			<Filename>Thunar.desktop</Filename>
-			<Filename>debian-uxterm.desktop</Filename>
-			<Filename>xdiagnose.desktop</Filename>
-			<Filename>xfce4-terminal.desktop</Filename>
+			<Filename>rxvt-unicode.desktop</Filename>
 			<Filename>debian-xterm.desktop</Filename>
+			<Filename>debian-uxterm.desktop</Filename>
+			<Filename>xfce4-terminal.desktop</Filename>
+			<Filename>xdiagnose.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 		<Include>

@@ -40,5 +40,5 @@ Terminal=false
 Type=Application
 #Encoding=UTF-8
 Icon=xterm-color
-Categories=TerminalEmulator;Utility;
+Categories=System;TerminalEmulator;
 X-Desktop-File-Install-Version=0.22
