@@ -3,17 +3,20 @@
 ! >>> Colors {{{
 ! ==============
 
-! Color scheme
-! ------------
-
-#include "../colorschemes/cmd-legacy"
+#define BASE_BLACK #000000
+#define BASE_WHITE #FFFFFF
 
 ! Foreground / background / cursor
 ! --------------------------------
 
-URxvt.foreground: BLACK
-URxvt.background: BRIGHT_WHITE
-URxvt.cursorColor: BLACK
+URxvt.foreground: BASE_BLACK
+URxvt.background: BASE_WHITE
+URxvt.cursorColor: BASE_BLACK
+
+! Color scheme
+! ------------
+
+#include "../colorschemes/cmd-legacy"
 
 ! ANSI colors
 ! -----------
