@@ -190,6 +190,7 @@
 		<Directory>xfce-system-tools.directory</Directory>
 		<Layout>
 			<Merge type="menus"/>
+			<Filename>activity-log-manager.desktop</Filename>
 			<Filename>apturl.desktop</Filename>
 			<Filename>Thunar-bulk-rename.desktop</Filename>
 			<Filename>org.gnome.baobab.desktop</Filename>
