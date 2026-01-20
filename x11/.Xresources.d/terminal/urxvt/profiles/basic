@@ -1,7 +1,8 @@
 ! URxvt configuration
 
-! >>> Colors {{{
-! ==============
+! --------------
+! --- Colors ---
+! --------------
 
 #define BASE_BLACK #000000
 #define BASE_WHITE #FFFFFF
@@ -139,10 +140,13 @@ URxvt.borderColor: BRIGHT_WHITE
 ! Default value: none (inherits terminal foreground)
 !URxvt.tabbar-fg:
 
-! <<< Colors }}}
+! ------------------
+! --- End Colors ---
+! ------------------
 
-! >>> Fonts {{{
-! =============
+! -------------
+! --- Fonts ---
+! -------------
 
 ! Sets the primary font used for normal text display in the terminal.
 ! Accepts: XLFD font name, Xft pattern, or fontconfig family (e.g.,
@@ -217,10 +221,13 @@ URxvt.lineSpace: 0
 ! Default value: 0
 URxvt.letterSpace: 0
 
-! <<< Fonts }}}
+! -----------------
+! --- End Fonts ---
+! -----------------
 
-! >>> Window & Borders {{{
-! ==================
+! ------------------------
+! --- Window & Borders ---
+! ------------------------
 
 ! Sets the path to an image file used as the icon for the terminal window.
 ! Useful for customizing the appearance of the terminal in window managers
@@ -321,10 +328,13 @@ URxvt.internalBorder: 2
 ! Default value: 0
 URxvt.externalBorder: 0
 
-! <<< Window & Borders }}}
+! ----------------------------
+! --- End Window & Borders ---
+! ----------------------------
 
-! >>> ISO14755 (Unicode input) {{{
-! ================================
+! --------------------------------
+! --- ISO14755 (Unicode input) ---
+! --------------------------------
 
 ! Controls urxvt’s built-in support for the ISO 14755 method of entering
 ! Unicode characters. When enabled, urxvt itself intercepts Ctrl+Shift+u
@@ -350,10 +360,13 @@ URxvt.iso14755: false
 ! Default value: true
 URxvt.iso14755_52: false
 
-! <<< ISO14755 (Unicode input) }}}
+! ------------------------------------
+! --- End ISO14755 (Unicode input) ---
+! ------------------------------------
 
-! >>> Scrollbar {{{
-! =================
+! -----------------
+! --- Scrollbar ---
+! -----------------
 
 ! Specifies whether or not the scrollbar should be displayed.
 ! Accepts: boolean
@@ -415,10 +428,13 @@ URxvt.scrollTtyKeypress: true
 ! Default: false
 URxvt.scrollWithBuffer: true
 
-! <<< Scrollbar }}}
+! ---------------------
+! --- End Scrollbar ---
+! ---------------------
 
-! >>> Cursor & Pointer {{{
-! ========================
+! ------------------------
+! --- Cursor & Pointer ---
+! ------------------------
 
 ! Specifies whether to make the cursor underlined or a box.
 ! Accepts: boolean
@@ -444,10 +460,14 @@ URxvt.pointerBlank: false
 ! Default value: 2
 URxvt.pointerBlankDelay: 2
 
-! <<< Cursor & Pointer }}}
+! ----------------------------
+! --- End Cursor & Pointer ---
+! ----------------------------
 
-! >>> Mouse {{{
-! =============
+! -------------
+! --- Mouse ---
+! -------------
+
 !
 ! Settings that control mouse-related behaviour and timings.
 
@@ -472,10 +492,13 @@ URxvt.mouseWheelScrollPage: false
 ! Default value: false
 URxvt.tripleclickwords: false
 
-! <<< Mouse }}}
+! -----------------
+! --- End Mouse ---
+! -----------------
 
-! >>> Core {{{
-! =============
+! ------------
+! --- Core ---
+! ------------
 
 ! Specifies the terminal type name to be set in the TERM environment variable.
 ! Accepts: string
@@ -532,10 +555,13 @@ URxvt.skipScroll: false
 ! Default value: true
 URxvt.pastableTabs: true
 
-! <<< Core }}}
+! ----------------
+! --- End Core ---
+! ----------------
 
-! >>> Bell & Alerts {{{
-! =====================
+! ---------------------
+! --- Bell & Alerts ---
+! ---------------------
 
 ! Enables or disables automatic de-iconification of the terminal window
 ! if a bell character is received while it is iconified (minimized).
@@ -571,10 +597,13 @@ URxvt.visualBell: false
 ! (visualBell, urgentOnBell).
 !URxvt.bell-command:
 
-! <<< Bell & Alerts }}}
+! -------------------------
+! --- End Bell & Alerts ---
+! -------------------------
 
-! >>> Scrollback {{{
-! ========================
+! ------------------
+! --- Scrollback ---
+! ------------------
 
 ! Specifies the number of lines the scrollback buffer will retain
 ! above the visible window.
@@ -597,10 +626,13 @@ URxvt.secondaryScreen: true
 ! Default value: true
 URxvt.secondaryScroll: true
 
-! <<< Scrollback }}}
+! ----------------------
+! --- End Scrollback ---
+! ----------------------
 
-! >>> Input / Keyboard {{{
-! ========================
+! ------------------------
+! --- Input / Keyboard ---
+! ------------------------
 
 ! Defines the character sent when the Backspace key is pressed.
 ! When set to DEC (or left unset), sends DEL (`^?`, ASCII 127); with Ctrl,
@@ -709,10 +741,13 @@ URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 ! Default value: (none)
 !URxvt.kuake.hotkey:
 
-! <<< Input / Keyboard }}}
+! ----------------------------
+! --- End Input / Keyboard ---
+! ----------------------------
 
-! >>> Transparency & Background {{{
-! =================================
+! ---------------------------------
+! --- Transparency & Background ---
+! ---------------------------------
 
 ! Inherit the background pixmap of the root window instead of drawing
 ! a separate background. This can be useful when a desktop wallpaper
@@ -789,10 +824,13 @@ URxvt.fadeColor: BLACK
 ! Default value: false
 !URxvt.background.internal: false
 
-! <<< Transparency & Background }}}
+! -------------------------------------
+! --- End Transparency & Background ---
+! -------------------------------------
 
-! >>> Internationalization (IME) {{{
-! ==================================
+! ----------------------------------
+! --- Internationalization (IME) ---
+! ----------------------------------
 
 ! Input method settings (needed only for IME, e.g. IBus, SCIM, XIM).
 ! Currently not configured since Latin script input is sufficient.
@@ -815,11 +853,14 @@ URxvt.fadeColor: BLACK
 ! Default value: none (falls back to main font)
 !URxvt.imFont:
 
-! <<< Internationalization (IME) }}}
+! --------------------------------------
+! --- End Internationalization (IME) ---
+! --------------------------------------
 
-! >>> Perl Extensions {{{
-! =======================
-!
+! -----------------------
+! --- Perl Extensions ---
+! -----------------------
+
 ! urxvt supports small helper scripts called Perl extensions. They add
 ! features like improved selection, menus, or integration with external
 ! tools. By default, if perl-ext-common is not set explicitly, urxvt loads
@@ -862,11 +903,14 @@ URxvt.perl-ext-common: default,selection,option-popup,readline,matcher
 ! Per-instance extension overrides (not configured)
 !URxvt.perl-ext:
 
-! <<< Perl Extensions }}}
+! ---------------------------
+! --- End Perl Extensions ---
+! ---------------------------
 
-! >>> URL / Matcher {{{
-! =====================
-!
+! ---------------------
+! --- URL / Matcher ---
+! ---------------------
+
 ! urxvt’s matcher extension highlights and makes URLs
 ! clickable inside the terminal. You can configure which
 ! button activates them, what launcher is used, add custom
@@ -892,11 +936,14 @@ URxvt.matcher.rend.0: Uline Bold
 ! Legacy option, alias for matcher.launcher
 !URxvt.url-launcher: firefox
 
-! <<< URL / Matcher }}}
+! -------------------------
+! --- End URL / Matcher ---
+! -------------------------
 
-! >>> Remote Clipboard {{{
-! ========================
-!
+! ------------------------
+! --- Remote Clipboard ---
+! ------------------------
+
 ! urxvt can integrate with remote clipboards by running
 ! external commands. This is most useful when working over
 ! SSH and you want copy/paste to bridge between machines.
@@ -915,12 +962,15 @@ URxvt.matcher.rend.0: Uline Bold
 !
 !URxvt.remote-clipboard.fetch: not configured yet
 !URxvt.remote-clipboard.store: not configured yet
-!
-! <<< Remote Clipboard }}}
 
-! >>> Selection & Clipboard {{{
-! =============================
-!
+! ----------------------------
+! --- End Remote Clipboard ---
+! ----------------------------
+
+! -----------------------------
+! --- Selection & Clipboard ---
+! -----------------------------
+
 ! urxvt supports advanced selection and clipboard features.
 ! In addition to the standard copy/paste behavior (already
 ! mapped to Ctrl+Shift+C/V), these options allow custom
@@ -939,12 +989,15 @@ URxvt.matcher.rend.0: Uline Bold
 !
 ! selection.pattern-0       : regex defining what count as a "word"
 !                             when selecting (not set)
-!
-! <<< Selection & Clipboard }}}
 
-! >>> Misc {{{
-! ============
-!
+! ---------------------------------
+! --- End Selection & Clipboard ---
+! ---------------------------------
+
+! ------------
+! --- Misc ---
+! ------------
+
 ! Miscellaneous urxvt options that don’t fit in other sections.
 ! Some improve usability (mouse scrolling, triple-click behavior),
 ! others affect security, printing, or environment handling.
@@ -983,7 +1036,9 @@ URxvt.print-pipe: lpr
 ! Default value: unset
 !URxvt.xrm:
 
-! <<< Misc }}}
+! ----------------
+! --- End Misc ---
+! ----------------
 
 !termName:                       string
 !geometry:                       geometry
