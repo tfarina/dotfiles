@@ -927,8 +927,9 @@ URxvt.matcher.launcher.http: firefox
 URxvt.matcher.launcher.https: firefox
 URxvt.matcher.launcher.mailto: thunderbird
 
-! Add custom regex patterns (example: Git commit hashes)
-URxvt.matcher.pattern.1: \b[0-9a-f]{7,40}\b
+! Add custom regex pattern to highlight file paths (e.g., ./src/main.c)
+! Accepts: Perl-compatible regular expression
+!URxvt.matcher.pattern.1: \b\./[\w\/\.-]+\b
 
 ! Visual style for matches (e.g., underline + bold)
 URxvt.matcher.rend.0: Uline Bold
