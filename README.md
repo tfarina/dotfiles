@@ -20,23 +20,6 @@ typically hidden because their names begin with a dot (e.g. `.bashrc`,
 
 The complete list of programs I use is available in [environment.md](environment.md).
 
-## Xfce Keyboard Shortcuts
-
-### Desktop
-
-| Action                         | Shortcut            |
-|--------------------------------|---------------------|
-| Display the Start menu         | Ctrl + Esc          |
-| Display the Start menu         | Super               |
-| Minimize or restore all windows| Super + D           |
-| Open the File Manager          | Super + E           |
-| Lock the screen                | Super + L           |
-| Open the Application Finder    | Super + R           |
-| Open the Screenshot program    | Shift + Super + S   |
-| Open the Terminal Emulator     | Super + T           |
-| Open the Web Browser           | Super + W           |
-| Open the Task Manager          | Ctrl + Shift + Esc  |
-
 ## Installation
 
 Before installing, read cowboy’s [gently-worded warning](https://github.com/cowboy/dotfiles#heed-this-critically-important-warning-before-you-install) and Anish Athalye’s [Dotfiles are NOT meant to be forked](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/).
