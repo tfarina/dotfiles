@@ -22,18 +22,20 @@ The complete list of programs I use is available in [environment.md](environment
 
 ## Xfce Keyboard Shortcuts
 
-| Press               | To                             |
-|---------------------|--------------------------------|
-| Ctrl + Esc          | Display the Start menu         |
-| Super               | Display the Start menu         |
-| Super + D           | Minimize or restore all windows|
-| Super + E           | Open the File Manager          |
-| Super + L           | Lock the screen                |
-| Super + R           | Open the Application Finder    |
-| Shift + Super + S   | Open the Screenshot program    |
-| Super + T           | Open the Terminal Emulator     |
-| Super + W           | Open the Web Browser           |
-| Ctrl + Shift + Esc  | Open the Task Manager          |
+### Desktop
+
+| Action                         | Shortcut            |
+|--------------------------------|---------------------|
+| Display the Start menu         | Ctrl + Esc          |
+| Display the Start menu         | Super               |
+| Minimize or restore all windows| Super + D           |
+| Open the File Manager          | Super + E           |
+| Lock the screen                | Super + L           |
+| Open the Application Finder    | Super + R           |
+| Open the Screenshot program    | Shift + Super + S   |
+| Open the Terminal Emulator     | Super + T           |
+| Open the Web Browser           | Super + W           |
+| Open the Task Manager          | Ctrl + Shift + Esc  |
 
 ## Installation
 
