@@ -14,3 +14,4 @@
 | Open the Terminal Emulator     | Super + T           |
 | Open the Web Browser           | Super + W           |
 | Open the Task Manager          | Ctrl + Shift + Esc  |
+| Log out                        | Ctrl + Alt + Delete |
