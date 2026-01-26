@@ -1,7 +1,6 @@
 # urxvt Configuration Checklist
 
 ## Core
-- [x] `geometry`
 - [x] `path`
 - [x] `chdir`
 - [x] `reverseVideo`
@@ -92,6 +91,7 @@
 - [x] `letterSpace`
 
 ## Window & Borders
+- [x] `geometry`
 - [x] `iconFile`
 - [x] `title`
 - [x] `iconName`

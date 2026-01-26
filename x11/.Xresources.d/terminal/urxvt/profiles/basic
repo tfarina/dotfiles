@@ -229,6 +229,11 @@ URxvt.letterSpace: 0
 ! --- Window & Borders ---
 ! ------------------------
 
+! Specifies the preferred size of this X window.
+! Accepts: string
+! Default value: 80x24
+URxvt.geometry: 80x24
+
 ! Sets the path to an image file used as the icon for the terminal window.
 ! Useful for customizing the appearance of the terminal in window managers
 ! or taskbars.
@@ -492,11 +497,6 @@ URxvt.tripleclickwords: false
 ! ------------
 ! --- Core ---
 ! ------------
-
-! Specifies the preferred size of this X window.
-! Accepts: string
-! Default value: 80x24
-URxvt.geometry: 80x24
 
 ! Directory list for searching configuration files and resources.
 ! Useful if you want urxvt to look for additional config fragments
