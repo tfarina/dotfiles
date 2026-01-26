@@ -5,10 +5,14 @@
 - [x] `geometry`
 - [x] `chdir`
 - [x] `reverseVideo`
-- [x] `loginShell`
 - [x] `jumpScroll`
 - [x] `skipScroll`
 - [x] `pastableTabs`
+
+## Terminal
+- [x] `loginShell`
+- [x] `utmpInhibit`
+- [x] `hold`
 
 ## Scrollbar
 - [x] `scrollBar`
@@ -93,7 +97,6 @@
 - [x] `visual`
 - [x] `transient-for`
 - [x] `override-redirect`
-- [x] `hold`
 - [x] `externalBorder`
 - [x] `internalBorder`
 - [x] `borderLess`
@@ -153,6 +156,5 @@
 ## Misc
 - [x] `path`
 - [x] `insecure`
-- [x] `utmpInhibit`
 - [x] `print-pipe`
 - [x] `xrm`

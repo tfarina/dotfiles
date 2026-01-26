@@ -304,13 +304,6 @@ URxvt.buffered: true
 ! Default value: false
 URxvt.override-redirect: false
 
-! Keeps the terminal window open after the child process (shell
-! or command) exits, instead of closing immediately. Handy for
-! inspecting program output before the window disappears.
-! Accepts: boolean
-! Default value: false
-!URxvt.hold:
-
 ! Requests a borderless window by setting MWM hints. If the window manager
 ! honors this request, the rxvt-unicode window will display without
 ! window decorations (title bar, borders, etc.).
@@ -521,13 +514,6 @@ URxvt.geometry: 80x24
 ! Default: false
 URxvt.reverseVideo: false
 
-! Specifies whether or not the shell to be run in the window
-! should be started as a login shell by prepending a `-' to
-! argv[0] of the shell.
-! Accepts: boolean
-! Default value: false
-URxvt.loginShell: false
-
 ! Enables or disables jump scrolling, which improves performance by batching
 ! multiple lines of output into a single scroll update, rather than redrawing
 ! line by line. This can make fast-scrolling applications (like compilers or
@@ -558,6 +544,35 @@ URxvt.pastableTabs: true
 ! ----------------
 ! --- End Core ---
 ! ----------------
+
+! ----------------
+! --- Terminal ---
+! ----------------
+
+! Specifies whether or not the shell to be run in the window
+! should be started as a login shell by prepending a `-' to
+! argv[0] of the shell.
+! Accepts: boolean
+! Default value: false
+URxvt.loginShell: false
+
+! Controls whether or not the terminal will update the utmp database
+! when a new terminal session is started. In other words, setting to
+! true prevents urxvt from making an entry in the utmp file.
+! Accepts: boolean
+! Default value: false
+URxvt.utmpInhibit: false
+
+! Keeps the terminal window open after the child process (shell
+! or command) exits, instead of closing immediately. Handy for
+! inspecting program output before the window disappears.
+! Accepts: boolean
+! Default value: false
+!URxvt.hold:
+
+! --------------------
+! --- End Terminal ---
+! --------------------
 
 ! ---------------------
 ! --- Bell & Alerts ---
@@ -1017,13 +1032,6 @@ URxvt.matcher.rend.0: Uline Bold
 ! Accepts: boolean
 ! Default value: false
 URxvt.insecure: false
-
-! Controls whether or not the terminal will update the utmp database
-! when a new terminal session is started. In other words, setting to
-! true prevents urxvt from making an entry in the utmp file.
-! Accepts: boolean
-! Default value: false
-URxvt.utmpInhibit: false
 
 ! Specify a command pipe for vt100 printer.
 ! Accepts: string
