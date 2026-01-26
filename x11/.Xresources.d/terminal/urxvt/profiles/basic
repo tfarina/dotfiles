@@ -493,10 +493,6 @@ URxvt.tripleclickwords: false
 ! --- Core ---
 ! ------------
 
-! Specifies the terminal type name to be set in the TERM environment variable.
-! Accepts: string
-URxvt.termName: rxvt-unicode-256color
-
 ! Specifies the preferred size of this X window.
 ! Accepts: string
 ! Default value: 80x24
@@ -551,6 +547,18 @@ URxvt.pastableTabs: true
 ! ----------------
 ! --- End Core ---
 ! ----------------
+
+! -------------------
+! --- Environment ---
+! -------------------
+
+! Specifies the terminal type name to be set in the TERM environment variable.
+! Accepts: string
+URxvt.termName: rxvt-unicode-256color
+
+! -----------------------
+! --- End Environment ---
+! -----------------------
 
 ! ----------------
 ! --- Terminal ---

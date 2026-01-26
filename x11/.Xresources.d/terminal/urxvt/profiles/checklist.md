@@ -1,7 +1,6 @@
 # urxvt Configuration Checklist
 
 ## Core
-- [x] `termName`
 - [x] `geometry`
 - [x] `path`
 - [x] `chdir`
@@ -9,6 +8,9 @@
 - [x] `jumpScroll`
 - [x] `skipScroll`
 - [x] `pastableTabs`
+
+## Environment
+- [x] `termName`
 
 ## Terminal
 - [x] `loginShell`
