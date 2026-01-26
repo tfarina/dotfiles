@@ -3,6 +3,7 @@
 ## Core
 - [x] `termName`
 - [x] `geometry`
+- [x] `path`
 - [x] `chdir`
 - [x] `reverseVideo`
 - [x] `jumpScroll`
@@ -154,7 +155,6 @@
 - [x] `selection.pattern-0`
 
 ## Misc
-- [x] `path`
 - [x] `insecure`
 - [x] `print-pipe`
 - [x] `xrm`

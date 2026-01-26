@@ -502,6 +502,13 @@ URxvt.termName: rxvt-unicode-256color
 ! Default value: 80x24
 URxvt.geometry: 80x24
 
+! Directory list for searching configuration files and resources.
+! Useful if you want urxvt to look for additional config fragments
+! or resources outside the default paths.
+! Accepts: colon-separated list of directories
+! Default value: (compiled-in, usually /usr/lib/urxvt:/usr/local/lib/urxvt)
+!URxvt.path:
+
 ! Sets the working directory that urxvt should start in.
 ! If not specified, urxvt inherits the current shell's
 ! working directory when launched.
@@ -1017,13 +1024,6 @@ URxvt.matcher.rend.0: Uline Bold
 ! Miscellaneous urxvt options that don’t fit in other sections.
 ! Some improve usability (mouse scrolling, triple-click behavior),
 ! others affect security, printing, or environment handling.
-
-! Directory list for searching configuration files and resources.
-! Useful if you want urxvt to look for additional config fragments
-! or resources outside the default paths.
-! Accepts: colon-separated list of directories
-! Default value: (compiled-in, usually /usr/lib/urxvt:/usr/local/lib/urxvt)
-!URxvt.path:
 
 ! Enables or disables potentially unsafe features like loading Perl
 ! extensions from user-writable directories and escape sequences that
