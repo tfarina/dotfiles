@@ -4,8 +4,6 @@
 - [x] `path`
 - [x] `chdir`
 - [x] `reverseVideo`
-- [x] `jumpScroll`
-- [x] `skipScroll`
 - [x] `pastableTabs`
 
 ## Environment
@@ -16,7 +14,7 @@
 - [x] `utmpInhibit`
 - [x] `hold`
 
-## Scrollbar
+## Scrolling
 - [x] `scrollBar`
 - [x] `scrollBar_right`
 - [x] `scrollBar_floating`
@@ -26,6 +24,11 @@
 - [x] `scrollTtyOutput`
 - [x] `scrollTtyKeypress`
 - [x] `scrollWithBuffer`
+- [x] `jumpScroll`
+- [x] `skipScroll`
+- [x] `secondaryScreen`
+- [x] `secondaryScroll`
+- [x] `saveLines`
 
 ## Transparency & Background
 - [x] `inheritPixmap`
@@ -103,11 +106,6 @@
 - [x] `externalBorder`
 - [x] `internalBorder`
 - [x] `borderLess`
-
-## Scrollback
-- [x] `saveLines`
-- [x] `secondaryScreen`
-- [x] `secondaryScroll`
 
 ## Input / Keyboard
 - [x] `backspacekey`

@@ -363,7 +363,7 @@ URxvt.iso14755_52: false
 ! ------------------------------------
 
 ! -----------------
-! --- Scrollbar ---
+! --- Scrolling ---
 ! -----------------
 
 ! Specifies whether or not the scrollbar should be displayed.
@@ -426,8 +426,48 @@ URxvt.scrollTtyKeypress: true
 ! Default: false
 URxvt.scrollWithBuffer: true
 
+! Enables or disables jump scrolling, which improves performance by batching
+! multiple lines of output into a single scroll update, rather than redrawing
+! line by line. This can make fast-scrolling applications (like compilers or
+! logs) appear smoother.
+! When disabled, urxvt updates the screen for each new line of output.
+! Accepts: boolean
+! Default value: false
+URxvt.jumpScroll: true
+
+! When enabled, suppresses screen updates entirely while output is being
+! received, only redrawing once the output stops. This can drastically
+! improve performance when large volumes of text are printed quickly
+! (e.g. compiling code).
+! Note: This is more aggressive than jumpScroll and may cause visible
+! delays in rendering until output pauses.
+! Accepts: boolean
+! Default value: true
+URxvt.skipScroll: false
+
+! Enables or disables switching to the secondary screen buffer when an
+! alternate screen is requested.
+! Needed for full-screen terminal programs like text editors (e.g., emacs)
+! to use a separate scrollback buffer.
+! Accepts: boolean
+! Default value: true
+URxvt.secondaryScreen: true
+
+! Enables or disables scrollback in the secondary screen buffer.
+! Useful if you want to use the scrollback history while running full-screen
+! programs like Emacs.
+! Accepts: boolean
+! Default value: true
+URxvt.secondaryScroll: true
+
+! Specifies the number of lines the scrollback buffer will retain
+! above the visible window.
+! Accepts: number
+! Default value: 64
+URxvt.saveLines: 64
+
 ! ---------------------
-! --- End Scrollbar ---
+! --- End Scrolling ---
 ! ---------------------
 
 ! ------------------------
@@ -516,25 +556,6 @@ URxvt.tripleclickwords: false
 ! Accepts: boolean
 ! Default: false
 URxvt.reverseVideo: false
-
-! Enables or disables jump scrolling, which improves performance by batching
-! multiple lines of output into a single scroll update, rather than redrawing
-! line by line. This can make fast-scrolling applications (like compilers or
-! logs) appear smoother.
-! When disabled, urxvt updates the screen for each new line of output.
-! Accepts: boolean
-! Default value: false
-URxvt.jumpScroll: true
-
-! When enabled, suppresses screen updates entirely while output is being
-! received, only redrawing once the output stops. This can drastically
-! improve performance when large volumes of text are printed quickly
-! (e.g. compiling code).
-! Note: This is more aggressive than jumpScroll and may cause visible
-! delays in rendering until output pauses.
-! Accepts: boolean
-! Default value: true
-URxvt.skipScroll: false
 
 ! Controls whether tabs are stored as actual tab characters or treated only as
 ! cursor movement. When enabled, tabs are preserved as wide characters, making
@@ -630,35 +651,6 @@ URxvt.visualBell: false
 ! -------------------------
 ! --- End Bell & Alerts ---
 ! -------------------------
-
-! ------------------
-! --- Scrollback ---
-! ------------------
-
-! Specifies the number of lines the scrollback buffer will retain
-! above the visible window.
-! Accepts: number
-! Default value: 64
-URxvt.saveLines: 64
-
-! Enables or disables switching to the secondary screen buffer when an
-! alternate screen is requested.
-! Needed for full-screen terminal programs like text editors (e.g., emacs)
-! to use a separate scrollback buffer.
-! Accepts: boolean
-! Default value: true
-URxvt.secondaryScreen: true
-
-! Enables or disables scrollback in the secondary screen buffer.
-! Useful if you want to use the scrollback history while running full-screen
-! programs like Emacs.
-! Accepts: boolean
-! Default value: true
-URxvt.secondaryScroll: true
-
-! ----------------------
-! --- End Scrollback ---
-! ----------------------
 
 ! ------------------------
 ! --- Input / Keyboard ---
