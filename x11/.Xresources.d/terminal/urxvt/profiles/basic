@@ -604,7 +604,7 @@ URxvt.utmpInhibit: false
 ! inspecting program output before the window disappears.
 ! Accepts: boolean
 ! Default value: false
-!URxvt.hold:
+URxvt.hold: false
 
 ! --------------------
 ! --- End Terminal ---
