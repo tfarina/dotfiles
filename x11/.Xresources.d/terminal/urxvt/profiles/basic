@@ -552,11 +552,6 @@ URxvt.tripleclickwords: false
 ! Default value: (none)
 !URxvt.chdir: /path/to/start/directory
 
-! Specifies whether or not reverse video should be simulated.
-! Accepts: boolean
-! Default: false
-URxvt.reverseVideo: false
-
 ! Controls whether tabs are stored as actual tab characters or treated only as
 ! cursor movement. When enabled, tabs are preserved as wide characters, making
 ! them copy-and-paste friendly. When disabled, tabs are interpreted solely as
@@ -609,6 +604,19 @@ URxvt.hold: false
 ! --------------------
 ! --- End Terminal ---
 ! --------------------
+
+! ---------------------
+! --- Accessibility ---
+! ---------------------
+
+! Specifies whether or not reverse video should be simulated.
+! Accepts: boolean
+! Default: false
+URxvt.reverseVideo: false
+
+! -------------------------
+! --- End Accessibility ---
+! -------------------------
 
 ! ---------------------
 ! --- Bell & Alerts ---

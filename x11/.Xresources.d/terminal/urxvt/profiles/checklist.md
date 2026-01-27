@@ -3,7 +3,6 @@
 ## Core
 - [x] `path`
 - [x] `chdir`
-- [x] `reverseVideo`
 - [x] `pastableTabs`
 
 ## Environment
@@ -13,6 +12,9 @@
 - [x] `loginShell`
 - [x] `utmpInhibit`
 - [x] `hold`
+
+## Accessibility
+- [x] `reverseVideo`
 
 ## Scrolling
 - [x] `scrollBar`
