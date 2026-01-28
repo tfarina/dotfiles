@@ -3,7 +3,6 @@
 ## Core
 - [x] `path`
 - [x] `chdir`
-- [x] `pastableTabs`
 
 ## Environment
 - [x] `termName`
@@ -52,6 +51,7 @@
 - [x] `bell-command`
 
 ## Cursor & Pointer
+- [x] `pastableTabs`
 - [x] `cursorUnderline`
 - [x] `cursorBlink`
 - [x] `pointerBlank`

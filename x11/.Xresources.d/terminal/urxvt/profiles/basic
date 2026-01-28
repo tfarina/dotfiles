@@ -474,6 +474,14 @@ URxvt.saveLines: 64
 ! --- Cursor & Pointer ---
 ! ------------------------
 
+! Controls whether tabs are stored as actual tab characters or treated only as
+! cursor movement. When enabled, tabs are preserved as wide characters, making
+! them copy-and-paste friendly. When disabled, tabs are interpreted solely as
+! horizontal cursor motion and are not stored as characters.
+! Accepts: boolean
+! Default value: true
+URxvt.pastableTabs: true
+
 ! Specifies whether to make the cursor underlined or a box.
 ! Accepts: boolean
 ! Default value: false
@@ -551,14 +559,6 @@ URxvt.tripleclickwords: false
 ! Accepts: string (path to directory)
 ! Default value: (none)
 !URxvt.chdir: /path/to/start/directory
-
-! Controls whether tabs are stored as actual tab characters or treated only as
-! cursor movement. When enabled, tabs are preserved as wide characters, making
-! them copy-and-paste friendly. When disabled, tabs are interpreted solely as
-! horizontal cursor motion and are not stored as characters.
-! Accepts: boolean
-! Default value: true
-URxvt.pastableTabs: true
 
 ! ----------------
 ! --- End Core ---
