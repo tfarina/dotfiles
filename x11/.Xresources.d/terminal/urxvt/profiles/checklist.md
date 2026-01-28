@@ -12,8 +12,14 @@
 - [x] `utmpInhibit`
 - [x] `hold`
 
+## Security
+- [x] `insecure`
+
 ## Accessibility
 - [x] `reverseVideo`
+
+## Printing
+- [x] `print-pipe`
 
 ## Scrolling
 - [x] `scrollBar`
@@ -156,7 +162,5 @@
 - [x] `selection-pastebin.url`
 - [x] `selection.pattern-0`
 
-## Misc
-- [x] `insecure`
-- [x] `print-pipe`
+## Extra
 - [x] `xrm`

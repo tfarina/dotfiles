@@ -605,6 +605,22 @@ URxvt.hold: false
 ! --- End Terminal ---
 ! --------------------
 
+! ----------------
+! --- Security ---
+! ----------------
+
+! Enables or disables potentially unsafe features like loading Perl
+! extensions from user-writable directories and escape sequences that
+! echo strings.
+! Should be disabled for security, especially on multi-user systems.
+! Accepts: boolean
+! Default value: false
+URxvt.insecure: false
+
+! --------------------
+! --- End Security ---
+! --------------------
+
 ! ---------------------
 ! --- Accessibility ---
 ! ---------------------
@@ -617,6 +633,19 @@ URxvt.reverseVideo: false
 ! -------------------------
 ! --- End Accessibility ---
 ! -------------------------
+
+! ----------------
+! --- Printing ---
+! ----------------
+
+! Specify a command pipe for vt100 printer.
+! Accepts: string
+! Default value: lpr
+URxvt.print-pipe: lpr
+
+! --------------------
+! --- End Printing ---
+! --------------------
 
 ! ---------------------
 ! --- Bell & Alerts ---
@@ -1025,26 +1054,9 @@ URxvt.matcher.rend.0: Uline Bold
 ! --- End Selection & Clipboard ---
 ! ---------------------------------
 
-! ------------
-! --- Misc ---
-! ------------
-
-! Miscellaneous urxvt options that don’t fit in other sections.
-! Some improve usability (mouse scrolling, triple-click behavior),
-! others affect security, printing, or environment handling.
-
-! Enables or disables potentially unsafe features like loading Perl
-! extensions from user-writable directories and escape sequences that
-! echo strings.
-! Should be disabled for security, especially on multi-user systems.
-! Accepts: boolean
-! Default value: false
-URxvt.insecure: false
-
-! Specify a command pipe for vt100 printer.
-! Accepts: string
-! Default value: lpr
-URxvt.print-pipe: lpr
+! -------------
+! --- Extra ---
+! -------------
 
 ! Adds extra X resources, overriding or complementing those loaded
 ! from ~/.Xresources or the system database.
@@ -1053,9 +1065,9 @@ URxvt.print-pipe: lpr
 ! Default value: unset
 !URxvt.xrm:
 
-! ----------------
-! --- End Misc ---
-! ----------------
+! -----------------
+! --- End Extra ---
+! -----------------
 
 !termName:                       string
 !geometry:                       geometry
