@@ -557,7 +557,7 @@ URxvt.tripleclickwords: false
 ! If not specified, urxvt inherits the current shell's
 ! working directory when launched.
 ! Accepts: string (path to directory)
-! Default value: (none)
+! Default value: none
 !URxvt.chdir: /path/to/start/directory
 
 ! ----------------
@@ -648,7 +648,7 @@ URxvt.visualBell: false
 ! sending a desktop notification, or logging the event).
 !
 ! Accepts: string (command line to execute)
-! Default value: (none) – no external command is run
+! Default value: none (no external command is run)
 ! Example:
 !   URxvt.bell-command: paplay /usr/share/sounds/freedesktop/stereo/bell.oga
 !
@@ -768,7 +768,7 @@ URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 ! (drop-down terminal style, similar to the Quake console).
 ! Only effective if urxvt is built with Kuake support.
 ! Accepts: string (key combination, e.g. Control+Shift+F12)
-! Default value: (none)
+! Default value: none
 !URxvt.kuake.hotkey:
 
 ! ----------------------------
