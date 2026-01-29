@@ -594,9 +594,10 @@ URxvt.loginShell: false
 ! Default value: false
 URxvt.utmpInhibit: false
 
-! Keeps the terminal window open after the child process (shell
-! or command) exits, instead of closing immediately. Handy for
-! inspecting program output before the window disappears.
+! Controls what happens when the shell or command exits.
+! When disabled, the terminal window closes immediately.
+! When enabled, the terminal window is kept open so you can
+! inspect the program output.
 ! Accepts: boolean
 ! Default value: false
 URxvt.hold: false
