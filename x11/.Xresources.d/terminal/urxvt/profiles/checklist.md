@@ -115,15 +115,17 @@
 - [x] `internalBorder`
 - [x] `borderLess`
 
-## Input / Keyboard
+## Keyboard
+- [x] `keysym.sym`
+- [x] `kuake.hotkey`
+
+## Input
 - [x] `backspacekey`
 - [x] `deletekey`
 - [x] `meta8`
 - [x] `modifier`
 - [x] `cutchars`
 - [x] `answerbackString`
-- [x] `keysym.sym`
-- [x] `kuake.hotkey`
 
 ## Internationalization (IME)
 - [x] `inputMethod`

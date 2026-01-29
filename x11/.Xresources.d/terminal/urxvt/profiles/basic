@@ -689,9 +689,30 @@ URxvt.visualBell: false
 ! --- End Bell & Alerts ---
 ! -------------------------
 
-! ------------------------
-! --- Input / Keyboard ---
-! ------------------------
+! ----------------
+! --- Keyboard ---
+! ----------------
+
+! Rebinds copy/paste to match GNOME Terminal convention.
+! Ctrl+Shift+C copies to the clipboard, Ctrl+Shift+V pastes from the
+! clipboard.
+URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Shift-V: eval:paste_clipboard
+
+! Defines a global hotkey to toggle urxvt in "Kuake mode"
+! (drop-down terminal style, similar to the Quake console).
+! Only effective if urxvt is built with Kuake support.
+! Accepts: string (key combination, e.g. Control+Shift+F12)
+! Default value: none
+!URxvt.kuake.hotkey:
+
+! --------------------
+! --- End Keyboard ---
+! --------------------
+
+! -------------
+! --- Input ---
+! -------------
 
 ! Defines the character sent when the Backspace key is pressed.
 ! When set to DEC (or left unset), sends DEL (`^?`, ASCII 127); with Ctrl,
@@ -787,22 +808,9 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! Default value: alt
 URxvt.modifier: alt
 
-! Rebinds copy/paste to match GNOME Terminal convention.
-! Ctrl+Shift+C copies to the clipboard, Ctrl+Shift+V pastes from the
-! clipboard.
-URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
-URxvt.keysym.Control-Shift-V: eval:paste_clipboard
-
-! Defines a global hotkey to toggle urxvt in "Kuake mode"
-! (drop-down terminal style, similar to the Quake console).
-! Only effective if urxvt is built with Kuake support.
-! Accepts: string (key combination, e.g. Control+Shift+F12)
-! Default value: none
-!URxvt.kuake.hotkey:
-
-! ----------------------------
-! --- End Input / Keyboard ---
-! ----------------------------
+! -----------------
+! --- End Input ---
+! -----------------
 
 ! ---------------------------------
 ! --- Transparency & Background ---
