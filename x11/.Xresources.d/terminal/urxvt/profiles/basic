@@ -514,7 +514,6 @@ URxvt.pointerBlankDelay: 2
 ! --- Mouse ---
 ! -------------
 
-!
 ! Settings that control mouse-related behaviour and timings.
 
 ! Specifies the maximum time (in milliseconds) between successive mouse
@@ -541,6 +540,26 @@ URxvt.tripleclickwords: false
 ! -----------------
 ! --- End Mouse ---
 ! -----------------
+
+! -----------------
+! --- Selection ---
+! -----------------
+
+! Defines additional characters that should be treated as word separators
+! when performing double-click selection in the terminal. When you
+! double-click on a word, urxvt determines its boundaries by using spaces,
+! punctuation, and the characters specified in cutchars.
+!
+! By customizing this list, you control which characters stop the selection.
+! This can be useful when working with programming languages, command-line
+! output, or URLs.
+! Accepts: string
+! Default value: "\"&'()*,;<=>?@[\\]^`{|}"
+URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
+
+! ---------------------
+! --- End Selection ---
+! ---------------------
 
 ! ------------
 ! --- Core ---
@@ -796,18 +815,6 @@ URxvt.meta8: false
 ! Accepts: string
 ! Default value: \033[?1;2c
 URxvt.answerbackString: \033[?1;2c
-
-! Defines additional characters that should be treated as word separators
-! when performing double-click selection in the terminal. When you
-! double-click on a word, urxvt determines its boundaries by using spaces,
-! punctuation, and the characters specified in cutchars.
-!
-! By customizing this list, you control which characters stop the selection.
-! This can be useful when working with programming languages, command-line
-! output, or URLs.
-! Accepts: string
-! Default value: "\"&'()*,;<=>?@[\\]^`{|}"
-URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 
 ! -----------------
 ! --- End Input ---

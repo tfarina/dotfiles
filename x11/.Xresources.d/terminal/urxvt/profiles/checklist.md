@@ -68,6 +68,9 @@
 - [x] `mouseWheelScrollPage`
 - [x] `tripleclickwords`
 
+## Selection
+- [x] `cutchars`
+
 ## Colors
 - [x] `foreground`
 - [x] `background`
@@ -124,7 +127,6 @@
 - [x] `backspacekey`
 - [x] `deletekey`
 - [x] `meta8`
-- [x] `cutchars`
 - [x] `answerbackString`
 
 ## Internationalization (IME)
