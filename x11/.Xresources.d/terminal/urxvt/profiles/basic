@@ -707,9 +707,9 @@ URxvt.keysym.Control-Shift-V: eval:paste_clipboard
 ! Default value: none
 !URxvt.kuake.hotkey:
 
-! Override detection of Meta modifier with specified key: alt, meta, hyper,
-! super, mod1, mod2, mod3, mod4, mod5.
-! Accepts: modifier
+! Specifies which modifier key urxvt should treat as Meta.
+! Overrides the automatic detection of the Meta modifier.
+! Accepts: alt, meta, hyper, super, mod1, mod2, mod3, mod4, mod5
 ! Default value: alt
 URxvt.modifier: alt
 
