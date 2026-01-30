@@ -118,12 +118,12 @@
 ## Keyboard
 - [x] `keysym.sym`
 - [x] `kuake.hotkey`
+- [x] `modifier`
 
 ## Input
 - [x] `backspacekey`
 - [x] `deletekey`
 - [x] `meta8`
-- [x] `modifier`
 - [x] `cutchars`
 - [x] `answerbackString`
 
