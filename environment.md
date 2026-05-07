@@ -23,7 +23,7 @@
 ## Theme and Appearance
 - **Window Manager Theme**: Clearlooks-Phenix-Modified
 - **GTK Themes**: Clearlooks-Phenix-Modified [GTK2], Ambiance [GTK3]
-- **Icon Theme**: elementary Xfce
+- **Icon Theme**: elementary-xfce
 - **Cursor Theme**: Bluecurve-inverse
 
 ## Terminal Environment
