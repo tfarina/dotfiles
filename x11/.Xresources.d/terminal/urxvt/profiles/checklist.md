@@ -53,8 +53,8 @@
 ## Bell & Alerts
 - [x] `urgentOnBell`
 - [x] `visualBell`
-- [x] `mapAlert`
 - [x] `bell-command`
+- [x] `mapAlert`
 
 ## Cursor & Pointer
 - [x] `pastableTabs`

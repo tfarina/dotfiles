@@ -671,14 +671,6 @@ URxvt.print-pipe: lpr
 ! --- Bell & Alerts ---
 ! ---------------------
 
-! Enables or disables automatic de-iconification of the terminal window
-! if a bell character is received while it is iconified (minimized).
-! Useful for drawing attention to important activity when the terminal
-! is not currently visible.
-! Accepts: boolean
-! Default value: false
-URxvt.mapAlert: false
-
 ! Sets/unsets the urgency hint of the window for the wm when the terminal
 ! receives a bell character.
 ! Accepts: boolean
@@ -704,6 +696,14 @@ URxvt.visualBell: false
 ! Note: If set, this runs in addition to other bell mechanisms
 ! (visualBell, urgentOnBell).
 !URxvt.bell-command:
+
+! Enables or disables automatic de-iconification of the terminal window
+! if a bell character is received while it is iconified (minimized).
+! Useful for drawing attention to important activity when the terminal
+! is not currently visible.
+! Accepts: boolean
+! Default value: false
+URxvt.mapAlert: false
 
 ! -------------------------
 ! --- End Bell & Alerts ---
