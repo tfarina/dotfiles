@@ -28,7 +28,7 @@ xfconf-query -c xsettings -p /Net/ThemeName -s "Clearlooks-Phenix-Modified"
 xfconf-query -c xsettings -p /Net/IconThemeName -s "elementary-xfce"
 
 # Cursor theme and size
-xfconf-query -c xsettings -p /Gtk/CursorThemeName -s "Bluecurve-inverse"
+xfconf-query -c xsettings -p /Gtk/CursorThemeName -s "Bluecurve"
 xfconf-query -c xsettings -p /Gtk/CursorThemeSize -s 16
 
 # Window manager theme (titlebars, borders)

@@ -24,7 +24,7 @@
 - **Window Manager Theme**: Clearlooks-Phenix-Modified
 - **GTK Themes**: Clearlooks-Phenix-Modified [GTK2], Ambiance [GTK3]
 - **Icon Theme**: elementary-xfce
-- **Cursor Theme**: Bluecurve-inverse
+- **Cursor Theme**: Bluecurve
 
 ## Terminal Environment
 - **Terminal Emulator**: urxvt v9.21

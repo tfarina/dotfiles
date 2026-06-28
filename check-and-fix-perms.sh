@@ -5,6 +5,7 @@ set -euo pipefail
 TARGETS=(
     /usr/share/themes/Clearlooks-Phenix-Modified
     /usr/share/icons/elementary-xfce
+    /usr/share/icons/Bluecurve
     /usr/share/icons/Bluecurve-inverse
     /usr/share/backgrounds/leonidas-1-noon.jpg
 )

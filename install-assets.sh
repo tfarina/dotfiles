@@ -9,7 +9,7 @@ sudo cp -r "$DOTFILES/themes/Clearlooks-Phenix-Modified" /usr/share/themes/
 
 echo "Installing system-wide icons and cursors..."
 sudo cp -r "$DOTFILES/icons/elementary-xfce" /usr/share/icons/
-sudo cp -r "$DOTFILES/icons/Bluecurve-inverse" /usr/share/icons/
+sudo cp -r "$DOTFILES/icons/Bluecurve" /usr/share/icons/
 
 echo "Installing system background..."
 sudo cp "$DOTFILES/backgrounds/leonidas-1-noon.jpg" /usr/share/backgrounds/
