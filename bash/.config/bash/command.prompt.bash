@@ -1,8 +1,8 @@
 # -*- mode: sh; -*-
 
 if [ -f ~/.config/bash/git.prompt.bash ]; then
-    GIT_PS1_SHOWDIRTYSTATE=1
-    GIT_PS1_SHOWUNTRACKEDFILES=1
+    GIT_PS1_SHOWDIRTYSTATE=
+    GIT_PS1_SHOWUNTRACKEDFILES=
     . ~/.config/bash/git.prompt.bash
 fi
 
