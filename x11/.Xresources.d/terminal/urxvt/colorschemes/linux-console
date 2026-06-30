@@ -1,0 +1,45 @@
+! Name: Linux console
+! Author: Linux kernel project
+! URL:
+! Notes: Traditional Linux virtual console (tty) color palette.
+!        Based on the classic IBM PC text mode (CGA/EGA/VGA) colors from the 1980s.
+
+! RGB table
+! ---------
+
+! BLACK          = 0, 0, 0
+! RED            = 170, 0, 0
+! GREEN          = 0, 170, 0
+! YELLOW         = 170, 85, 0
+! BLUE           = 0, 0, 170
+! MAGENTA        = 170, 0, 170
+! CYAN           = 0, 170, 170
+! WHITE          = 170, 170, 170
+! BRIGHT_BLACK   = 85, 85, 85
+! BRIGHT_RED     = 255, 85, 85
+! BRIGHT_GREEN   = 85, 255, 85
+! BRIGHT_YELLOW  = 255, 255, 85
+! BRIGHT_BLUE    = 85, 85, 255
+! BRIGHT_MAGENTA = 255, 85, 255
+! BRIGHT_CYAN    = 85, 255, 255
+! BRIGHT_WHITE   = 255, 255, 255
+
+! Hexadecimal values
+! ------------------
+
+#define BLACK          #000000
+#define RED            #AA0000
+#define GREEN          #00AA00
+#define YELLOW         #AA5500
+#define BLUE           #0000AA
+#define MAGENTA        #AA00AA
+#define CYAN           #00AAAA
+#define WHITE          #AAAAAA
+#define BRIGHT_BLACK   #555555
+#define BRIGHT_RED     #FF5555
+#define BRIGHT_GREEN   #55FF55
+#define BRIGHT_YELLOW  #FFFF55
+#define BRIGHT_BLUE    #5555FF
+#define BRIGHT_MAGENTA #FF55FF
+#define BRIGHT_CYAN    #55FFFF
+#define BRIGHT_WHITE   #FFFFFF
