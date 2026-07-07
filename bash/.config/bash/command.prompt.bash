@@ -6,8 +6,12 @@ if [ -f ~/.config/bash/git.prompt.bash ]; then
     . ~/.config/bash/git.prompt.bash
 fi
 
-COLOR_PREFIX="\[\033["
-COLOR_SUFFIX="m\]"
+# Bash PS1 markers for non-printing sequences.
+PS1_NONPRINT_BEGIN="\["
+PS1_NONPRINT_END="\]"
+
+COLOR_PREFIX="${PS1_NONPRINT_BEGIN}\033["
+COLOR_SUFFIX="m${PS1_NONPRINT_END}"
 
 RESET="${COLOR_PREFIX}00${COLOR_SUFFIX}"
 BLACK="${COLOR_PREFIX}0;30${COLOR_SUFFIX}"
