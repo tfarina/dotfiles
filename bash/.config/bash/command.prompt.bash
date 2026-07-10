@@ -10,8 +10,19 @@ fi
 PS1_NONPRINT_BEGIN="\["
 PS1_NONPRINT_END="\]"
 
+# ASCII Escape (ESC) character.
+#
+# Bash prompt expansion recognizes '\e' and octal character escapes
+# ('\nnn'), but not '\xHH'. We intentionally use the explicit octal
+# form '\033' (ASCII decimal 27, hexadecimal 0x1B) because it makes
+# the escape character explicit and reusable.
+#
+# WARNING: Do not replace '\033' with '\x1b': hexadecimal escapes are
+# not recognized in Bash prompt strings (PS1).
+ESC="\033"
+
 # ANSI Control Sequence Introducer.
-CSI="\033["
+CSI="$ESC["
 
 # ANSI Select Graphic Rendition (SGR) sequence components.
 SGR_PREFIX="${PS1_NONPRINT_BEGIN}${CSI}"
