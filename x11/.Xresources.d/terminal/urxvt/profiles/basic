@@ -144,9 +144,9 @@ URxvt.borderColor: BRIGHT_WHITE
 ! --- End Colors ---
 ! ------------------
 
-! -------------
-! --- Fonts ---
-! -------------
+! ------------
+! --- Font ---
+! ------------
 
 ! Sets the primary font used for normal text display in the terminal.
 ! Accepts: XLFD font name, Xft pattern, or fontconfig family (e.g.,
@@ -221,9 +221,9 @@ URxvt.lineSpace: 0
 ! Default value: 0
 URxvt.letterSpace: 0
 
-! -----------------
-! --- End Fonts ---
-! -----------------
+! ----------------
+! --- End Font ---
+! ----------------
 
 ! ------------------------
 ! --- Window & Borders ---

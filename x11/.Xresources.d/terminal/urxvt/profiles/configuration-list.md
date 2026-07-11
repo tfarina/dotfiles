@@ -25,6 +25,14 @@
 | Scrolling | `secondaryScreen` | default | |
 | Scrolling | `secondaryScroll` | default | |
 | Scrolling | `saveLines` | default | |
+| Font | `font` | configured | |
+| Font | `boldFont` | configured | |
+| Font | `italicFont` | configured  | |
+| Font | `boldItalicFont` | configured | |
+| Font | `skipBuiltinGlyphs` | configured | |
+| Font | `intensityStyles` | default | |
+| Font | `lineSpace` | default | |
+| Font | `letterSpace` | default | |
 | Transparency & Background | `inheritPixmap` | documented | |
 | Transparency & Background | `transparent` | default | |
 | Transparency & Background | `tintColor` | default | |
@@ -70,14 +78,6 @@
 | Colors | `tab-fg` | documented | |
 | Colors | `tabbar-bg` | documented | |
 | Colors | `tabbar-fg` | documented | |
-| Fonts | `font` | configured | |
-| Fonts | `boldFont` | configured | |
-| Fonts | `italicFont` | configured  | |
-| Fonts | `boldItalicFont` | configured | |
-| Fonts | `skipBuiltinGlyphs` | configured | |
-| Fonts | `intensityStyles` | default | |
-| Fonts | `lineSpace` | default | |
-| Fonts | `letterSpace` | default | |
 | Window & Borders | `geometry` | default | |
 | Window & Borders | `iconFile` | configured | |
 | Window & Borders | `title` | documented | |
