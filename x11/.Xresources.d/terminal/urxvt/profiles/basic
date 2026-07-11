@@ -607,9 +607,9 @@ URxvt.termName: rxvt-unicode-256color
 ! --- Terminal ---
 ! ----------------
 
-! Specifies whether the shell should be started as a login shell.
-! If enabled, urxvt prepends a `-` to the shell name, making it
-! behave like a login shell.
+! Specifies whether to start the shell as a login shell.
+! If enabled, urxvt prepends a `-` to the name of the shell, causing it
+! to behave as a login shell.
 ! Accepts: boolean
 ! Default value: false
 URxvt.loginShell: false
