@@ -81,14 +81,14 @@
 | Bell & Alerts | `visualBell` | default | |
 | Bell & Alerts | `bell-command` | documented | |
 | Bell & Alerts | `mapAlert` | default | |
-| Cursor & Pointer | `pastableTabs` | default | |
-| Cursor & Pointer | `cursorUnderline` | default | |
-| Cursor & Pointer | `cursorBlink` | default | |
-| Cursor & Pointer | `pointerBlank` | default | |
-| Cursor & Pointer | `pointerBlankDelay` | default | |
+| Cursor | `pastableTabs` | default | |
+| Cursor | `cursorUnderline` | default | |
+| Cursor | `cursorBlink` | default | |
 | Mouse | `multiClickTime` | default | |
 | Mouse | `mouseWheelScrollPage` | default | |
 | Mouse | `tripleclickwords` | default | |
+| Pointer | `pointerBlank` | default | |
+| Pointer | `pointerBlankDelay` | default | |
 | Selection | `cutchars` | default | |
 | Keyboard | `keysym.sym` | configured | |
 | Keyboard | `kuake.hotkey` | documented | |

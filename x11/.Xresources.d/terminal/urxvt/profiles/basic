@@ -470,9 +470,9 @@ URxvt.saveLines: 64
 ! --- End Scrolling ---
 ! ---------------------
 
-! ------------------------
-! --- Cursor & Pointer ---
-! ------------------------
+! --------------
+! --- Cursor ---
+! --------------
 
 ! Controls whether tabs are stored as actual tab characters or treated only as
 ! cursor movement. When enabled, tabs are preserved as wide characters, making
@@ -492,23 +492,9 @@ URxvt.cursorUnderline: false
 ! Default value: false
 URxvt.cursorBlink: false
 
-! Hides the mouse pointer when a key is pressed or after a short period of
-! inactivity.
-! The pointer reappears automatically on mouse movement.
-! Accepts: boolean
-! Default value: false
-URxvt.pointerBlank: false
-
-! Specifies how long (in seconds) the mouse pointer remains visible when
-! idle before being hidden.
-! Only takes effect if pointerBlank is enabled.
-! Accepts: number
-! Default value: 2
-URxvt.pointerBlankDelay: 2
-
-! ----------------------------
-! --- End Cursor & Pointer ---
-! ----------------------------
+! ------------------
+! --- End Cursor ---
+! ------------------
 
 ! -------------
 ! --- Mouse ---
@@ -540,6 +526,28 @@ URxvt.tripleclickwords: false
 ! -----------------
 ! --- End Mouse ---
 ! -----------------
+
+! ---------------
+! --- Pointer ---
+! ---------------
+
+! Hides the mouse pointer when a key is pressed or after a short period of
+! inactivity.
+! The pointer reappears automatically on mouse movement.
+! Accepts: boolean
+! Default value: false
+URxvt.pointerBlank: false
+
+! Specifies how long (in seconds) the mouse pointer remains visible when
+! idle before being hidden.
+! Only takes effect if pointerBlank is enabled.
+! Accepts: number
+! Default value: 2
+URxvt.pointerBlankDelay: 2
+
+! -------------------
+! --- End Pointer ---
+! -------------------
 
 ! -----------------
 ! --- Selection ---
