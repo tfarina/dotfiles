@@ -242,19 +242,19 @@ URxvt.geometry: 80x24
 ! provides the icon.
 URxvt.iconFile: /usr/share/pixmaps/urxvt_32x32.xpm
 
-! Sets the title of the urxvt window (the -T option is still respected).
-! When unspecified, the default title is the basename of the program
-! specified after -e, or the application name if no program is given.
-! Accepts: string
-! Default value: program basename or application name
-!URxvt.title:
-
 ! Sets the name used to label the window icon or the name shown in an icon
 ! manager. When unspecified, it defaults to the basename of the running
 ! program.
 ! Accepts: string
 ! Default value: program basename
 !URxvt.iconName:
+
+! Sets the title of the urxvt window (the -T option is still respected).
+! When unspecified, the default title is the basename of the program
+! specified after -e, or the application name if no program is given.
+! Accepts: string
+! Default value: program basename or application name
+!URxvt.title:
 
 ! Enables or disables double-buffering to reduce flicker when updating
 ! the terminal display. It controls how the terminal handles drawing to

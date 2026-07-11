@@ -35,8 +35,8 @@
 | Font | `letterSpace` | default | |
 | Window & Borders | `geometry` | default | |
 | Window & Borders | `iconFile` | configured | |
-| Window & Borders | `title` | documented | |
 | Window & Borders | `iconName` | documented | |
+| Window & Borders | `title` | documented | |
 | Window & Borders | `buffered` | default | |
 | Window & Borders | `depth` | documented | |
 | Window & Borders | `visual` | documented | |
