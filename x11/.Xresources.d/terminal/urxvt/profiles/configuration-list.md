@@ -56,19 +56,6 @@
 | Transparency & Background | `background.border` | documented | |
 | Transparency & Background | `background.expr` | documented | |
 | Transparency & Background | `background.interval` | documented | |
-| Bell & Alerts | `urgentOnBell` | default | |
-| Bell & Alerts | `visualBell` | default | |
-| Bell & Alerts | `bell-command` | documented | |
-| Bell & Alerts | `mapAlert` | default | |
-| Cursor & Pointer | `pastableTabs` | default | |
-| Cursor & Pointer | `cursorUnderline` | default | |
-| Cursor & Pointer | `cursorBlink` | default | |
-| Cursor & Pointer | `pointerBlank` | default | |
-| Cursor & Pointer | `pointerBlankDelay` | default | |
-| Mouse | `multiClickTime` | default | |
-| Mouse | `mouseWheelScrollPage` | default | |
-| Mouse | `tripleclickwords` | default | |
-| Selection | `cutchars` | default | |
 | Colors | `foreground` | configured | |
 | Colors | `background` | configured | |
 | Colors | `color0` → `color15` | configured | |
@@ -90,6 +77,19 @@
 | Colors | `tab-fg` | documented | |
 | Colors | `tabbar-bg` | documented | |
 | Colors | `tabbar-fg` | documented | |
+| Bell & Alerts | `urgentOnBell` | default | |
+| Bell & Alerts | `visualBell` | default | |
+| Bell & Alerts | `bell-command` | documented | |
+| Bell & Alerts | `mapAlert` | default | |
+| Cursor & Pointer | `pastableTabs` | default | |
+| Cursor & Pointer | `cursorUnderline` | default | |
+| Cursor & Pointer | `cursorBlink` | default | |
+| Cursor & Pointer | `pointerBlank` | default | |
+| Cursor & Pointer | `pointerBlankDelay` | default | |
+| Mouse | `multiClickTime` | default | |
+| Mouse | `mouseWheelScrollPage` | default | |
+| Mouse | `tripleclickwords` | default | |
+| Selection | `cutchars` | default | |
 | Keyboard | `keysym.sym` | configured | |
 | Keyboard | `kuake.hotkey` | documented | |
 | Keyboard | `modifier` | default | |
