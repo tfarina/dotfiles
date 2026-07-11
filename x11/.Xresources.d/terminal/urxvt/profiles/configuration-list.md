@@ -33,6 +33,18 @@
 | Font | `intensityStyles` | default | |
 | Font | `lineSpace` | default | |
 | Font | `letterSpace` | default | |
+| Window & Borders | `geometry` | default | |
+| Window & Borders | `iconFile` | configured | |
+| Window & Borders | `title` | documented | |
+| Window & Borders | `iconName` | documented | |
+| Window & Borders | `buffered` | default | |
+| Window & Borders | `depth` | documented | |
+| Window & Borders | `visual` | documented | |
+| Window & Borders | `transient-for` | documented | |
+| Window & Borders | `override-redirect` | default | |
+| Window & Borders | `externalBorder` | default | |
+| Window & Borders | `internalBorder` | default | |
+| Window & Borders | `borderLess` | default | |
 | Transparency & Background | `inheritPixmap` | documented | |
 | Transparency & Background | `transparent` | default | |
 | Transparency & Background | `tintColor` | default | |
@@ -78,18 +90,6 @@
 | Colors | `tab-fg` | documented | |
 | Colors | `tabbar-bg` | documented | |
 | Colors | `tabbar-fg` | documented | |
-| Window & Borders | `geometry` | default | |
-| Window & Borders | `iconFile` | configured | |
-| Window & Borders | `title` | documented | |
-| Window & Borders | `iconName` | documented | |
-| Window & Borders | `buffered` | default | |
-| Window & Borders | `depth` | documented | |
-| Window & Borders | `visual` | documented | |
-| Window & Borders | `transient-for` | documented | |
-| Window & Borders | `override-redirect` | default | |
-| Window & Borders | `externalBorder` | default | |
-| Window & Borders | `internalBorder` | default | |
-| Window & Borders | `borderLess` | default | |
 | Keyboard | `keysym.sym` | configured | |
 | Keyboard | `kuake.hotkey` | documented | |
 | Keyboard | `modifier` | default | |
