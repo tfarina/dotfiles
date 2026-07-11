@@ -2,8 +2,8 @@
 
 | Category | Option | Status | Notes |
 |---|---|---|---|
-| Core | `path` | documented | |
-| Core | `chdir` | documented | |
+| Startup | `path` | documented | |
+| Startup | `chdir` | documented | |
 | Environment | `termName` | configured | |
 | Terminal | `loginShell` | default | |
 | Terminal | `utmpInhibit` | default | |

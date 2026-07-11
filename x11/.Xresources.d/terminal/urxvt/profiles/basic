@@ -569,9 +569,9 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! --- End Selection ---
 ! ---------------------
 
-! ------------
-! --- Core ---
-! ------------
+! ---------------
+! --- Startup ---
+! ---------------
 
 ! Directory list for searching configuration files and resources.
 ! Useful if you want urxvt to look for additional config fragments
@@ -587,9 +587,9 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! Default value: none
 !URxvt.chdir: /path/to/start/directory
 
-! ----------------
-! --- End Core ---
-! ----------------
+! -------------------
+! --- End Startup ---
+! -------------------
 
 ! -------------------
 ! --- Environment ---
