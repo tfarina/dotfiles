@@ -107,12 +107,12 @@
 | Perl Extensions | `perl-eval` | documented | |
 | Perl Extensions | `perl-ext-common` | configured | |
 | Perl Extensions | `perl-ext` | documented | |
-| URL / Matcher | `matcher.button` | default | |
-| URL / Matcher | `matcher.launcher` | configured | |
-| URL / Matcher | `matcher.launcher.*` | configured | |
-| URL / Matcher | `matcher.pattern.*` | documented | |
-| URL / Matcher | `matcher.rend.*` | configured | |
-| URL / Matcher | `url-launcher` | documented | |
+| Hints | `matcher.button` | default | |
+| Hints | `matcher.launcher` | configured | |
+| Hints | `matcher.launcher.*` | configured | |
+| Hints | `matcher.pattern.*` | documented | |
+| Hints | `matcher.rend.*` | configured | |
+| Hints | `url-launcher` | documented | |
 | Remote Clipboard | `remote-clipboard.fetch` | documented | |
 | Remote Clipboard | `remote-clipboard.store` | documented | |
 | Selection & Clipboard | `selection-autotransform.*` | documented | |

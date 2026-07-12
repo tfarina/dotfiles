@@ -982,14 +982,14 @@ URxvt.perl-ext-common: default,selection,option-popup,readline,matcher
 ! --- End Perl Extensions ---
 ! ---------------------------
 
-! ---------------------
-! --- URL / Matcher ---
-! ---------------------
+! -------------
+! --- Hints ---
+! -------------
 
-! urxvt’s matcher extension highlights and makes URLs
-! clickable inside the terminal. You can configure which
-! button activates them, what launcher is used, add custom
-! patterns, and even style the matches visually.
+! urxvt’s matcher extension detects URLs and other text patterns,
+! highlights them, and makes them clickable inside the terminal.
+! You can configure which button activates them, what launcher
+! is used, add custom patterns, and even style the matches visually.
 
 ! Mouse button to open matched URLs (default: 1 = left click)
 URxvt.matcher.button: 1
@@ -1012,9 +1012,9 @@ URxvt.matcher.rend.0: Uline Bold
 ! Legacy option, alias for matcher.launcher
 !URxvt.url-launcher: firefox
 
-! -------------------------
-! --- End URL / Matcher ---
-! -------------------------
+! -----------------
+! --- End Hints ---
+! -----------------
 
 ! ------------------------
 ! --- Remote Clipboard ---
