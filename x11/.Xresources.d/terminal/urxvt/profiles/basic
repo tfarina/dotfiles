@@ -903,11 +903,12 @@ URxvt.fadeColor: BLACK
 ! --- End Transparency & Background ---
 ! -------------------------------------
 
-! ----------------------------------
-! --- Internationalization (IME) ---
-! ----------------------------------
+! ------------
+! --- I18n ---
+! ------------
 
-! Input method settings (needed only for IME, e.g. IBus, SCIM, XIM).
+! Internationalization (I18n) settings for input methods (IME) (needed
+! only for IME, e.g. IBus, SCIM, XIM).
 ! Currently not configured since Latin script input is sufficient.
 !
 ! Note: IME options (inputMethod, preeditType, imLocale) are for
@@ -928,9 +929,9 @@ URxvt.fadeColor: BLACK
 ! Default value: none (falls back to main font)
 !URxvt.imFont:
 
-! --------------------------------------
-! --- End Internationalization (IME) ---
-! --------------------------------------
+! ----------------
+! --- End I18n ---
+! ----------------
 
 ! -----------------------
 ! --- Perl Extensions ---

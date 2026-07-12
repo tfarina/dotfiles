@@ -99,10 +99,10 @@
 | Input | `answerbackString` | default | |
 | Input | `iso14755` | configured | |
 | Input | `iso14755_52` | configured | |
-| Internationalization (IME) | `inputMethod` | documented | |
-| Internationalization (IME) | `preeditType` | documented | |
-| Internationalization (IME) | `imLocale` | documented | |
-| Internationalization (IME) | `imFont` | documented | |
+| I18n | `inputMethod` | documented | |
+| I18n | `preeditType` | documented | |
+| I18n | `imLocale` | documented | |
+| I18n | `imFont` | documented | |
 | Perl Extensions | `perl-lib` | documented | |
 | Perl Extensions | `perl-eval` | documented | |
 | Perl Extensions | `perl-ext-common` | configured | |
