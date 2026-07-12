@@ -97,6 +97,8 @@
 | Input | `deletekey` | default | |
 | Input | `meta8` | default | |
 | Input | `answerbackString` | default | |
+| Input | `iso14755` | configured | |
+| Input | `iso14755_52` | configured | |
 | Internationalization (IME) | `inputMethod` | documented | |
 | Internationalization (IME) | `preeditType` | documented | |
 | Internationalization (IME) | `imLocale` | documented | |
@@ -105,8 +107,6 @@
 | Perl Extensions | `perl-eval` | documented | |
 | Perl Extensions | `perl-ext-common` | configured | |
 | Perl Extensions | `perl-ext` | documented | |
-| ISO14755 (Unicode input) | `iso14755` | configured | |
-| ISO14755 (Unicode input) | `iso14755_52` | configured | |
 | URL / Matcher | `matcher.button` | default | |
 | URL / Matcher | `matcher.launcher` | configured | |
 | URL / Matcher | `matcher.launcher.*` | configured | |
