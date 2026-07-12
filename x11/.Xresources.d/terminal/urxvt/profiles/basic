@@ -933,9 +933,9 @@ URxvt.fadeColor: BLACK
 ! --- End I18n ---
 ! ----------------
 
-! -----------------------
-! --- Perl Extensions ---
-! -----------------------
+! ------------------
+! --- Extensions ---
+! ------------------
 
 ! urxvt supports small helper scripts called Perl extensions. They add
 ! features like improved selection, menus, or integration with external
@@ -979,9 +979,9 @@ URxvt.perl-ext-common: default,selection,option-popup,readline,matcher
 ! Per-instance extension overrides (not configured)
 !URxvt.perl-ext:
 
-! ---------------------------
-! --- End Perl Extensions ---
-! ---------------------------
+! ----------------------
+! --- End Extensions ---
+! ----------------------
 
 ! -------------
 ! --- Hints ---

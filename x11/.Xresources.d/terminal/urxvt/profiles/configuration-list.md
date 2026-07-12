@@ -103,10 +103,10 @@
 | I18n | `preeditType` | documented | |
 | I18n | `imLocale` | documented | |
 | I18n | `imFont` | documented | |
-| Perl Extensions | `perl-lib` | documented | |
-| Perl Extensions | `perl-eval` | documented | |
-| Perl Extensions | `perl-ext-common` | configured | |
-| Perl Extensions | `perl-ext` | documented | |
+| Extensions | `perl-lib` | documented | |
+| Extensions | `perl-eval` | documented | |
+| Extensions | `perl-ext-common` | configured | |
+| Extensions | `perl-ext` | documented | |
 | Hints | `matcher.button` | default | |
 | Hints | `matcher.launcher` | configured | |
 | Hints | `matcher.launcher.*` | configured | |
