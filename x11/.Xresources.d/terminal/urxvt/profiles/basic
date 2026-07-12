@@ -675,9 +675,9 @@ URxvt.print-pipe: lpr
 ! --- End Printing ---
 ! --------------------
 
-! ---------------------
-! --- Bell & Alerts ---
-! ---------------------
+! ------------
+! --- Bell ---
+! ------------
 
 ! Sets/unsets the urgency hint of the window for the wm when the terminal
 ! receives a bell character.
@@ -713,9 +713,9 @@ URxvt.visualBell: false
 ! Default value: false
 URxvt.mapAlert: false
 
-! -------------------------
-! --- End Bell & Alerts ---
-! -------------------------
+! ----------------
+! --- End Bell ---
+! ----------------
 
 ! ----------------
 ! --- Keyboard ---

@@ -77,10 +77,10 @@
 | Colors | `tab-fg` | documented | |
 | Colors | `tabbar-bg` | documented | |
 | Colors | `tabbar-fg` | documented | |
-| Bell & Alerts | `urgentOnBell` | default | |
-| Bell & Alerts | `visualBell` | default | |
-| Bell & Alerts | `bell-command` | documented | |
-| Bell & Alerts | `mapAlert` | default | |
+| Bell | `urgentOnBell` | default | |
+| Bell | `visualBell` | default | |
+| Bell | `bell-command` | documented | |
+| Bell | `mapAlert` | default | |
 | Cursor | `cursorUnderline` | default | |
 | Cursor | `cursorBlink` | default | |
 | Cursor | `pastableTabs` | default | |
