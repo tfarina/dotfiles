@@ -326,6 +326,81 @@ URxvt.internalBorder: 2
 ! Default value: 0
 URxvt.externalBorder: 0
 
+! Inherit the background pixmap of the root window instead of drawing
+! a separate background. This can be useful when a desktop wallpaper
+! manager sets the background at the root level and you want urxvt
+! to blend with it.
+! Accepts: boolean
+! Default value: false
+!URxvt.inheritPixmap: false
+
+! Enables a transparent terminal background that allows the root window
+! (or desktop background image) to show through.
+! Requires a compositor (like picom, compton, or xcompmgr) for true
+! transparency; otherwise, shows the background image beneath.
+! This creates the effect of a translucent terminal. Often used for
+! aesthetic setups.
+! Accepts: boolean
+! Default value: false
+URxvt.transparent: false
+
+! Tint the transparent background with the given colour.
+! Accepts: color
+! Default value: BRIGHT_WHITE
+URxvt.tintColor: BRIGHT_WHITE
+
+! Darken (0 .. 99) or lighten (101 .. 200) the transparent background.
+! A value of 100 means no shading.
+! Accepts: number
+! Default value: 100
+URxvt.shading: 100
+
+! Apply gaussian blur with the specified radius to the transparent background.
+! Accepts: HxV
+! Default value: 0
+URxvt.blurRadius: 0
+
+! Fade the text by the given percentage when focus is lost.
+! Accepts: number
+! Default value: 0
+URxvt.fading: 0
+
+! Fade to this colour, when fading is used.
+! Accepts: color
+! Default value: BLACK
+URxvt.fadeColor: BLACK
+
+! Sets a pixmap (image file) to be used as the terminal background.
+! The file path must point to a valid X11-supported image format.
+! Depending on your system, additional utilities may be required
+! (e.g. `xrdb` settings or external loaders).
+! Accepts: string (path to image file)
+! Default value: none
+!URxvt.backgroundPixmap: /path/to/image.xpm
+
+! Sets the border width (in pixels) used when drawing the background
+! pixmap. This affects how the background image is tiled or aligned
+! within the terminal window.
+! Accepts: integer (pixel value)
+! Default value: 0
+!URxvt.background.border: 2
+
+! Defines an expression for dynamically generating or transforming
+! the terminal background. This is an advanced option intended for
+! users who want to compute backgrounds based on functions rather
+! than using static images or colors.
+! Accepts: string (expression syntax is rarely used and may depend
+! on external patches or extensions)
+! Default value: none
+!URxvt.background.expr: some_expression
+
+! Internal resource related to urxvt’s background rendering.
+! Rarely configured directly by users; mostly intended for
+! debugging or development purposes.
+! Accepts: boolean
+! Default value: false
+!URxvt.background.internal: false
+
 ! ------------------
 ! --- End Window ---
 ! ------------------
@@ -819,89 +894,6 @@ URxvt.iso14755_52: false
 ! -----------------
 ! --- End Input ---
 ! -----------------
-
-! ---------------------------------
-! --- Transparency & Background ---
-! ---------------------------------
-
-! Inherit the background pixmap of the root window instead of drawing
-! a separate background. This can be useful when a desktop wallpaper
-! manager sets the background at the root level and you want urxvt
-! to blend with it.
-! Accepts: boolean
-! Default value: false
-!URxvt.inheritPixmap: false
-
-! Enables a transparent terminal background that allows the root window
-! (or desktop background image) to show through.
-! Requires a compositor (like picom, compton, or xcompmgr) for true
-! transparency; otherwise, shows the background image beneath.
-! This creates the effect of a translucent terminal. Often used for
-! aesthetic setups.
-! Accepts: boolean
-! Default value: false
-URxvt.transparent: false
-
-! Tint the transparent background with the given colour.
-! Accepts: color
-! Default value: BRIGHT_WHITE
-URxvt.tintColor: BRIGHT_WHITE
-
-! Darken (0 .. 99) or lighten (101 .. 200) the transparent background.
-! A value of 100 means no shading.
-! Accepts: number
-! Default value: 100
-URxvt.shading: 100
-
-! Apply gaussian blur with the specified radius to the transparent background.
-! Accepts: HxV
-! Default value: 0
-URxvt.blurRadius: 0
-
-! Fade the text by the given percentage when focus is lost.
-! Accepts: number
-! Default value: 0
-URxvt.fading: 0
-
-! Fade to this colour, when fading is used.
-! Accepts: color
-! Default value: BLACK
-URxvt.fadeColor: BLACK
-
-! Sets a pixmap (image file) to be used as the terminal background.
-! The file path must point to a valid X11-supported image format.
-! Depending on your system, additional utilities may be required
-! (e.g. `xrdb` settings or external loaders).
-! Accepts: string (path to image file)
-! Default value: none
-!URxvt.backgroundPixmap: /path/to/image.xpm
-
-! Sets the border width (in pixels) used when drawing the background
-! pixmap. This affects how the background image is tiled or aligned
-! within the terminal window.
-! Accepts: integer (pixel value)
-! Default value: 0
-!URxvt.background.border: 2
-
-! Defines an expression for dynamically generating or transforming
-! the terminal background. This is an advanced option intended for
-! users who want to compute backgrounds based on functions rather
-! than using static images or colors.
-! Accepts: string (expression syntax is rarely used and may depend
-! on external patches or extensions)
-! Default value: none
-!URxvt.background.expr: some_expression
-
-! Internal resource related to urxvt’s background rendering.
-! Rarely configured directly by users; mostly intended for
-! debugging or development purposes.
-! Accepts: boolean
-! Default value: false
-!URxvt.background.internal: false
-
-! -------------------------------------
-! --- End Transparency & Background ---
-! -------------------------------------
 
 ! ------------
 ! --- I18n ---

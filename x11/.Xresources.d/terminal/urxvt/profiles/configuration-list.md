@@ -45,17 +45,17 @@
 | Window | `externalBorder` | default | |
 | Window | `internalBorder` | default | |
 | Window | `borderLess` | default | |
-| Transparency & Background | `inheritPixmap` | documented | |
-| Transparency & Background | `transparent` | default | |
-| Transparency & Background | `tintColor` | default | |
-| Transparency & Background | `shading` | default | |
-| Transparency & Background | `blurRadius` | default | |
-| Transparency & Background | `fading` | default | |
-| Transparency & Background | `fadeColor` | default | |
-| Transparency & Background | `backgroundPixmap` | documented | |
-| Transparency & Background | `background.border` | documented | |
-| Transparency & Background | `background.expr` | documented | |
-| Transparency & Background | `background.interval` | documented | |
+| Window | `inheritPixmap` | documented | |
+| Window | `transparent` | default | |
+| Window | `tintColor` | default | |
+| Window | `shading` | default | |
+| Window | `blurRadius` | default | |
+| Window | `fading` | default | |
+| Window | `fadeColor` | default | |
+| Window | `backgroundPixmap` | documented | |
+| Window | `background.border` | documented | |
+| Window | `background.expr` | documented | |
+| Window | `background.interval` | documented | |
 | Colors | `foreground` | configured | |
 | Colors | `background` | configured | |
 | Colors | `color0` → `color15` | configured | |
