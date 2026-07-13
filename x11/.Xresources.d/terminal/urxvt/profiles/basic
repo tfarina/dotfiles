@@ -225,9 +225,9 @@ URxvt.letterSpace: 0
 ! --- End Font ---
 ! ----------------
 
-! ------------------------
-! --- Window & Borders ---
-! ------------------------
+! --------------
+! --- Window ---
+! --------------
 
 ! Specifies the preferred size of this X window.
 ! Accepts: string
@@ -326,9 +326,9 @@ URxvt.internalBorder: 2
 ! Default value: 0
 URxvt.externalBorder: 0
 
-! ----------------------------
-! --- End Window & Borders ---
-! ----------------------------
+! ------------------
+! --- End Window ---
+! ------------------
 
 ! -----------------
 ! --- Scrolling ---

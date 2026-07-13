@@ -33,18 +33,18 @@
 | Font | `intensityStyles` | default | |
 | Font | `lineSpace` | default | |
 | Font | `letterSpace` | default | |
-| Window & Borders | `geometry` | default | |
-| Window & Borders | `iconFile` | configured | |
-| Window & Borders | `iconName` | documented | |
-| Window & Borders | `title` | documented | |
-| Window & Borders | `buffered` | default | |
-| Window & Borders | `depth` | documented | |
-| Window & Borders | `visual` | documented | |
-| Window & Borders | `transient-for` | documented | |
-| Window & Borders | `override-redirect` | default | |
-| Window & Borders | `externalBorder` | default | |
-| Window & Borders | `internalBorder` | default | |
-| Window & Borders | `borderLess` | default | |
+| Window | `geometry` | default | |
+| Window | `iconFile` | configured | |
+| Window | `iconName` | documented | |
+| Window | `title` | documented | |
+| Window | `buffered` | default | |
+| Window | `depth` | documented | |
+| Window | `visual` | documented | |
+| Window | `transient-for` | documented | |
+| Window | `override-redirect` | default | |
+| Window | `externalBorder` | default | |
+| Window | `internalBorder` | default | |
+| Window | `borderLess` | default | |
 | Transparency & Background | `inheritPixmap` | documented | |
 | Transparency & Background | `transparent` | default | |
 | Transparency & Background | `tintColor` | default | |
