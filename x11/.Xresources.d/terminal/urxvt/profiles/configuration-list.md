@@ -93,10 +93,10 @@
 | Keyboard | `keysym.sym` | configured | |
 | Keyboard | `kuake.hotkey` | documented | |
 | Keyboard | `modifier` | default | |
-| Input | `backspacekey` | default | |
-| Input | `deletekey` | default | |
-| Input | `meta8` | default | |
-| Input | `answerbackString` | default | |
+| Compatibility | `backspacekey` | default | |
+| Compatibility | `deletekey` | default | |
+| Compatibility | `meta8` | default | |
+| Compatibility | `answerbackString` | default | |
 | Input | `iso14755` | configured | |
 | Input | `iso14755_52` | configured | |
 | I18n | `inputMethod` | documented | |

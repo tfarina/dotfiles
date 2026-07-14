@@ -787,9 +787,9 @@ URxvt.modifier: alt
 ! --- End Keyboard ---
 ! --------------------
 
-! -------------
-! --- Input ---
-! -------------
+! ---------------------
+! --- Compatibility ---
+! ---------------------
 
 ! Defines the character sent when the Backspace key is pressed.
 ! When set to DEC (or left unset), sends DEL (`^?`, ASCII 127); with Ctrl,
@@ -866,6 +866,14 @@ URxvt.meta8: false
 ! Accepts: string
 ! Default value: \033[?1;2c
 URxvt.answerbackString: \033[?1;2c
+
+! -------------------------
+! --- End Compatibility ---
+! -------------------------
+
+! -------------
+! --- Input ---
+! -------------
 
 ! Controls urxvt’s built-in support for the ISO 14755 method of entering
 ! Unicode characters. When enabled, urxvt itself intercepts Ctrl+Shift+u
