@@ -107,16 +107,16 @@
 | Extensions | `perl-eval` | documented | |
 | Extensions | `perl-ext-common` | configured | |
 | Extensions | `perl-ext` | documented | |
+| Extensions | `selection-autotransform.*` | documented | |
+| Extensions | `selection-pastebin.cmd` | documented | |
+| Extensions | `selection-pastebin.url` | documented | |
+| Extensions | `selection.pattern-0` | documented | |
+| Extensions | `remote-clipboard.fetch` | documented | |
+| Extensions | `remote-clipboard.store` | documented | |
 | Hints | `matcher.button` | default | |
 | Hints | `matcher.launcher` | configured | |
 | Hints | `matcher.launcher.*` | configured | |
 | Hints | `matcher.pattern.*` | documented | |
 | Hints | `matcher.rend.*` | configured | |
 | Hints | `url-launcher` | documented | |
-| Remote Clipboard | `remote-clipboard.fetch` | documented | |
-| Remote Clipboard | `remote-clipboard.store` | documented | |
-| Selection & Clipboard | `selection-autotransform.*` | documented | |
-| Selection & Clipboard | `selection-pastebin.cmd` | documented | |
-| Selection & Clipboard | `selection-pastebin.url` | documented | |
-| Selection & Clipboard | `selection.pattern-0` | documented | |
 | Extra | `xrm` | documented | |

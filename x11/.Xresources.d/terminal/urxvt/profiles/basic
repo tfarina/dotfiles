@@ -971,6 +971,44 @@ URxvt.perl-ext-common: default,selection,option-popup,readline,matcher
 ! Per-instance extension overrides (not configured)
 !URxvt.perl-ext:
 
+! urxvt supports advanced selection and clipboard features.
+! In addition to the standard copy/paste behavior (already
+! mapped to Ctrl+Shift+C/V), these options allow custom
+! transformations, pastebin integration, and regex-based
+! selection matching.
+!
+! selection-autotransform.* : rules to automatically transform
+!                             selected text (e.g., lowercase,
+!                             strip whitespace, etc.)
+!
+! selection-pastebin.cmd    : command to upload selection
+!                             to a pastebin service (not set)
+!
+! selection-pastebin.url    : URL template for the pastebin
+!                             service (not set)
+!
+! selection.pattern-0       : regex defining what count as a "word"
+!                             when selecting (not set)
+
+! urxvt can integrate with remote clipboards by running
+! external commands. This is most useful when working over
+! SSH and you want copy/paste to bridge between machines.
+!
+! remote-clipboard.fetch : command to fetch clipboard
+! remote-clipboard.store : command to store clipboard
+!
+! Example (using xsel locally):
+!   URxvt.remote-clipboard.fetch:  xsel -o -b
+!   URxvt.remote-clipboard.store:  xsel -i -b
+!
+! Note: local clipboard copy/paste is already available
+! via the 'selection' extension (enabled by default),
+! even without the 'clipboard' extension. Remote clipboard
+! options are left unconfigured for now.
+!
+!URxvt.remote-clipboard.fetch: not configured yet
+!URxvt.remote-clipboard.store: not configured yet
+
 ! ----------------------
 ! --- End Extensions ---
 ! ----------------------
@@ -1008,60 +1046,6 @@ URxvt.matcher.rend.0: Uline Bold
 ! -----------------
 ! --- End Hints ---
 ! -----------------
-
-! ------------------------
-! --- Remote Clipboard ---
-! ------------------------
-
-! urxvt can integrate with remote clipboards by running
-! external commands. This is most useful when working over
-! SSH and you want copy/paste to bridge between machines.
-!
-! remote-clipboard.fetch : command to fetch clipboard
-! remote-clipboard.store : command to store clipboard
-!
-! Example (using xsel locally):
-!   URxvt.remote-clipboard.fetch:  xsel -o -b
-!   URxvt.remote-clipboard.store:  xsel -i -b
-!
-! Note: local clipboard copy/paste is already available
-! via the 'selection' extension (enabled by default),
-! even without the 'clipboard' extension. Remote clipboard
-! options are left unconfigured for now.
-!
-!URxvt.remote-clipboard.fetch: not configured yet
-!URxvt.remote-clipboard.store: not configured yet
-
-! ----------------------------
-! --- End Remote Clipboard ---
-! ----------------------------
-
-! -----------------------------
-! --- Selection & Clipboard ---
-! -----------------------------
-
-! urxvt supports advanced selection and clipboard features.
-! In addition to the standard copy/paste behavior (already
-! mapped to Ctrl+Shift+C/V), these options allow custom
-! transformations, pastebin integration, and regex-based
-! selection matching.
-!
-! selection-autotransform.* : rules to automatically transform
-!                             selected text (e.g., lowercase,
-!                             strip whitespace, etc.)
-!
-! selection-pastebin.cmd    : command to upload selection
-!                             to a pastebin service (not set)
-!
-! selection-pastebin.url    : URL template for the pastebin
-!                             service (not set)
-!
-! selection.pattern-0       : regex defining what count as a "word"
-!                             when selecting (not set)
-
-! ---------------------------------
-! --- End Selection & Clipboard ---
-! ---------------------------------
 
 ! -------------
 ! --- Extra ---
