@@ -647,7 +647,7 @@ URxvt.termName: rxvt-unicode-256color
 ! -----------------------
 
 ! ----------------
-! --- Terminal ---
+! --- Command ---
 ! ----------------
 
 ! Specifies whether to start the shell as a login shell.
@@ -672,9 +672,9 @@ URxvt.utmpInhibit: false
 ! Default value: false
 URxvt.hold: false
 
-! --------------------
-! --- End Terminal ---
-! --------------------
+! -------------------
+! --- End Command ---
+! -------------------
 
 ! ----------------
 ! --- Security ---

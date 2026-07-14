@@ -5,9 +5,9 @@
 | Startup | `path` | documented | |
 | Startup | `chdir` | documented | |
 | Environment | `termName` | configured | |
-| Terminal | `loginShell` | default | |
-| Terminal | `utmpInhibit` | default | |
-| Terminal | `hold` | default | |
+| Command | `loginShell` | default | |
+| Command | `utmpInhibit` | default | |
+| Command | `hold` | default | |
 | Security | `insecure` | default | |
 | Accessibility | `reverseVideo` | default | |
 | Printing | `print-pipe` | default | |
