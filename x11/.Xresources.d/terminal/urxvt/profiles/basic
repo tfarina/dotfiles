@@ -1,148 +1,218 @@
 ! URxvt configuration
 
-! --------------
-! --- Colors ---
-! --------------
+! ---------------
+! --- Startup ---
+! ---------------
 
-#define BASE_BLACK #000000
-#define BASE_WHITE #FFFFFF
+! Directory list for searching configuration files and resources.
+! Useful if you want urxvt to look for additional config fragments
+! or resources outside the default paths.
+! Accepts: colon-separated list of directories
+! Default value: (compiled-in, usually /usr/lib/urxvt:/usr/local/lib/urxvt)
+!URxvt.path:
 
-! Foreground / background / cursor
-! --------------------------------
+! Sets the working directory that urxvt should start in.
+! If not specified, urxvt inherits the current shell's
+! working directory when launched.
+! Accepts: string (path to directory)
+! Default value: none
+!URxvt.chdir: /path/to/start/directory
 
-URxvt.foreground: BASE_BLACK
-URxvt.background: BASE_WHITE
-URxvt.cursorColor: BASE_BLACK
+! -------------------
+! --- End Startup ---
+! -------------------
 
-! Color scheme
-! ------------
+! -------------------
+! --- Environment ---
+! -------------------
 
-#include "../colorschemes/cmd-legacy"
+! Specifies the terminal type name to be set in the TERM environment variable.
+! Accepts: string
+URxvt.termName: rxvt-unicode-256color
 
-! ANSI colors
-! -----------
+! -----------------------
+! --- End Environment ---
+! -----------------------
 
-URxvt.color0:  BLACK
-URxvt.color1:  RED
-URxvt.color2:  GREEN
-URxvt.color3:  YELLOW
-URxvt.color4:  BLUE
-URxvt.color5:  MAGENTA
-URxvt.color6:  CYAN
-URxvt.color7:  WHITE
-URxvt.color8:  BRIGHT_BLACK
-URxvt.color9:  BRIGHT_RED
-URxvt.color10: BRIGHT_GREEN
-URxvt.color11: BRIGHT_YELLOW
-URxvt.color12: BRIGHT_BLUE
-URxvt.color13: BRIGHT_MAGENTA
-URxvt.color14: BRIGHT_CYAN
-URxvt.color15: BRIGHT_WHITE
+! ----------------
+! --- Command ---
+! ----------------
 
-! Specifies the color of the scrollbar slider (also called the thumb).
-! Accepts: color
-! Default value: #B2B2B2
-URxvt.scrollColor: #B2B2B2
+! Specifies whether to start the shell as a login shell.
+! If enabled, urxvt prepends a `-` to the name of the shell, causing it
+! to behave as a login shell.
+! Accepts: boolean
+! Default value: false
+URxvt.loginShell: false
 
-! Specifies the color for the trough area of the scrollbar.
-! Accepts: color
-! Default value: #969696
-URxvt.troughColor: #969696
+! Controls whether or not the terminal will update the utmp database
+! when a new terminal session is started. In other words, setting to
+! true prevents urxvt from making an entry in the utmp file.
+! Accepts: boolean
+! Default value: false
+URxvt.utmpInhibit: false
 
-! Specifies the colour of the border around the text area and between the
-! scrollbar and the text.
-! Accepts: color in hex format: "#rgb" or "#rrggbb" or "rgb:rr/gg/bb"
-! Default value:
-! If unset, it uses the background color.
-URxvt.borderColor: BRIGHT_WHITE
+! Controls what happens when the shell or command exits.
+! When disabled, the terminal window closes immediately.
+! When enabled, the terminal window is kept open so you can
+! inspect the program output.
+! Accepts: boolean
+! Default value: false
+URxvt.hold: false
 
-! Sets the foreground color for bold text.
-! Accepts: color name or #rrggbb
-! Default value: color1 (usually bright red, but depends on theme)
-!URxvt.colorBD:
+! -------------------
+! --- End Command ---
+! -------------------
 
-! Sets the foreground color for italic text.
-! Accepts: color name or #rrggbb
-! Default value: foreground
-!URxvt.colorIT:
+! ----------------
+! --- Security ---
+! ----------------
 
-! Sets the foreground color for underlined text.
-! Accepts: color name or #rrggbb
-! Default value: foreground
-!URxvt.colorUL:
+! Enables or disables potentially unsafe features like loading Perl
+! extensions from user-writable directories and escape sequences that
+! echo strings.
+! Should be disabled for security, especially on multi-user systems.
+! Accepts: boolean
+! Default value: false
+URxvt.insecure: false
 
-! Sets the foreground color of reversed video text in urxvt.
-! Reversed video swaps the foreground and background colors of text.
-! Accepts: color name or hexadecimal RGB value
-! Default value: none (inherits terminal foreground)
-!URxvt.colorRV:
+! --------------------
+! --- End Security ---
+! --------------------
 
-! Sets the color used for drawing the underline itself (instead of the text).
-! Useful for distinguishing underline from text color.
-! Accepts: color name or #rrggbb
-! Default value: colorUL (falls back to foreground if not set)
-!URxvt.underlineColor:
+! ---------------------
+! --- Accessibility ---
+! ---------------------
 
-! Sets the background color of the text cursor when it is inactive
-! or unfocused. Useful when cursorColor is too bright or similar
-! to the text color.
-! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
-! Default value: none (cursor uses cursorColor)
-!URxvt.cursorColor2:
+! Specifies whether or not reverse video should be simulated.
+! Accepts: boolean
+! Default: false
+URxvt.reverseVideo: false
 
-! Sets the primary color of the mouse pointer (cursor).
-! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
-! Default value: black
-!URxvt.pointerColor:
+! -------------------------
+! --- End Accessibility ---
+! -------------------------
 
-! Sets the secondary color of the mouse pointer (cursor).
-! This color is typically used for contrast or as an outline.
-! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
-! Default value: white
-!URxvt.pointerColor2:
+! ----------------
+! --- Printing ---
+! ----------------
 
-! Sets the background color used when text is highlighted (selected).
-! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
-! Default value: reverse video of text and background colors
-!URxvt.highlightColor:
+! Specify a command pipe for vt100 printer.
+! Accepts: string
+! Default value: lpr
+URxvt.print-pipe: lpr
 
-! Sets the text color used when text is highlighted (selected).
-! Accepts: color name or hexadecimal RGB value
-! Default value: reverse video of text and background colors
-!URxvt.highlightTextColor:
+! --------------------
+! --- End Printing ---
+! --------------------
 
-! Sets the background color of inactive tabs.
-! Has no effect unless the “tabbed” Perl extension is enabled
-! through the “perl-ext-common” resource.
-! Accepts: color name or hexadecimal RGB value
-! Default value: none (inherits terminal background)
-!URxvt.tab-bg:
+! -----------------
+! --- Scrolling ---
+! -----------------
 
-! Sets the foreground (text) color of inactive tabs.
-! Only applies if the “tabbed” Perl extension is enabled
-! via the “perl-ext-common” resource.
-! Accepts: color name or hexadecimal RGB value
-! Default value: none (inherits terminal foreground)
-!URxvt.tab-fg:
+! Specifies whether or not the scrollbar should be displayed.
+! Accepts: boolean
+! Default value: true
+URxvt.scrollBar: false
 
-! Sets the background color of the tab bar.
-! This defines the color behind all tab buttons. Has no effect
-! unless the “tabbed” Perl extension is enabled through the
-! “perl-ext-common” resource.
-! Accepts: color name or hexadecimal RGB value
-! Default value: none (inherits terminal background)
-!URxvt.tabbar-bg:
+! Specifies whether or not the scrollbar should be displayed on
+! the right rather than the left.
+! Accepts: boolean
+! Default value: false
+URxvt.scrollBar_right: false
 
-! Sets the foreground (text) color of the tab bar.
-! Only takes effect when the “tabbed” Perl extension is active
-! and listed in “perl-ext-common”.
-! Accepts: color name or hexadecimal RGB value
-! Default value: none (inherits terminal foreground)
-!URxvt.tabbar-fg:
+! Displays rxvt (non XTerm/NeXT) scrollbar without (true value)/
+! with (false value) a trough.
+! Accepts: boolean
+! Default value: false
+URxvt.scrollBar_floating: false
 
-! ------------------
-! --- End Colors ---
-! ------------------
+! Aligns the top, bottom or centre of the scrollbar thumb with the pointer
+! on middle button press/drag.
+! Accepts: mode
+! Default value: centre
+URxvt.scrollBar_align: centre
+
+! Specifies the style to be used for the scrollbar.
+! Accepts: mode
+! Choices: rxvt, plain, next or xterm
+! Default value: rxvt
+URxvt.scrollstyle: plain
+
+! Specifies the width in pixels of the scrollbar.
+! Accepts: number
+! Default value: 5
+URxvt.thickness: 5
+
+! Specifies whether or not output to the terminal should automatically
+! cause the scrollbar to go to the bottom of the scrolling region.
+! Accepts: boolean
+! Default value: true
+URxvt.scrollTtyOutput: false
+
+! Specifies whether or not pressing a key should automatically
+! cause the scrollbar to go to the bottom of the scrolling region.
+! Accepts: boolean
+! Default value: false
+URxvt.scrollTtyKeypress: true
+
+! Enables smooth scrolling through the scrollback buffer of the terminal,
+! even while new output is being written to the screen.
+! When this option is enabled, using the mouse wheel, touchpad, or scrollbar
+! allows you to move the visible area of the scrollback buffer without being
+! interrupted by new output. This makes it easier to review logs, command
+! history, or previous output while the terminal remains active.
+!
+! If disabled (the default), the visible region may be shifted by new
+! output — especially when scrollTtyOutput is also enabled — making it
+! harder to inspect previous output during periods of heavy terminal activity.
+! Accepts: boolean
+! Default: false
+URxvt.scrollWithBuffer: true
+
+! Enables or disables jump scrolling, which improves performance by batching
+! multiple lines of output into a single scroll update, rather than redrawing
+! line by line. This can make fast-scrolling applications (like compilers or
+! logs) appear smoother.
+! When disabled, urxvt updates the screen for each new line of output.
+! Accepts: boolean
+! Default value: false
+URxvt.jumpScroll: true
+
+! When enabled, suppresses screen updates entirely while output is being
+! received, only redrawing once the output stops. This can drastically
+! improve performance when large volumes of text are printed quickly
+! (e.g. compiling code).
+! Note: This is more aggressive than jumpScroll and may cause visible
+! delays in rendering until output pauses.
+! Accepts: boolean
+! Default value: true
+URxvt.skipScroll: false
+
+! Enables or disables switching to the secondary screen buffer when an
+! alternate screen is requested.
+! Needed for full-screen terminal programs like text editors (e.g., emacs)
+! to use a separate scrollback buffer.
+! Accepts: boolean
+! Default value: true
+URxvt.secondaryScreen: true
+
+! Enables or disables scrollback in the secondary screen buffer.
+! Useful if you want to use the scrollback history while running full-screen
+! programs like Emacs.
+! Accepts: boolean
+! Default value: true
+URxvt.secondaryScroll: true
+
+! Specifies the number of lines the scrollback buffer will retain
+! above the visible window.
+! Accepts: number
+! Default value: 64
+URxvt.saveLines: 64
+
+! ---------------------
+! --- End Scrolling ---
+! ---------------------
 
 ! ------------
 ! --- Font ---
@@ -405,113 +475,191 @@ URxvt.fadeColor: BLACK
 ! --- End Window ---
 ! ------------------
 
-! -----------------
-! --- Scrolling ---
-! -----------------
+! --------------
+! --- Colors ---
+! --------------
 
-! Specifies whether or not the scrollbar should be displayed.
-! Accepts: boolean
-! Default value: true
-URxvt.scrollBar: false
+#define BASE_BLACK #000000
+#define BASE_WHITE #FFFFFF
 
-! Specifies whether or not the scrollbar should be displayed on
-! the right rather than the left.
+! Foreground / background / cursor
+! --------------------------------
+
+URxvt.foreground: BASE_BLACK
+URxvt.background: BASE_WHITE
+URxvt.cursorColor: BASE_BLACK
+
+! Color scheme
+! ------------
+
+#include "../colorschemes/cmd-legacy"
+
+! ANSI colors
+! -----------
+
+URxvt.color0:  BLACK
+URxvt.color1:  RED
+URxvt.color2:  GREEN
+URxvt.color3:  YELLOW
+URxvt.color4:  BLUE
+URxvt.color5:  MAGENTA
+URxvt.color6:  CYAN
+URxvt.color7:  WHITE
+URxvt.color8:  BRIGHT_BLACK
+URxvt.color9:  BRIGHT_RED
+URxvt.color10: BRIGHT_GREEN
+URxvt.color11: BRIGHT_YELLOW
+URxvt.color12: BRIGHT_BLUE
+URxvt.color13: BRIGHT_MAGENTA
+URxvt.color14: BRIGHT_CYAN
+URxvt.color15: BRIGHT_WHITE
+
+! Specifies the color of the scrollbar slider (also called the thumb).
+! Accepts: color
+! Default value: #B2B2B2
+URxvt.scrollColor: #B2B2B2
+
+! Specifies the color for the trough area of the scrollbar.
+! Accepts: color
+! Default value: #969696
+URxvt.troughColor: #969696
+
+! Specifies the colour of the border around the text area and between the
+! scrollbar and the text.
+! Accepts: color in hex format: "#rgb" or "#rrggbb" or "rgb:rr/gg/bb"
+! Default value:
+! If unset, it uses the background color.
+URxvt.borderColor: BRIGHT_WHITE
+
+! Sets the foreground color for bold text.
+! Accepts: color name or #rrggbb
+! Default value: color1 (usually bright red, but depends on theme)
+!URxvt.colorBD:
+
+! Sets the foreground color for italic text.
+! Accepts: color name or #rrggbb
+! Default value: foreground
+!URxvt.colorIT:
+
+! Sets the foreground color for underlined text.
+! Accepts: color name or #rrggbb
+! Default value: foreground
+!URxvt.colorUL:
+
+! Sets the foreground color of reversed video text in urxvt.
+! Reversed video swaps the foreground and background colors of text.
+! Accepts: color name or hexadecimal RGB value
+! Default value: none (inherits terminal foreground)
+!URxvt.colorRV:
+
+! Sets the color used for drawing the underline itself (instead of the text).
+! Useful for distinguishing underline from text color.
+! Accepts: color name or #rrggbb
+! Default value: colorUL (falls back to foreground if not set)
+!URxvt.underlineColor:
+
+! Sets the background color of the text cursor when it is inactive
+! or unfocused. Useful when cursorColor is too bright or similar
+! to the text color.
+! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
+! Default value: none (cursor uses cursorColor)
+!URxvt.cursorColor2:
+
+! Sets the primary color of the mouse pointer (cursor).
+! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
+! Default value: black
+!URxvt.pointerColor:
+
+! Sets the secondary color of the mouse pointer (cursor).
+! This color is typically used for contrast or as an outline.
+! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
+! Default value: white
+!URxvt.pointerColor2:
+
+! Sets the background color used when text is highlighted (selected).
+! Accepts: color name or #RGB / #RRGGBB / #RRRRGGGGBBBB format
+! Default value: reverse video of text and background colors
+!URxvt.highlightColor:
+
+! Sets the text color used when text is highlighted (selected).
+! Accepts: color name or hexadecimal RGB value
+! Default value: reverse video of text and background colors
+!URxvt.highlightTextColor:
+
+! Sets the background color of inactive tabs.
+! Has no effect unless the “tabbed” Perl extension is enabled
+! through the “perl-ext-common” resource.
+! Accepts: color name or hexadecimal RGB value
+! Default value: none (inherits terminal background)
+!URxvt.tab-bg:
+
+! Sets the foreground (text) color of inactive tabs.
+! Only applies if the “tabbed” Perl extension is enabled
+! via the “perl-ext-common” resource.
+! Accepts: color name or hexadecimal RGB value
+! Default value: none (inherits terminal foreground)
+!URxvt.tab-fg:
+
+! Sets the background color of the tab bar.
+! This defines the color behind all tab buttons. Has no effect
+! unless the “tabbed” Perl extension is enabled through the
+! “perl-ext-common” resource.
+! Accepts: color name or hexadecimal RGB value
+! Default value: none (inherits terminal background)
+!URxvt.tabbar-bg:
+
+! Sets the foreground (text) color of the tab bar.
+! Only takes effect when the “tabbed” Perl extension is active
+! and listed in “perl-ext-common”.
+! Accepts: color name or hexadecimal RGB value
+! Default value: none (inherits terminal foreground)
+!URxvt.tabbar-fg:
+
+! ------------------
+! --- End Colors ---
+! ------------------
+
+! ------------
+! --- Bell ---
+! ------------
+
+! Sets/unsets the urgency hint of the window for the wm when the terminal
+! receives a bell character.
 ! Accepts: boolean
 ! Default value: false
-URxvt.scrollBar_right: false
+URxvt.urgentOnBell: false
 
-! Displays rxvt (non XTerm/NeXT) scrollbar without (true value)/
-! with (false value) a trough.
+! Enables or disables a visual flash when the terminal receives a bell
+! character, instead of playing a sound.
 ! Accepts: boolean
 ! Default value: false
-URxvt.scrollBar_floating: false
+URxvt.visualBell: false
 
-! Aligns the top, bottom or centre of the scrollbar thumb with the pointer
-! on middle button press/drag.
-! Accepts: mode
-! Default value: centre
-URxvt.scrollBar_align: centre
-
-! Specifies the style to be used for the scrollbar.
-! Accepts: mode
-! Choices: rxvt, plain, next or xterm
-! Default value: rxvt
-URxvt.scrollstyle: plain
-
-! Specifies the width in pixels of the scrollbar.
-! Accepts: number
-! Default value: 5
-URxvt.thickness: 5
-
-! Specifies whether or not output to the terminal should automatically
-! cause the scrollbar to go to the bottom of the scrolling region.
-! Accepts: boolean
-! Default value: true
-URxvt.scrollTtyOutput: false
-
-! Specifies whether or not pressing a key should automatically
-! cause the scrollbar to go to the bottom of the scrolling region.
-! Accepts: boolean
-! Default value: false
-URxvt.scrollTtyKeypress: true
-
-! Enables smooth scrolling through the scrollback buffer of the terminal,
-! even while new output is being written to the screen.
-! When this option is enabled, using the mouse wheel, touchpad, or scrollbar
-! allows you to move the visible area of the scrollback buffer without being
-! interrupted by new output. This makes it easier to review logs, command
-! history, or previous output while the terminal remains active.
+! External command to execute when the terminal bell is triggered.
+! This allows replacing or supplementing the default visual or
+! audible bell with a custom action (e.g. playing a sound,
+! sending a desktop notification, or logging the event).
 !
-! If disabled (the default), the visible region may be shifted by new
-! output — especially when scrollTtyOutput is also enabled — making it
-! harder to inspect previous output during periods of heavy terminal activity.
-! Accepts: boolean
-! Default: false
-URxvt.scrollWithBuffer: true
+! Accepts: string (command line to execute)
+! Default value: none (no external command is run)
+! Example:
+!   URxvt.bell-command: paplay /usr/share/sounds/freedesktop/stereo/bell.oga
+!
+! Note: If set, this runs in addition to other bell mechanisms
+! (visualBell, urgentOnBell).
+!URxvt.bell-command:
 
-! Enables or disables jump scrolling, which improves performance by batching
-! multiple lines of output into a single scroll update, rather than redrawing
-! line by line. This can make fast-scrolling applications (like compilers or
-! logs) appear smoother.
-! When disabled, urxvt updates the screen for each new line of output.
+! Enables or disables automatic de-iconification of the terminal window
+! if a bell character is received while it is iconified (minimized).
+! Useful for drawing attention to important activity when the terminal
+! is not currently visible.
 ! Accepts: boolean
 ! Default value: false
-URxvt.jumpScroll: true
+URxvt.mapAlert: false
 
-! When enabled, suppresses screen updates entirely while output is being
-! received, only redrawing once the output stops. This can drastically
-! improve performance when large volumes of text are printed quickly
-! (e.g. compiling code).
-! Note: This is more aggressive than jumpScroll and may cause visible
-! delays in rendering until output pauses.
-! Accepts: boolean
-! Default value: true
-URxvt.skipScroll: false
-
-! Enables or disables switching to the secondary screen buffer when an
-! alternate screen is requested.
-! Needed for full-screen terminal programs like text editors (e.g., emacs)
-! to use a separate scrollback buffer.
-! Accepts: boolean
-! Default value: true
-URxvt.secondaryScreen: true
-
-! Enables or disables scrollback in the secondary screen buffer.
-! Useful if you want to use the scrollback history while running full-screen
-! programs like Emacs.
-! Accepts: boolean
-! Default value: true
-URxvt.secondaryScroll: true
-
-! Specifies the number of lines the scrollback buffer will retain
-! above the visible window.
-! Accepts: number
-! Default value: 64
-URxvt.saveLines: 64
-
-! ---------------------
-! --- End Scrolling ---
-! ---------------------
+! ----------------
+! --- End Bell ---
+! ----------------
 
 ! --------------
 ! --- Cursor ---
@@ -611,154 +759,6 @@ URxvt.cutchars: "\"&'()*,;<=>?@[\\]^`{|}"
 ! ---------------------
 ! --- End Selection ---
 ! ---------------------
-
-! ---------------
-! --- Startup ---
-! ---------------
-
-! Directory list for searching configuration files and resources.
-! Useful if you want urxvt to look for additional config fragments
-! or resources outside the default paths.
-! Accepts: colon-separated list of directories
-! Default value: (compiled-in, usually /usr/lib/urxvt:/usr/local/lib/urxvt)
-!URxvt.path:
-
-! Sets the working directory that urxvt should start in.
-! If not specified, urxvt inherits the current shell's
-! working directory when launched.
-! Accepts: string (path to directory)
-! Default value: none
-!URxvt.chdir: /path/to/start/directory
-
-! -------------------
-! --- End Startup ---
-! -------------------
-
-! -------------------
-! --- Environment ---
-! -------------------
-
-! Specifies the terminal type name to be set in the TERM environment variable.
-! Accepts: string
-URxvt.termName: rxvt-unicode-256color
-
-! -----------------------
-! --- End Environment ---
-! -----------------------
-
-! ----------------
-! --- Command ---
-! ----------------
-
-! Specifies whether to start the shell as a login shell.
-! If enabled, urxvt prepends a `-` to the name of the shell, causing it
-! to behave as a login shell.
-! Accepts: boolean
-! Default value: false
-URxvt.loginShell: false
-
-! Controls whether or not the terminal will update the utmp database
-! when a new terminal session is started. In other words, setting to
-! true prevents urxvt from making an entry in the utmp file.
-! Accepts: boolean
-! Default value: false
-URxvt.utmpInhibit: false
-
-! Controls what happens when the shell or command exits.
-! When disabled, the terminal window closes immediately.
-! When enabled, the terminal window is kept open so you can
-! inspect the program output.
-! Accepts: boolean
-! Default value: false
-URxvt.hold: false
-
-! -------------------
-! --- End Command ---
-! -------------------
-
-! ----------------
-! --- Security ---
-! ----------------
-
-! Enables or disables potentially unsafe features like loading Perl
-! extensions from user-writable directories and escape sequences that
-! echo strings.
-! Should be disabled for security, especially on multi-user systems.
-! Accepts: boolean
-! Default value: false
-URxvt.insecure: false
-
-! --------------------
-! --- End Security ---
-! --------------------
-
-! ---------------------
-! --- Accessibility ---
-! ---------------------
-
-! Specifies whether or not reverse video should be simulated.
-! Accepts: boolean
-! Default: false
-URxvt.reverseVideo: false
-
-! -------------------------
-! --- End Accessibility ---
-! -------------------------
-
-! ----------------
-! --- Printing ---
-! ----------------
-
-! Specify a command pipe for vt100 printer.
-! Accepts: string
-! Default value: lpr
-URxvt.print-pipe: lpr
-
-! --------------------
-! --- End Printing ---
-! --------------------
-
-! ------------
-! --- Bell ---
-! ------------
-
-! Sets/unsets the urgency hint of the window for the wm when the terminal
-! receives a bell character.
-! Accepts: boolean
-! Default value: false
-URxvt.urgentOnBell: false
-
-! Enables or disables a visual flash when the terminal receives a bell
-! character, instead of playing a sound.
-! Accepts: boolean
-! Default value: false
-URxvt.visualBell: false
-
-! External command to execute when the terminal bell is triggered.
-! This allows replacing or supplementing the default visual or
-! audible bell with a custom action (e.g. playing a sound,
-! sending a desktop notification, or logging the event).
-!
-! Accepts: string (command line to execute)
-! Default value: none (no external command is run)
-! Example:
-!   URxvt.bell-command: paplay /usr/share/sounds/freedesktop/stereo/bell.oga
-!
-! Note: If set, this runs in addition to other bell mechanisms
-! (visualBell, urgentOnBell).
-!URxvt.bell-command:
-
-! Enables or disables automatic de-iconification of the terminal window
-! if a bell character is received while it is iconified (minimized).
-! Useful for drawing attention to important activity when the terminal
-! is not currently visible.
-! Accepts: boolean
-! Default value: false
-URxvt.mapAlert: false
-
-! ----------------
-! --- End Bell ---
-! ----------------
 
 ! ----------------
 ! --- Keyboard ---
