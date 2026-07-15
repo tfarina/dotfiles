@@ -482,20 +482,21 @@ URxvt.fadeColor: BLACK
 #define BASE_BLACK #000000
 #define BASE_WHITE #FFFFFF
 
-! Foreground / background / cursor
-! --------------------------------
+! --- General ---
 
 URxvt.foreground: BASE_BLACK
 URxvt.background: BASE_WHITE
 URxvt.cursorColor: BASE_BLACK
 
-! Color scheme
-! ------------
+! --- Palette ---
+
+! -- Color scheme
+! ---------------
 
 #include "../colorschemes/cmd-legacy"
 
-! ANSI colors
-! -----------
+! -- ANSI colors
+! --------------
 
 URxvt.color0:  BLACK
 URxvt.color1:  RED
