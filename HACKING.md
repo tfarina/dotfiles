@@ -3,6 +3,18 @@
 This file documents personal workflows, tools, and development-related notes
 about maintaining and customizing these dotfiles.
 
+## Naming Conventions
+
+Follow these conventions when adding new files and directories:
+
+- Use lowercase names.
+- Use kebab-case (`-`) for multi-word filenames and shell scripts.
+- Use hyphens instead of underscores in multi-word filenames.
+- Use descriptive but concise names.
+
+These conventions help keep filenames predictable and consistent
+throughout the repository.
+
 ## Taking a Screenshot of the LightDM Greeter
 
 To capture the LightDM greeter screen (e.g., to verify visual changes like
