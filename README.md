@@ -10,15 +10,15 @@ managed with [GNU Stow](https://www.gnu.org/software/stow/).
 Dotfiles are user-specific configuration files on Unix-like systems,
 typically hidden because their names begin with a dot (e.g. `.bashrc`,
 `.profile`).
-[Read more on their origin →](./history.md)
+[Read more on their origin →](./docs/history.md)
 
 ## **System Documentation**
-- [System Info](./system-info.md)
-- [Environment Setup](./environment.md)
+- [System Info](./docs/system-info.md)
+- [Environment Setup](./docs/environment.md)
 
 ## Programs
 
-The complete list of programs I use is available in [environment.md](environment.md).
+The complete list of programs I use is available in [environment.md](docs/environment.md).
 
 ## Installation
 
