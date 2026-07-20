@@ -1,57 +1,75 @@
 # dotfiles
 
-Minimal and maintainable dotfiles for a functional Linux desktop — neatly
-managed with [GNU Stow](https://www.gnu.org/software/stow/).
+A curated collection of configuration files for a minimal, efficient Linux desktop workflow. Automated setup with [GNU Stow](https://www.gnu.org/software/stow/) ensures clean, modular management.
 
 ![Desktop Screenshot](screenshots/current_xfce_desktop.png)
 
-## What are dotfiles?
+## Quick Start
 
-Dotfiles are user-specific configuration files on Unix-like systems,
-typically hidden because their names begin with a dot (e.g. `.bashrc`,
-`.profile`).
-[Read more on their origin →](./docs/history.md)
-
-## **System Documentation**
-- [System Info](./docs/system-info.md)
-- [Environment Setup](./docs/environment.md)
-
-## Programs
-
-The complete list of programs I use is available in [environment.md](docs/environment.md).
-
-## Installation
-
-Before installing, read cowboy’s [gently-worded warning](https://github.com/cowboy/dotfiles#heed-this-critically-important-warning-before-you-install) and Anish Athalye’s [Dotfiles are NOT meant to be forked](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/).
-
-1. **Install GNU Stow**
-
-```sh
-sudo apt install stow
-```
-
-2. **Clone this repo**
-
-```sh
+```bash
+# Clone the repository
 git clone https://github.com/tfarina/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-```
 
-3. **Stow desired config folders**
+# Install GNU Stow (if not already installed)
+sudo apt install stow
 
-Instead of running `stow` manually, use the provided `setup.sh` helper script:
-
-```sh
-# Stow all default modules (bash, emacs, git, x11, xscreensaver, …)
+# Deploy configurations
 ./setup.sh
-
-# Stow only selected modules
-./setup.sh bash emacs
 ```
 
-To **unstow** a module later, run the following inside the dotfiles directory:
+## What's Inside
 
-```sh
+This repository contains configuration modules for:
+
+- **Shell & Terminal** — Bash configuration with aliases and environment setup
+- **Git** — Version control configuration and workflow helpers
+- **Text Editors** — Emacs configuration with custom keybindings and extensions
+- **Display Server** — X11 and Xscreensaver settings for XFCE desktop
+- **Visual Design** — CSS styling, themes, and desktop backgrounds
+- **Automation** — Shell scripts and build tools for system management
+
+See [environment.md](docs/environment.md) for a complete program inventory.
+
+## How It Works
+
+Each top-level directory in this repo represents a self-contained configuration module (e.g., `bash/`, `emacs/`, `git/`). When you run `./setup.sh`, GNU Stow creates symlinks from each module into your home directory, keeping everything organized and trackable.
+
+### Using Individual Modules
+
+```bash
+# Deploy specific modules only
+./setup.sh bash emacs git
+
+# Remove a module later
 cd ~/dotfiles
 stow -D emacs
 ```
+
+## Design Philosophy
+
+- **Minimal footprint** — Only essential configs, no bloat
+- **Modular structure** — Deploy or remove features independently
+- **Version controlled** — All configurations tracked and auditable
+- **Portable setup** — Easy to replicate across systems
+
+## Customization
+
+Before deploying to a new system, review the configurations to ensure they match your preferences. Some modules may require adjustments for your specific environment.
+
+**Key files to review:**
+- `bash/.bashrc` — Shell environment and aliases
+- `emacs/.emacs.d/` — Editor setup and extensions
+- `x11/.xinitrc` — Display server initialization
+
+## Documentation
+
+- [System Information](./docs/system-info.md) — Hardware and OS details
+- [Environment Setup](./docs/environment.md) — Complete tool and program list
+- [Dotfiles History](./docs/history.md) — Background on configuration files
+
+## Maintenance
+
+- Keep modules in sync with your active system
+- Archive unused configurations in `.archive/` for future reference
+- Test changes on a secondary system before merging to main
