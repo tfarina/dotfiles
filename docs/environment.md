@@ -103,7 +103,7 @@
   - Released: 2024-08-20
   - Website: https://www.mozilla.org/firefox/
 
-- Mail Reader: **Thunderbird** 68.10.0
+- Email Client: **Thunderbird** 68.10.0
   - Released: 2020-07-07
   - Website: https://www.thunderbird.net/
 
