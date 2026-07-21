@@ -4,6 +4,7 @@ set -euo pipefail
 # List of directories to check
 TARGETS=(
     /usr/share/themes/Clearlooks-Phenix-Modified
+    /usr/share/icons/gnome
     /usr/share/icons/elementary-xfce
     /usr/share/icons/Bluecurve
     /usr/share/icons/Bluecurve-inverse

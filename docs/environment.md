@@ -64,7 +64,7 @@
 
 - Window Manager Theme: **Clearlooks-Phenix-Modified**
 - GTK Themes: **Clearlooks-Phenix-Modified (GTK2)**, Ambiance (GTK3)
-- Icon Theme: **elementary-xfce**
+- Icon Theme: **gnome**
 - Cursor Theme: **Bluecurve**
 
 ## Terminal Environment

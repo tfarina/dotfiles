@@ -25,7 +25,7 @@ cd "$SCRIPT_DIR"
 xfconf-query -c xsettings -p /Net/ThemeName -s "Clearlooks-Phenix-Modified"
 
 # Icon theme
-xfconf-query -c xsettings -p /Net/IconThemeName -s "elementary-xfce"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "gnome"
 
 # Cursor theme and size
 xfconf-query -c xsettings -p /Gtk/CursorThemeName -s "Bluecurve"
