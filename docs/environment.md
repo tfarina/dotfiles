@@ -108,6 +108,10 @@
   - Released: 2020-07-07
   - Website: https://www.thunderbird.net/
 
+- FTP Client: **FileZilla** 3.15.0.2
+  - Released: 2016-02-10
+  - Website: https://filezilla-project.org/
+
 ### Document & Media
 
 - Document Viewer: **evince** 3.18.2
@@ -117,6 +121,16 @@
 - Image Viewer: **ristretto** 0.8.0
   - Released: 2014-04-10
   - Website: https://docs.xfce.org/xfce/ristretto/start
+
+- Color Picker: **gcolor2** 0.4
+  - Released: 2005-07-12
+  - Website: https://gcolor2.sourceforge.net/
+
+### Office
+
+- **LibreOffice** 5.1.6.2
+  - Released: 2016-11-03
+  - Website: https://www.libreoffice.org/
 
 ### System Utilities
 
