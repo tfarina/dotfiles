@@ -73,7 +73,8 @@
   - Released: 2014-12-31
   - Website: http://software.schmorp.de/pkg/rxvt-unicode.html
 
-- Terminal Font: **Ubuntu Mono** 12
+- Font: **Ubuntu Mono**
+  - Website: https://design.ubuntu.com/font
 
 - Shell: **bash** 4.3.48(1)-release
   - Released: 2014-10-23
