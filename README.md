@@ -2,7 +2,7 @@
 
 A curated collection of configuration files for a minimal, efficient Linux desktop workflow. Automated setup with [GNU Stow](https://www.gnu.org/software/stow/) ensures clean, modular management.
 
-![Desktop Screenshot](screenshots/current_xfce_desktop.png)
+![Desktop Screenshot](screenshots/preview.png)
 
 ## Quick Start
 
