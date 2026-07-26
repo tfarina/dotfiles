@@ -2,63 +2,26 @@
 
 ## Operating System
 
-- Distro: **Ubuntu** 16.04.7 LTS (Xenial Xerus)
-  - Released: 2016-04-21
-  - Website: https://ubuntu.com
-
-- Kernel: **Linux** 4.15.0-142-generic
-  - Released: 2019-03-31
-  - Website: https://kernel.org
-
+- Distro: [Ubuntu](https://ubuntu.com) 16.04.7 LTS (Xenial Xerus)
+- Kernel: [Linux](https://kernel.org) 4.15.0-142-generic
 - Filesystem: **ext4**
-
-- Bootloader: **GRUB** 2.02~beta2-36ubuntu3.32
-  - Released: 2016-12-25
-  - Website: https://www.gnu.org/software/grub/
-
-- Init System: **systemd** 229
-  - Released: 2015-10-07
-  - Website: https://systemd.io
+- Bootloader: [GRUB](https://www.gnu.org/software/grub/) 2.02~beta2-36ubuntu3.32
+- Init System: [systemd](https://systemd.io) 229
 
 ## Display System
 
-- Display Server: **Xorg** 1.19.6
-  - Released: 2017-04-04
-  - Website: https://www.x.org
-
-- Display Manager: **lightdm** 1.18.3
-  - Released: 2016-08-17
-  - Website: https://github.com/canonical/lightdm
-
-- Greeter: **lightdm-gtk-greeter** 2.0.1
-  - Released: 2015-12-08
-  - Website: https://github.com/Xubuntu/lightdm-gtk-greeter
+- Display Server: [Xorg](https://www.x.org) 1.19.6
+- Display Manager: [lightdm](https://github.com/canonical/lightdm) 1.18.3
+- Greeter: [lightdm-gtk-greeter](https://github.com/Xubuntu/lightdm-gtk-greeter) 2.0.1
 
 ## Desktop Environment: XFCE 4.12
 
-- Session Manager: **xfce4-session** 4.12.1
-  - Released: 2015-02-28
-  - Website: https://docs.xfce.org/xfce/xfce4-session/start
-
-- Settings Daemon: **xfsettingsd** 4.12.0
-  - Released: 2015-02-28
-  - Website: https://docs.xfce.org
-
-- Window Manager: **xfwm4** 4.12.3
-  - Released: 2015-11-07
-  - Website: https://docs.xfce.org/xfce/xfwm4/start
-
-- Desktop Manager: **xfdesktop** 4.12.3
-  - Released: 2015-11-07
-  - Website: https://docs.xfce.org/xfce/xfdesktop/start
-
-- Panel: **xfce4-panel** 4.12.0
-  - Released: 2015-02-28
-  - Website: https://docs.xfce.org/xfce/xfce4-panel/start
-
-- Application Finder: **xfce4-appfinder** 4.12.0
-  - Released: 2015-02-28
-  - Website: https://docs.xfce.org/xfce/xfce4-appfinder/start
+- Session Manager: [xfce4-session](https://docs.xfce.org/xfce/xfce4-session/start) 4.12.1
+- Settings Daemon: [xfsettingsd](https://docs.xfce.org) 4.12.0
+- Window Manager: [xfwm4](https://docs.xfce.org/xfce/xfwm4/start) 4.12.3
+- Desktop Manager: [xfdesktop](https://docs.xfce.org/xfce/xfdesktop/start) 4.12.3
+- Panel: [xfce4-panel](https://docs.xfce.org/xfce/xfce4-panel/start) 4.12.0
+- Application Finder: [xfce4-appfinder](https://docs.xfce.org/xfce/xfce4-appfinder/start) 4.12.0
 
 ## Theme and Appearance
 
@@ -69,107 +32,51 @@
 
 ## Terminal Environment
 
-- Terminal Emulator: **urxvt** 9.21
-  - Released: 2014-12-31
-  - Website: http://software.schmorp.de/pkg/rxvt-unicode.html
-
-- Font: **Ubuntu Mono**
-  - Website: https://design.ubuntu.com/font
-
-- Shell: **bash** 4.3.48(1)-release
-  - Released: 2014-10-23
-  - Website: https://www.gnu.org/software/bash/
+- Terminal Emulator: [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) 9.21
+- Font: [Ubuntu Mono](https://design.ubuntu.com/font)
+- Shell: [bash](https://www.gnu.org/software/bash/) 4.3.48(1)-release
 
 ## Applications
 
 ### Text Editors
 
-- **emacs** 24.5.1
-  - Released: 2015-04-10
-  - Website: https://www.gnu.org/software/emacs/
-
-- **gedit** 3.18.3
-  - Released: 2015-10-19
-  - Website: https://wiki.gnome.org/Apps/Gedit
+- [emacs](https://www.gnu.org/software/emacs/) 24.5.1
+- [gedit](https://wiki.gnome.org/Apps/Gedit) 3.18.3
 
 ### File Management
 
-- File Manager: **Thunar** 1.6.11
-  - Released: 2015-12-12
-  - Website: https://docs.xfce.org/xfce/thunar/start
+- File Manager: [Thunar](https://docs.xfce.org/xfce/thunar/start) 1.6.11
 
 ### Internet & Communication
 
-- Web Browser: **Firefox** 128.0.3
-  - Released: 2024-08-20
-  - Website: https://www.mozilla.org/firefox/
-
-- Email Client: **Thunderbird** 68.10.0
-  - Released: 2020-07-07
-  - Website: https://www.thunderbird.net/
-
-- FTP Client: **FileZilla** 3.15.0.2
-  - Released: 2016-02-10
-  - Website: https://filezilla-project.org/
+- Web Browser: [Firefox](https://www.mozilla.org/firefox/) 128.0.3
+- Email Client: [Thunderbird](https://www.thunderbird.net/) 68.10.0
+- FTP Client: [FileZilla](https://filezilla-project.org/) 3.15.0.2
 
 ### Document & Media
 
-- Document Viewer: **evince** 3.18.2
-  - Released: 2015-09-21
-  - Website: https://wiki.gnome.org/Apps/Evince
-
-- Image Viewer: **ristretto** 0.8.0
-  - Released: 2014-04-10
-  - Website: https://docs.xfce.org/xfce/ristretto/start
-
-- Color Picker: **gcolor2** 0.4
-  - Released: 2005-07-12
-  - Website: https://gcolor2.sourceforge.net/
+- Document Viewer: [evince](https://wiki.gnome.org/Apps/Evince) 3.18.2
+- Image Viewer: [ristretto](https://docs.xfce.org/xfce/ristretto/start) 0.8.0
+- Color Picker: [gcolor2](https://gcolor2.sourceforge.net/) 0.4
 
 ### Office
 
-- **LibreOffice** 5.1.6.2
-  - Released: 2016-11-03
-  - Website: https://www.libreoffice.org/
+- [LibreOffice](https://www.libreoffice.org/) 5.1.6.2
 
 ### System Utilities
 
-- Clipboard Manager: **clipit** 1.4.2
-  - Released: 2013-11-27
-  - Website: https://github.com/CristianHenzel/ClipIt
-
-- System Monitor: **gkrellm** 2.3.6-RC1
-  - Released: 2011-09-23
-  - Website: https://billwittel.com/gkrellm/
-
-- Task Manager: **lxtask** 0.1.10
-  - Released: 2011-03-13
-  - Website: https://github.com/lxde/lxtask
-
-- Screen Locker & Screensaver: **xscreensaver** 5.34
-  - Released: 2015-09-04
-  - Website: https://www.jwz.org/xscreensaver/
+- Clipboard Manager: [clipit](https://github.com/CristianHenzel/ClipIt) 1.4.2
+- System Monitor: [gkrellm](https://billwittel.com/gkrellm/) 2.3.6-RC1
+- Task Manager: [lxtask](https://github.com/lxde/lxtask) 0.1.10
+- Screen Locker & Screensaver: [xscreensaver](https://www.jwz.org/xscreensaver/) 5.34
 
 ### Screenshot Tools
 
-- **scrot** 0.8
-  - Released: 2009-10-18
-  - Website: https://github.com/dreamer/scrot
-
-- **gnome-screenshot** 3.18.0
-  - Released: 2015-09-21
-  - Website: https://wiki.gnome.org/Apps/Screenshot
-
-- **xfce4-screenshooter** 1.8.2
-  - Released: 2012-11-13
-  - Website: https://docs.xfce.org/xfce/xfce4-screenshooter/start
+- [scrot](https://github.com/dreamer/scrot) 0.8
+- [gnome-screenshot](https://wiki.gnome.org/Apps/Screenshot) 3.18.0
+- [xfce4-screenshooter](https://docs.xfce.org/xfce/xfce4-screenshooter/start) 1.8.2
 
 ### Archive Managers
 
-- **file-roller** 3.16.5
-  - Released: 2015-09-21
-  - Website: https://wiki.gnome.org/Apps/FileRoller
-
-- **xarchiver** 0.5.4
-  - Released: 2012-08-29
-  - Website: https://github.com/ib/xarchiver
+- [file-roller](https://wiki.gnome.org/Apps/FileRoller) 3.16.5
+- [xarchiver](https://github.com/ib/xarchiver) 0.5.4
