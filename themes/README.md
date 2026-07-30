@@ -18,14 +18,14 @@ cd ~/dotfiles
 ./install-assets.sh
 ```
 
-## Activating the themes in XFCE 4.12
+## Setting the default themes in XFCE 4.12
 
 After copying the themes, manually apply them in the XFCE settings:
 
-- **GTK theme (for applications)**:
-  Go to **Settings > Appearance > Style** and select the theme you want.
+#### GTK theme (for applications):
+- Go to **Settings > Appearance > Style**, and then choose the theme from the list.
 
-- **Window manager theme (for titlebars, borders)**:
-  Go to **Settings > Window Manager > Style** and select the theme you want.
+#### Window Manager theme (for titlebars, borders):
+- Go to **Settings > Window Manager > Style**, and then choose the theme from the list.
 
 Changes should apply immediately after selection.
