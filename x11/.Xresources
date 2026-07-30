@@ -34,9 +34,9 @@
 !---------------------------------------------------------------------!
 !                         URxvt configuration                         !
 !---------------------------------------------------------------------!
-#include ".Xresources.d/terminal/urxvt/profiles/default"
+#include ".Xresources.d/urxvt/profiles/default"
 
 !---------------------------------------------------------------------!
 !                         XTerm configuration                         !
 !---------------------------------------------------------------------!
-#include ".Xresources.d/terminal/xterm/profiles/default"
+#include ".Xresources.d/xterm/profiles/default"
