@@ -493,7 +493,7 @@ URxvt.cursorColor: BASE_BLACK
 ! -- Color scheme
 ! ---------------
 
-#include "../colorschemes/cmd-legacy"
+#include "../../colorschemes/cmd-legacy"
 
 ! -- ANSI colors
 ! --------------
