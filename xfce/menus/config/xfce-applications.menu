@@ -282,6 +282,13 @@
 			<Merge type="files"/>
 		</Layout>
 	</Menu>
+	<Menu>
+	  <Name>Places</Name>
+	  <Directory>xfce-places.directory</Directory>
+	  <Include>
+	    <Filename>gnome-search-tool.desktop</Filename>
+	  </Include>
+	</Menu>
 	<Layout>
 		<Menuname>Accessories</Menuname>
 		<Menuname>Development</Menuname>
@@ -293,7 +300,7 @@
 		<Menuname>Office</Menuname>
 		<Menuname>System Tools</Menuname>
 		<Separator/>
-		<Filename>gnome-search-tool.desktop</Filename>
+		<Menuname>Places</Menuname>
 		<Separator/>
 		<Menuname>Settings</Menuname>
 		<Filename>yelp.desktop</Filename>
