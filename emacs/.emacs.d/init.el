@@ -29,13 +29,13 @@
 ;; Disable the startup screen.
 (setq inhibit-startup-screen t)
 
-;; Hide menu bar.
+;; Disable the menu-bar.
 (menu-bar-mode -1)
 
-;; Hide tool bar.
+;; Disable the tool-bar.
 (tool-bar-mode -1)
 
-;; Hide left scrollbar.
+;; Disable the vertical scroll-bars.
 (scroll-bar-mode -1)
 
 ;; Activates the mark and highlights the region.
