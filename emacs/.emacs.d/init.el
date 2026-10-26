@@ -14,7 +14,7 @@
 ;; To keep things consistent, set the same font family/size in both.
 
 (when (display-graphic-p)
-  (let ((my-font "Ubuntu Mono-12"))   ;; <--- change family/size here
+  (let ((my-font "Monospace-12"))   ;; <--- change family/size here
     ;; Apply font to the default frame (new windows)
     (add-to-list 'default-frame-alist `(font . ,my-font))
     ;; Apply font immediately to the current frame
