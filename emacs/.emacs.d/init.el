@@ -26,17 +26,19 @@
 ;; Set color scheme.
 (load-theme 'vs-light t)
 
-;; Disable the startup screen.
-(setq inhibit-startup-screen t)
+;; Disable GUI elements in terminal Emacs.
+(unless (display-graphic-p)
+  ;; Disable the startup screen.
+  (setq inhibit-startup-screen t)
 
-;; Disable the menu-bar.
-(menu-bar-mode -1)
+  ;; Disable the menu-bar.
+  (menu-bar-mode -1)
 
-;; Disable the tool-bar.
-(tool-bar-mode -1)
+  ;; Disable the tool-bar.
+  (tool-bar-mode -1)
 
-;; Disable the vertical scroll-bars.
-(scroll-bar-mode -1)
+  ;; Disable the vertical scroll-bars.
+  (scroll-bar-mode -1))
 
 ;; Activates the mark and highlights the region.
 (transient-mark-mode t)
