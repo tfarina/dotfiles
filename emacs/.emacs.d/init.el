@@ -1,4 +1,5 @@
-;; Elisp files go in ~/.emacs.d/lisp/
+;; Add ~/.emacs.d/lisp/ to the load-path to make my personal Lisp libraries
+;; available.
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 ;; --------------------------------
