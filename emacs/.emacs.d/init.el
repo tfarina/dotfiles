@@ -41,7 +41,7 @@
   ;; Disable the vertical scroll-bars.
   (scroll-bar-mode -1))
 
-;; Activates the mark and highlights the region.
+;; Highlight the active region.
 (transient-mark-mode t)
 
 ;; Show column numbers.
