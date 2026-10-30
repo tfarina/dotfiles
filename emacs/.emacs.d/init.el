@@ -75,7 +75,14 @@
 ;; Prefer UTF-8 to ISO-8859-1.
 (prefer-coding-system 'utf-8)
 
-;; eol type
+;; Customize how Emacs labels the current end-of-line convention in the
+;; mode line:
+;;   LF    -> "LF"    (Unix / GNU/Linux)
+;;   CRLF  -> "CRLF"  (Windows / DOS)
+;;   CR    -> "CR"    (classic Mac)
+;;
+;; Without these overrides, Emacs uses the default mode-line labels:
+;;   ":" for LF, "(DOS)" for CRLF, and "(Mac)" for CR.
 (setq eol-mnemonic-unix "LF")
 (setq eol-mnemonic-dos "CRLF")
 (setq eol-mnemonic-mac "CR")
