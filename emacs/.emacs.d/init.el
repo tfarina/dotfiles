@@ -53,7 +53,7 @@
 ;; Highlight matching parentheses.
 (show-paren-mode t)
 
-;; Use box cursor in GUI for consistency with tty (which is always a box).
+;; In GUI frames, use a box cursor for consisteny with terminal Emacs.
 (set-default 'cursor-type 'box)
 
 ;; Disable cursor blinking when running Emacs in a terminal.
