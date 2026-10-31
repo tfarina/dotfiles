@@ -56,7 +56,7 @@
 ;; Use box cursor in GUI for consistency with tty (which is always a box).
 (set-default 'cursor-type 'box)
 
-;; Do not blink the cursor.
+;; Disable cursor blinking when running Emacs in a terminal.
 (setq visible-cursor nil)
 
 ;; In GUI frames, disable cursor blinking for consistency with tty.
