@@ -39,7 +39,11 @@
   (tool-bar-mode -1)
 
   ;; Disable the vertical scroll-bars.
-  (scroll-bar-mode -1))
+  (scroll-bar-mode -1)
+
+  ;; Disable cursor blinking when running Emacs in a terminal.
+  (setq visible-cursor nil)
+)
 
 ;; Highlight the active region.
 (transient-mark-mode t)
@@ -55,9 +59,6 @@
 
 ;; In GUI frames, use a box cursor for consisteny with terminal Emacs.
 (setq-default cursor-type 'box)
-
-;; Disable cursor blinking when running Emacs in a terminal.
-(setq visible-cursor nil)
 
 ;; In GUI frames, disable cursor blinking for consistency with tty.
 (when (display-graphic-p)
