@@ -54,7 +54,7 @@
 (show-paren-mode t)
 
 ;; In GUI frames, use a box cursor for consisteny with terminal Emacs.
-(set-default 'cursor-type 'box)
+(setq-default cursor-type 'box)
 
 ;; Disable cursor blinking when running Emacs in a terminal.
 (setq visible-cursor nil)
