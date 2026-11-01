@@ -60,7 +60,7 @@
 ;; In GUI frames, use a box cursor for consisteny with terminal Emacs.
 (setq-default cursor-type 'box)
 
-;; In GUI frames, disable cursor blinking for consistency with tty.
+;; In GUI frames, disable cursor blinking for consistency with terminal Emacs.
 (when (display-graphic-p)
   (blink-cursor-mode 0))
 
