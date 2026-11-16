@@ -1,0 +1,8 @@
+Name: NeoTree
+Description: A tree explorer plugin for Emacs.
+URL: https://github.com/jaypei/emacs-neotree
+Version: 0.6.0
+License: GPL-3.0
+Source: Vendored upstream source
+Revision: 53c0e55034644236ee3761037e0dcfcd1c881c45
+Imported: 2026-11-16

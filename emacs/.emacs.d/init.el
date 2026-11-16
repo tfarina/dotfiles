@@ -1,6 +1,13 @@
 ;; Add personal Lisp libraries to the load-path.
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
+;; Add third-party packages to the load-path.
+(add-to-list 'load-path
+	     (expand-file-name "site-lisp/neotree" user-emacs-directory))
+
+;; Load personal configurations.
+(require 'init-neotree)
+
 ;; --------------------------------
 ;; Font configuration for Emacs GUI
 ;; --------------------------------
