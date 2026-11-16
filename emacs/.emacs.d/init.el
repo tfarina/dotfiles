@@ -1,6 +1,5 @@
-;; Add ~/.emacs.d/lisp/ to the load-path to make my personal Lisp libraries
-;; available.
-(add-to-list 'load-path "~/.emacs.d/lisp/")
+;; Add personal Lisp libraries to the load-path.
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 ;; --------------------------------
 ;; Font configuration for Emacs GUI
