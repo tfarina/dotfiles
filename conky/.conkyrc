@@ -1,0 +1,120 @@
+conky.config = {
+--    background = true,
+    update_interval = 1.5,  -- update interval in seconds
+    double_buffer = true, -- use double buffering (reduces flicker, may not work for everyone)
+    no_buffers = true,
+
+
+    -- window aligment
+    alignment = 'top_left',
+    gap_x = 10,
+    gap_y = 40,
+
+    -- window settings
+    minimum_height = 5,
+    minimum_width = 5,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+
+    -- window borders
+    border_width = 1,
+
+    -- font
+    use_xft = true,
+    font = 'DejaVu Sans:pixelsize=12',
+
+    cpu_avg_samples = 1,
+    net_avg_samples = 1,
+
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    draw_graph_borders = true,
+    show_graph_scale = false,
+    show_graph_range = false,
+
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+
+    stippled_borders = 0,
+
+    uppercase = false,
+    use_spacer = 'none',
+
+    -- colors
+    default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    color1 ='E7C208',
+    color2 ='FFFFFF'
+}
+
+conky.text = [[
+#${color2}${alignc}${nodename}
+#${color2}${alignc}${time %a %d %b}
+#${color2}${alignc}${time %I:%M}
+
+${font Sans Serif:Bold:size=10}SYSTEM ${hr 2}$font
+
+${color1}CPU 0: ${color2}${cpu cpu1}%
+${color1}${cpugraph cpu0}
+${color1}CPU 1: ${color2}${cpu cpu2}%
+${color1}${cpugraph cpu1}
+#${color1}${cpugraph cpu1 30,170 5599cc 5599cc}
+
+${color1}Processes: ${color2}${processes}
+#${color1}Running: ${color2}${running_processes}
+${color1}Users: ${color2}${user_number}
+#${color1}User names: ${color2}${user_names}
+
+#${acpitemp}C
+${color1}temp1: ${color2}${execi 10 awk '{printf "%.1f°C\n", $1 / 1000}' /sys/class/hwmon/hwmon0/temp1_input}
+${color1}Core 0: ${color2}${hwmon 1 temp 2}°C
+${color1}temp1: ${color2}${hwmon 0 temp 1}°C
+${color1}Core 0: ${color2}${hwmon 1 temp 2}°C
+${color1}Core 1: ${color2}${hwmon 1 temp 3}°C
+
+${font Sans Serif:Bold:size=10}DISK ${hr 2}$font
+
+${color1}Read: ${color2}${diskio_read /dev/sda}
+${color1}Write: ${color2}${diskio_write /dev/sda}
+
+${font Sans Serif:Bold:size=10}MEMORY ${hr 2}$font
+
+${color1}RAM${color2}
+$mem / $memmax $alignr ${memperc} %
+${membar 6}
+Total:     ${memmax}
+Used:      ${mem}
+Free:      ${memfree}
+Buffers:   ${buffers}
+Cached:    ${cached}
+Available:  ${execi 5 awk '/^MemAvailable:/ {printf "%.0f MiB", $2/1024}' /proc/meminfo}
+
+${color1}SWAP${color2}
+$swap / $swapmax $alignr ${swapperc} %
+${swapbar 6}
+Total:      ${swapmax}
+Used:       ${swap}
+Free:       ${swapfree}
+
+# TODO: Storage is mostly static information. Consider not displaying it.
+${font Sans Serif:Bold:size=10}STORAGE ${hr 2}$font
+
+${color1}root$alignr${color2}${fs_type /}
+${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /} %
+${fs_bar 6}
+${color1}/home/$alignr${color2}${fs_type /home}
+${fs_used /home} / ${fs_size /home} $alignr ${fs_used_perc /home} %
+${fs_bar 6 /home}
+
+${font Sans Serif:Bold:size=10}NETWORK ${hr 2}$font
+#${color1}IP Address: $alignr${color2}${addr wlx00c0a8e1f377}
+
+${color1}Down: ${color2}${downspeedf wlx00c0a8e1f377} kb/s $alignr${color1}Total: ${color2}${totaldown wlx00c0a8e1f377}
+${color1}Up: ${color2}${upspeedf wlx00c0a8e1f377} kb/s $alignr${color1}Total: ${color2}${totalup wlx00c0a8e1f377}
+
+${color1}Uptime: ${color2}$uptime
+]]
