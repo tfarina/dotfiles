@@ -2,26 +2,26 @@
 
 ## Operating System
 
-- Distro: [Ubuntu](https://ubuntu.com) 16.04.7 LTS (Xenial Xerus)
-- Kernel: [Linux](https://kernel.org) 4.15.0-142-generic
+- Distro: [Ubuntu](https://ubuntu.com)
+- Kernel: [Linux](https://kernel.org)
 - Filesystem: **ext4**
-- Bootloader: [GRUB](https://www.gnu.org/software/grub/) 2.02~beta2-36ubuntu3.32
-- Init System: [systemd](https://systemd.io) 229
+- Bootloader: [GRUB](https://www.gnu.org/software/grub/)
+- Init System: [systemd](https://systemd.io)
 
 ## Display System
 
-- Display Server: [Xorg](https://www.x.org) 1.19.6
-- Display Manager: [lightdm](https://github.com/canonical/lightdm) 1.18.3
-- Greeter: [lightdm-gtk-greeter](https://github.com/Xubuntu/lightdm-gtk-greeter) 2.0.1
+- Display Server: [Xorg](https://www.x.org)
+- Display Manager: [lightdm](https://github.com/canonical/lightdm)
+- Greeter: [lightdm-gtk-greeter](https://github.com/Xubuntu/lightdm-gtk-greeter)
 
-## Desktop Environment: XFCE 4.12
+## Desktop Environment: XFCE
 
-- Session Manager: [xfce4-session](https://docs.xfce.org/xfce/xfce4-session/start) 4.12.1
-- Settings Daemon: [xfsettingsd](https://docs.xfce.org) 4.12.0
-- Window Manager: [xfwm4](https://docs.xfce.org/xfce/xfwm4/start) 4.12.3
-- Desktop Manager: [xfdesktop](https://docs.xfce.org/xfce/xfdesktop/start) 4.12.3
-- Panel: [xfce4-panel](https://docs.xfce.org/xfce/xfce4-panel/start) 4.12.0
-- Application Finder: [xfce4-appfinder](https://docs.xfce.org/xfce/xfce4-appfinder/start) 4.12.0
+- Session Manager: [xfce4-session](https://docs.xfce.org/xfce/xfce4-session/start)
+- Settings Daemon: [xfsettingsd](https://docs.xfce.org)
+- Window Manager: [xfwm4](https://docs.xfce.org/xfce/xfwm4/start)
+- Desktop Manager: [xfdesktop](https://docs.xfce.org/xfce/xfdesktop/start)
+- Panel: [xfce4-panel](https://docs.xfce.org/xfce/xfce4-panel/start)
+- Application Finder: [xfce4-appfinder](https://docs.xfce.org/xfce/xfce4-appfinder/start)
 
 ## Theme and Appearance
 
@@ -32,51 +32,51 @@
 
 ## Terminal Environment
 
-- Terminal Emulator: [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) 9.21
+- Terminal Emulator: [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
 - Font: [Ubuntu Mono](https://design.ubuntu.com/font)
-- Shell: [bash](https://www.gnu.org/software/bash/) 4.3.48(1)-release
+- Shell: [bash](https://www.gnu.org/software/bash/)
 
 ## Applications
 
 ### Text Editors
 
-- [emacs](https://www.gnu.org/software/emacs/) 24.5.1
-- [gedit](https://wiki.gnome.org/Apps/Gedit) 3.18.3
+- [emacs](https://www.gnu.org/software/emacs/)
+- [gedit](https://wiki.gnome.org/Apps/Gedit)
 
 ### File Management
 
-- File Manager: [Thunar](https://docs.xfce.org/xfce/thunar/start) 1.6.11
+- File Manager: [Thunar](https://docs.xfce.org/xfce/thunar/start)
 
 ### Internet & Communication
 
-- Web Browser: [Firefox](https://www.mozilla.org/firefox/) 128.0.3
-- Email Client: [Thunderbird](https://www.thunderbird.net/) 68.10.0
-- FTP Client: [FileZilla](https://filezilla-project.org/) 3.15.0.2
+- Web Browser: [Firefox](https://www.mozilla.org/firefox/)
+- Email Client: [Thunderbird](https://www.thunderbird.net/)
+- FTP Client: [FileZilla](https://filezilla-project.org/)
 
 ### Document & Media
 
-- Document Viewer: [evince](https://wiki.gnome.org/Apps/Evince) 3.18.2
-- Image Viewer: [ristretto](https://docs.xfce.org/xfce/ristretto/start) 0.8.0
-- Color Picker: [gcolor2](https://gcolor2.sourceforge.net/) 0.4
+- Document Viewer: [evince](https://wiki.gnome.org/Apps/Evince)
+- Image Viewer: [ristretto](https://docs.xfce.org/xfce/ristretto/start)
+- Color Picker: [gcolor2](https://gcolor2.sourceforge.net/)
 
 ### Office
 
-- [LibreOffice](https://www.libreoffice.org/) 5.1.6.2
+- [LibreOffice](https://www.libreoffice.org/)
 
 ### System Utilities
 
-- Clipboard Manager: [clipit](https://github.com/CristianHenzel/ClipIt) 1.4.2
-- System Monitor: [gkrellm](https://billwittel.com/gkrellm/) 2.3.6-RC1
-- Task Manager: [lxtask](https://github.com/lxde/lxtask) 0.1.10
-- Screen Locker & Screensaver: [xscreensaver](https://www.jwz.org/xscreensaver/) 5.34
+- Clipboard Manager: [clipit](https://github.com/CristianHenzel/ClipIt)
+- System Monitor: [gkrellm](https://billwittel.com/gkrellm/)
+- Task Manager: [lxtask](https://github.com/lxde/lxtask)
+- Screen Locker & Screensaver: [xscreensaver](https://www.jwz.org/xscreensaver/)
 
 ### Screenshot Tools
 
-- [scrot](https://github.com/dreamer/scrot) 0.8
-- [gnome-screenshot](https://wiki.gnome.org/Apps/Screenshot) 3.18.0
-- [xfce4-screenshooter](https://docs.xfce.org/xfce/xfce4-screenshooter/start) 1.8.2
+- [scrot](https://github.com/dreamer/scrot)
+- [gnome-screenshot](https://wiki.gnome.org/Apps/Screenshot)
+- [xfce4-screenshooter](https://docs.xfce.org/xfce/xfce4-screenshooter/start)
 
 ### Archive Managers
 
-- [file-roller](https://wiki.gnome.org/Apps/FileRoller) 3.16.5
-- [xarchiver](https://github.com/ib/xarchiver) 0.5.4
+- [file-roller](https://wiki.gnome.org/Apps/FileRoller)
+- [xarchiver](https://github.com/ib/xarchiver)
