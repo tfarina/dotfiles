@@ -5,7 +5,7 @@ conky.config = {
     no_buffers = true,
 
 
-    -- window aligment
+    -- window alignment
     alignment = 'top_left',
     gap_x = 10,
     gap_y = 40,
@@ -47,31 +47,21 @@ conky.config = {
     default_color = 'white',
     default_outline_color = 'white',
     default_shade_color = 'white',
-    color1 ='E7C208',
-    color2 ='FFFFFF'
+    color1 = 'E7C208',
+    color2 = 'FFFFFF'
 }
 
 conky.text = [[
-#${color2}${alignc}${nodename}
-#${color2}${alignc}${time %a %d %b}
-#${color2}${alignc}${time %I:%M}
-
 ${font Sans Serif:Bold:size=10}SYSTEM ${hr 2}$font
 
 ${color1}CPU 0: ${color2}${cpu cpu1}%
 ${color1}${cpugraph cpu0}
 ${color1}CPU 1: ${color2}${cpu cpu2}%
 ${color1}${cpugraph cpu1}
-#${color1}${cpugraph cpu1 30,170 5599cc 5599cc}
 
 ${color1}Processes: ${color2}${processes}
-#${color1}Running: ${color2}${running_processes}
 ${color1}Users: ${color2}${user_number}
-#${color1}User names: ${color2}${user_names}
 
-#${acpitemp}C
-${color1}temp1: ${color2}${execi 10 awk '{printf "%.1f°C\n", $1 / 1000}' /sys/class/hwmon/hwmon0/temp1_input}
-${color1}Core 0: ${color2}${hwmon 1 temp 2}°C
 ${color1}temp1: ${color2}${hwmon 0 temp 1}°C
 ${color1}Core 0: ${color2}${hwmon 1 temp 2}°C
 ${color1}Core 1: ${color2}${hwmon 1 temp 3}°C
@@ -111,7 +101,6 @@ ${fs_used /home} / ${fs_size /home} $alignr ${fs_used_perc /home} %
 ${fs_bar 6 /home}
 
 ${font Sans Serif:Bold:size=10}NETWORK ${hr 2}$font
-#${color1}IP Address: $alignr${color2}${addr wlx00c0a8e1f377}
 
 ${color1}Down: ${color2}${downspeedf wlx00c0a8e1f377} kb/s $alignr${color1}Total: ${color2}${totaldown wlx00c0a8e1f377}
 ${color1}Up: ${color2}${upspeedf wlx00c0a8e1f377} kb/s $alignr${color1}Total: ${color2}${totalup wlx00c0a8e1f377}
