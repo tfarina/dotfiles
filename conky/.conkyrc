@@ -35,7 +35,7 @@ conky.config = {
 conky.text = [[
 ${color1}Uptime: ${color2}$uptime
 
-${font Sans Serif:Bold:size=10}SYSTEM ${hr 2}$font
+${font DejaVu Sans:Bold:size=10}SYSTEM ${hr 2}$font
 
 ${color1}CPU 0: ${color2}${cpu cpu1}%
 ${color1}${cpugraph cpu0}
@@ -49,12 +49,12 @@ ${color1}temp1: ${color2}${hwmon 0 temp 1}°C
 ${color1}Core 0: ${color2}${hwmon 1 temp 2}°C
 ${color1}Core 1: ${color2}${hwmon 1 temp 3}°C
 
-${font Sans Serif:Bold:size=10}DISK ${hr 2}$font
+${font DejaVu Sans:Bold:size=10}DISK ${hr 2}$font
 
 ${color1}Read: ${color2}${diskio_read /dev/sda}
 ${color1}Write: ${color2}${diskio_write /dev/sda}
 
-${font Sans Serif:Bold:size=10}MEMORY ${hr 2}$font
+${font DejaVu Sans:Bold:size=10}MEMORY ${hr 2}$font
 
 ${color1}RAM${color2}
 $mem / $memmax $alignr ${memperc} %
@@ -73,7 +73,7 @@ Total:      ${swapmax}
 Used:       ${swap}
 Free:       ${swapfree}
 
-${font Sans Serif:Bold:size=10}NETWORK ${hr 2}$font
+${font DejaVu Sans:Bold:size=10}NETWORK ${hr 2}$font
 
 ${color1}Up: ${color2}${upspeedf wlx00c0a8e1f377} KiB/s ${alignr}${color1}Down: ${color2}${downspeedf wlx00c0a8e1f377} KiB/s
 ${color1}Sent: ${color2}${totalup wlx00c0a8e1f377} ${alignr}${color1}Received: ${color2}${totaldown wlx00c0a8e1f377}
