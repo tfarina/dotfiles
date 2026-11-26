@@ -4,23 +4,16 @@ conky.config = {
     double_buffer = true, -- use double buffering (reduces flicker, may not work for everyone)
     no_buffers = true,
 
-
-    -- window alignment
     alignment = 'top_left',
     gap_x = 10,
     gap_y = 40,
 
-    -- window settings
-    minimum_height = 5,
-    minimum_width = 5,
     own_window = true,
     own_window_class = 'Conky',
     own_window_type = 'desktop',
 
-    -- window borders
     border_width = 1,
 
-    -- font
     use_xft = true,
     font = 'DejaVu Sans:pixelsize=12',
 
@@ -34,21 +27,9 @@ conky.config = {
     show_graph_scale = false,
     show_graph_range = false,
 
-    out_to_console = false,
-    out_to_stderr = false,
-    extra_newline = false,
-
-    stippled_borders = 0,
-
-    uppercase = false,
-    use_spacer = 'none',
-
-    -- colors
     default_color = 'white',
-    default_outline_color = 'white',
-    default_shade_color = 'white',
-    color1 = 'E7C208',
-    color2 = 'FFFFFF'
+    color1 = '#E7C208',
+    color2 = '#FFFFFF'
 }
 
 conky.text = [[
