@@ -75,6 +75,6 @@ Free:       ${swapfree}
 
 ${font Sans Serif:Bold:size=10}NETWORK ${hr 2}$font
 
-${color1}Down: ${color2}${downspeedf wlx00c0a8e1f377} kb/s $alignr${color1}Total: ${color2}${totaldown wlx00c0a8e1f377}
-${color1}Up: ${color2}${upspeedf wlx00c0a8e1f377} kb/s $alignr${color1}Total: ${color2}${totalup wlx00c0a8e1f377}
+${color1}Up: ${color2}${upspeedf wlx00c0a8e1f377} KiB/s ${alignr}${color1}Down: ${color2}${downspeedf wlx00c0a8e1f377} KiB/s
+${color1}Sent: ${color2}${totalup wlx00c0a8e1f377} ${alignr}${color1}Received: ${color2}${totaldown wlx00c0a8e1f377}
 ]]
