@@ -90,16 +90,6 @@ Total:      ${swapmax}
 Used:       ${swap}
 Free:       ${swapfree}
 
-# TODO: Storage is mostly static information. Consider not displaying it.
-${font Sans Serif:Bold:size=10}STORAGE ${hr 2}$font
-
-${color1}root$alignr${color2}${fs_type /}
-${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /} %
-${fs_bar 6}
-${color1}/home/$alignr${color2}${fs_type /home}
-${fs_used /home} / ${fs_size /home} $alignr ${fs_used_perc /home} %
-${fs_bar 6 /home}
-
 ${font Sans Serif:Bold:size=10}NETWORK ${hr 2}$font
 
 ${color1}Down: ${color2}${downspeedf wlx00c0a8e1f377} kb/s $alignr${color1}Total: ${color2}${totaldown wlx00c0a8e1f377}
