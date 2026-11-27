@@ -50,8 +50,7 @@ ${color1}Core 1:$color ${hwmon 1 temp 3}°C
 
 ${font DejaVu Sans:style=Bold:size=10}DISK ${hr 2}$font
 
-${color1}Read:$color ${diskio_read /dev/sda}
-${color1}Write:$color ${diskio_write /dev/sda}
+${color1}Read:$color ${diskio_read /dev/sda} ${alignr}${color1}Write:$color ${diskio_write /dev/sda}
 
 ${font DejaVu Sans:style=Bold:size=10}MEMORY ${hr 2}$font
 
