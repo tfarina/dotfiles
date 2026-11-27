@@ -37,9 +37,9 @@ ${color1}Uptime:$color $uptime
 ${font DejaVu Sans:style=Bold:size=10}SYSTEM ${hr 2}$font
 
 ${color1}CPU 0:$color ${cpu cpu1}%
-${color1}${cpugraph cpu0}
+${color1}${cpubar cpu0 4}
 ${color1}CPU 1:$color ${cpu cpu2}%
-${color1}${cpugraph cpu1}
+${color1}${cpubar cpu1 4}
 
 ${color1}Processes:$color ${processes}
 ${color1}Users:$color ${user_number}
