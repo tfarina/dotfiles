@@ -54,22 +54,16 @@ ${color1}Read:$color ${diskio_read /dev/sda} ${alignr}${color1}Write:$color ${di
 
 ${font DejaVu Sans:style=Bold:size=10}MEMORY ${hr 2}$font
 
-${color1}RAM$color
-$mem / $memmax $alignr ${memperc} %
+${color1}RAM$color $alignr ${memperc}% used
 ${membar 6}
-Total:     ${memmax}
-Used:      ${mem}
-Free:      ${memfree}
-Buffers:   ${buffers}
-Cached:    ${cached}
-Available:  ${execi 5 awk '/^MemAvailable:/ {printf "%.0f MiB", $2/1024}' /proc/meminfo}
+${color1}Used:$color ${mem} $alignr ${color1}Total:$color ${memmax}
+${color1}Available:$color ${execi 5 awk '/^MemAvailable:/ {printf "%.0f MiB", $2/1024}' /proc/meminfo} $alignr ${color1}Free:$color ${memfree}
+${color1}Buffers:$color ${buffers} $alignr ${color1}Cached:$color ${cached}
 
-${color1}SWAP$color
-$swap / $swapmax $alignr ${swapperc} %
+${color1}SWAP$color $alignr ${swapperc}% used
 ${swapbar 6}
-Total:      ${swapmax}
-Used:       ${swap}
-Free:       ${swapfree}
+${color1}Used:$color ${swap} $alignr ${color1}Total:$color ${swapmax}
+${color1}Free:$color ${swapfree}
 
 ${font DejaVu Sans:style=Bold:size=10}NETWORK ${hr 2}$font
 
