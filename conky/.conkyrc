@@ -55,13 +55,13 @@ ${font DejaVu Sans:style=Bold:size=10}MEMORY ${hr 2}$font
 
 ${color1}RAM:$color ${memperc}%
 ${color1}${membar 4}
-${color1}Used:$color ${mem} $alignr ${color1}Total:$color ${memmax}
-${color1}Available:$color ${execi 5 awk '/^MemAvailable:/ {printf "%.0f MiB", $2/1024}' /proc/meminfo} $alignr ${color1}Free:$color ${memfree}
-${color1}Buffers:$color ${buffers} $alignr ${color1}Cached:$color ${cached}
+${color1}Used:$color ${mem} ${alignr} ${color1}Total:$color ${memmax}
+${color1}Available:$color ${execi 5 awk '/^MemAvailable:/ {printf "%.0f MiB", $2/1024}' /proc/meminfo} ${alignr} ${color1}Free:$color ${memfree}
+${color1}Buffers:$color ${buffers} ${alignr} ${color1}Cached:$color ${cached}
 
 ${color1}SWAP:$color ${swapperc}%
 ${color1}${swapbar 4}
-${color1}Used:$color ${swap} $alignr ${color1}Total:$color ${swapmax}
+${color1}Used:$color ${swap} ${alignr} ${color1}Total:$color ${swapmax}
 ${color1}Free:$color ${swapfree}
 
 ${font DejaVu Sans:style=Bold:size=10}NETWORK ${hr 2}$font
